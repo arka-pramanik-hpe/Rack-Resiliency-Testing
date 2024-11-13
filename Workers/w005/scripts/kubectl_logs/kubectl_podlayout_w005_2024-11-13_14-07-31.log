@@ -1,0 +1,39 @@
+Timestamp: 2024-11-13 14:07:31
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-b5npn                             3/3     Running       9 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-mktr9                                3/3     Running       9 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+kube-system          pod/kube-multus-ds-cfplv                                              1/1     Running       3 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+kube-system          pod/kube-proxy-nt289                                                  1/1     Running       3 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+kube-system          pod/node-problem-detector-xmjz7                                       1/1     Running       3 (137m ago)    7d1h    10.46.0.22    ncn-w005   <none>           <none>
+kube-system          pod/weave-net-dgsml                                                   2/2     Running       9 (137m ago)    10d     10.252.1.14   ncn-w005   <none>           <none>
+metallb-system       pod/metallb-speaker-6w8t4                                             1/1     Running       3 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+nexus                pod/cray-precache-images-xtzjk                                        1/1     Running       3 (137m ago)    7d1h    10.46.0.2     ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-admin-j475x                      1/1     Running       3 (137m ago)    7d1h    10.46.0.10    ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-user-lt5zd                       1/1     Running       3 (137m ago)    7d1h    10.46.0.12    ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hhr4p                                     1/1     Running       2 (137m ago)    30h     10.46.0.7     ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hmn-gd987                                 1/1     Running       3 (137m ago)    7d1h    10.46.0.4     ncn-w005   <none>           <none>
+services             pod/cfs-ara-postgres-1                                                3/3     Terminating   0               135m    10.46.0.17    ncn-w005   <none>           <none>
+services             pod/cray-cfs-api-557fb98d57-v6sl4                                     2/2     Terminating   0               47m     10.46.0.18    ncn-w005   <none>           <none>
+services             pod/cray-dns-powerdns-postgres-2                                      3/3     Terminating   0               135m    10.46.0.24    ncn-w005   <none>           <none>
+services             pod/cray-dns-unbound-manager-28858402-tkb6p                           1/2     Terminating   0               45m     10.46.0.21    ncn-w005   <none>           <none>
+services             pod/cray-fas-bitnami-etcd-0                                           2/2     Terminating   0               134m    10.46.0.30    ncn-w005   <none>           <none>
+services             pod/cray-hbtd-bitnami-etcd-0                                          2/2     Terminating   0               135m    10.46.0.11    ncn-w005   <none>           <none>
+services             pod/cray-keycloak-0                                                   2/2     Terminating   0               135m    10.46.0.26    ncn-w005   <none>           <none>
+services             pod/cray-node-discovery-gnnrw                                         1/1     Running       3 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+services             pod/cray-shared-kafka-zookeeper-1                                     1/1     Terminating   0               135m    10.46.0.20    ncn-w005   <none>           <none>
+services             pod/cray-sls-postgres-2                                               2/3     Terminating   0               47m     10.46.0.8     ncn-w005   <none>           <none>
+services             pod/cray-smd-postgres-2                                               3/3     Terminating   0               135m    10.46.0.28    ncn-w005   <none>           <none>
+services             pod/cray-tftp-modprobe-cfmzt                                          1/1     Running       3 (137m ago)    7d1h    10.46.0.9     ncn-w005   <none>           <none>
+services             pod/gitea-vcs-postgres-2                                              3/3     Terminating   0               135m    10.46.0.25    ncn-w005   <none>           <none>
+services             pod/keycloak-postgres-0                                               3/3     Terminating   0               135m    10.46.0.27    ncn-w005   <none>           <none>
+services             pod/sonar-jobs-watcher-bkz8g                                          1/1     Running       3 (137m ago)    7d1h    10.46.0.1     ncn-w005   <none>           <none>
+services             pod/sonar-sync-28858403-9fzs4                                         0/1     Terminating   0               44m     <none>        ncn-w005   <none>           <none>
+spire                pod/cray-spire-agent-qwqpg                                            1/1     Running       3 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+spire                pod/cray-spire-postgres-2                                             3/3     Terminating   0               135m    10.46.0.15    ncn-w005   <none>           <none>
+spire                pod/cray-spire-server-0                                               2/2     Terminating   0               135m    10.46.0.19    ncn-w005   <none>           <none>
+spire                pod/request-ncn-join-token-95vlr                                      2/2     Running       6 (137m ago)    7d1h    10.46.0.13    ncn-w005   <none>           <none>
+spire                pod/spire-agent-xjqzr                                                 1/1     Running       3 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-s7cfl                     1/1     Running       3 (137m ago)    7d1h    10.46.0.3     ncn-w005   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-lc69n                  1/1     Running       3 (137m ago)    7d1h    10.46.0.6     ncn-w005   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-df5zx                1/1     Running       3 (137m ago)    7d1h    10.252.1.14   ncn-w005   <none>           <none>
+vault                pod/cray-vault-0                                                      5/5     Terminating   2 (135m ago)    135m    10.46.0.14    ncn-w005   <none>           <none>
+velero               pod/restic-zj544                                                      1/1     Running       3 (137m ago)    7d1h    10.46.0.5     ncn-w005   <none>           <none>

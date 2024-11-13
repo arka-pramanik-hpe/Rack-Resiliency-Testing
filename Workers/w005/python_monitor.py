@@ -4,14 +4,12 @@ import time
 from datetime import datetime
 from subprocess import check_output
 
-# File to log state changes
-LOG_FILE = "./pod_state_changes.log"
-# File to store JSON output with Timestamp first structure
-JSON_FILE_TIMESTAMP_FIRST = "./pod_state_changes_timestamp_first.json"
-# File to store JSON output with Node first structure
-JSON_FILE_NODE_FIRST = "./pod_state_changes_node_first.json"
-# File to store JSON output with Node and Namespace structure
-JSON_FILE_NODE_NAMESPACE_TIMESTAMP = "./pod_state_changes_node_namespace_timestamp.json"
+# Directory to store logs and JSON files
+LOG_DIR = "./pod_state_logs"
+LOG_FILE = os.path.join(LOG_DIR, "pod_state_changes.log")
+JSON_FILE_TIMESTAMP_FIRST = os.path.join(LOG_DIR, "pod_state_changes_timestamp_first.json")
+JSON_FILE_NODE_FIRST = os.path.join(LOG_DIR, "pod_state_changes_node_first.json")
+JSON_FILE_NODE_NAMESPACE_TIMESTAMP = os.path.join(LOG_DIR, "pod_state_changes_node_namespace_timestamp.json")
 
 # Dictionary to store current and previous pod states
 pod_states = {}
@@ -30,7 +28,7 @@ def log_changes(namespace, log_entries):
         for entry in log_entries:
             log_file.write(entry)
 
-def update_json_timestamp_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name):
+def update_json_timestamp_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name, pod_age):
     """Update the JSON structure with the state change details in timestamp first order."""
     if timestamp not in json_data_timestamp_first:
         json_data_timestamp_first[timestamp] = {}
@@ -41,21 +39,22 @@ def update_json_timestamp_first(timestamp, node_name, namespace, pod_name, previ
     if namespace not in json_data_timestamp_first[timestamp][node_name]:
         json_data_timestamp_first[timestamp][node_name][namespace] = {}
 
-    # Store pod state change and controller in the JSON structure
+    # Store pod state change, controller, and pod age in the JSON structure
     json_data_timestamp_first[timestamp][node_name][namespace][pod_name] = {
         "Previous State": previous_state,
         "Current State": current_state,
         "Controller": {
             "Type": controller_type,
             "Name": controller_name
-        }
+        },
+        "Pod Age": pod_age
     }
 
     # Write JSON data to file
     with open(JSON_FILE_TIMESTAMP_FIRST, "w") as json_file:
         json.dump(json_data_timestamp_first, json_file, indent=4)
 
-def update_json_node_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name):
+def update_json_node_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name, pod_age):
     """Update the JSON structure with the state change details in node first order."""
     if node_name not in json_data_node_first:
         json_data_node_first[node_name] = {}
@@ -66,7 +65,7 @@ def update_json_node_first(timestamp, node_name, namespace, pod_name, previous_s
     if namespace not in json_data_node_first[node_name][timestamp]:
         json_data_node_first[node_name][timestamp][namespace] = {}
 
-    # Store pod state change and controller in the JSON structure
+    # Store pod state change, controller, and pod age in the JSON structure
     json_data_node_first[node_name][timestamp][namespace] = {
         pod_name: {
             "Previous State": previous_state,
@@ -74,7 +73,8 @@ def update_json_node_first(timestamp, node_name, namespace, pod_name, previous_s
             "Controller": {
                 "Type": controller_type,
                 "Name": controller_name
-            }
+            },
+            "Pod Age": pod_age
         }
     }
 
@@ -82,7 +82,7 @@ def update_json_node_first(timestamp, node_name, namespace, pod_name, previous_s
     with open(JSON_FILE_NODE_FIRST, "w") as json_file:
         json.dump(json_data_node_first, json_file, indent=4)
 
-def update_json_node_namespace_timestamp(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name):
+def update_json_node_namespace_timestamp(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name, pod_age):
     """Update the JSON structure with the state change details in Node -> Namespace -> Timestamp order."""
     if node_name not in json_data_node_namespace_timestamp:
         json_data_node_namespace_timestamp[node_name] = {}
@@ -93,14 +93,15 @@ def update_json_node_namespace_timestamp(timestamp, node_name, namespace, pod_na
     if timestamp not in json_data_node_namespace_timestamp[node_name][namespace]:
         json_data_node_namespace_timestamp[node_name][namespace][timestamp] = {}
 
-    # Store pod state change and controller in the JSON structure
+    # Store pod state change, controller, and pod age in the JSON structure
     json_data_node_namespace_timestamp[node_name][namespace][timestamp][pod_name] = {
         "Previous State": previous_state,
         "Current State": current_state,
         "Controller": {
             "Type": controller_type,
             "Name": controller_name
-        }
+        },
+        "Pod Age": pod_age
     }
 
     # Write JSON data to file
@@ -120,7 +121,26 @@ def get_pod_data():
         print(f"Error fetching pod data: {e}")
         return []
 
+def calculate_pod_age(creation_timestamp):
+    """Calculate the age of the pod based on its creation timestamp."""
+    try:
+        # Parse creation timestamp to datetime
+        creation_time = datetime.strptime(creation_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+        current_time = datetime.utcnow()
+        age = current_time - creation_time
+        # Return age in a human-readable format (days, hours, minutes)
+        days = age.days
+        hours, remainder = divmod(age.seconds, 3600)
+        minutes, seconds = divmod(remainder, 60)
+        return f"{days}d {hours}h {minutes}m"
+    except Exception as e:
+        return "Unknown"
+
 def main():
+    # Ensure the log directory exists
+    if not os.path.exists(LOG_DIR):
+        os.makedirs(LOG_DIR)
+
     while True:
         # Dictionary to store logs grouped by namespace
         grouped_logs = {}
@@ -135,8 +155,12 @@ def main():
                 pod_name = pod.get("metadata", {}).get("name", "unknown")
                 current_state = pod.get("status", {}).get("phase", "unknown")
                 node_name = pod.get("spec", {}).get("nodeName", "unknown")
+                creation_timestamp = pod.get("metadata", {}).get("creationTimestamp", "unknown")
                 deletion_timestamp = pod.get("metadata", {}).get("deletionTimestamp", "")
                 owner_references = pod.get("metadata", {}).get("ownerReferences", [])
+
+                # Calculate pod age
+                pod_age = calculate_pod_age(creation_timestamp) if creation_timestamp != "unknown" else "Unknown"
 
                 # Extract the controller type and name (e.g., ReplicaSet, DaemonSet, StatefulSet)
                 controller_type = "Unknown"
@@ -164,6 +188,7 @@ def main():
                         f"    Previous State: {previous_state}\n"
                         f"    Current State: {current_state}\n"
                         f"    Controller: {controller_type}/{controller_name}\n"
+                        f"    Pod Age: {pod_age}\n"
                         f"    Timestamp: {timestamp}\n\n"
                     )
 
@@ -172,10 +197,10 @@ def main():
                         grouped_logs[namespace] = []
                     grouped_logs[namespace].append(log_entry)
 
-                    # Update all three JSON files with the change and controller info
-                    update_json_timestamp_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name)
-                    update_json_node_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name)
-                    update_json_node_namespace_timestamp(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name)
+                    # Update all three JSON files with the change, controller info, and pod age
+                    update_json_timestamp_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name, pod_age)
+                    update_json_node_first(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name, pod_age)
+                    update_json_node_namespace_timestamp(timestamp, node_name, namespace, pod_name, previous_state, current_state, controller_type, controller_name, pod_age)
 
                     # Update the state in the dictionary
                     pod_states[pod_id] = current_state
@@ -192,18 +217,5 @@ def main():
         time.sleep(10)
 
 if __name__ == "__main__":
-    # Ensure the log and JSON files exist
-    if not os.path.exists(LOG_FILE):
-        open(LOG_FILE, "w").close()
-    
-    if not os.path.exists(JSON_FILE_TIMESTAMP_FIRST):
-        open(JSON_FILE_TIMESTAMP_FIRST, "w").close()
-
-    if not os.path.exists(JSON_FILE_NODE_FIRST):
-        open(JSON_FILE_NODE_FIRST, "w").close()
-
-    if not os.path.exists(JSON_FILE_NODE_NAMESPACE_TIMESTAMP):
-        open(JSON_FILE_NODE_NAMESPACE_TIMESTAMP, "w").close()
-
     main()
 

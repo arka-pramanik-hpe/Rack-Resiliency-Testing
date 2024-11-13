@@ -1,0 +1,35 @@
+metallb-system       metallb-controller-564f6966f-p4sp4                                1/1     Running       0               28h     10.41.0.49    ncn-w004   <none>           <none>
+nexus                cray-precache-images-8hdmn                                        1/1     Running       1 (7d7h ago)    10d     10.34.0.9     ncn-w002   <none>           <none>
+nexus                cray-precache-images-9xddc                                        1/1     Running       1 (8d ago)      10d     10.36.0.5     ncn-w001   <none>           <none>
+nexus                cray-precache-images-gqndd                                        1/1     Running       1 (6d3h ago)    10d     10.44.0.1     ncn-w003   <none>           <none>
+nexus                cray-precache-images-jxv9h                                        1/1     Running       1 (2d ago)      10d     10.41.0.1     ncn-w004   <none>           <none>
+nexus                cray-precache-images-xtzjk                                        1/1     Running       3 (120m ago)    7d1h    10.46.0.2     ncn-w005   <none>           <none>
+nexus                nexus-84f59cbb6-ndmcw                                             2/2     Running       0               28h     10.41.0.38    ncn-w004   <none>           <none>
+services             cfs-hwsync-agent-b4b6657d5-w76b2                                  2/2     Running       0               28h     10.41.0.40    ncn-w004   <none>           <none>
+services             cfs-trust-68fc9fcdb4-8dc6r                                        2/2     Running       1 (2d1h ago)    2d1h    10.44.0.37    ncn-w003   <none>           <none>
+services             cray-bos-db-788bcbc84c-xmsm6                                      2/2     Running       0               2d1h    10.44.0.71    ncn-w003   <none>           <none>
+services             cray-cfs-api-db-ff7f66d5d-pnk2d                                   2/2     Running       0               7d1h    10.34.0.43    ncn-w002   <none>           <none>
+services             cray-cfs-batcher-6c66f6887-nkgff                                  2/2     Running       0               2d1h    10.44.0.34    ncn-w003   <none>           <none>
+services             cray-console-data-bbff78774-2hr6d                                 2/2     Running       0               2d1h    10.44.0.77    ncn-w003   <none>           <none>
+services             cray-console-data-postgres-0                                      3/3     Running       0               2d      10.44.0.25    ncn-w003   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Running       0               7d1h    10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running       0               8d      10.36.0.19    ncn-w001   <none>           <none>
+services             cray-dhcp-kea-56c5bb5789-b62rk                                    3/3     Running       2 (2d1h ago)    6d4h    10.36.0.80    ncn-w001   <none>           <none>
+services             cray-dhcp-kea-56c5bb5789-c75gj                                    3/3     Running       4 (2d1h ago)    7d1h    10.34.0.33    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-56c5bb5789-zwzzj                                    3/3     Running       0               2d1h    10.44.0.69    ncn-w003   <none>           <none>
+services             cray-dhcp-kea-helper-28858422-pbcnv                               0/2     Completed     0               8m43s   10.41.0.84    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-helper-28858425-2nbzg                               0/2     Completed     0               5m43s   10.41.0.83    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-helper-28858428-jbqld                               0/2     Completed     0               2m43s   10.41.0.84    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-0                                          3/3     Running       0               7d1h    10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running       0               2d      10.41.0.12    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running       0               8d      10.36.0.30    ncn-w001   <none>           <none>
+services             cray-externaldns-external-dns-688c68fb58-79vnm                    1/1     Running       0               28h     10.41.0.55    ncn-w004   <none>           <none>
+services             cray-ipxe-aarch64-6d97578788-cnm4t                                2/2     Running       0               7d1h    10.34.0.45    ncn-w002   <none>           <none>
+services             cray-ipxe-x86-64-59d949584d-ztgg2                                 2/2     Running       0               28h     10.41.0.25    ncn-w004   <none>           <none>
+services             gitea-vcs-856dfb98cf-tx2t9                                        2/2     Running       0               2d1h    10.44.0.82    ncn-w003   <none>           <none>
+services             gitea-vcs-postgres-0                                              3/3     Running       0               2d      10.41.0.116   ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running       0               8d      10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Terminating   0               118m    10.46.0.25    ncn-w005   <none>           <none>
+services             logical-backup-gitea-vcs-postgres-28854790-gpkcc                  0/2     Completed     0               2d12h   10.44.0.26    ncn-w003   <none>           <none>
+services             logical-backup-gitea-vcs-postgres-28856230-fch9x                  0/2     Completed     0               36h     10.41.0.50    ncn-w004   <none>           <none>
+vault                cray-vault-configurer-7b6f84b7df-m6zzh                            2/2     Running       0               2d1h    10.44.0.67    ncn-w003   <none>           <none>

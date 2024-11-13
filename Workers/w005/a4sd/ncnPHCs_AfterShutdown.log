@@ -1,23 +1,23 @@
              +++++ NCN Postgres Health Checks +++++
 === Can Be Executed on any ncn worker or master node. ===
-=== Executing on ncn-m001, Tue Nov 12 10:59:39 UTC 2024 ===
+=== Executing on ncn-m001, Wed Nov 13 14:04:15 UTC 2024 ===
 
 === Postgresql Operator Version ===
 artifactory.algol60.net/csm-docker/stable/registry.opensource.zalan.do/acid/postgres-operator:v1.8.2
 
 === List of Postgresql Clusters Using Operator ===
 NAMESPACE   NAME                         TEAM                VERSION   PODS   VOLUME   CPU-REQUEST   MEMORY-REQUEST   AGE   STATUS
-argo        cray-nls-postgres            cray-nls            14        3      2Gi                                     18d   Running
-services    cfs-ara-postgres             cfs-ara             14        3      50Gi                                    18d   Running
-services    cray-console-data-postgres   cray-console-data   14        3      2Gi                                     18d   Running
-services    cray-dhcp-kea-postgres       cray-dhcp-kea       14        3      10Gi     2             1Gi              18d   Running
-services    cray-dns-powerdns-postgres   cray-dns-powerdns   14        3      10Gi                                    18d   Running
-services    cray-sls-postgres            cray-sls            14        3      1Gi                                     18d   Running
-services    cray-smd-postgres            cray-smd            14        3      100Gi    4             8Gi              18d   Running
-services    gitea-vcs-postgres           gitea-vcs           14        3      50Gi                                    18d   Running
-services    keycloak-postgres            keycloak            14        3      10Gi                                    18d   Running
-spire       cray-spire-postgres          cray-spire          14        3      60Gi     4             4Gi              18d   Running
-spire       spire-postgres               spire               14        3      60Gi     4             4Gi              18d   Running
+argo        cray-nls-postgres            cray-nls            14        3      2Gi                                     19d   Running
+services    cfs-ara-postgres             cfs-ara             14        3      50Gi                                    19d   Running
+services    cray-console-data-postgres   cray-console-data   14        3      2Gi                                     19d   Running
+services    cray-dhcp-kea-postgres       cray-dhcp-kea       14        3      10Gi     2             1Gi              19d   Running
+services    cray-dns-powerdns-postgres   cray-dns-powerdns   14        3      10Gi                                    19d   Running
+services    cray-sls-postgres            cray-sls            14        3      1Gi                                     19d   Running
+services    cray-smd-postgres            cray-smd            14        3      100Gi    4             8Gi              19d   Running
+services    gitea-vcs-postgres           gitea-vcs           14        3      50Gi                                    19d   Running
+services    keycloak-postgres            keycloak            14        3      10Gi                                    19d   Running
+spire       cray-spire-postgres          cray-spire          14        3      60Gi     4             4Gi              19d   Running
+spire       spire-postgres               spire               14        3      60Gi     4             4Gi              19d   Running
 
 === Look at patronictl list info for each cluster, determine and attach to leader of each cluster ===
 === Report status of postgres pods in cluster ===
@@ -34,9 +34,9 @@ spire       spire-postgres               spire               14        3      60
 | cray-nls-postgres-2 | 10.41.0.129 | Replica | running |  6 |         0 |
 +---------------------+-------------+---------+---------+----+-----------+
 NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-argo                 cray-nls-postgres-0                                               3/3     Running       0               7d4h    10.36.0.17    ncn-w001   <none>           <none>
-argo                 cray-nls-postgres-1                                               3/3     Running       0               5d22h   10.34.0.44    ncn-w002   <none>           <none>
-argo                 cray-nls-postgres-2                                               3/3     Running       0               21h     10.41.0.129   ncn-w004   <none>           <none>
+argo                 cray-nls-postgres-0                                               3/3     Running       0               8d      10.36.0.17    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-1                                               3/3     Running       0               7d1h    10.34.0.44    ncn-w002   <none>           <none>
+argo                 cray-nls-postgres-2                                               3/3     Running       0               2d      10.41.0.129   ncn-w004   <none>           <none>
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -48,19 +48,16 @@ argo                 cray-nls-postgres-2                                        
 | Member             | Host       | Role    | State   | TL | Lag in MB |
 +--------------------+------------+---------+---------+----+-----------+
 | cfs-ara-postgres-0 | 10.41.0.27 | Replica | running |  6 |         0 |
-| cfs-ara-postgres-1 | 10.46.0.15 | Replica | running |  6 |         0 |
+| cfs-ara-postgres-1 | 10.46.0.17 | Replica | running |  6 |         0 |
 | cfs-ara-postgres-2 | 10.36.0.73 | Leader  | running |  6 |           |
 +--------------------+------------+---------+---------+----+-----------+
 NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             cfs-ara-postgres-0                                                3/3     Running       0               21h     10.41.0.27    ncn-w004   <none>           <none>
-services             cfs-ara-postgres-1                                                3/3     Terminating   0               5d      10.46.0.15    ncn-w005   <none>           <none>
-services             cfs-ara-postgres-2                                                3/3     Running       0               5d22h   10.36.0.73    ncn-w001   <none>           <none>
+services             cfs-ara-postgres-0                                                3/3     Running       0               2d      10.41.0.27    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-1                                                3/3     Terminating   0               132m    10.46.0.17    ncn-w005   <none>           <none>
+services             cfs-ara-postgres-2                                                3/3     Running       0               7d1h    10.36.0.73    ncn-w001   <none>           <none>
 --- ERROR --- not all cfs-ara-postgres pods have status 'Running'
 
 --- Error Logs for services "Leader Pod" cfs-ara-postgres-2 --- 
-ERROR:  extension "pg_cron" does not exist
-ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
-ERROR:  schema "cron" does not exist
 
 --- Error Logs for services non-leader pod cfs-ara-postgres-0 --- 
 2024-11-11 13:39:31,950 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
@@ -131,10 +128,10 @@ ERROR:  schema "cron" does not exist
 | cray-console-data-postgres-1 | 10.34.0.49 | Replica | running |  4 |         0 |
 | cray-console-data-postgres-2 | 10.36.0.19 | Leader  | running |  4 |           |
 +------------------------------+------------+---------+---------+----+-----------+
-NAMESPACE            NAME                                                              READY   STATUS              RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             cray-console-data-postgres-0                                      3/3     Running             0               21h     10.44.0.25    ncn-w003   <none>           <none>
-services             cray-console-data-postgres-1                                      3/3     Running             0               5d22h   10.34.0.49    ncn-w002   <none>           <none>
-services             cray-console-data-postgres-2                                      3/3     Running             0               7d4h    10.36.0.19    ncn-w001   <none>           <none>
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-console-data-postgres-0                                      3/3     Running       0               2d      10.44.0.25    ncn-w003   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Running       0               7d1h    10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running       0               8d      10.36.0.19    ncn-w001   <none>           <none>
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -149,10 +146,10 @@ services             cray-console-data-postgres-2                               
 | cray-dhcp-kea-postgres-1 | 10.41.0.12 | Replica | running |  6 |         0 |
 | cray-dhcp-kea-postgres-2 | 10.36.0.30 | Replica | running |  6 |         0 |
 +--------------------------+------------+---------+---------+----+-----------+
-NAMESPACE            NAME                                                              READY   STATUS              RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             cray-dhcp-kea-postgres-0                                          3/3     Running             0               5d22h   10.34.0.48    ncn-w002   <none>           <none>
-services             cray-dhcp-kea-postgres-1                                          3/3     Running             0               21h     10.41.0.12    ncn-w004   <none>           <none>
-services             cray-dhcp-kea-postgres-2                                          3/3     Running             0               7d      10.36.0.30    ncn-w001   <none>           <none>
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-dhcp-kea-postgres-0                                          3/3     Running       0               7d1h    10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running       0               2d      10.41.0.12    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running       0               8d      10.36.0.30    ncn-w001   <none>           <none>
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -165,14 +162,14 @@ services             cray-dhcp-kea-postgres-2                                   
 +------------------------------+------------+---------+---------+----+-----------+
 | cray-dns-powerdns-postgres-0 | 10.41.0.14 | Leader  | running |  5 |           |
 | cray-dns-powerdns-postgres-1 | 10.36.0.28 | Replica | running |  5 |         0 |
-| cray-dns-powerdns-postgres-2 | 10.46.0.27 | Replica | running |  4 |        16 |
+| cray-dns-powerdns-postgres-2 | 10.46.0.24 | Replica | running |  5 |        16 |
 +------------------------------+------------+---------+---------+----+-----------+
 --- WARNING --- cray-dns-powerdns-postgres members have Lag
 
-NAMESPACE            NAME                                                              READY   STATUS              RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             cray-dns-powerdns-postgres-0                                      3/3     Running             0               21h     10.41.0.14    ncn-w004   <none>           <none>
-services             cray-dns-powerdns-postgres-1                                      3/3     Running             0               5d22h   10.36.0.28    ncn-w001   <none>           <none>
-services             cray-dns-powerdns-postgres-2                                      3/3     Terminating         0               5d      10.46.0.27    ncn-w005   <none>           <none>
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-dns-powerdns-postgres-0                                      3/3     Running       0               2d      10.41.0.14    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-1                                      3/3     Running       0               7d1h    10.36.0.28    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-2                                      3/3     Terminating   0               132m    10.46.0.24    ncn-w005   <none>           <none>
 --- ERROR --- not all cray-dns-powerdns-postgres pods have status 'Running'
 
 --- Error Logs for services "Leader Pod" cray-dns-powerdns-postgres-0 --- 
@@ -242,25 +239,21 @@ ERROR:  schema "cron" does not exist
 + Cluster: cray-sls-postgres (7429648913392148553) -----+----+-----------+
 | Member              | Host       | Role    | State    | TL | Lag in MB |
 +---------------------+------------+---------+----------+----+-----------+
-| cray-sls-postgres-0 | 10.41.0.19 | Replica | starting |    |   unknown |
+| cray-sls-postgres-0 | 10.41.0.19 | Replica | running  |  8 |         0 |
 | cray-sls-postgres-1 | 10.36.0.72 | Leader  | running  |  8 |           |
-| cray-sls-postgres-2 | 10.46.0.17 | Replica | running  |  7 |        16 |
+| cray-sls-postgres-2 | 10.46.0.8  | Replica | starting |    |   unknown |
 +---------------------+------------+---------+----------+----+-----------+
 --- ERROR --- state of each cray-sls-postgres member cray-sls-postgres-0 is not 'running'
---- WARNING --- cray-sls-postgres members have Lag
-
-NAMESPACE            NAME                                                              READY   STATUS              RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             cray-sls-postgres-0                                               2/3     Running             0               21h     10.41.0.19    ncn-w004   <none>           <none>
-services             cray-sls-postgres-1                                               3/3     Running             0               5d22h   10.36.0.72    ncn-w001   <none>           <none>
-services             cray-sls-postgres-2                                               3/3     Terminating         0               5d      10.46.0.17    ncn-w005   <none>           <none>
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-sls-postgres-0                                               3/3     Running       0               2d      10.41.0.19    ncn-w004   <none>           <none>
+services             cray-sls-postgres-1                                               3/3     Running       0               7d1h    10.36.0.72    ncn-w001   <none>           <none>
+services             cray-sls-postgres-2                                               2/3     Terminating   0               44m     10.46.0.8     ncn-w005   <none>           <none>
 --- ERROR --- not all cray-sls-postgres pods have status 'Running'
 
 --- Error Logs for services "Leader Pod" cray-sls-postgres-1 --- 
-ERROR:  extension "pg_cron" does not exist
-ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
-ERROR:  schema "cron" does not exist
 
 --- Error Logs for services non-leader pod cray-sls-postgres-0 --- 
+2024-11-13 13:20:13,717 ERROR: Failed to rewind from healty master: cray-sls-postgres-1
 
 --- Error Logs for services non-leader pod cray-sls-postgres-2 --- 
 
@@ -277,14 +270,14 @@ ERROR:  schema "cron" does not exist
 +---------------------+------------+---------+---------+----+-----------+
 | cray-smd-postgres-0 | 10.34.0.47 | Replica | running |  5 |         0 |
 | cray-smd-postgres-1 | 10.36.0.23 | Leader  | running |  5 |           |
-| cray-smd-postgres-2 | 10.46.0.50 | Replica | running |  5 |        16 |
+| cray-smd-postgres-2 | 10.46.0.28 | Replica | running |  5 |        16 |
 +---------------------+------------+---------+---------+----+-----------+
 --- WARNING --- cray-smd-postgres members have Lag
 
 NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             cray-smd-postgres-0                                               3/3     Running       0               5d22h   10.34.0.47    ncn-w002   <none>           <none>
-services             cray-smd-postgres-1                                               3/3     Running       0               7d4h    10.36.0.23    ncn-w001   <none>           <none>
-services             cray-smd-postgres-2                                               3/3     Terminating   0               21h     10.46.0.50    ncn-w005   <none>           <none>
+services             cray-smd-postgres-0                                               3/3     Running       0               7d1h    10.34.0.47    ncn-w002   <none>           <none>
+services             cray-smd-postgres-1                                               3/3     Running       0               8d      10.36.0.23    ncn-w001   <none>           <none>
+services             cray-smd-postgres-2                                               3/3     Terminating   0               132m    10.46.0.28    ncn-w005   <none>           <none>
 --- ERROR --- not all cray-smd-postgres pods have status 'Running'
 
 --- Error Logs for services "Leader Pod" cray-smd-postgres-1 --- 
@@ -306,12 +299,14 @@ services             cray-smd-postgres-2                                        
 +----------------------+-------------+---------+---------+----+-----------+
 | gitea-vcs-postgres-0 | 10.41.0.116 | Replica | running |  5 |         0 |
 | gitea-vcs-postgres-1 | 10.36.0.14  | Leader  | running |  5 |           |
-| gitea-vcs-postgres-2 | 10.46.0.28  | Replica | running |  5 |         0 |
+| gitea-vcs-postgres-2 | 10.46.0.25  | Replica | running |  5 |        16 |
 +----------------------+-------------+---------+---------+----+-----------+
+--- WARNING --- gitea-vcs-postgres members have Lag
+
 NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             gitea-vcs-postgres-0                                              3/3     Running       0               21h     10.41.0.116   ncn-w004   <none>           <none>
-services             gitea-vcs-postgres-1                                              3/3     Running       0               7d4h    10.36.0.14    ncn-w001   <none>           <none>
-services             gitea-vcs-postgres-2                                              3/3     Terminating   0               5d      10.46.0.28    ncn-w005   <none>           <none>
+services             gitea-vcs-postgres-0                                              3/3     Running       0               2d      10.41.0.116   ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running       0               8d      10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Terminating   0               133m    10.46.0.25    ncn-w005   <none>           <none>
 --- ERROR --- not all gitea-vcs-postgres pods have status 'Running'
 
 --- Error Logs for services "Leader Pod" gitea-vcs-postgres-1 --- 
@@ -331,69 +326,17 @@ services             gitea-vcs-postgres-2                                       
 + Cluster: keycloak-postgres (7429648627273879625) ----+----+-----------+
 | Member              | Host       | Role    | State   | TL | Lag in MB |
 +---------------------+------------+---------+---------+----+-----------+
-| keycloak-postgres-0 | 10.46.0.18 | Replica | running |  5 |        16 |
+| keycloak-postgres-0 | 10.46.0.27 | Replica | running |  6 |         0 |
 | keycloak-postgres-1 | 10.36.0.18 | Leader  | running |  6 |           |
 | keycloak-postgres-2 | 10.41.0.36 | Replica | running |  6 |         0 |
 +---------------------+------------+---------+---------+----+-----------+
---- WARNING --- keycloak-postgres members have Lag
-
-NAMESPACE            NAME                                                              READY   STATUS              RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-services             keycloak-postgres-0                                               3/3     Terminating   0               5d      10.46.0.18    ncn-w005   <none>           <none>
-services             keycloak-postgres-1                                               3/3     Running       0               7d4h    10.36.0.18    ncn-w001   <none>           <none>
-services             keycloak-postgres-2                                               3/3     Running       0               21h     10.41.0.36    ncn-w004   <none>           <none>
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             keycloak-postgres-0                                               3/3     Terminating   0               133m    10.46.0.27    ncn-w005   <none>           <none>
+services             keycloak-postgres-1                                               3/3     Running       0               8d      10.36.0.18    ncn-w001   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running       0               2d      10.41.0.36    ncn-w004   <none>           <none>
 --- ERROR --- not all keycloak-postgres pods have status 'Running'
 
 --- Error Logs for services "Leader Pod" keycloak-postgres-1 --- 
-2024-11-05 06:59:50,018 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 06:59:51,046 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-05 06:59:52,048 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 06:59:52,523 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 06:59:53,524 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 06:59:54,553 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 06:59:55,554 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 06:59:56,029 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 06:59:57,030 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 06:59:58,059 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 06:59:59,060 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 06:59:59,535 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:00,023 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:00,536 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:01,566 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:02,566 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:03,041 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:04,042 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:05,071 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:06,072 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:06,547 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:07,548 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:08,578 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:09,578 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:10,051 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:11,052 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:12,082 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:13,084 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:13,558 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:14,559 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:15,588 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:16,075 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:16,550 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-05 07:00:16,589 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:17,076 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:21,598 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-05 07:00:22,085 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-05 07:00:22,600 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:23,086 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:24,563 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError("HTTPSConnectionPool(host='10.16.0.1', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))",)
-2024-11-05 07:00:25,565 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:25,590 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:26,592 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:28,070 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:29,072 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-05 07:00:29,098 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
-2024-11-05 07:00:30,099 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-ERROR:  extension "pg_cron" does not exist
-ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
-ERROR:  schema "cron" does not exist
 
 --- Error Logs for services non-leader pod keycloak-postgres-0 --- 
 
@@ -449,30 +392,20 @@ ERROR:  schema "cron" does not exist
 +-----------------------+------------+---------+---------+----+-----------+
 | cray-spire-postgres-0 | 10.41.0.32 | Replica | running |  6 |         0 |
 | cray-spire-postgres-1 | 10.34.0.46 | Leader  | running |  6 |           |
-| cray-spire-postgres-2 | 10.46.0.21 | Replica | running |  6 |        32 |
+| cray-spire-postgres-2 | 10.46.0.15 | Replica | running |  6 |        16 |
 +-----------------------+------------+---------+---------+----+-----------+
 --- WARNING --- cray-spire-postgres members have Lag
 
 NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-spire                cray-spire-postgres-0                                             3/3     Running       0               21h     10.41.0.32    ncn-w004   <none>           <none>
-spire                cray-spire-postgres-1                                             3/3     Running       0               5d22h   10.34.0.46    ncn-w002   <none>           <none>
-spire                cray-spire-postgres-2                                             3/3     Terminating   0               5d      10.46.0.21    ncn-w005   <none>           <none>
-spire                cray-spire-postgres-pooler-5997f6f6f5-dmwl8                       2/2     Terminating   0               22h     10.46.0.37    ncn-w005   <none>           <none>
-spire                cray-spire-postgres-pooler-5997f6f6f5-jkdwx                       2/2     Running       0               6d5h    10.36.0.64    ncn-w001   <none>           <none>
-spire                cray-spire-postgres-pooler-5997f6f6f5-lkxmw                       2/2     Running       0               5d22h   10.34.0.29    ncn-w002   <none>           <none>
-spire                cray-spire-postgres-pooler-5997f6f6f5-mwzwg                       2/2     Running       0               71m     10.41.0.68    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-0                                             3/3     Running       0               2d      10.41.0.32    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-1                                             3/3     Running       0               7d1h    10.34.0.46    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-2                                             3/3     Terminating   0               134m    10.46.0.15    ncn-w005   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-jkdwx                       2/2     Running       0               7d8h    10.36.0.64    ncn-w001   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-lkxmw                       2/2     Running       0               7d1h    10.34.0.29    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-mwzwg                       2/2     Running       0               28h     10.41.0.68    ncn-w004   <none>           <none>
 --- ERROR --- not all cray-spire-postgres pods have status 'Running'
 
 --- Error Logs for spire "Leader Pod" cray-spire-postgres-1 --- 
-2024-11-06 12:38:20,595 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-06 12:38:25,606 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-06 12:38:25,611 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-06 12:38:25,612 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
-2024-11-06 12:38:26,608 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-2024-11-06 12:38:26,612 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
-ERROR:  extension "pg_cron" does not exist
-ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
-ERROR:  schema "cron" does not exist
 
 --- Error Logs for spire non-leader pod cray-spire-postgres-0 --- 
 2024-11-11 13:39:56,356 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
@@ -511,12 +444,12 @@ ERROR:  schema "cron" does not exist
 | spire-postgres-2 | 10.36.0.71 | Leader  | running |  6 |           |
 +------------------+------------+---------+---------+----+-----------+
 NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-spire                spire-postgres-0                                                  3/3     Running       0               21h     10.41.0.28    ncn-w004   <none>           <none>
-spire                spire-postgres-1                                                  3/3     Running       0               5d      10.44.0.13    ncn-w003   <none>           <none>
-spire                spire-postgres-2                                                  3/3     Running       0               5d22h   10.36.0.71    ncn-w001   <none>           <none>
-spire                spire-postgres-pooler-6c97d87dd5-h6b8k                            2/2     Running       0               6d5h    10.36.0.36    ncn-w001   <none>           <none>
-spire                spire-postgres-pooler-6c97d87dd5-n5fzp                            2/2     Running       0               5d1h    10.34.0.52    ncn-w002   <none>           <none>
-spire                spire-postgres-pooler-6c97d87dd5-t4r5s                            2/2     Running       0               22h     10.44.0.58    ncn-w003   <none>           <none>
+spire                spire-postgres-0                                                  3/3     Running       0               2d      10.41.0.28    ncn-w004   <none>           <none>
+spire                spire-postgres-1                                                  3/3     Running       0               6d3h    10.44.0.13    ncn-w003   <none>           <none>
+spire                spire-postgres-2                                                  3/3     Running       0               7d1h    10.36.0.71    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-h6b8k                            2/2     Running       0               7d8h    10.36.0.36    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-n5fzp                            2/2     Running       0               6d4h    10.34.0.52    ncn-w002   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-t4r5s                            2/2     Running       0               2d1h    10.44.0.58    ncn-w003   <none>           <none>
 
 --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------
@@ -524,39 +457,39 @@ spire                spire-postgres-pooler-6c97d87dd5-t4r5s                     
 === kubectl get pods -A -o wide | grep "NAME\|postgres-" | grep -v "operator\|Completed\|pooler" ===
 
 NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
-argo                 cray-nls-postgres-0                                               3/3     Running       0               7d4h    10.36.0.17    ncn-w001   <none>           <none>
-argo                 cray-nls-postgres-1                                               3/3     Running       0               5d22h   10.34.0.44    ncn-w002   <none>           <none>
-argo                 cray-nls-postgres-2                                               3/3     Running       0               21h     10.41.0.129   ncn-w004   <none>           <none>
-services             cfs-ara-postgres-0                                                3/3     Running       0               21h     10.41.0.27    ncn-w004   <none>           <none>
-services             cfs-ara-postgres-1                                                3/3     Terminating   0               5d      10.46.0.15    ncn-w005   <none>           <none>
-services             cfs-ara-postgres-2                                                3/3     Running       0               5d22h   10.36.0.73    ncn-w001   <none>           <none>
-services             cray-console-data-postgres-0                                      3/3     Running       0               21h     10.44.0.25    ncn-w003   <none>           <none>
-services             cray-console-data-postgres-1                                      3/3     Running       0               5d22h   10.34.0.49    ncn-w002   <none>           <none>
-services             cray-console-data-postgres-2                                      3/3     Running       0               7d4h    10.36.0.19    ncn-w001   <none>           <none>
-services             cray-dhcp-kea-postgres-0                                          3/3     Running       0               5d22h   10.34.0.48    ncn-w002   <none>           <none>
-services             cray-dhcp-kea-postgres-1                                          3/3     Running       0               21h     10.41.0.12    ncn-w004   <none>           <none>
-services             cray-dhcp-kea-postgres-2                                          3/3     Running       0               7d      10.36.0.30    ncn-w001   <none>           <none>
-services             cray-dns-powerdns-postgres-0                                      3/3     Running       0               21h     10.41.0.14    ncn-w004   <none>           <none>
-services             cray-dns-powerdns-postgres-1                                      3/3     Running       0               5d22h   10.36.0.28    ncn-w001   <none>           <none>
-services             cray-dns-powerdns-postgres-2                                      3/3     Terminating   0               5d      10.46.0.27    ncn-w005   <none>           <none>
-services             cray-sls-postgres-0                                               2/3     Running       0               21h     10.41.0.19    ncn-w004   <none>           <none>
-services             cray-sls-postgres-1                                               3/3     Running       0               5d22h   10.36.0.72    ncn-w001   <none>           <none>
-services             cray-sls-postgres-2                                               3/3     Terminating   0               5d      10.46.0.17    ncn-w005   <none>           <none>
-services             cray-smd-postgres-0                                               3/3     Running       0               5d22h   10.34.0.47    ncn-w002   <none>           <none>
-services             cray-smd-postgres-1                                               3/3     Running       0               7d4h    10.36.0.23    ncn-w001   <none>           <none>
-services             cray-smd-postgres-2                                               3/3     Terminating   0               21h     10.46.0.50    ncn-w005   <none>           <none>
-services             gitea-vcs-postgres-0                                              3/3     Running       0               21h     10.41.0.116   ncn-w004   <none>           <none>
-services             gitea-vcs-postgres-1                                              3/3     Running       0               7d4h    10.36.0.14    ncn-w001   <none>           <none>
-services             gitea-vcs-postgres-2                                              3/3     Terminating   0               5d      10.46.0.28    ncn-w005   <none>           <none>
-services             keycloak-postgres-0                                               3/3     Terminating   0               5d      10.46.0.18    ncn-w005   <none>           <none>
-services             keycloak-postgres-1                                               3/3     Running       0               7d4h    10.36.0.18    ncn-w001   <none>           <none>
-services             keycloak-postgres-2                                               3/3     Running       0               21h     10.41.0.36    ncn-w004   <none>           <none>
-spire                cray-spire-postgres-0                                             3/3     Running       0               21h     10.41.0.32    ncn-w004   <none>           <none>
-spire                cray-spire-postgres-1                                             3/3     Running       0               5d22h   10.34.0.46    ncn-w002   <none>           <none>
-spire                cray-spire-postgres-2                                             3/3     Terminating   0               5d      10.46.0.21    ncn-w005   <none>           <none>
-spire                spire-postgres-0                                                  3/3     Running       0               21h     10.41.0.28    ncn-w004   <none>           <none>
-spire                spire-postgres-1                                                  3/3     Running       0               5d      10.44.0.13    ncn-w003   <none>           <none>
-spire                spire-postgres-2                                                  3/3     Running       0               5d22h   10.36.0.71    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-0                                               3/3     Running       0               8d      10.36.0.17    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-1                                               3/3     Running       0               7d1h    10.34.0.44    ncn-w002   <none>           <none>
+argo                 cray-nls-postgres-2                                               3/3     Running       0               2d      10.41.0.129   ncn-w004   <none>           <none>
+services             cfs-ara-postgres-0                                                3/3     Running       0               2d      10.41.0.27    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-1                                                3/3     Terminating   0               134m    10.46.0.17    ncn-w005   <none>           <none>
+services             cfs-ara-postgres-2                                                3/3     Running       0               7d1h    10.36.0.73    ncn-w001   <none>           <none>
+services             cray-console-data-postgres-0                                      3/3     Running       0               2d      10.44.0.25    ncn-w003   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Running       0               7d1h    10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running       0               8d      10.36.0.19    ncn-w001   <none>           <none>
+services             cray-dhcp-kea-postgres-0                                          3/3     Running       0               7d1h    10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running       0               2d      10.41.0.12    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running       0               8d      10.36.0.30    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-0                                      3/3     Running       0               2d      10.41.0.14    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-1                                      3/3     Running       0               7d1h    10.36.0.28    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-2                                      3/3     Terminating   0               134m    10.46.0.24    ncn-w005   <none>           <none>
+services             cray-sls-postgres-0                                               3/3     Running       0               2d      10.41.0.19    ncn-w004   <none>           <none>
+services             cray-sls-postgres-1                                               3/3     Running       0               7d1h    10.36.0.72    ncn-w001   <none>           <none>
+services             cray-sls-postgres-2                                               2/3     Terminating   0               45m     10.46.0.8     ncn-w005   <none>           <none>
+services             cray-smd-postgres-0                                               3/3     Running       0               7d1h    10.34.0.47    ncn-w002   <none>           <none>
+services             cray-smd-postgres-1                                               3/3     Running       0               8d      10.36.0.23    ncn-w001   <none>           <none>
+services             cray-smd-postgres-2                                               3/3     Terminating   0               133m    10.46.0.28    ncn-w005   <none>           <none>
+services             gitea-vcs-postgres-0                                              3/3     Running       0               2d      10.41.0.116   ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running       0               8d      10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Terminating   0               133m    10.46.0.25    ncn-w005   <none>           <none>
+services             keycloak-postgres-0                                               3/3     Terminating   0               133m    10.46.0.27    ncn-w005   <none>           <none>
+services             keycloak-postgres-1                                               3/3     Running       0               8d      10.36.0.18    ncn-w001   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running       0               2d      10.41.0.36    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-0                                             3/3     Running       0               2d      10.41.0.32    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-1                                             3/3     Running       0               7d1h    10.34.0.46    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-2                                             3/3     Terminating   0               134m    10.46.0.15    ncn-w005   <none>           <none>
+spire                spire-postgres-0                                                  3/3     Running       0               2d      10.41.0.28    ncn-w004   <none>           <none>
+spire                spire-postgres-1                                                  3/3     Running       0               6d3h    10.44.0.13    ncn-w003   <none>           <none>
+spire                spire-postgres-2                                                  3/3     Running       0               7d1h    10.36.0.71    ncn-w001   <none>           <none>
 
 --- FAILURE --- 
  
@@ -565,12 +498,11 @@ ERROR: not all cfs-ara-postgres pods have status 'Running'
 WARNING: cray-dns-powerdns-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
 ERROR: not all cray-dns-powerdns-postgres pods have status 'Running'
 ERROR: state of each cray-sls-postgres member is not 'running'
-WARNING: cray-sls-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
 ERROR: not all cray-sls-postgres pods have status 'Running'
 WARNING: cray-smd-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
 ERROR: not all cray-smd-postgres pods have status 'Running'
+WARNING: gitea-vcs-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
 ERROR: not all gitea-vcs-postgres pods have status 'Running'
-WARNING: keycloak-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
 ERROR: not all keycloak-postgres pods have status 'Running'
 WARNING: cray-spire-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
 ERROR: not all cray-spire-postgres pods have status 'Running'
