@@ -1,0 +1,16 @@
+Timestamp: 2024-11-12 04:01:26
+argo                 pod/cray-nls-bfd94746b-vnbrn                                          2/2     Running     0               9d      10.43.0.10    ncn-m001   <none>           <none>
+kube-system          pod/coredns-59cc8dbcc8-w7v45                                          1/1     Running     0               9d      10.43.0.9     ncn-m001   <none>           <none>
+kube-system          pod/cray-k8s-encryption-49d6x                                         1/1     Running     0               17d     10.43.0.4     ncn-m001   <none>           <none>
+kube-system          pod/kube-apiserver-ncn-m001                                           1/1     Running     0               17d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          pod/kube-controller-manager-ncn-m001                                  1/1     Running     2 (4d22h ago)   17d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          pod/kube-multus-ds-cc8kk                                              1/1     Running     0               17d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          pod/kube-proxy-lfht9                                                  1/1     Running     0               17d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          pod/kube-scheduler-ncn-m001                                           1/1     Running     2 (4d22h ago)   17d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          pod/node-problem-detector-4pwct                                       1/1     Running     0               17d     10.43.0.2     ncn-m001   <none>           <none>
+kube-system          pod/weave-net-ksz95                                                   2/2     Running     1 (17d ago)     17d     10.252.1.12   ncn-m001   <none>           <none>
+metallb-system       pod/metallb-speaker-nk44l                                             1/1     Running     0               17d     10.252.1.12   ncn-m001   <none>           <none>
+spire                pod/request-ncn-join-token-d9269                                      2/2     Running     0               17d     10.43.0.1     ncn-m001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-grok-exporter-544fb59f84-lwktf                1/1     Running     0               17d     10.43.0.5     ncn-m001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-pdl4m                  1/1     Running     0               17d     10.43.0.3     ncn-m001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-v6lz5                1/1     Running     0               17d     10.252.1.12   ncn-m001   <none>           <none>

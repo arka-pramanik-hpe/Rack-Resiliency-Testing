@@ -1,0 +1,17 @@
+Timestamp: 2024-11-07 05:43:25
+argo                 pod/cray-nls-bfd94746b-9ptvp                                          2/2     Terminating   1 (4d7h ago)    4d7h    10.38.0.6     ncn-m002   <none>           <none>
+argo                 pod/cray-nls-bfd94746b-thj7v                                          2/2     Terminating   0               4d7h    10.38.0.7     ncn-m002   <none>           <none>
+kube-system          pod/coredns-59cc8dbcc8-qm446                                          1/1     Terminating   0               4d7h    10.38.0.8     ncn-m002   <none>           <none>
+kube-system          pod/cray-k8s-encryption-sfk2x                                         1/1     Running       0               4d8h    10.38.0.3     ncn-m002   <none>           <none>
+kube-system          pod/kube-apiserver-ncn-m002                                           1/1     Running       0               4d8h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-controller-manager-ncn-m002                                  1/1     Running       0               4d8h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-multus-ds-nz4sg                                              1/1     Running       0               4d8h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-proxy-4nnxp                                                  1/1     Running       0               4d8h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-scheduler-ncn-m002                                           1/1     Running       0               4d8h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/node-problem-detector-jhtwl                                       1/1     Running       0               4d8h    10.38.0.5     ncn-m002   <none>           <none>
+kube-system          pod/weave-net-fcqnz                                                   2/2     Running       1 (4d8h ago)    4d8h    10.252.1.11   ncn-m002   <none>           <none>
+metallb-system       pod/metallb-speaker-fq8mh                                             1/1     Running       0               4d8h    10.252.1.11   ncn-m002   <none>           <none>
+spire                pod/request-ncn-join-token-29q8q                                      2/2     Running       0               4d8h    10.38.0.4     ncn-m002   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-grok-exporter-544fb59f84-9l6f7                1/1     Terminating   0               4d8h    10.38.0.2     ncn-m002   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-5x9tm                  1/1     Running       0               4d8h    10.38.0.1     ncn-m002   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-74hxf                1/1     Running       0               4d8h    10.252.1.11   ncn-m002   <none>           <none>

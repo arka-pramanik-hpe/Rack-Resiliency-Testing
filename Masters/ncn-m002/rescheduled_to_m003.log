@@ -1,0 +1,15 @@
+argo                 cray-nls-bfd94746b-l2tts                                          2/2     Running       0               15m     10.32.0.8     ncn-m003   <none>           <none>
+argo                 cray-nls-bfd94746b-ztgdb                                          2/2     Running       1 (15m ago)     15m     10.32.0.7     ncn-m003   <none>           <none>
+kube-system          cray-k8s-encryption-6r875                                         1/1     Running       1 (11h ago)     4d7h    10.32.0.5     ncn-m003   <none>           <none>
+kube-system          kube-apiserver-ncn-m003                                           1/1     Running       1 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-controller-manager-ncn-m003                                  1/1     Running       1 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-multus-ds-cjnw7                                              1/1     Running       1 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-proxy-rllms                                                  1/1     Running       1 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-scheduler-ncn-m003                                           1/1     Running       1 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          node-problem-detector-8kzps                                       1/1     Running       1 (11h ago)     4d7h    10.32.0.6     ncn-m003   <none>           <none>
+kube-system          weave-net-spkgb                                                   2/2     Running       3 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+metallb-system       metallb-speaker-mlqr4                                             1/1     Running       1 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+spire                request-ncn-join-token-cfvt9                                      2/2     Running       2 (11h ago)     4d7h    10.32.0.3     ncn-m003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-grok-exporter-544fb59f84-nnsvr                1/1     Running       0               11h     10.32.0.2     ncn-m003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-c7p7l                  1/1     Running       1 (11h ago)     4d7h    10.32.0.4     ncn-m003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-ntjwx                1/1     Running       1 (11h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>

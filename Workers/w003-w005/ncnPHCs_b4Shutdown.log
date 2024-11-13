@@ -1,0 +1,267 @@
+             +++++ NCN Postgres Health Checks +++++
+=== Can Be Executed on any ncn worker or master node. ===
+=== Executing on ncn-m001, Thu Nov  7 07:43:50 UTC 2024 ===
+
+=== Postgresql Operator Version ===
+artifactory.algol60.net/csm-docker/stable/registry.opensource.zalan.do/acid/postgres-operator:v1.8.2
+
+=== List of Postgresql Clusters Using Operator ===
+NAMESPACE   NAME                         TEAM                VERSION   PODS   VOLUME   CPU-REQUEST   MEMORY-REQUEST   AGE   STATUS
+argo        cray-nls-postgres            cray-nls            14        3      2Gi                                     12d   Running
+services    cfs-ara-postgres             cfs-ara             14        3      50Gi                                    12d   Running
+services    cray-console-data-postgres   cray-console-data   14        3      2Gi                                     12d   Running
+services    cray-dhcp-kea-postgres       cray-dhcp-kea       14        3      10Gi     2             1Gi              12d   Running
+services    cray-dns-powerdns-postgres   cray-dns-powerdns   14        3      10Gi                                    12d   Running
+services    cray-sls-postgres            cray-sls            14        3      1Gi                                     12d   Running
+services    cray-smd-postgres            cray-smd            14        3      100Gi    4             8Gi              12d   Running
+services    gitea-vcs-postgres           gitea-vcs           14        3      50Gi                                    12d   Running
+services    keycloak-postgres            keycloak            14        3      10Gi                                    12d   Running
+spire       cray-spire-postgres          cray-spire          14        3      60Gi     4             4Gi              12d   Running
+spire       spire-postgres               spire               14        3      60Gi     4             4Gi              12d   Running
+
+=== Look at patronictl list info for each cluster, determine and attach to leader of each cluster ===
+=== Report status of postgres pods in cluster ===
+-----------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-nls-postgres cluster with leader pod: cray-nls-postgres-0 ===
+
+--- patronictl, version , list for argo leader pod cray-nls-postgres-0 ---
++ Cluster: cray-nls-postgres (7429648723677089861) ----+----+-----------+
+| Member              | Host       | Role    | State   | TL | Lag in MB |
++---------------------+------------+---------+---------+----+-----------+
+| cray-nls-postgres-0 | 10.36.0.17 | Leader  | running |  6 |           |
+| cray-nls-postgres-1 | 10.34.0.44 | Replica | running |  6 |         0 |
+| cray-nls-postgres-2 | 10.41.0.75 | Replica | running |  6 |         0 |
++---------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+argo                 cray-nls-postgres-0                                               3/3     Running     0               2d      10.36.0.17    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-1                                               3/3     Running     0               19h     10.34.0.44    ncn-w002   <none>           <none>
+argo                 cray-nls-postgres-2                                               3/3     Running     0               4d9h    10.41.0.75    ncn-w004   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cfs-ara-postgres cluster with leader pod: cfs-ara-postgres-0 ===
+
+--- patronictl, version , list for services leader pod cfs-ara-postgres-0 ---
++ Cluster: cfs-ara-postgres (7429653337307897930) ----+----+-----------+
+| Member             | Host       | Role    | State   | TL | Lag in MB |
++--------------------+------------+---------+---------+----+-----------+
+| cfs-ara-postgres-0 | 10.41.0.70 | Leader  | running |  5 |           |
+| cfs-ara-postgres-1 | 10.44.0.19 | Replica | running |  5 |         0 |
+| cfs-ara-postgres-2 | 10.36.0.73 | Replica | running |  5 |         0 |
++--------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS              RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cfs-ara-postgres-0                                                3/3     Running             0               4d9h    10.41.0.70    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-1                                                3/3     Running             0               4d9h    10.44.0.19    ncn-w003   <none>           <none>
+services             cfs-ara-postgres-2                                                3/3     Running             0               19h     10.36.0.73    ncn-w001   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-console-data-postgres cluster with leader pod: cray-console-data-postgres-0 ===
+
+--- patronictl, version , list for services leader pod cray-console-data-postgres-0 ---
++ Cluster: cray-console-data-postgres (7429653366548672586) ----+----+-----------+
+| Member                       | Host       | Role    | State   | TL | Lag in MB |
++------------------------------+------------+---------+---------+----+-----------+
+| cray-console-data-postgres-0 | 10.41.0.37 | Leader  | running |  3 |           |
+| cray-console-data-postgres-1 | 10.34.0.49 | Replica | running |  3 |         0 |
+| cray-console-data-postgres-2 | 10.36.0.19 | Replica | running |  3 |         0 |
++------------------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-console-data-postgres-0                                      3/3     Running     0               4d11h   10.41.0.37    ncn-w004   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Running     0               19h     10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running     0               2d      10.36.0.19    ncn-w001   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-dhcp-kea-postgres cluster with leader pod: cray-dhcp-kea-postgres-1 ===
+
+--- patronictl, version , list for services leader pod cray-dhcp-kea-postgres-1 ---
++ Cluster: cray-dhcp-kea-postgres (7429648994707337289) ----+----+-----------+
+| Member                   | Host       | Role    | State   | TL | Lag in MB |
++--------------------------+------------+---------+---------+----+-----------+
+| cray-dhcp-kea-postgres-0 | 10.34.0.48 | Replica | running |  5 |         0 |
+| cray-dhcp-kea-postgres-1 | 10.41.0.72 | Leader  | running |  5 |           |
+| cray-dhcp-kea-postgres-2 | 10.36.0.30 | Replica | running |  5 |         0 |
++--------------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-dhcp-kea-postgres-0                                          3/3     Running     0               19h     10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running     0               4d9h    10.41.0.72    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running     0               44h     10.36.0.30    ncn-w001   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-dns-powerdns-postgres cluster with leader pod: cray-dns-powerdns-postgres-0 ===
+
+--- patronictl, version , list for services leader pod cray-dns-powerdns-postgres-0 ---
++ Cluster: cray-dns-powerdns-postgres (7429649497407156297) ----+----+-----------+
+| Member                       | Host       | Role    | State   | TL | Lag in MB |
++------------------------------+------------+---------+---------+----+-----------+
+| cray-dns-powerdns-postgres-0 | 10.41.0.22 | Leader  | running |  3 |           |
+| cray-dns-powerdns-postgres-1 | 10.36.0.28 | Replica | running |  3 |         0 |
+| cray-dns-powerdns-postgres-2 | 10.44.0.68 | Replica | running |  3 |         0 |
++------------------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-dns-powerdns-postgres-0                                      3/3     Running     0               4d11h   10.41.0.22    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-1                                      3/3     Running     0               19h     10.36.0.28    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-2                                      3/3     Running     0               4d9h    10.44.0.68    ncn-w003   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-sls-postgres cluster with leader pod: cray-sls-postgres-0 ===
+
+--- patronictl, version , list for services leader pod cray-sls-postgres-0 ---
++ Cluster: cray-sls-postgres (7429648913392148553) ----+----+-----------+
+| Member              | Host       | Role    | State   | TL | Lag in MB |
++---------------------+------------+---------+---------+----+-----------+
+| cray-sls-postgres-0 | 10.41.0.71 | Leader  | running |  6 |           |
+| cray-sls-postgres-1 | 10.36.0.72 | Replica | running |  6 |         0 |
+| cray-sls-postgres-2 | 10.44.0.67 | Replica | running |  6 |         0 |
++---------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-sls-postgres-0                                               3/3     Running     0               4d9h    10.41.0.71    ncn-w004   <none>           <none>
+services             cray-sls-postgres-1                                               3/3     Running     0               19h     10.36.0.72    ncn-w001   <none>           <none>
+services             cray-sls-postgres-2                                               3/3     Running     0               4d9h    10.44.0.67    ncn-w003   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-smd-postgres cluster with leader pod: cray-smd-postgres-2 ===
+
+--- patronictl, version , list for services leader pod cray-smd-postgres-2 ---
++ Cluster: cray-smd-postgres (7429648967686664265) ----+----+-----------+
+| Member              | Host       | Role    | State   | TL | Lag in MB |
++---------------------+------------+---------+---------+----+-----------+
+| cray-smd-postgres-0 | 10.34.0.47 | Replica | running |  4 |         0 |
+| cray-smd-postgres-1 | 10.36.0.23 | Replica | running |  4 |         0 |
+| cray-smd-postgres-2 | 10.41.0.73 | Leader  | running |  4 |           |
++---------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-smd-postgres-0                                               3/3     Running     0               19h     10.34.0.47    ncn-w002   <none>           <none>
+services             cray-smd-postgres-1                                               3/3     Running     0               2d      10.36.0.23    ncn-w001   <none>           <none>
+services             cray-smd-postgres-2                                               3/3     Running     0               4d11h   10.41.0.73    ncn-w004   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the gitea-vcs-postgres cluster with leader pod: gitea-vcs-postgres-0 ===
+
+--- patronictl, version , list for services leader pod gitea-vcs-postgres-0 ---
++ Cluster: gitea-vcs-postgres (7429653957876965450) ----+----+-----------+
+| Member               | Host       | Role    | State   | TL | Lag in MB |
++----------------------+------------+---------+---------+----+-----------+
+| gitea-vcs-postgres-0 | 10.41.0.69 | Leader  | running |  4 |           |
+| gitea-vcs-postgres-1 | 10.36.0.14 | Replica | running |  4 |         0 |
+| gitea-vcs-postgres-2 | 10.44.0.70 | Replica | running |  4 |         0 |
++----------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             gitea-vcs-postgres-0                                              3/3     Running     0               4d9h    10.41.0.69    ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running     0               2d      10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Running     0               19h     10.44.0.70    ncn-w003   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the keycloak-postgres cluster with leader pod: keycloak-postgres-2 ===
+
+--- patronictl, version , list for services leader pod keycloak-postgres-2 ---
++ Cluster: keycloak-postgres (7429648627273879625) ----+----+-----------+
+| Member              | Host       | Role    | State   | TL | Lag in MB |
++---------------------+------------+---------+---------+----+-----------+
+| keycloak-postgres-0 | 10.44.0.69 | Replica | running |  4 |         0 |
+| keycloak-postgres-1 | 10.36.0.18 | Replica | running |  4 |         0 |
+| keycloak-postgres-2 | 10.41.0.74 | Leader  | running |  4 |           |
++---------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             keycloak-postgres-0                                               3/3     Running     0               19h     10.44.0.69    ncn-w003   <none>           <none>
+services             keycloak-postgres-1                                               3/3     Running     0               2d      10.36.0.18    ncn-w001   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running     0               4d11h   10.41.0.74    ncn-w004   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-spire-postgres cluster with leader pod: cray-spire-postgres-1 ===
+
+--- patronictl, version , list for spire leader pod cray-spire-postgres-1 ---
++ Cluster: cray-spire-postgres (7429654005986693194) ----+----+-----------+
+| Member                | Host       | Role    | State   | TL | Lag in MB |
++-----------------------+------------+---------+---------+----+-----------+
+| cray-spire-postgres-0 | 10.41.0.36 | Replica | running |  6 |         0 |
+| cray-spire-postgres-1 | 10.34.0.46 | Leader  | running |  6 |           |
+| cray-spire-postgres-2 | 10.44.0.17 | Replica | running |  6 |         0 |
++-----------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+spire                cray-spire-postgres-0                                             3/3     Running     0               4d9h    10.41.0.36    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-1                                             3/3     Running     0               19h     10.34.0.46    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-2                                             3/3     Running     0               4d9h    10.44.0.17    ncn-w003   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-jkdwx                       2/2     Running     0               25h     10.36.0.64    ncn-w001   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-lkxmw                       2/2     Running     0               19h     10.34.0.29    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-q59zj                       2/2     Running     0               4d13h   10.41.0.17    ncn-w004   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the spire-postgres cluster with leader pod: spire-postgres-0 ===
+
+--- patronictl, version , list for spire leader pod spire-postgres-0 ---
++ Cluster: spire-postgres (7429654033559437386) ----+----+-----------+
+| Member           | Host       | Role    | State   | TL | Lag in MB |
++------------------+------------+---------+---------+----+-----------+
+| spire-postgres-0 | 10.41.0.27 | Leader  | running |  5 |           |
+| spire-postgres-1 | 10.44.0.13 | Replica | running |  5 |         0 |
+| spire-postgres-2 | 10.36.0.71 | Replica | running |  5 |         0 |
++------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+spire                spire-postgres-0                                                  3/3     Running     0               4d9h    10.41.0.27    ncn-w004   <none>           <none>
+spire                spire-postgres-1                                                  3/3     Running     0               4d9h    10.44.0.13    ncn-w003   <none>           <none>
+spire                spire-postgres-2                                                  3/3     Running     0               19h     10.36.0.71    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-7z9nh                            2/2     Running     0               4d13h   10.41.0.18    ncn-w004   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-h6b8k                            2/2     Running     0               25h     10.36.0.36    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-nt7xb                            2/2     Running     0               4d13h   10.44.0.25    ncn-w003   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== kubectl get pods -A -o wide | grep "NAME\|postgres-" | grep -v "operator\|Completed\|pooler" ===
+
+NAMESPACE            NAME                                                              READY   STATUS              RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+argo                 cray-nls-postgres-0                                               3/3     Running             0               2d      10.36.0.17    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-1                                               3/3     Running             0               19h     10.34.0.44    ncn-w002   <none>           <none>
+argo                 cray-nls-postgres-2                                               3/3     Running             0               4d9h    10.41.0.75    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-0                                                3/3     Running             0               4d9h    10.41.0.70    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-1                                                3/3     Running             0               4d9h    10.44.0.19    ncn-w003   <none>           <none>
+services             cfs-ara-postgres-2                                                3/3     Running             0               19h     10.36.0.73    ncn-w001   <none>           <none>
+services             cray-console-data-postgres-0                                      3/3     Running             0               4d11h   10.41.0.37    ncn-w004   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Running             0               19h     10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running             0               2d      10.36.0.19    ncn-w001   <none>           <none>
+services             cray-dhcp-kea-postgres-0                                          3/3     Running             0               19h     10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running             0               4d9h    10.41.0.72    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running             0               44h     10.36.0.30    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-0                                      3/3     Running             0               4d11h   10.41.0.22    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-1                                      3/3     Running             0               19h     10.36.0.28    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-2                                      3/3     Running             0               4d9h    10.44.0.68    ncn-w003   <none>           <none>
+services             cray-sls-postgres-0                                               3/3     Running             0               4d9h    10.41.0.71    ncn-w004   <none>           <none>
+services             cray-sls-postgres-1                                               3/3     Running             0               19h     10.36.0.72    ncn-w001   <none>           <none>
+services             cray-sls-postgres-2                                               3/3     Running             0               4d9h    10.44.0.67    ncn-w003   <none>           <none>
+services             cray-smd-postgres-0                                               3/3     Running             0               19h     10.34.0.47    ncn-w002   <none>           <none>
+services             cray-smd-postgres-1                                               3/3     Running             0               2d      10.36.0.23    ncn-w001   <none>           <none>
+services             cray-smd-postgres-2                                               3/3     Running             0               4d11h   10.41.0.73    ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-0                                              3/3     Running             0               4d9h    10.41.0.69    ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running             0               2d      10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Running             0               19h     10.44.0.70    ncn-w003   <none>           <none>
+services             keycloak-postgres-0                                               3/3     Running             0               19h     10.44.0.69    ncn-w003   <none>           <none>
+services             keycloak-postgres-1                                               3/3     Running             0               2d      10.36.0.18    ncn-w001   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running             0               4d11h   10.41.0.74    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-0                                             3/3     Running             0               4d9h    10.41.0.36    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-1                                             3/3     Running             0               19h     10.34.0.46    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-2                                             3/3     Running             0               4d9h    10.44.0.17    ncn-w003   <none>           <none>
+spire                spire-postgres-0                                                  3/3     Running             0               4d9h    10.41.0.27    ncn-w004   <none>           <none>
+spire                spire-postgres-1                                                  3/3     Running             0               4d9h    10.44.0.13    ncn-w003   <none>           <none>
+spire                spire-postgres-2                                                  3/3     Running             0               19h     10.36.0.71    ncn-w001   <none>           <none>
+
+PASSED. All postgresql checks passed.

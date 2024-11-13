@@ -1,0 +1,304 @@
+=== NCN Master nodes: ncn-m001 ncn-m002 ncn-m003 ===
+=== NCN Worker nodes: ncn-w001 ncn-w002 ncn-w003 ncn-w004 ncn-w005 ===
+=== NCN Storage nodes: ncn-s001 ncn-s002 ncn-s003 ===
+
+             +++++ NCN Health Checks +++++
+=== Can be executed on any worker or master ncn node. ===
+=== Executing on ncn-m001, Wed Nov  6 18:28:31 UTC 2024 ===
+=== Active CSM version:
+
+
+**************************************************************************
+
+=== Check Kubernetes' Master and Worker Node Status. ===
+=== Verify Kubernetes' Node "Ready" Status and Version. ===
+Wed Nov  6 18:28:31 UTC 2024
+NAME       STATUS   ROLES           AGE     VERSION    INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                              KERNEL-VERSION               CONTAINER-RUNTIME
+ncn-m001   Ready    control-plane   12d     v1.24.17   10.252.1.12   <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ncn-m002   Ready    control-plane   3d20h   v1.24.17   10.252.1.11   <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ncn-m003   Ready    control-plane   3d20h   v1.24.17   10.252.1.10   <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ncn-w001   Ready    <none>          4d1h    v1.24.17   10.252.1.9    <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ncn-w002   Ready    <none>          4d1h    v1.24.17   10.252.1.8    <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ncn-w003   Ready    <none>          4d      v1.24.17   10.252.1.7    <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ncn-w004   Ready    <none>          4d      v1.24.17   10.252.1.13   <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ncn-w005   Ready    <none>          3d22h   v1.24.17   10.252.1.14   <none>        SUSE Linux Enterprise Server 15 SP6   6.4.0-150600.23.17-default   containerd://1.7.21
+ --- PASSED --- 
+
+**************************************************************************
+
+=== Check Ceph Health Status. ===
+=== Verify "health: HEALTH_OK" Status. ===
+=== At times a status of HEALTH_WARN, too few PGs per OSD, and/or large   omap objects, may be okay. ===
+=== date; ssh ncn-m001 ceph -s; ===
+Wed Nov  6 18:28:31 UTC 2024
+  cluster:
+    id:     e1ce52a6-92aa-11ef-ae72-1402ecd97c88
+    health: HEALTH_OK
+ 
+  services:
+    mon: 3 daemons, quorum ncn-s001,ncn-s002,ncn-s003 (age 3d)
+    mgr: ncn-s001.lwgvin(active, since 3d), standbys: ncn-s003.tzpfbg, ncn-s002.rqjssn
+    mds: 2/2 daemons up, 3 standby, 1 hot standby
+    osd: 24 osds: 24 up (since 3d), 24 in (since 3d)
+    rgw: 3 daemons active (3 hosts, 1 zones)
+ 
+  data:
+    volumes: 2/2 healthy
+    pools:   15 pools, 881 pgs
+    objects: 362.30k objects, 692 GiB
+    usage:   1.7 TiB used, 40 TiB / 42 TiB avail
+    pgs:     881 active+clean
+ 
+  io:
+    client:   136 KiB/s rd, 3.2 MiB/s wr, 65 op/s rd, 307 op/s wr
+ 
+ --- PASSED --- 
+
+**************************************************************************
+
+=== Check the Health of the Etcd Clusters in all Namespaces. ===
+=== Verify a "healthy" Report for Each Etcd Pod. ===
+Wed Nov  6 18:28:34 UTC 2024
+### cray-bss-bitnami-etcd-1 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.389502ms
+### cray-bss-bitnami-etcd-2 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 3.85496ms
+### cray-bss-bitnami-etcd-0 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.928844ms
+### cray-fas-bitnami-etcd-1 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 5.338556ms
+### cray-fas-bitnami-etcd-2 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.463879ms
+### cray-fas-bitnami-etcd-0 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.197853ms
+### cray-hbtd-bitnami-etcd-1 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.259911ms
+### cray-hbtd-bitnami-etcd-2 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 3.774286ms
+### cray-hbtd-bitnami-etcd-0 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 5.209577ms
+### cray-hmnfd-bitnami-etcd-1 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.349538ms
+### cray-hmnfd-bitnami-etcd-2 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 3.203543ms
+### cray-hmnfd-bitnami-etcd-0 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.404599ms
+### cray-power-control-bitnami-etcd-2 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 4.608188ms
+### cray-power-control-bitnami-etcd-0 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 3.407309ms
+### cray-power-control-bitnami-etcd-1 ###
+127.0.0.1:2379 is healthy: successfully committed proposal: took = 5.239221ms
+ --- PASSED --- 
+
+**************************************************************************
+
+=== Check the Number of Pods in Each Cluster. Verify they are Balanced. ===
+=== Each cluster should contain at least three pods, but may contain more. ===
+=== Ensure that no two pods in a given cluster exist on the same worker node. ===
+Wed Nov  6 18:28:41 UTC 2024
+cray-bss-bitnami-etcd-0                                           2/2     Running     0               4d      10.44.0.44    ncn-w003   <none>           <none>
+cray-bss-bitnami-etcd-1                                           2/2     Running     0               11h     10.34.0.23    ncn-w002   <none>           <none>
+cray-bss-bitnami-etcd-2                                           2/2     Running     0               35h     10.36.0.20    ncn-w001   <none>           <none>
+
+cray-fas-bitnami-etcd-0                                           2/2     Running     0               4d      10.44.0.39    ncn-w003   <none>           <none>
+cray-fas-bitnami-etcd-1                                           2/2     Running     0               11h     10.34.0.21    ncn-w002   <none>           <none>
+cray-fas-bitnami-etcd-2                                           2/2     Running     0               3d23h   10.41.0.32    ncn-w004   <none>           <none>
+
+cray-hbtd-bitnami-etcd-0                                          2/2     Running     0               4d      10.44.0.42    ncn-w003   <none>           <none>
+cray-hbtd-bitnami-etcd-1                                          2/2     Running     1 (11h ago)     12h     10.34.0.14    ncn-w002   <none>           <none>
+cray-hbtd-bitnami-etcd-2                                          2/2     Running     0               3d23h   10.41.0.33    ncn-w004   <none>           <none>
+
+cray-hmnfd-bitnami-etcd-0                                         2/2     Running     0               4d      10.44.0.45    ncn-w003   <none>           <none>
+cray-hmnfd-bitnami-etcd-1                                         2/2     Running     0               11h     10.34.0.15    ncn-w002   <none>           <none>
+cray-hmnfd-bitnami-etcd-2                                         2/2     Running     0               3d23h   10.41.0.31    ncn-w004   <none>           <none>
+
+cray-power-control-bitnami-etcd-0                                 2/2     Running     0               35h     10.36.0.24    ncn-w001   <none>           <none>
+cray-power-control-bitnami-etcd-1                                 2/2     Running     0               3d23h   10.41.0.34    ncn-w004   <none>           <none>
+cray-power-control-bitnami-etcd-2                                 2/2     Running     0               11h     10.34.0.19    ncn-w002   <none>           <none>
+
+ --- PASSED --- 
+
+**************************************************************************
+
+=== Check if any "alarms" are set for any of the Etcd Clusters in all Namespaces. ===
+=== An empty list is returned if no alarms are set ===
+### cray-bss-bitnami-etcd-1 Alarms Set: ###
+### cray-bss-bitnami-etcd-2 Alarms Set: ###
+### cray-bss-bitnami-etcd-0 Alarms Set: ###
+### cray-fas-bitnami-etcd-1 Alarms Set: ###
+### cray-fas-bitnami-etcd-2 Alarms Set: ###
+### cray-fas-bitnami-etcd-0 Alarms Set: ###
+### cray-hbtd-bitnami-etcd-1 Alarms Set: ###
+### cray-hbtd-bitnami-etcd-2 Alarms Set: ###
+### cray-hbtd-bitnami-etcd-0 Alarms Set: ###
+### cray-hmnfd-bitnami-etcd-1 Alarms Set: ###
+### cray-hmnfd-bitnami-etcd-2 Alarms Set: ###
+### cray-hmnfd-bitnami-etcd-0 Alarms Set: ###
+### cray-power-control-bitnami-etcd-2 Alarms Set: ###
+### cray-power-control-bitnami-etcd-0 Alarms Set: ###
+### cray-power-control-bitnami-etcd-1 Alarms Set: ###
+ --- PASSED --- 
+
+**************************************************************************
+
+=== Check the health of Etcd Cluster's database in the Services Namespace. ===
+=== PASS or FAIL status returned. ===
+### cray-bss-bitnami-etcd-1 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-bss-bitnami-etcd-2 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-bss-bitnami-etcd-0 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-fas-bitnami-etcd-1 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-fas-bitnami-etcd-2 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-fas-bitnami-etcd-0 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-hbtd-bitnami-etcd-1 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-hbtd-bitnami-etcd-2 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-hbtd-bitnami-etcd-0 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-hmnfd-bitnami-etcd-1 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-hmnfd-bitnami-etcd-2 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-hmnfd-bitnami-etcd-0 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-power-control-bitnami-etcd-2 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-power-control-bitnami-etcd-0 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+### cray-power-control-bitnami-etcd-1 Etcd Database Check: ###
+PASS: OK foo fooCheck 1
+ --- PASSED --- 
+
+**************************************************************************
+
+=== Verify etcd clusters have a backup in the last 24 hours. ===
+=== The complete list of backups can be listed as follows:
+=== % /opt/cray/platform-utils/etcd/etcd-util.sh list_backups -
+Wed Nov  6 18:29:00 UTC 2024
+
+-- cray-bss -- backups
+PASS: backup found less than 24 hours old.
+
+-- cray-fas -- backups
+PASS: backup found less than 24 hours old.
+
+-- cray-hbtd -- backups
+PASS: backup found less than 24 hours old.
+
+-- cray-hmnfd -- backups
+PASS: backup found less than 24 hours old.
+
+-- cray-power-control -- backups
+PASS: backup found less than 24 hours old.
+ --- PASSED --- 
+
+**************************************************************************
+
+=== NCN node uptimes ===
+=== NCN Master nodes: ncn-m001 ncn-m002 ncn-m003 ===
+=== NCN Worker nodes: ncn-w001 ncn-w002 ncn-w003 ncn-w004 ncn-w005 ===
+=== NCN Storage nodes: ncn-s001 ncn-s002 ncn-s003 ===
+=== date; for n in ncn-m001 ncn-m002 ncn-m003 ncn-w001 ncn-w002 ncn-w003 ncn-w004 ncn-w005 ncn-s001 ncn-s002 ncn-s003; do echo$n:; ssh $n uptime; done ===
+Wed Nov  6 18:29:13 UTC 2024
+ncn-m001:
+ 18:29:13  up 12 days  5:55,  7 users,  load average: 3.34, 2.12, 1.62
+ncn-m002:
+ 18:29:15  up 3 days 20:55,  0 users,  load average: 0.58, 1.16, 1.13
+ncn-m003:
+ 18:29:16  up   0:14,  0 users,  load average: 1.55, 1.27, 0.83
+ncn-w001:
+ 18:29:18  up 1 day 11:33,  0 users,  load average: 4.84, 6.06, 5.31
+ncn-w002:
+ 18:29:21  up  12:03,  0 users,  load average: 2.61, 4.50, 5.02
+ncn-w003:
+ 18:29:24  up 4 days  0:50,  0 users,  load average: 4.22, 5.36, 5.25
+ncn-w004:
+ 18:29:26  up 4 days  0:16,  0 users,  load average: 7.22, 8.27, 8.51
+ncn-w005:
+ 18:29:26  up   5:43,  2 users,  load average: 3.22, 2.55, 2.73
+ncn-s001:
+ 18:29:27  up 4 days  2:45,  0 users,  load average: 0.87, 0.86, 0.78
+ncn-s002:
+ 18:29:27  up 3 days 22:15,  1 user,  load average: 0.56, 0.95, 0.89
+ncn-s003:
+ 18:29:27  up 3 days 21:43,  0 users,  load average: 1.45, 1.00, 0.76
+ --- This is an informative check. No pass or fail status to report. --- 
+
+**************************************************************************
+
+=== NCN master and worker node resource consumption ===
+=== NCN Master nodes: ncn-m001 ncn-m002 ncn-m003 ===
+=== NCN Worker nodes: ncn-w001 ncn-w002 ncn-w003 ncn-w004 ncn-w005 ===
+=== date; kubectl top nodes ===
+Wed Nov  6 18:29:27 UTC 2024
+NAME       CPU(cores)   CPU%   MEMORY(bytes)   MEMORY%   
+ncn-m001   2497m        7%     9725Mi          7%        
+ncn-m002   1529m        4%     5975Mi          4%        
+ncn-m003   476m         1%     3729Mi          2%        
+ncn-w001   5508m        8%     21910Mi         8%        
+ncn-w002   3223m        5%     17514Mi         6%        
+ncn-w003   4765m        7%     23337Mi         9%        
+ncn-w004   5783m        4%     45774Mi         17%       
+ncn-w005   3495m        5%     4745Mi          1%        
+ --- PASSED --- 
+
+**************************************************************************
+
+=== NCN node xnames and metal.no-wipe status ===
+=== metal.no-wipe=1, expected setting - the client ===
+=== already has the right partitions and a bootable ROM. ===
+=== Note that before the PIT node has been rebooted into ncn-m001, ===
+=== metal.no-wipe status may not available. ===
+=== NCN Master nodes: ncn-m001 ncn-m002 ncn-m003 ===
+=== NCN Worker nodes: ncn-w001 ncn-w002 ncn-w003 ncn-w004 ncn-w005 ===
+=== NCN Storage nodes: ncn-s001 ncn-s002 ncn-s003 ===
+Wed Nov  6 18:29:29 UTC 2024
+ncn-m001: x3000c0s1b0n0 - metal.no-wipe=1
+ncn-m002: x3000c0s2b0n0 - metal.no-wipe=1
+ncn-m003: x3000c0s3b0n0 - metal.no-wipe=1
+ncn-w001: x3000c0s4b0n0 - metal.no-wipe=1
+ncn-w002: x3000c0s5b0n0 - metal.no-wipe=1
+ncn-w003: x3000c0s6b0n0 - metal.no-wipe=1
+ncn-w004: x3000c0s30b0n0 - metal.no-wipe=1
+ncn-w005: x3000c0s31b0n0 - metal.no-wipe=1
+ncn-s001: x3000c0s7b0n0 - metal.no-wipe=1
+ncn-s002: x3000c0s8b0n0 - metal.no-wipe=1
+ncn-s003: x3000c0s9b0n0 - metal.no-wipe=1
+ --- PASSED ---
+
+**************************************************************************
+
+=== Worker ncn node pod counts ===
+=== NCN Worker nodes: ncn-w001 ncn-w002 ncn-w003 ncn-w004 ncn-w005  ===
+=== date; kubectl get pods -A -o wide | grep -v Completed | grep ncn-XXX | wc -l ===
+Wed Nov  6 18:29:44 UTC 2024
+ncn-w001: 83
+ncn-w002: 60
+ncn-w003: 83
+ncn-w004: 115
+ncn-w005: 22
+ --- This is an informative check. No pass or fail status to report. --- 
+
+**************************************************************************
+
+=== Pods yet to reach the running state: ===
+=== kubectl get pods -A -o wide | grep -Ev " (Completed|Running|(cray-dns-unbound-manager|hms-discovery)-.* (Pending|Init:0/[1-9]|PodInitializing|NotReady|Terminating)) " ===
+Wed Nov  6 18:29:47 UTC 2024
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+ --- PASSED ---
+
+**************************************************************************
+
+NCN Health Check complete. Summary of failures and warnings is printed below.
+
+No failures or warnings to report. All checks passed.
+
+Two informative tests were run which checked 'NCN uptimes' and 'worker NCN node pod counts'. These results can be manually checked.
+

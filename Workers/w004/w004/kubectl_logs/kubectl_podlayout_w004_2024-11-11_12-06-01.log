@@ -1,0 +1,137 @@
+Timestamp: 2024-11-11 12:06:01
+argo                 pod/cray-nls-argo-workflows-server-564cd584d9-njk6t                   2/2     Running     0               8d      10.41.0.12    ncn-w004   <none>           <none>
+argo                 pod/cray-nls-argo-workflows-workflow-controller-6cdc74f748-qcw9c      2/2     Running     2 (4d6h ago)    8d      10.41.0.14    ncn-w004   <none>           <none>
+argo                 pod/cray-nls-postgres-2                                               3/3     Running     0               8d      10.41.0.75    ncn-w004   <none>           <none>
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-4pcj5                             3/3     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+ceph-cephfs          pod/cray-ceph-csi-cephfs-provisioner-788df75f76-2ltmm                 6/6     Running     3 (4d6h ago)    8d      10.41.0.57    ncn-w004   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-nzc82                                3/3     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-provisioner-6974c7d78b-sdxcd                    7/7     Running     2 (4d6h ago)    8d      10.41.0.56    ncn-w004   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-7d8995464d-h2p79                    2/2     Running     0               6d6h    10.41.0.81    ncn-w004   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-cainjector-6c7845f6dc-7nmgl         2/2     Running     0               4d2h    10.41.0.127   ncn-w004   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-webhook-57dbbff888-jhm55            2/2     Running     2 (4d2h ago)    4d2h    10.41.0.115   ncn-w004   <none>           <none>
+dvs                  pod/cray-activemq-artemis-operator-controller-manager-958999f8j4x62   2/2     Running     1 (4d6h ago)    6d6h    10.41.0.80    ncn-w004   <none>           <none>
+dvs                  pod/cray-dvs-mqtt-ss-1                                                1/2     Running     0               8d      10.41.0.35    ncn-w004   <none>           <none>
+hnc-system           pod/hnc-controller-manager-56c97b978d-xkcjk                           2/2     Running     1 (5d6h ago)    5d6h    10.41.0.86    ncn-w004   <none>           <none>
+istio-operator       pod/istio-operator-5695f4cd46-hstq5                                   1/1     Running     1 (4d6h ago)    5d6h    10.41.0.100   ncn-w004   <none>           <none>
+istio-system         pod/istio-ingressgateway-94df8f964-g77b6                              1/1     Running     0               8d      10.41.0.19    ncn-w004   <none>           <none>
+istio-system         pod/istio-ingressgateway-customer-admin-ffc69c5f-t9w9q                1/1     Running     0               4d2h    10.41.0.124   ncn-w004   <none>           <none>
+istio-system         pod/istio-ingressgateway-customer-user-77fbcc86d7-xv7rc               1/1     Running     0               8d      10.41.0.21    ncn-w004   <none>           <none>
+istio-system         pod/istio-ingressgateway-hmn-785b96ddb8-bdtwv                         1/1     Running     0               8d      10.41.0.20    ncn-w004   <none>           <none>
+istio-system         pod/istiod-6bb7bc7fb9-7wjk5                                           1/1     Running     0               5d6h    10.41.0.85    ncn-w004   <none>           <none>
+istio-system         pod/kiali-7cf8968ff4-xk2l2                                            1/1     Running     0               4d2h    10.41.0.117   ncn-w004   <none>           <none>
+kube-system          pod/kube-multus-ds-4rd57                                              1/1     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+kube-system          pod/kube-proxy-bhhnm                                                  1/1     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+kube-system          pod/metrics-server-545fcf988f-fhbx7                                   1/1     Running     0               4d2h    10.41.0.107   ncn-w004   <none>           <none>
+kube-system          pod/node-problem-detector-rr54n                                       1/1     Running     0               8d      10.41.0.2     ncn-w004   <none>           <none>
+kube-system          pod/sealed-secrets-685b8dc459-jzjgx                                   1/1     Running     0               5d6h    10.41.0.87    ncn-w004   <none>           <none>
+kube-system          pod/weave-net-f27f9                                                   2/2     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+kyverno              pod/kyverno-admission-controller-5fb8868644-x7tvh                     1/1     Running     0               8d      10.41.0.23    ncn-w004   <none>           <none>
+kyverno              pod/kyverno-background-controller-5bb9c4566d-c8tnb                    1/1     Running     0               4d2h    10.41.0.112   ncn-w004   <none>           <none>
+kyverno              pod/kyverno-reports-controller-599f875b5b-nlwvv                       1/1     Running     3 (4d6h ago)    8d      10.41.0.24    ncn-w004   <none>           <none>
+metallb-system       pod/metallb-controller-564f6966f-wtbgq                                1/1     Running     0               5d6h    10.41.0.99    ncn-w004   <none>           <none>
+metallb-system       pod/metallb-speaker-cdcdv                                             1/1     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+nexus                pod/cray-precache-images-jxv9h                                        1/1     Running     0               8d      10.41.0.1     ncn-w004   <none>           <none>
+nexus                pod/nexus-84f59cbb6-pssnc                                             2/2     Running     0               6d6h    10.41.0.84    ncn-w004   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-8pw9f                                     1/1     Running     0               8d      10.41.0.5     ncn-w004   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-admin-jcp2r                      1/1     Running     0               8d      10.41.0.6     ncn-w004   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-user-rs9m5                       1/1     Running     0               8d      10.41.0.11    ncn-w004   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hmn-gpzjz                                 1/1     Running     0               8d      10.41.0.4     ncn-w004   <none>           <none>
+operators            pod/cray-kiali-kiali-operator-66645594fc-n86ht                        1/1     Running     0               4d2h    10.41.0.123   ncn-w004   <none>           <none>
+operators            pod/strimzi-cluster-operator-569c45b5d-p5cf7                          1/1     Running     1 (8d ago)      8d      10.41.0.46    ncn-w004   <none>           <none>
+pki-operator         pod/trustedcerts-operator-f546977cb-7sv6b                             2/2     Running     0               6d6h    10.41.0.77    ncn-w004   <none>           <none>
+services             pod/cfs-0e2f6e2b-b3b6-43e3-a546-9e4161e76007-stdln                    0/3     Completed   0               6d5h    10.41.0.90    ncn-w004   <none>           <none>
+services             pod/cfs-5e165e1e-5057-4f09-a81f-1225b10a5224-hj26v                    0/3     Completed   0               4d23h   10.41.0.105   ncn-w004   <none>           <none>
+services             pod/cfs-ara-postgres-0                                                3/3     Running     0               8d      10.41.0.70    ncn-w004   <none>           <none>
+services             pod/cfs-hwsync-agent-b4b6657d5-5f9rz                                  2/2     Running     6 (6d6h ago)    8d      10.41.0.45    ncn-w004   <none>           <none>
+services             pod/cfs-trust-68fc9fcdb4-w29kx                                        2/2     Running     0               4d2h    10.41.0.119   ncn-w004   <none>           <none>
+services             pod/cray-bos-75bb8ddbf9-8z72g                                         2/2     Running     0               4d2h    10.41.0.126   ncn-w004   <none>           <none>
+services             pod/cray-bos-db-788bcbc84c-k66tw                                      2/2     Running     0               4d2h    10.41.0.122   ncn-w004   <none>           <none>
+services             pod/cray-bos-operator-actual-state-cleanup-576b95fdc6-5gxkv           2/2     Running     0               5d6h    10.41.0.98    ncn-w004   <none>           <none>
+services             pod/cray-bos-operator-configuration-7856b8fc78-dgv2v                  2/2     Running     0               5d6h    10.41.0.88    ncn-w004   <none>           <none>
+services             pod/cray-bos-operator-discovery-59ff8c8554-cvqj4                      2/2     Running     0               5d6h    10.41.0.92    ncn-w004   <none>           <none>
+services             pod/cray-bos-operator-power-off-forceful-7d75d64556-dpndw             2/2     Running     0               5d6h    10.41.0.91    ncn-w004   <none>           <none>
+services             pod/cray-bos-operator-power-off-graceful-756657cbfb-6rf5j             2/2     Running     0               5d6h    10.41.0.103   ncn-w004   <none>           <none>
+services             pod/cray-bss-79785c6d89-q66xz                                         2/2     Running     0               6d6h    10.41.0.83    ncn-w004   <none>           <none>
+services             pod/cray-capmc-6c5d69f685-hv798                                       2/2     Running     0               8d      10.41.0.47    ncn-w004   <none>           <none>
+services             pod/cray-cfs-batcher-6c66f6887-xd8f5                                  2/2     Running     0               5d6h    10.41.0.102   ncn-w004   <none>           <none>
+services             pod/cray-cfs-operator-854847c8c-s25lf                                 2/2     Running     0               8d      10.41.0.44    ncn-w004   <none>           <none>
+services             pod/cray-console-data-bbff78774-pfdvc                                 2/2     Running     0               5d6h    10.41.0.104   ncn-w004   <none>           <none>
+services             pod/cray-console-data-postgres-0                                      3/3     Running     0               8d      10.41.0.37    ncn-w004   <none>           <none>
+services             pod/cray-console-operator-79b4c7dd4b-tx5v6                            2/2     Running     0               8d      10.41.0.64    ncn-w004   <none>           <none>
+services             pod/cray-cps-5684977999-88dpx                                         2/2     Running     0               8d      10.41.0.55    ncn-w004   <none>           <none>
+services             pod/cray-dhcp-kea-56c5bb5789-72rcl                                    3/3     Running     4 (4d6h ago)    8d      10.41.0.49    ncn-w004   <none>           <none>
+services             pod/cray-dhcp-kea-postgres-1                                          3/3     Running     0               8d      10.41.0.72    ncn-w004   <none>           <none>
+services             pod/cray-dns-powerdns-645654c6f6-4g8v6                                2/2     Running     2 (8d ago)      8d      10.41.0.59    ncn-w004   <none>           <none>
+services             pod/cray-dns-powerdns-postgres-0                                      3/3     Running     0               8d      10.41.0.22    ncn-w004   <none>           <none>
+services             pod/cray-dns-unbound-79b56d4645-5zpr6                                 3/3     Running     0               6d6h    10.41.0.76    ncn-w004   <none>           <none>
+services             pod/cray-externaldns-external-dns-688c68fb58-bwxzs                    1/1     Running     0               5d6h    10.41.0.93    ncn-w004   <none>           <none>
+services             pod/cray-fas-bitnami-etcd-2                                           2/2     Running     0               8d      10.41.0.32    ncn-w004   <none>           <none>
+services             pod/cray-hbtd-55fb95cc7b-g44mc                                        2/2     Running     0               8d      10.41.0.25    ncn-w004   <none>           <none>
+services             pod/cray-hbtd-bitnami-etcd-2                                          2/2     Running     0               8d      10.41.0.33    ncn-w004   <none>           <none>
+services             pod/cray-hmnfd-747b78f958-k6hjk                                       2/2     Running     0               6d6h    10.41.0.82    ncn-w004   <none>           <none>
+services             pod/cray-hmnfd-bitnami-etcd-2                                         2/2     Running     0               8d      10.41.0.31    ncn-w004   <none>           <none>
+services             pod/cray-hms-hmcollector-ingress-7c5bb55c74-8x8cx                     2/2     Running     0               8d      10.41.0.58    ncn-w004   <none>           <none>
+services             pod/cray-hms-hmcollector-poll-66cc59bcd-f8lrh                         2/2     Running     0               8d      10.41.0.43    ncn-w004   <none>           <none>
+services             pod/cray-hms-rts-5488d9b94-b4p6z                                      3/3     Running     0               8d      10.41.0.61    ncn-w004   <none>           <none>
+services             pod/cray-hms-rts-snmp-d9cb7fdc-b9qbq                                  3/3     Running     0               8d      10.41.0.62    ncn-w004   <none>           <none>
+services             pod/cray-ims-d7466c6f9-4z9qp                                          2/2     Running     0               8d      10.41.0.50    ncn-w004   <none>           <none>
+services             pod/cray-ipxe-x86-64-59d949584d-wd4cv                                 2/2     Running     0               6d6h    10.41.0.79    ncn-w004   <none>           <none>
+services             pod/cray-keycloak-1                                                   2/2     Running     2 (8d ago)      8d      10.41.0.65    ncn-w004   <none>           <none>
+services             pod/cray-meds-85d8955fb5-9hpf5                                        2/2     Running     0               5d6h    10.41.0.101   ncn-w004   <none>           <none>
+services             pod/cray-node-discovery-l5wzh                                         1/1     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+services             pod/cray-oauth2-proxies-customer-access-ingress-7fc49cffcf-dhxph      1/1     Running     0               8d      10.41.0.41    ncn-w004   <none>           <none>
+services             pod/cray-postgres-operator-596b6cfb9c-d2bbn                           2/2     Running     0               4d2h    10.41.0.128   ncn-w004   <none>           <none>
+services             pod/cray-power-control-6f9869d68-gfzlr                                2/2     Running     0               4d2h    10.41.0.125   ncn-w004   <none>           <none>
+services             pod/cray-power-control-bitnami-etcd-1                                 2/2     Running     0               8d      10.41.0.34    ncn-w004   <none>           <none>
+services             pod/cray-scsd-b744ccc54-gm6tl                                         2/2     Running     0               4d2h    10.41.0.113   ncn-w004   <none>           <none>
+services             pod/cray-shared-kafka-entity-operator-779945b686-hvr4h                2/2     Running     1 (8d ago)      8d      10.41.0.26    ncn-w004   <none>           <none>
+services             pod/cray-shared-kafka-kafka-0                                         1/1     Running     1 (8d ago)      8d      10.41.0.29    ncn-w004   <none>           <none>
+services             pod/cray-shared-kafka-zookeeper-2                                     1/1     Running     0               8d      10.41.0.15    ncn-w004   <none>           <none>
+services             pod/cray-sls-9d467b6d6-lxt8h                                          2/2     Running     0               8d      10.41.0.60    ncn-w004   <none>           <none>
+services             pod/cray-sls-postgres-0                                               3/3     Running     0               8d      10.41.0.71    ncn-w004   <none>           <none>
+services             pod/cray-smd-79dc846fcb-r4wtn                                         2/2     Running     0               8d      10.41.0.16    ncn-w004   <none>           <none>
+services             pod/cray-smd-postgres-2                                               3/3     Running     0               8d      10.41.0.73    ncn-w004   <none>           <none>
+services             pod/cray-sts-6b8bb75c68-bwt25                                         2/2     Running     0               8d      10.41.0.40    ncn-w004   <none>           <none>
+services             pod/cray-tftp-5d546777c9-59v7f                                        1/1     Running     0               8d      10.41.0.51    ncn-w004   <none>           <none>
+services             pod/cray-tftp-modprobe-ltd9g                                          1/1     Running     0               8d      10.41.0.9     ncn-w004   <none>           <none>
+services             pod/cray-vpa-recommender-86867b7bf6-ldczx                             2/2     Running     0               4d2h    10.41.0.118   ncn-w004   <none>           <none>
+services             pod/csm-ssh-keys-7ccc4f5494-kkcnx                                     2/2     Running     0               4d2h    10.41.0.109   ncn-w004   <none>           <none>
+services             pod/etcd-backup-restore-75bb5c4694-nzcf6                              1/1     Running     0               4d2h    10.41.0.108   ncn-w004   <none>           <none>
+services             pod/gitea-vcs-856dfb98cf-49hz7                                        2/2     Running     0               4d2h    10.41.0.120   ncn-w004   <none>           <none>
+services             pod/gitea-vcs-postgres-0                                              3/3     Running     0               8d      10.41.0.69    ncn-w004   <none>           <none>
+services             pod/keycloak-postgres-2                                               3/3     Running     0               8d      10.41.0.74    ncn-w004   <none>           <none>
+services             pod/nmdv2-service-86466bc7f8-vcfsn                                    2/2     Running     0               6d6h    10.41.0.78    ncn-w004   <none>           <none>
+services             pod/slingshot-fabric-manager-6b74fdb5c7-v729x                         2/2     Running     0               5d6h    10.41.0.111   ncn-w004   <none>           <none>
+services             pod/sonar-jobs-watcher-zmctk                                          1/1     Running     0               8d      10.41.0.3     ncn-w004   <none>           <none>
+spire                pod/cray-spire-agent-z9gtm                                            1/1     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+spire                pod/cray-spire-jwks-847fc745b8-slc5n                                  3/3     Running     0               8d      10.41.0.28    ncn-w004   <none>           <none>
+spire                pod/cray-spire-postgres-0                                             3/3     Running     0               8d      10.41.0.36    ncn-w004   <none>           <none>
+spire                pod/cray-spire-postgres-pooler-5997f6f6f5-q59zj                       2/2     Running     0               8d      10.41.0.17    ncn-w004   <none>           <none>
+spire                pod/cray-spire-server-1                                               2/2     Running     0               8d      10.41.0.52    ncn-w004   <none>           <none>
+spire                pod/request-ncn-join-token-jnw8x                                      2/2     Running     0               8d      10.41.0.7     ncn-w004   <none>           <none>
+spire                pod/spire-agent-qgtjq                                                 1/1     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+spire                pod/spire-jwks-6fbb5864db-f976b                                       3/3     Running     0               8d      10.41.0.30    ncn-w004   <none>           <none>
+spire                pod/spire-postgres-0                                                  3/3     Running     0               8d      10.41.0.27    ncn-w004   <none>           <none>
+spire                pod/spire-postgres-pooler-6c97d87dd5-7z9nh                            2/2     Running     0               8d      10.41.0.18    ncn-w004   <none>           <none>
+spire                pod/spire-server-1                                                    2/2     Running     0               8d      10.41.0.66    ncn-w004   <none>           <none>
+spire                pod/tpm-provisioner-0                                                 2/2     Running     0               8d      10.41.0.68    ncn-w004   <none>           <none>
+sshot-net-operator   pod/sshot-net-operator-cf49677c5-7bglg                                1/1     Running     0               5d6h    10.41.0.97    ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-canu-test-5fc8b5d66c-6d7nb                    2/2     Running     0               5d6h    10.41.0.94    ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-grafana-7476fd6654-wtzkq                      3/3     Running     0               5d6h    10.41.0.95    ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-kube-state-metrics-754c86467f-bjwgq           1/1     Running     0               8d      10.41.0.38    ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-logstash-exporter-85bc88574b-xjd5z            1/1     Running     0               5d6h    10.41.0.90    ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-xqbdz                     1/1     Running     0               8d      10.41.0.13    ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-pwmzv                  1/1     Running     0               8d      10.41.0.8     ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-l9zwd                1/1     Running     0               8d      10.252.1.13   ncn-w004   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-snmp-exporter-5cb4c85bb8-p988n     1/1     Running     0               4d2h    10.41.0.110   ncn-w004   <none>           <none>
+sysmgmt-health       pod/vmagent-vms-0-5877fbd5c4-9nkk5                                    2/2     Running     0               8d      10.41.0.48    ncn-w004   <none>           <none>
+sysmgmt-health       pod/vmagent-vms-1-8c8799964-9cvxd                                     2/2     Running     0               8d      10.41.0.39    ncn-w004   <none>           <none>
+sysmgmt-health       pod/vmalert-vms-5fdd8f54dd-wz9t8                                      2/2     Running     0               4d2h    10.41.0.121   ncn-w004   <none>           <none>
+sysmgmt-health       pod/vmalertmanager-vms-0                                              2/2     Running     0               8d      10.41.0.53    ncn-w004   <none>           <none>
+sysmgmt-health       pod/vminsert-vms-cd9d4f894-mr5dw                                      1/1     Running     0               4d2h    10.41.0.114   ncn-w004   <none>           <none>
+sysmgmt-health       pod/vmstorage-vms-1                                                   1/1     Running     0               8d      10.41.0.63    ncn-w004   <none>           <none>
+tapms-operator       pod/cray-tapms-operator-57c6cfccf7-zt27f                              2/2     Running     2 (4d2h ago)    4d2h    10.41.0.116   ncn-w004   <none>           <none>
+vault                pod/cray-vault-2                                                      5/5     Running     3 (8d ago)      8d      10.41.0.67    ncn-w004   <none>           <none>
+vault                pod/cray-vault-configurer-7b6f84b7df-nbznn                            2/2     Running     0               5d6h    10.41.0.96    ncn-w004   <none>           <none>
+velero               pod/cray-velero-78bb7fbcfd-sf2vc                                      1/1     Running     0               8d      10.41.0.54    ncn-w004   <none>           <none>
+velero               pod/restic-sdqkb                                                      1/1     Running     0               8d      10.41.0.10    ncn-w004   <none>           <none>

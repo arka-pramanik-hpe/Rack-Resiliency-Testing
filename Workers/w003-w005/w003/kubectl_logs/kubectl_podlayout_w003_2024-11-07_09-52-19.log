@@ -1,0 +1,84 @@
+Timestamp: 2024-11-07 09:52:19
+argo                 pod/cray-nls-argo-workflows-server-564cd584d9-jfpnf                   2/2     Terminating   0                4d15h   10.44.0.12    ncn-w003   <none>           <none>
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-wgrxz                             3/3     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+ceph-cephfs          pod/cray-ceph-csi-cephfs-provisioner-788df75f76-zhs7q                 6/6     Terminating   3 (4h41m ago)    4d15h   10.44.0.21    ncn-w003   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-4cwjf                                3/3     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-provisioner-6974c7d78b-q8xlq                    7/7     Terminating   11 (4h41m ago)   4d15h   10.44.0.50    ncn-w003   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-7d8995464d-rxhvk                    2/2     Terminating   0                4d15h   10.44.0.22    ncn-w003   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-cainjector-6c7845f6dc-kvpl2         2/2     Terminating   1 (4h41m ago)    4d15h   10.44.0.23    ncn-w003   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-webhook-57dbbff888-zx55x            2/2     Terminating   3 (4d15h ago)    4d15h   10.44.0.47    ncn-w003   <none>           <none>
+istio-system         pod/istio-ingressgateway-94df8f964-kcmdd                              1/1     Terminating   0                4d15h   10.44.0.29    ncn-w003   <none>           <none>
+istio-system         pod/istio-ingressgateway-customer-admin-ffc69c5f-5fksl                1/1     Terminating   0                4d15h   10.44.0.15    ncn-w003   <none>           <none>
+istio-system         pod/istio-ingressgateway-customer-user-77fbcc86d7-475jz               1/1     Terminating   0                4d15h   10.44.0.30    ncn-w003   <none>           <none>
+istio-system         pod/istio-ingressgateway-hmn-785b96ddb8-7t795                         1/1     Terminating   0                4d15h   10.44.0.27    ncn-w003   <none>           <none>
+istio-system         pod/istiod-6bb7bc7fb9-bggqx                                           1/1     Terminating   0                4d15h   10.44.0.33    ncn-w003   <none>           <none>
+istio-system         pod/kiali-7cf8968ff4-lbmn4                                            1/1     Terminating   0                4d15h   10.44.0.52    ncn-w003   <none>           <none>
+kube-system          pod/kube-multus-ds-jtkkw                                              1/1     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          pod/kube-proxy-cb496                                                  1/1     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          pod/metrics-server-545fcf988f-r4s2t                                   1/1     Terminating   0                4d15h   10.44.0.53    ncn-w003   <none>           <none>
+kube-system          pod/node-problem-detector-kntvd                                       1/1     Running       0                4d16h   10.44.0.5     ncn-w003   <none>           <none>
+kube-system          pod/weave-net-7pbx9                                                   2/2     Running       1 (4d16h ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+kyverno              pod/kyverno-admission-controller-5fb8868644-q8hnb                     1/1     Terminating   0                4d15h   10.44.0.26    ncn-w003   <none>           <none>
+kyverno              pod/kyverno-background-controller-5bb9c4566d-wspfz                    1/1     Terminating   0                4d15h   10.44.0.28    ncn-w003   <none>           <none>
+metallb-system       pod/metallb-speaker-95n2g                                             1/1     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+nexus                pod/cray-precache-images-gqndd                                        1/1     Running       0                4d16h   10.44.0.6     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-9qs2m                                     1/1     Running       0                4d16h   10.44.0.7     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-admin-p6psv                      1/1     Running       0                4d16h   10.44.0.8     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-user-9b4vb                       1/1     Running       0                4d16h   10.44.0.4     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hmn-2mwmk                                 1/1     Running       0                4d16h   10.44.0.11    ncn-w003   <none>           <none>
+operators            pod/cray-kiali-kiali-operator-66645594fc-p5prx                        1/1     Terminating   0                4d15h   10.44.0.20    ncn-w003   <none>           <none>
+pki-operator         pod/trustedcerts-operator-f546977cb-hvbtx                             2/2     Terminating   3 (4d15h ago)    4d15h   10.44.0.46    ncn-w003   <none>           <none>
+services             pod/cfs-ara-postgres-1                                                3/3     Terminating   0                4d12h   10.44.0.19    ncn-w003   <none>           <none>
+services             pod/cfs-trust-68fc9fcdb4-sp44l                                        2/2     Terminating   2 (4d15h ago)    4d15h   10.44.0.24    ncn-w003   <none>           <none>
+services             pod/cray-bos-75bb8ddbf9-g94cv                                         2/2     Terminating   0                4d15h   10.44.0.14    ncn-w003   <none>           <none>
+services             pod/cray-bos-db-788bcbc84c-6xkwc                                      2/2     Terminating   0                4d15h   10.44.0.62    ncn-w003   <none>           <none>
+services             pod/cray-bss-79785c6d89-kq8vf                                         2/2     Terminating   0                4d15h   10.44.0.32    ncn-w003   <none>           <none>
+services             pod/cray-bss-bitnami-etcd-0                                           2/2     Terminating   0                4d15h   10.44.0.44    ncn-w003   <none>           <none>
+services             pod/cray-capmc-6c5d69f685-4m44m                                       2/2     Terminating   0                4d15h   10.44.0.60    ncn-w003   <none>           <none>
+services             pod/cray-console-node-0                                               3/3     Terminating   1 (4h41m ago)    4d15h   10.44.0.72    ncn-w003   <none>           <none>
+services             pod/cray-dhcp-kea-56c5bb5789-96vj5                                    3/3     Terminating   4 (4h37m ago)    4d15h   10.44.0.59    ncn-w003   <none>           <none>
+services             pod/cray-dns-powerdns-postgres-2                                      3/3     Terminating   0                4d12h   10.44.0.68    ncn-w003   <none>           <none>
+services             pod/cray-dns-unbound-79b56d4645-ldnvn                                 3/3     Terminating   0                4d15h   10.44.0.31    ncn-w003   <none>           <none>
+services             pod/cray-fas-bitnami-etcd-0                                           2/2     Terminating   0                4d15h   10.44.0.39    ncn-w003   <none>           <none>
+services             pod/cray-hbtd-55fb95cc7b-6srfv                                        2/2     Terminating   0                4d15h   10.44.0.35    ncn-w003   <none>           <none>
+services             pod/cray-hbtd-bitnami-etcd-0                                          2/2     Terminating   0                4d15h   10.44.0.42    ncn-w003   <none>           <none>
+services             pod/cray-hmnfd-747b78f958-n6m76                                       2/2     Terminating   0                4d15h   10.44.0.36    ncn-w003   <none>           <none>
+services             pod/cray-hmnfd-bitnami-etcd-0                                         2/2     Terminating   0                4d15h   10.44.0.45    ncn-w003   <none>           <none>
+services             pod/cray-hms-hmcollector-ingress-7c5bb55c74-hd9rz                     2/2     Terminating   0                4d15h   10.44.0.61    ncn-w003   <none>           <none>
+services             pod/cray-keycloak-0                                                   2/2     Terminating   0                4d15h   10.44.0.64    ncn-w003   <none>           <none>
+services             pod/cray-node-discovery-cz27p                                         1/1     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+services             pod/cray-postgres-operator-596b6cfb9c-lcxd2                           2/2     Terminating   0                4d15h   10.44.0.40    ncn-w003   <none>           <none>
+services             pod/cray-power-control-6f9869d68-7kgz4                                2/2     Terminating   1 (4d15h ago)    4d15h   10.44.0.34    ncn-w003   <none>           <none>
+services             pod/cray-scsd-b744ccc54-sdz25                                         2/2     Terminating   0                4d15h   10.44.0.55    ncn-w003   <none>           <none>
+services             pod/cray-shared-kafka-kafka-2                                         1/1     Terminating   1 (4d15h ago)    4d15h   10.44.0.38    ncn-w003   <none>           <none>
+services             pod/cray-shared-kafka-zookeeper-1                                     1/1     Terminating   0                4d15h   10.44.0.43    ncn-w003   <none>           <none>
+services             pod/cray-sls-9d467b6d6-ns8pv                                          2/2     Terminating   0                4d15h   10.44.0.18    ncn-w003   <none>           <none>
+services             pod/cray-sls-postgres-2                                               3/3     Terminating   0                4d12h   10.44.0.67    ncn-w003   <none>           <none>
+services             pod/cray-tftp-5d546777c9-4f67h                                        1/1     Terminating   0                4d15h   10.44.0.65    ncn-w003   <none>           <none>
+services             pod/cray-tftp-modprobe-q6msp                                          1/1     Running       0                4d16h   10.44.0.3     ncn-w003   <none>           <none>
+services             pod/cray-vpa-recommender-86867b7bf6-p65sg                             2/2     Terminating   0                4d15h   10.44.0.54    ncn-w003   <none>           <none>
+services             pod/csm-ssh-keys-7ccc4f5494-nc44c                                     2/2     Terminating   1 (4d15h ago)    4d15h   10.44.0.49    ncn-w003   <none>           <none>
+services             pod/etcd-backup-restore-75bb5c4694-4kgp5                              1/1     Terminating   0                4d15h   10.44.0.51    ncn-w003   <none>           <none>
+services             pod/gitea-vcs-856dfb98cf-v52ws                                        2/2     Terminating   0                4d15h   10.44.0.66    ncn-w003   <none>           <none>
+services             pod/gitea-vcs-postgres-2                                              3/3     Terminating   0                21h     10.44.0.70    ncn-w003   <none>           <none>
+services             pod/keycloak-postgres-0                                               3/3     Terminating   0                21h     10.44.0.69    ncn-w003   <none>           <none>
+services             pod/sonar-jobs-watcher-jnqk5                                          1/1     Running       0                4d16h   10.44.0.9     ncn-w003   <none>           <none>
+spire                pod/cray-spire-agent-nd9hd                                            1/1     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+spire                pod/cray-spire-jwks-847fc745b8-n925t                                  3/3     Terminating   0                4d15h   10.44.0.37    ncn-w003   <none>           <none>
+spire                pod/cray-spire-postgres-2                                             3/3     Terminating   0                4d12h   10.44.0.17    ncn-w003   <none>           <none>
+spire                pod/cray-spire-server-0                                               2/2     Terminating   0                4d15h   10.44.0.63    ncn-w003   <none>           <none>
+spire                pod/request-ncn-join-token-99gk5                                      2/2     Running       0                4d16h   10.44.0.10    ncn-w003   <none>           <none>
+spire                pod/spire-agent-f2tzn                                                 1/1     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+spire                pod/spire-jwks-6fbb5864db-4cxg2                                       3/3     Terminating   0                4d15h   10.44.0.41    ncn-w003   <none>           <none>
+spire                pod/spire-postgres-1                                                  3/3     Terminating   0                4d12h   10.44.0.13    ncn-w003   <none>           <none>
+spire                pod/spire-postgres-pooler-6c97d87dd5-nt7xb                            2/2     Terminating   0                4d15h   10.44.0.25    ncn-w003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-gm4pz                     1/1     Running       0                4d15h   10.44.0.16    ncn-w003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-q6kll                  1/1     Running       0                4d16h   10.44.0.1     ncn-w003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-dtvnd                1/1     Running       0                4d16h   10.252.1.7    ncn-w003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-snmp-exporter-5cb4c85bb8-j8pdq     1/1     Terminating   0                4d15h   10.44.0.58    ncn-w003   <none>           <none>
+sysmgmt-health       pod/vmagent-vms-1-8c8799964-jk4pr                                     2/2     Terminating   0                4d15h   10.44.0.48    ncn-w003   <none>           <none>
+sysmgmt-health       pod/vmalert-vms-5fdd8f54dd-9j82s                                      2/2     Terminating   0                4d15h   10.44.0.57    ncn-w003   <none>           <none>
+sysmgmt-health       pod/vminsert-vms-cd9d4f894-5wzts                                      1/1     Terminating   0                4d15h   10.44.0.56    ncn-w003   <none>           <none>
+tapms-operator       pod/cray-tapms-operator-57c6cfccf7-czq7d                              2/2     Terminating   12 (4h41m ago)   4d15h   10.44.0.73    ncn-w003   <none>           <none>
+vault                pod/cray-vault-0                                                      5/5     Terminating   1 (4d15h ago)    4d15h   10.44.0.71    ncn-w003   <none>           <none>
+velero               pod/restic-mrgfq                                                      1/1     Running       0                4d16h   10.44.0.2     ncn-w003   <none>           <none>

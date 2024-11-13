@@ -1,0 +1,469 @@
+NAMESPACE            NAME                                                              READY   STATUS      RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+argo                 cray-iuf-metacontroller-helm-0                                    2/2     Running     0               45h     10.36.0.15    ncn-w001   <none>           <none>
+argo                 cray-iuf-metacontroller-helm-1                                    2/2     Running     1 (22h ago)     22h     10.34.0.20    ncn-w002   <none>           <none>
+argo                 cray-nls-argo-workflows-server-564cd584d9-fdg2s                   2/2     Running     1 (16h ago)     16h     10.34.0.39    ncn-w002   <none>           <none>
+argo                 cray-nls-argo-workflows-server-564cd584d9-jfpnf                   2/2     Running     0               4d10h   10.44.0.12    ncn-w003   <none>           <none>
+argo                 cray-nls-argo-workflows-server-564cd584d9-njk6t                   2/2     Running     0               4d10h   10.41.0.12    ncn-w004   <none>           <none>
+argo                 cray-nls-argo-workflows-workflow-controller-6cdc74f748-8h522      2/2     Running     0               16h     10.34.0.18    ncn-w002   <none>           <none>
+argo                 cray-nls-argo-workflows-workflow-controller-6cdc74f748-qcw9c      2/2     Running     1 (4d7h ago)    4d10h   10.41.0.14    ncn-w004   <none>           <none>
+argo                 cray-nls-bfd94746b-9ptvp                                          2/2     Running     1 (4d7h ago)    4d7h    10.38.0.6     ncn-m002   <none>           <none>
+argo                 cray-nls-bfd94746b-thj7v                                          2/2     Running     0               4d7h    10.38.0.7     ncn-m002   <none>           <none>
+argo                 cray-nls-bfd94746b-vnbrn                                          2/2     Running     0               4d7h    10.43.0.10    ncn-m001   <none>           <none>
+argo                 cray-nls-postgres-0                                               3/3     Running     0               45h     10.36.0.17    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-1                                               3/3     Running     0               16h     10.34.0.44    ncn-w002   <none>           <none>
+argo                 cray-nls-postgres-2                                               3/3     Running     0               4d7h    10.41.0.75    ncn-w004   <none>           <none>
+argo                 logical-backup-cray-nls-postgres-28847470-nncph                   0/2     Completed   0               29h     10.36.0.34    ncn-w001   <none>           <none>
+argo                 logical-backup-cray-nls-postgres-28848910-cjhlc                   0/2     Completed   0               5h46m   10.46.0.16    ncn-w005   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-nodeplugin-4pcj5                             3/3     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-nodeplugin-b5npn                             3/3     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-nodeplugin-dkqsm                             3/3     Running     3 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-nodeplugin-wgrxz                             3/3     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-nodeplugin-x2bz4                             3/3     Running     3 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-provisioner-788df75f76-2ltmm                 6/6     Running     1 (4d7h ago)    4d10h   10.41.0.57    ncn-w004   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-provisioner-788df75f76-g7zhx                 6/6     Running     0               16h     10.34.0.25    ncn-w002   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-provisioner-788df75f76-zhs7q                 6/6     Running     1 (4d7h ago)    4d10h   10.44.0.21    ncn-w003   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-nodeplugin-4cwjf                                3/3     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-nodeplugin-bw4mr                                3/3     Running     3 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-nodeplugin-mktr9                                3/3     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-nodeplugin-nzc82                                3/3     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-nodeplugin-q76tz                                3/3     Running     3 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-provisioner-6974c7d78b-66m9l                    7/7     Running     0               23h     10.36.0.34    ncn-w001   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-provisioner-6974c7d78b-q8xlq                    7/7     Running     8 (4d7h ago)    4d10h   10.44.0.50    ncn-w003   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-provisioner-6974c7d78b-sdxcd                    7/7     Running     0               4d10h   10.41.0.56    ncn-w004   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-7d8995464d-85pv4                    2/2     Running     0               23h     10.36.0.43    ncn-w001   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-7d8995464d-h2p79                    2/2     Running     0               47h     10.41.0.81    ncn-w004   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-7d8995464d-rxhvk                    2/2     Running     0               4d10h   10.44.0.22    ncn-w003   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-cainjector-6c7845f6dc-kvpl2         2/2     Running     0               4d10h   10.44.0.23    ncn-w003   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-cainjector-6c7845f6dc-n4xdd         2/2     Running     2 (16h ago)     16h     10.34.0.40    ncn-w002   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-cainjector-6c7845f6dc-pfwtc         2/2     Running     2 (23h ago)     23h     10.36.0.57    ncn-w001   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-webhook-57dbbff888-8kds5            2/2     Running     2 (23h ago)     23h     10.36.0.41    ncn-w001   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-webhook-57dbbff888-tgsjt            2/2     Running     1 (16h ago)     16h     10.34.0.28    ncn-w002   <none>           <none>
+cert-manager         cray-certmanager-cert-manager-webhook-57dbbff888-zx55x            2/2     Running     3 (4d10h ago)   4d10h   10.44.0.47    ncn-w003   <none>           <none>
+dvs                  cray-activemq-artemis-operator-controller-manager-958999f8j4x62   2/2     Running     0               47h     10.41.0.80    ncn-w004   <none>           <none>
+dvs                  cray-dvs-mqtt-ss-0                                                2/2     Running     0               42h     10.36.0.26    ncn-w001   <none>           <none>
+dvs                  cray-dvs-mqtt-ss-1                                                1/2     Running     0               4d10h   10.41.0.35    ncn-w004   <none>           <none>
+hnc-system           hnc-controller-manager-56c97b978d-xkcjk                           2/2     Running     1 (23h ago)     23h     10.41.0.86    ncn-w004   <none>           <none>
+istio-operator       istio-operator-5695f4cd46-hstq5                                   1/1     Running     0               23h     10.41.0.100   ncn-w004   <none>           <none>
+istio-system         istio-ingressgateway-94df8f964-g77b6                              1/1     Running     0               4d10h   10.41.0.19    ncn-w004   <none>           <none>
+istio-system         istio-ingressgateway-94df8f964-kcmdd                              1/1     Running     0               4d10h   10.44.0.29    ncn-w003   <none>           <none>
+istio-system         istio-ingressgateway-94df8f964-x8cz6                              1/1     Running     0               23h     10.36.0.56    ncn-w001   <none>           <none>
+istio-system         istio-ingressgateway-customer-admin-ffc69c5f-5fksl                1/1     Running     0               4d10h   10.44.0.15    ncn-w003   <none>           <none>
+istio-system         istio-ingressgateway-customer-admin-ffc69c5f-b6qh9                1/1     Running     0               23h     10.36.0.37    ncn-w001   <none>           <none>
+istio-system         istio-ingressgateway-customer-admin-ffc69c5f-flhqq                1/1     Running     0               16h     10.34.0.35    ncn-w002   <none>           <none>
+istio-system         istio-ingressgateway-customer-user-77fbcc86d7-475jz               1/1     Running     0               4d10h   10.44.0.30    ncn-w003   <none>           <none>
+istio-system         istio-ingressgateway-customer-user-77fbcc86d7-6ft45               1/1     Running     0               23h     10.36.0.51    ncn-w001   <none>           <none>
+istio-system         istio-ingressgateway-customer-user-77fbcc86d7-xv7rc               1/1     Running     0               4d10h   10.41.0.21    ncn-w004   <none>           <none>
+istio-system         istio-ingressgateway-hmn-785b96ddb8-54zzz                         1/1     Running     0               23h     10.36.0.59    ncn-w001   <none>           <none>
+istio-system         istio-ingressgateway-hmn-785b96ddb8-7t795                         1/1     Running     0               4d10h   10.44.0.27    ncn-w003   <none>           <none>
+istio-system         istio-ingressgateway-hmn-785b96ddb8-bdtwv                         1/1     Running     0               4d10h   10.41.0.20    ncn-w004   <none>           <none>
+istio-system         istiod-6bb7bc7fb9-4bp8c                                           1/1     Running     0               16h     10.34.0.34    ncn-w002   <none>           <none>
+istio-system         istiod-6bb7bc7fb9-7wjk5                                           1/1     Running     0               23h     10.41.0.85    ncn-w004   <none>           <none>
+istio-system         istiod-6bb7bc7fb9-bggqx                                           1/1     Running     0               4d10h   10.44.0.33    ncn-w003   <none>           <none>
+istio-system         kiali-7cf8968ff4-lbmn4                                            1/1     Running     0               4d10h   10.44.0.52    ncn-w003   <none>           <none>
+kube-system          coredns-59cc8dbcc8-qm446                                          1/1     Running     0               4d7h    10.38.0.8     ncn-m002   <none>           <none>
+kube-system          coredns-59cc8dbcc8-w7v45                                          1/1     Running     0               4d7h    10.43.0.9     ncn-m001   <none>           <none>
+kube-system          cray-k8s-encryption-49d6x                                         1/1     Running     0               12d     10.43.0.4     ncn-m001   <none>           <none>
+kube-system          cray-k8s-encryption-6r875                                         1/1     Running     1 (10h ago)     4d7h    10.32.0.5     ncn-m003   <none>           <none>
+kube-system          cray-k8s-encryption-sfk2x                                         1/1     Running     0               4d7h    10.38.0.3     ncn-m002   <none>           <none>
+kube-system          kube-apiserver-ncn-m001                                           1/1     Running     0               12d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          kube-apiserver-ncn-m002                                           1/1     Running     0               4d7h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          kube-apiserver-ncn-m003                                           1/1     Running     1 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-controller-manager-ncn-m001                                  1/1     Running     1 (4d7h ago)    12d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          kube-controller-manager-ncn-m002                                  1/1     Running     0               4d7h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          kube-controller-manager-ncn-m003                                  1/1     Running     1 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-etcdbackup-28849250-7g286                                    0/1     Completed   0               6m56s   10.46.0.15    ncn-w005   <none>           <none>
+kube-system          kube-multus-ds-4rd57                                              1/1     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+kube-system          kube-multus-ds-cc8kk                                              1/1     Running     0               12d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          kube-multus-ds-cfplv                                              1/1     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+kube-system          kube-multus-ds-cjnw7                                              1/1     Running     1 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-multus-ds-gkhzv                                              1/1     Running     1 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+kube-system          kube-multus-ds-jtkkw                                              1/1     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          kube-multus-ds-m4889                                              1/1     Running     1 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+kube-system          kube-multus-ds-nz4sg                                              1/1     Running     0               4d7h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          kube-proxy-4nnxp                                                  1/1     Running     0               4d7h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          kube-proxy-5wzp2                                                  1/1     Running     1 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+kube-system          kube-proxy-bhhnm                                                  1/1     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+kube-system          kube-proxy-cb496                                                  1/1     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          kube-proxy-gxncj                                                  1/1     Running     1 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+kube-system          kube-proxy-lfht9                                                  1/1     Running     0               12d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          kube-proxy-nt289                                                  1/1     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+kube-system          kube-proxy-rllms                                                  1/1     Running     1 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          kube-scheduler-ncn-m001                                           1/1     Running     1 (4d7h ago)    12d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          kube-scheduler-ncn-m002                                           1/1     Running     0               4d7h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          kube-scheduler-ncn-m003                                           1/1     Running     1 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          metrics-server-545fcf988f-r4s2t                                   1/1     Running     0               4d10h   10.44.0.53    ncn-w003   <none>           <none>
+kube-system          node-problem-detector-4pwct                                       1/1     Running     0               12d     10.43.0.2     ncn-m001   <none>           <none>
+kube-system          node-problem-detector-6rd8h                                       1/1     Running     1 (45h ago)     4d12h   10.36.0.11    ncn-w001   <none>           <none>
+kube-system          node-problem-detector-8kzps                                       1/1     Running     1 (10h ago)     4d7h    10.32.0.6     ncn-m003   <none>           <none>
+kube-system          node-problem-detector-gc29x                                       1/1     Running     1 (22h ago)     4d11h   10.34.0.6     ncn-w002   <none>           <none>
+kube-system          node-problem-detector-jhtwl                                       1/1     Running     0               4d7h    10.38.0.5     ncn-m002   <none>           <none>
+kube-system          node-problem-detector-kntvd                                       1/1     Running     0               4d11h   10.44.0.5     ncn-w003   <none>           <none>
+kube-system          node-problem-detector-rr54n                                       1/1     Running     0               4d10h   10.41.0.2     ncn-w004   <none>           <none>
+kube-system          node-problem-detector-xmjz7                                       1/1     Running     0               16h     10.46.0.2     ncn-w005   <none>           <none>
+kube-system          sealed-secrets-685b8dc459-jzjgx                                   1/1     Running     0               23h     10.41.0.87    ncn-w004   <none>           <none>
+kube-system          weave-net-7pbx9                                                   2/2     Running     1 (4d11h ago)   4d11h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          weave-net-dgsml                                                   2/2     Running     3 (16h ago)     4d9h    10.252.1.14   ncn-w005   <none>           <none>
+kube-system          weave-net-f27f9                                                   2/2     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+kube-system          weave-net-fcqnz                                                   2/2     Running     1 (4d7h ago)    4d7h    10.252.1.11   ncn-m002   <none>           <none>
+kube-system          weave-net-ksz95                                                   2/2     Running     1 (12d ago)     12d     10.252.1.12   ncn-m001   <none>           <none>
+kube-system          weave-net-sbv7r                                                   2/2     Running     3 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+kube-system          weave-net-spkgb                                                   2/2     Running     3 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+kube-system          weave-net-zntch                                                   2/2     Running     3 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+kyverno              kyverno-admission-controller-5fb8868644-9plms                     1/1     Running     0               16h     10.34.0.27    ncn-w002   <none>           <none>
+kyverno              kyverno-admission-controller-5fb8868644-q8hnb                     1/1     Running     0               4d10h   10.44.0.26    ncn-w003   <none>           <none>
+kyverno              kyverno-admission-controller-5fb8868644-x7tvh                     1/1     Running     0               4d10h   10.41.0.23    ncn-w004   <none>           <none>
+kyverno              kyverno-background-controller-5bb9c4566d-wspfz                    1/1     Running     0               4d10h   10.44.0.28    ncn-w003   <none>           <none>
+kyverno              kyverno-cleanup-admission-reports-28849250-vh9lf                  0/1     Completed   0               6m56s   10.46.0.14    ncn-w005   <none>           <none>
+kyverno              kyverno-cleanup-cluster-admission-reports-28849250-hkbn9          0/1     Completed   0               6m56s   10.46.0.13    ncn-w005   <none>           <none>
+kyverno              kyverno-cleanup-controller-5569cb8948-xfbc9                       1/1     Running     0               16h     10.34.0.24    ncn-w002   <none>           <none>
+kyverno              kyverno-reports-controller-599f875b5b-nlwvv                       1/1     Running     2 (4d7h ago)    4d10h   10.41.0.24    ncn-w004   <none>           <none>
+metallb-system       metallb-controller-564f6966f-wtbgq                                1/1     Running     0               23h     10.41.0.99    ncn-w004   <none>           <none>
+metallb-system       metallb-speaker-6w8t4                                             1/1     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+metallb-system       metallb-speaker-95n2g                                             1/1     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+metallb-system       metallb-speaker-c2vx4                                             1/1     Running     2 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+metallb-system       metallb-speaker-cdcdv                                             1/1     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+metallb-system       metallb-speaker-fq8mh                                             1/1     Running     0               4d7h    10.252.1.11   ncn-m002   <none>           <none>
+metallb-system       metallb-speaker-mlqr4                                             1/1     Running     1 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+metallb-system       metallb-speaker-nk44l                                             1/1     Running     0               12d     10.252.1.12   ncn-m001   <none>           <none>
+metallb-system       metallb-speaker-z6gcb                                             1/1     Running     1 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+nexus                cray-precache-images-8hdmn                                        1/1     Running     1 (22h ago)     4d11h   10.34.0.9     ncn-w002   <none>           <none>
+nexus                cray-precache-images-9xddc                                        1/1     Running     1 (45h ago)     4d12h   10.36.0.5     ncn-w001   <none>           <none>
+nexus                cray-precache-images-gqndd                                        1/1     Running     0               4d11h   10.44.0.6     ncn-w003   <none>           <none>
+nexus                cray-precache-images-jxv9h                                        1/1     Running     0               4d10h   10.41.0.1     ncn-w004   <none>           <none>
+nexus                cray-precache-images-xtzjk                                        1/1     Running     0               16h     10.46.0.12    ncn-w005   <none>           <none>
+nexus                nexus-84f59cbb6-pssnc                                             2/2     Running     0               47h     10.41.0.84    ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-8pw9f                                     1/1     Running     0               4d10h   10.41.0.5     ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-9jpjm                                     1/1     Running     0               16h     10.46.0.9     ncn-w005   <none>           <none>
+opa                  cray-opa-ingressgateway-9qs2m                                     1/1     Running     0               4d11h   10.44.0.7     ncn-w003   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-admin-bmrht                      1/1     Running     1 (45h ago)     4d12h   10.36.0.3     ncn-w001   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-admin-ggrcp                      1/1     Running     1 (22h ago)     4d11h   10.34.0.5     ncn-w002   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-admin-j475x                      1/1     Running     0               16h     10.46.0.1     ncn-w005   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-admin-jcp2r                      1/1     Running     0               4d10h   10.41.0.6     ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-admin-p6psv                      1/1     Running     0               4d11h   10.44.0.8     ncn-w003   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-user-768w7                       1/1     Running     1 (22h ago)     4d11h   10.34.0.1     ncn-w002   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-user-9b4vb                       1/1     Running     0               4d11h   10.44.0.4     ncn-w003   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-user-glbm7                       1/1     Running     1 (45h ago)     4d12h   10.36.0.6     ncn-w001   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-user-lt5zd                       1/1     Running     0               16h     10.46.0.11    ncn-w005   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-user-rs9m5                       1/1     Running     0               4d10h   10.41.0.11    ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-g9wjv                                     1/1     Running     1 (22h ago)     4d11h   10.34.0.2     ncn-w002   <none>           <none>
+opa                  cray-opa-ingressgateway-hmn-2mwmk                                 1/1     Running     0               4d11h   10.44.0.11    ncn-w003   <none>           <none>
+opa                  cray-opa-ingressgateway-hmn-gd987                                 1/1     Running     0               16h     10.46.0.4     ncn-w005   <none>           <none>
+opa                  cray-opa-ingressgateway-hmn-gj65t                                 1/1     Running     1 (45h ago)     4d12h   10.36.0.2     ncn-w001   <none>           <none>
+opa                  cray-opa-ingressgateway-hmn-gpzjz                                 1/1     Running     0               4d10h   10.41.0.4     ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-hmn-trx9n                                 1/1     Running     1 (22h ago)     4d11h   10.34.0.8     ncn-w002   <none>           <none>
+opa                  cray-opa-ingressgateway-sv4zc                                     1/1     Running     1 (45h ago)     4d12h   10.36.0.10    ncn-w001   <none>           <none>
+operators            cray-kiali-kiali-operator-66645594fc-p5prx                        1/1     Running     0               4d10h   10.44.0.20    ncn-w003   <none>           <none>
+operators            strimzi-cluster-operator-569c45b5d-p5cf7                          1/1     Running     1 (4d7h ago)    4d10h   10.41.0.46    ncn-w004   <none>           <none>
+pki-operator         trustedcerts-operator-f546977cb-7sv6b                             2/2     Running     0               47h     10.41.0.77    ncn-w004   <none>           <none>
+pki-operator         trustedcerts-operator-f546977cb-hvbtx                             2/2     Running     3 (4d10h ago)   4d10h   10.44.0.46    ncn-w003   <none>           <none>
+pki-operator         trustedcerts-operator-f546977cb-nlv7d                             2/2     Running     1 (23h ago)     23h     10.36.0.68    ncn-w001   <none>           <none>
+services             cfs-0e2f6e2b-b3b6-43e3-a546-9e4161e76007-stdln                    0/3     Completed   0               45h     10.41.0.90    ncn-w004   <none>           <none>
+services             cfs-0e4b1e69-0739-4bb0-9250-2c1342925a1c-xtr5d                    0/3     Completed   0               22h     10.36.0.74    ncn-w001   <none>           <none>
+services             cfs-319212e1-0cad-4e2b-907b-9fedec35e082-zzgr7                    0/3     Completed   0               4d10h   10.41.0.12    ncn-w004   <none>           <none>
+services             cfs-41ab5ec8-167d-4b1d-9cdb-8ba0f2b295ec-44nwr                    0/3     Completed   0               4d9h    10.41.0.71    ncn-w004   <none>           <none>
+services             cfs-5e165e1e-5057-4f09-a81f-1225b10a5224-hj26v                    0/3     Completed   0               16h     10.41.0.105   ncn-w004   <none>           <none>
+services             cfs-6e8dd436-412f-43ff-9467-2fa55812d992-8lfzg                    0/3     Completed   0               10h     10.46.0.14    ncn-w005   <none>           <none>
+services             cfs-9996c04d-89fd-4c58-9c89-8f4875ed140a-9twtc                    0/3     Completed   0               17h     10.34.0.25    ncn-w002   <none>           <none>
+services             cfs-9e837c7a-df93-4f06-b77f-d3a6a93f3e4e-qj92f                    0/3     Completed   0               4d11h   10.44.0.13    ncn-w003   <none>           <none>
+services             cfs-ara-7f56fdf8b4-k5snh                                          2/2     Running     1 (23h ago)     23h     10.36.0.47    ncn-w001   <none>           <none>
+services             cfs-ara-postgres-0                                                3/3     Running     0               4d7h    10.41.0.70    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-1                                                3/3     Running     0               4d7h    10.44.0.19    ncn-w003   <none>           <none>
+services             cfs-ara-postgres-2                                                3/3     Running     0               16h     10.36.0.73    ncn-w001   <none>           <none>
+services             cfs-hwsync-agent-b4b6657d5-5f9rz                                  2/2     Running     6 (47h ago)     4d10h   10.41.0.45    ncn-w004   <none>           <none>
+services             cfs-trust-68fc9fcdb4-sp44l                                        2/2     Running     2 (4d10h ago)   4d10h   10.44.0.24    ncn-w003   <none>           <none>
+services             cos-config-service-c9b948f98-js22r                                2/2     Running     0               23h     10.36.0.38    ncn-w001   <none>           <none>
+services             cray-bos-75bb8ddbf9-6m26g                                         2/2     Running     0               23h     10.36.0.70    ncn-w001   <none>           <none>
+services             cray-bos-75bb8ddbf9-g94cv                                         2/2     Running     0               4d10h   10.44.0.14    ncn-w003   <none>           <none>
+services             cray-bos-db-788bcbc84c-6xkwc                                      2/2     Running     0               4d10h   10.44.0.62    ncn-w003   <none>           <none>
+services             cray-bos-operator-actual-state-cleanup-576b95fdc6-5gxkv           2/2     Running     0               23h     10.41.0.98    ncn-w004   <none>           <none>
+services             cray-bos-operator-configuration-7856b8fc78-dgv2v                  2/2     Running     0               23h     10.41.0.88    ncn-w004   <none>           <none>
+services             cray-bos-operator-discovery-59ff8c8554-cvqj4                      2/2     Running     0               23h     10.41.0.92    ncn-w004   <none>           <none>
+services             cray-bos-operator-power-off-forceful-7d75d64556-dpndw             2/2     Running     0               23h     10.41.0.91    ncn-w004   <none>           <none>
+services             cray-bos-operator-power-off-graceful-756657cbfb-6rf5j             2/2     Running     0               23h     10.41.0.103   ncn-w004   <none>           <none>
+services             cray-bos-operator-power-on-7b8ccc7554-5lzcx                       2/2     Running     0               23h     10.36.0.55    ncn-w001   <none>           <none>
+services             cray-bos-operator-session-cleanup-6c7448798b-ln96p                2/2     Running     0               23h     10.36.0.50    ncn-w001   <none>           <none>
+services             cray-bos-operator-session-completion-6576ff58b-9cl49              2/2     Running     0               23h     10.36.0.69    ncn-w001   <none>           <none>
+services             cray-bos-operator-session-setup-6b9fc44c88-5mq4q                  2/2     Running     0               23h     10.36.0.52    ncn-w001   <none>           <none>
+services             cray-bos-operator-status-57bc98cb8d-rn7vl                         2/2     Running     0               16h     10.34.0.32    ncn-w002   <none>           <none>
+services             cray-bss-79785c6d89-kq8vf                                         2/2     Running     0               4d10h   10.44.0.32    ncn-w003   <none>           <none>
+services             cray-bss-79785c6d89-q66xz                                         2/2     Running     0               47h     10.41.0.83    ncn-w004   <none>           <none>
+services             cray-bss-79785c6d89-twsbv                                         2/2     Running     0               23h     10.36.0.46    ncn-w001   <none>           <none>
+services             cray-bss-bitnami-etcd-0                                           2/2     Running     0               4d10h   10.44.0.44    ncn-w003   <none>           <none>
+services             cray-bss-bitnami-etcd-1                                           2/2     Running     0               22h     10.34.0.23    ncn-w002   <none>           <none>
+services             cray-bss-bitnami-etcd-2                                           2/2     Running     0               45h     10.36.0.20    ncn-w001   <none>           <none>
+services             cray-bss-bitnami-etcd-snapshotter-28849200-7cw6t                  0/2     Completed   0               56m     10.46.0.22    ncn-w005   <none>           <none>
+services             cray-capmc-6c5d69f685-4m44m                                       2/2     Running     0               4d10h   10.44.0.60    ncn-w003   <none>           <none>
+services             cray-capmc-6c5d69f685-hv798                                       2/2     Running     0               4d10h   10.41.0.47    ncn-w004   <none>           <none>
+services             cray-capmc-6c5d69f685-qcwv8                                       2/2     Running     0               23h     10.36.0.45    ncn-w001   <none>           <none>
+services             cray-cfs-api-557fb98d57-2hwd5                                     2/2     Running     9 (16h ago)     4d10h   10.41.0.42    ncn-w004   <none>           <none>
+services             cray-cfs-api-557fb98d57-s2t4t                                     2/2     Running     1 (16h ago)     16h     10.34.0.42    ncn-w002   <none>           <none>
+services             cray-cfs-api-db-ff7f66d5d-pnk2d                                   2/2     Running     0               16h     10.34.0.43    ncn-w002   <none>           <none>
+services             cray-cfs-batcher-6c66f6887-xd8f5                                  2/2     Running     0               23h     10.41.0.102   ncn-w004   <none>           <none>
+services             cray-cfs-operator-854847c8c-s25lf                                 2/2     Running     0               4d10h   10.41.0.44    ncn-w004   <none>           <none>
+services             cray-console-data-bbff78774-pfdvc                                 2/2     Running     0               23h     10.41.0.104   ncn-w004   <none>           <none>
+services             cray-console-data-postgres-0                                      3/3     Running     0               4d8h    10.41.0.37    ncn-w004   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Running     0               16h     10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running     0               45h     10.36.0.19    ncn-w001   <none>           <none>
+services             cray-console-node-0                                               3/3     Running     0               4d10h   10.44.0.72    ncn-w003   <none>           <none>
+services             cray-console-node-1                                               3/3     Running     0               45h     10.36.0.21    ncn-w001   <none>           <none>
+services             cray-console-operator-79b4c7dd4b-tx5v6                            2/2     Running     0               4d10h   10.41.0.64    ncn-w004   <none>           <none>
+services             cray-cps-5684977999-88dpx                                         2/2     Running     0               4d10h   10.41.0.55    ncn-w004   <none>           <none>
+services             cray-cps-5684977999-czl8z                                         2/2     Running     0               23h     10.36.0.40    ncn-w001   <none>           <none>
+services             cray-dhcp-kea-56c5bb5789-72rcl                                    3/3     Running     2 (47h ago)     4d10h   10.41.0.49    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-56c5bb5789-96vj5                                    3/3     Running     2 (47h ago)     4d10h   10.44.0.59    ncn-w003   <none>           <none>
+services             cray-dhcp-kea-56c5bb5789-c75gj                                    3/3     Running     0               16h     10.34.0.33    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-helper-28849248-w5lnb                               0/2     Completed   0               8m56s   10.46.0.15    ncn-w005   <none>           <none>
+services             cray-dhcp-kea-helper-28849251-m2hz4                               0/2     Completed   0               5m56s   10.46.0.16    ncn-w005   <none>           <none>
+services             cray-dhcp-kea-helper-28849254-pwjl2                               0/2     Completed   0               2m56s   10.46.0.16    ncn-w005   <none>           <none>
+services             cray-dhcp-kea-postgres-0                                          3/3     Running     0               16h     10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running     0               4d7h    10.41.0.72    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running     0               42h     10.36.0.30    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-645654c6f6-4g8v6                                2/2     Running     2 (4d10h ago)   4d10h   10.41.0.59    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-0                                      3/3     Running     0               4d8h    10.41.0.22    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-1                                      3/3     Running     0               16h     10.36.0.28    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-2                                      3/3     Running     0               4d7h    10.44.0.68    ncn-w003   <none>           <none>
+services             cray-dns-unbound-79b56d4645-5zpr6                                 3/3     Running     0               47h     10.41.0.76    ncn-w004   <none>           <none>
+services             cray-dns-unbound-79b56d4645-l9c7x                                 3/3     Running     0               23h     10.36.0.39    ncn-w001   <none>           <none>
+services             cray-dns-unbound-79b56d4645-ldnvn                                 3/3     Running     0               4d10h   10.44.0.31    ncn-w003   <none>           <none>
+services             cray-dns-unbound-manager-28849252-2bnmt                           0/2     Completed   0               4m56s   10.46.0.15    ncn-w005   <none>           <none>
+services             cray-dns-unbound-manager-28849254-7lfk4                           0/2     Completed   0               2m56s   10.46.0.15    ncn-w005   <none>           <none>
+services             cray-dns-unbound-manager-28849256-949kv                           0/2     Completed   0               56s     10.46.0.14    ncn-w005   <none>           <none>
+services             cray-externaldns-external-dns-688c68fb58-bwxzs                    1/1     Running     0               23h     10.41.0.93    ncn-w004   <none>           <none>
+services             cray-fas-77bb4c6b79-qbjvr                                         2/2     Running     1 (16h ago)     16h     10.34.0.38    ncn-w002   <none>           <none>
+services             cray-fas-bitnami-etcd-0                                           2/2     Running     0               4d10h   10.44.0.39    ncn-w003   <none>           <none>
+services             cray-fas-bitnami-etcd-1                                           2/2     Running     0               22h     10.34.0.21    ncn-w002   <none>           <none>
+services             cray-fas-bitnami-etcd-2                                           2/2     Running     0               4d10h   10.41.0.32    ncn-w004   <none>           <none>
+services             cray-fas-bitnami-etcd-snapshotter-28849200-4k8wq                  0/2     Completed   0               56m     10.46.0.20    ncn-w005   <none>           <none>
+services             cray-hbtd-55fb95cc7b-5mbtb                                        2/2     Running     0               23h     10.36.0.44    ncn-w001   <none>           <none>
+services             cray-hbtd-55fb95cc7b-6srfv                                        2/2     Running     0               4d10h   10.44.0.35    ncn-w003   <none>           <none>
+services             cray-hbtd-55fb95cc7b-g44mc                                        2/2     Running     0               4d10h   10.41.0.25    ncn-w004   <none>           <none>
+services             cray-hbtd-bitnami-etcd-0                                          2/2     Running     0               4d10h   10.44.0.42    ncn-w003   <none>           <none>
+services             cray-hbtd-bitnami-etcd-1                                          2/2     Running     1 (22h ago)     22h     10.34.0.14    ncn-w002   <none>           <none>
+services             cray-hbtd-bitnami-etcd-2                                          2/2     Running     0               4d10h   10.41.0.33    ncn-w004   <none>           <none>
+services             cray-hbtd-bitnami-etcd-snapshotter-28849200-8qz68                 0/2     Completed   0               56m     10.46.0.21    ncn-w005   <none>           <none>
+services             cray-hmnfd-747b78f958-cjmw6                                       2/2     Running     0               23h     10.36.0.66    ncn-w001   <none>           <none>
+services             cray-hmnfd-747b78f958-k6hjk                                       2/2     Running     0               47h     10.41.0.82    ncn-w004   <none>           <none>
+services             cray-hmnfd-747b78f958-n6m76                                       2/2     Running     0               4d10h   10.44.0.36    ncn-w003   <none>           <none>
+services             cray-hmnfd-bitnami-etcd-0                                         2/2     Running     0               4d10h   10.44.0.45    ncn-w003   <none>           <none>
+services             cray-hmnfd-bitnami-etcd-1                                         2/2     Running     0               22h     10.34.0.15    ncn-w002   <none>           <none>
+services             cray-hmnfd-bitnami-etcd-2                                         2/2     Running     0               4d10h   10.41.0.31    ncn-w004   <none>           <none>
+services             cray-hmnfd-bitnami-etcd-snapshotter-28849200-dpzwq                0/2     Completed   0               56m     10.46.0.23    ncn-w005   <none>           <none>
+services             cray-hms-hmcollector-ingress-7c5bb55c74-8x8cx                     2/2     Running     0               4d10h   10.41.0.58    ncn-w004   <none>           <none>
+services             cray-hms-hmcollector-ingress-7c5bb55c74-hd9rz                     2/2     Running     0               4d10h   10.44.0.61    ncn-w003   <none>           <none>
+services             cray-hms-hmcollector-ingress-7c5bb55c74-nnflv                     2/2     Running     0               23h     10.36.0.62    ncn-w001   <none>           <none>
+services             cray-hms-hmcollector-poll-66cc59bcd-f8lrh                         2/2     Running     0               4d10h   10.41.0.43    ncn-w004   <none>           <none>
+services             cray-hms-rts-5488d9b94-b4p6z                                      3/3     Running     0               4d10h   10.41.0.61    ncn-w004   <none>           <none>
+services             cray-hms-rts-snmp-d9cb7fdc-b9qbq                                  3/3     Running     0               4d10h   10.41.0.62    ncn-w004   <none>           <none>
+services             cray-ims-d7466c6f9-4z9qp                                          2/2     Running     0               4d10h   10.41.0.50    ncn-w004   <none>           <none>
+services             cray-ipxe-aarch64-6d97578788-cnm4t                                2/2     Running     0               16h     10.34.0.45    ncn-w002   <none>           <none>
+services             cray-ipxe-x86-64-59d949584d-wd4cv                                 2/2     Running     0               47h     10.41.0.79    ncn-w004   <none>           <none>
+services             cray-keycloak-0                                                   2/2     Running     0               4d10h   10.44.0.64    ncn-w003   <none>           <none>
+services             cray-keycloak-1                                                   2/2     Running     2 (4d10h ago)   4d10h   10.41.0.65    ncn-w004   <none>           <none>
+services             cray-keycloak-2                                                   2/2     Running     2 (45h ago)     45h     10.36.0.12    ncn-w001   <none>           <none>
+services             cray-meds-85d8955fb5-9hpf5                                        2/2     Running     0               23h     10.41.0.101   ncn-w004   <none>           <none>
+services             cray-node-discovery-cz27p                                         1/1     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+services             cray-node-discovery-gnnrw                                         1/1     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+services             cray-node-discovery-jfnhp                                         1/1     Running     1 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+services             cray-node-discovery-l5wzh                                         1/1     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+services             cray-node-discovery-r5jzj                                         1/1     Running     1 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+services             cray-node-labels-6c7cc4c5f8-g6wp5                                 2/2     Running     0               23h     10.36.0.61    ncn-w001   <none>           <none>
+services             cray-oauth2-proxies-customer-access-ingress-7fc49cffcf-dhxph      1/1     Running     0               4d10h   10.41.0.41    ncn-w004   <none>           <none>
+services             cray-oauth2-proxies-customer-high-speed-ingress-79cb9bd579q6gm6   1/1     Running     0               23h     10.36.0.42    ncn-w001   <none>           <none>
+services             cray-oauth2-proxies-customer-management-ingress-c6c64ddfb-zsj6n   1/1     Running     0               23h     10.36.0.58    ncn-w001   <none>           <none>
+services             cray-postgres-operator-596b6cfb9c-lcxd2                           2/2     Running     0               4d10h   10.44.0.40    ncn-w003   <none>           <none>
+services             cray-power-control-6f9869d68-7kgz4                                2/2     Running     1 (4d10h ago)   4d10h   10.44.0.34    ncn-w003   <none>           <none>
+services             cray-power-control-6f9869d68-lb4ck                                2/2     Running     1 (23h ago)     23h     10.36.0.35    ncn-w001   <none>           <none>
+services             cray-power-control-6f9869d68-tq877                                2/2     Running     0               16h     10.34.0.26    ncn-w002   <none>           <none>
+services             cray-power-control-bitnami-etcd-0                                 2/2     Running     0               45h     10.36.0.24    ncn-w001   <none>           <none>
+services             cray-power-control-bitnami-etcd-1                                 2/2     Running     0               4d10h   10.41.0.34    ncn-w004   <none>           <none>
+services             cray-power-control-bitnami-etcd-2                                 2/2     Running     0               22h     10.34.0.19    ncn-w002   <none>           <none>
+services             cray-power-control-bitnami-etcd-snapshotter-28849200-9mszw        0/2     Completed   0               56m     10.46.0.13    ncn-w005   <none>           <none>
+services             cray-powerdns-manager-6c49966f54-2wlcl                            3/3     Running     0               23h     10.41.0.89    ncn-w004   <none>           <none>
+services             cray-scsd-b744ccc54-9v9jf                                         2/2     Running     0               23h     10.36.0.60    ncn-w001   <none>           <none>
+services             cray-scsd-b744ccc54-hlxhw                                         2/2     Running     0               16h     10.34.0.41    ncn-w002   <none>           <none>
+services             cray-scsd-b744ccc54-sdz25                                         2/2     Running     0               4d10h   10.44.0.55    ncn-w003   <none>           <none>
+services             cray-shared-kafka-entity-operator-779945b686-hvr4h                2/2     Running     1 (4d10h ago)   4d10h   10.41.0.26    ncn-w004   <none>           <none>
+services             cray-shared-kafka-kafka-0                                         1/1     Running     1 (4d10h ago)   4d10h   10.41.0.29    ncn-w004   <none>           <none>
+services             cray-shared-kafka-kafka-1                                         1/1     Running     1 (45h ago)     45h     10.36.0.16    ncn-w001   <none>           <none>
+services             cray-shared-kafka-kafka-2                                         1/1     Running     1 (4d10h ago)   4d10h   10.44.0.38    ncn-w003   <none>           <none>
+services             cray-shared-kafka-zookeeper-0                                     1/1     Running     0               45h     10.36.0.22    ncn-w001   <none>           <none>
+services             cray-shared-kafka-zookeeper-1                                     1/1     Running     0               4d10h   10.44.0.43    ncn-w003   <none>           <none>
+services             cray-shared-kafka-zookeeper-2                                     1/1     Running     0               4d10h   10.41.0.15    ncn-w004   <none>           <none>
+services             cray-sls-9d467b6d6-56klc                                          2/2     Running     0               23h     10.36.0.54    ncn-w001   <none>           <none>
+services             cray-sls-9d467b6d6-lxt8h                                          2/2     Running     0               4d10h   10.41.0.60    ncn-w004   <none>           <none>
+services             cray-sls-9d467b6d6-ns8pv                                          2/2     Running     0               4d10h   10.44.0.18    ncn-w003   <none>           <none>
+services             cray-sls-postgres-0                                               3/3     Running     0               4d7h    10.41.0.71    ncn-w004   <none>           <none>
+services             cray-sls-postgres-1                                               3/3     Running     0               16h     10.36.0.72    ncn-w001   <none>           <none>
+services             cray-sls-postgres-2                                               3/3     Running     0               4d7h    10.44.0.67    ncn-w003   <none>           <none>
+services             cray-smd-79dc846fcb-8c4mf                                         2/2     Running     1 (16h ago)     16h     10.34.0.36    ncn-w002   <none>           <none>
+services             cray-smd-79dc846fcb-r4wtn                                         2/2     Running     0               4d10h   10.41.0.16    ncn-w004   <none>           <none>
+services             cray-smd-79dc846fcb-wg7nw                                         2/2     Running     1 (16h ago)     16h     10.34.0.37    ncn-w002   <none>           <none>
+services             cray-smd-postgres-0                                               3/3     Running     0               16h     10.34.0.47    ncn-w002   <none>           <none>
+services             cray-smd-postgres-1                                               3/3     Running     0               45h     10.36.0.23    ncn-w001   <none>           <none>
+services             cray-smd-postgres-2                                               3/3     Running     0               4d8h    10.41.0.73    ncn-w004   <none>           <none>
+services             cray-sts-6b8bb75c68-9p7lx                                         2/2     Running     0               16h     10.34.0.30    ncn-w002   <none>           <none>
+services             cray-sts-6b8bb75c68-bwt25                                         2/2     Running     0               4d10h   10.41.0.40    ncn-w004   <none>           <none>
+services             cray-sts-6b8bb75c68-lzq7j                                         2/2     Running     0               23h     10.36.0.53    ncn-w001   <none>           <none>
+services             cray-tftp-5d546777c9-4f67h                                        1/1     Running     0               4d10h   10.44.0.65    ncn-w003   <none>           <none>
+services             cray-tftp-5d546777c9-59v7f                                        1/1     Running     0               4d10h   10.41.0.51    ncn-w004   <none>           <none>
+services             cray-tftp-5d546777c9-bpnpq                                        1/1     Running     0               23h     10.36.0.29    ncn-w001   <none>           <none>
+services             cray-tftp-modprobe-4hsf2                                          1/1     Running     1 (45h ago)     4d12h   10.36.0.9     ncn-w001   <none>           <none>
+services             cray-tftp-modprobe-cfmzt                                          1/1     Running     0               16h     10.46.0.7     ncn-w005   <none>           <none>
+services             cray-tftp-modprobe-ltd9g                                          1/1     Running     0               4d10h   10.41.0.9     ncn-w004   <none>           <none>
+services             cray-tftp-modprobe-pkrhx                                          1/1     Running     1 (22h ago)     4d11h   10.34.0.0     ncn-w002   <none>           <none>
+services             cray-tftp-modprobe-q6msp                                          1/1     Running     0               4d11h   10.44.0.3     ncn-w003   <none>           <none>
+services             cray-vpa-recommender-86867b7bf6-p65sg                             2/2     Running     0               4d10h   10.44.0.54    ncn-w003   <none>           <none>
+services             cray-vpa-updater-6f7bb8dcf5-ntxgt                                 2/2     Running     0               23h     10.36.0.67    ncn-w001   <none>           <none>
+services             csm-ssh-keys-7ccc4f5494-nc44c                                     2/2     Running     1 (4d10h ago)   4d10h   10.44.0.49    ncn-w003   <none>           <none>
+services             etcd-backup-pvc-snapshots-to-s3-28849205-w9zgn                    0/2     Completed   0               51m     10.46.0.14    ncn-w005   <none>           <none>
+services             etcd-backup-restore-75bb5c4694-4kgp5                              1/1     Running     0               4d10h   10.44.0.51    ncn-w003   <none>           <none>
+services             etcd-backup-restore-75bb5c4694-bh8js                              1/1     Running     0               23h     10.36.0.32    ncn-w001   <none>           <none>
+services             gitea-vcs-856dfb98cf-v52ws                                        2/2     Running     0               4d10h   10.44.0.66    ncn-w003   <none>           <none>
+services             gitea-vcs-postgres-0                                              3/3     Running     0               4d7h    10.41.0.69    ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running     0               45h     10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Running     0               16h     10.44.0.70    ncn-w003   <none>           <none>
+services             hms-discovery-28849227-vm8hv                                      0/2     Completed   0               29m     10.46.0.17    ncn-w005   <none>           <none>
+services             hms-discovery-28849230-6c5lh                                      0/2     Completed   0               26m     10.46.0.18    ncn-w005   <none>           <none>
+services             hms-discovery-28849233-mtn52                                      0/2     Completed   0               23m     10.46.0.16    ncn-w005   <none>           <none>
+services             hms-discovery-28849236-pn45d                                      0/2     Completed   0               20m     10.46.0.16    ncn-w005   <none>           <none>
+services             hms-discovery-28849239-5sjjp                                      0/2     Completed   0               17m     10.46.0.15    ncn-w005   <none>           <none>
+services             hms-discovery-28849242-g6558                                      0/2     Completed   0               14m     10.46.0.14    ncn-w005   <none>           <none>
+services             hms-discovery-28849245-dxzqd                                      0/2     Completed   0               11m     10.46.0.14    ncn-w005   <none>           <none>
+services             hms-discovery-28849248-8t99w                                      0/2     Completed   0               8m56s   10.46.0.17    ncn-w005   <none>           <none>
+services             hms-discovery-28849251-w94hj                                      0/2     Completed   0               5m56s   10.46.0.14    ncn-w005   <none>           <none>
+services             hms-discovery-28849254-8w5qt                                      0/2     Completed   0               2m56s   10.46.0.17    ncn-w005   <none>           <none>
+services             keycloak-postgres-0                                               3/3     Running     0               16h     10.44.0.69    ncn-w003   <none>           <none>
+services             keycloak-postgres-1                                               3/3     Running     0               45h     10.36.0.18    ncn-w001   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running     0               4d8h    10.41.0.74    ncn-w004   <none>           <none>
+services             kube-etcd-defrag-28848960-vwcjq                                   0/2     Completed   0               4h56m   10.46.0.18    ncn-w005   <none>           <none>
+services             kube-etcd-defrag-cray-hbtd-bitnami-etcd-28849200-prvm4            0/2     Completed   0               56m     10.46.0.17    ncn-w005   <none>           <none>
+services             logical-backup-cray-sls-postgres-28847470-n4trn                   0/2     Completed   0               29h     10.36.0.28    ncn-w001   <none>           <none>
+services             logical-backup-cray-sls-postgres-28848910-ch5fp                   0/2     Completed   0               5h46m   10.46.0.17    ncn-w005   <none>           <none>
+services             logical-backup-cray-smd-postgres-28847530-48qcc                   0/2     Completed   0               28h     10.36.0.35    ncn-w001   <none>           <none>
+services             logical-backup-cray-smd-postgres-28848970-t87lq                   0/2     Completed   0               4h46m   10.46.0.22    ncn-w005   <none>           <none>
+services             logical-backup-gitea-vcs-postgres-28847590-94f92                  0/2     Completed   0               27h     10.36.0.35    ncn-w001   <none>           <none>
+services             logical-backup-gitea-vcs-postgres-28849030-lts2p                  0/2     Completed   0               3h46m   10.46.0.19    ncn-w005   <none>           <none>
+services             logical-backup-keycloak-postgres-28847650-jwvf6                   0/2     Completed   0               26h     10.36.0.35    ncn-w001   <none>           <none>
+services             logical-backup-keycloak-postgres-28849090-gczlf                   0/2     Completed   0               166m    10.46.0.18    ncn-w005   <none>           <none>
+services             nmdv2-service-86466bc7f8-vcfsn                                    2/2     Running     0               47h     10.41.0.78    ncn-w004   <none>           <none>
+services             slingshot-fabric-manager-6b74fdb5c7-v729x                         2/2     Running     0               23h     10.41.0.111   ncn-w004   <none>           <none>
+services             sonar-jobs-watcher-bkz8g                                          1/1     Running     0               16h     10.46.0.8     ncn-w005   <none>           <none>
+services             sonar-jobs-watcher-cc5sz                                          1/1     Running     1 (45h ago)     4d12h   10.36.0.4     ncn-w001   <none>           <none>
+services             sonar-jobs-watcher-jnqk5                                          1/1     Running     0               4d11h   10.44.0.9     ncn-w003   <none>           <none>
+services             sonar-jobs-watcher-t28jc                                          1/1     Running     1 (22h ago)     4d11h   10.34.0.11    ncn-w002   <none>           <none>
+services             sonar-jobs-watcher-zmctk                                          1/1     Running     0               4d10h   10.41.0.3     ncn-w004   <none>           <none>
+services             sonar-sync-28849254-qzcmp                                         0/1     Completed   0               2m56s   10.46.0.13    ncn-w005   <none>           <none>
+services             sonar-sync-28849255-mmfcm                                         0/1     Completed   0               116s    10.46.0.13    ncn-w005   <none>           <none>
+services             sonar-sync-28849256-z692z                                         0/1     Completed   0               56s     10.46.0.13    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849227-grj5b                                   0/2     Completed   0               29m     10.46.0.15    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849230-wpfdd                                   0/2     Completed   0               26m     10.46.0.13    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849233-42gv2                                   0/2     Completed   0               23m     10.46.0.14    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849236-gpvdz                                   0/2     Completed   0               20m     10.46.0.14    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849239-f8r4v                                   0/2     Completed   0               17m     10.46.0.14    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849242-j7dpk                                   0/2     Completed   0               14m     10.46.0.15    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849245-9g8rv                                   0/2     Completed   0               11m     10.46.0.16    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849248-q2snb                                   0/2     Completed   0               8m56s   10.46.0.16    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849251-rjlzd                                   0/2     Completed   0               5m56s   10.46.0.15    ncn-w005   <none>           <none>
+services             sshot-fm-recover-28849254-v2mnm                                   0/2     Completed   0               2m56s   10.46.0.14    ncn-w005   <none>           <none>
+spire                cray-spire-agent-fhp9g                                            1/1     Running     1 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+spire                cray-spire-agent-mkdvt                                            1/1     Running     1 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+spire                cray-spire-agent-nd9hd                                            1/1     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+spire                cray-spire-agent-qwqpg                                            1/1     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+spire                cray-spire-agent-z9gtm                                            1/1     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+spire                cray-spire-jwks-847fc745b8-68zwq                                  3/3     Running     0               16h     10.34.0.31    ncn-w002   <none>           <none>
+spire                cray-spire-jwks-847fc745b8-n925t                                  3/3     Running     0               4d10h   10.44.0.37    ncn-w003   <none>           <none>
+spire                cray-spire-jwks-847fc745b8-slc5n                                  3/3     Running     0               4d10h   10.41.0.28    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-0                                             3/3     Running     0               4d7h    10.41.0.36    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-1                                             3/3     Running     0               16h     10.34.0.46    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-2                                             3/3     Running     0               4d7h    10.44.0.17    ncn-w003   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-jkdwx                       2/2     Running     0               23h     10.36.0.64    ncn-w001   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-lkxmw                       2/2     Running     0               16h     10.34.0.29    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-q59zj                       2/2     Running     0               4d10h   10.41.0.17    ncn-w004   <none>           <none>
+spire                cray-spire-server-0                                               2/2     Running     0               4d10h   10.44.0.63    ncn-w003   <none>           <none>
+spire                cray-spire-server-1                                               2/2     Running     0               4d10h   10.41.0.52    ncn-w004   <none>           <none>
+spire                cray-spire-server-2                                               2/2     Running     0               22h     10.34.0.16    ncn-w002   <none>           <none>
+spire                request-ncn-join-token-29q8q                                      2/2     Running     0               4d7h    10.38.0.4     ncn-m002   <none>           <none>
+spire                request-ncn-join-token-95vlr                                      2/2     Running     0               16h     10.46.0.10    ncn-w005   <none>           <none>
+spire                request-ncn-join-token-99gk5                                      2/2     Running     0               4d11h   10.44.0.10    ncn-w003   <none>           <none>
+spire                request-ncn-join-token-cfvt9                                      2/2     Running     2 (10h ago)     4d7h    10.32.0.3     ncn-m003   <none>           <none>
+spire                request-ncn-join-token-d9269                                      2/2     Running     0               12d     10.43.0.1     ncn-m001   <none>           <none>
+spire                request-ncn-join-token-ffwtk                                      2/2     Running     2 (45h ago)     4d12h   10.36.0.8     ncn-w001   <none>           <none>
+spire                request-ncn-join-token-jnw8x                                      2/2     Running     0               4d10h   10.41.0.7     ncn-w004   <none>           <none>
+spire                request-ncn-join-token-w5cfp                                      2/2     Running     2 (22h ago)     4d11h   10.34.0.12    ncn-w002   <none>           <none>
+spire                spire-agent-9lnh8                                                 1/1     Running     1 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+spire                spire-agent-f2tzn                                                 1/1     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+spire                spire-agent-qgtjq                                                 1/1     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+spire                spire-agent-wbcch                                                 1/1     Running     1 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+spire                spire-agent-xjqzr                                                 1/1     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+spire                spire-jwks-6fbb5864db-4cxg2                                       3/3     Running     0               4d10h   10.44.0.41    ncn-w003   <none>           <none>
+spire                spire-jwks-6fbb5864db-7x7d7                                       3/3     Running     0               23h     10.36.0.48    ncn-w001   <none>           <none>
+spire                spire-jwks-6fbb5864db-f976b                                       3/3     Running     0               4d10h   10.41.0.30    ncn-w004   <none>           <none>
+spire                spire-postgres-0                                                  3/3     Running     0               4d7h    10.41.0.27    ncn-w004   <none>           <none>
+spire                spire-postgres-1                                                  3/3     Running     0               4d7h    10.44.0.13    ncn-w003   <none>           <none>
+spire                spire-postgres-2                                                  3/3     Running     0               16h     10.36.0.71    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-7z9nh                            2/2     Running     0               4d10h   10.41.0.18    ncn-w004   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-h6b8k                            2/2     Running     0               23h     10.36.0.36    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-nt7xb                            2/2     Running     0               4d10h   10.44.0.25    ncn-w003   <none>           <none>
+spire                spire-server-0                                                    2/2     Running     0               42h     10.36.0.27    ncn-w001   <none>           <none>
+spire                spire-server-1                                                    2/2     Running     0               4d10h   10.41.0.66    ncn-w004   <none>           <none>
+spire                spire-server-2                                                    2/2     Running     0               22h     10.34.0.22    ncn-w002   <none>           <none>
+spire                tpm-provisioner-0                                                 2/2     Running     0               4d10h   10.41.0.68    ncn-w004   <none>           <none>
+sshot-net-operator   sshot-net-operator-cf49677c5-7bglg                                1/1     Running     0               23h     10.41.0.97    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-canu-test-5fc8b5d66c-6d7nb                    2/2     Running     0               23h     10.41.0.94    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-grafana-7476fd6654-wtzkq                      3/3     Running     0               23h     10.41.0.95    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-grok-exporter-544fb59f84-9l6f7                1/1     Running     0               4d7h    10.38.0.2     ncn-m002   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-grok-exporter-544fb59f84-lwktf                1/1     Running     0               12d     10.43.0.5     ncn-m001   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-grok-exporter-544fb59f84-nnsvr                1/1     Running     0               11h     10.32.0.2     ncn-m003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-kube-state-metrics-754c86467f-bjwgq           1/1     Running     0               4d10h   10.41.0.38    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-logstash-exporter-85bc88574b-xjd5z            1/1     Running     0               23h     10.41.0.90    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-iscsi-58772                     1/1     Running     1 (45h ago)     4d12h   10.36.0.13    ncn-w001   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-iscsi-gm4pz                     1/1     Running     0               4d11h   10.44.0.16    ncn-w003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-iscsi-hv2z4                     1/1     Running     1 (22h ago)     4d11h   10.34.0.3     ncn-w002   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-iscsi-s7cfl                     1/1     Running     0               16h     10.46.0.6     ncn-w005   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-iscsi-xqbdz                     1/1     Running     0               4d10h   10.41.0.13    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-5x9tm                  1/1     Running     0               4d7h    10.38.0.1     ncn-m002   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-c7p7l                  1/1     Running     1 (10h ago)     4d7h    10.32.0.4     ncn-m003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-kthlq                  1/1     Running     1 (22h ago)     4d11h   10.34.0.7     ncn-w002   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-lc69n                  1/1     Running     0               16h     10.46.0.3     ncn-w005   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-pdl4m                  1/1     Running     0               12d     10.43.0.3     ncn-m001   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-pwmzv                  1/1     Running     0               4d10h   10.41.0.8     ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-q6kll                  1/1     Running     0               4d11h   10.44.0.1     ncn-w003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-z58nr                  1/1     Running     1 (45h ago)     4d12h   10.36.0.1     ncn-w001   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-74hxf                1/1     Running     0               4d7h    10.252.1.11   ncn-m002   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-df5zx                1/1     Running     0               16h     10.252.1.14   ncn-w005   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-dtvnd                1/1     Running     0               4d11h   10.252.1.7    ncn-w003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-jnqwg                1/1     Running     1 (45h ago)     4d12h   10.252.1.9    ncn-w001   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-l9zwd                1/1     Running     0               4d10h   10.252.1.13   ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-ntjwx                1/1     Running     1 (10h ago)     4d7h    10.252.1.10   ncn-m003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-v6lz5                1/1     Running     0               12d     10.252.1.12   ncn-m001   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-zq9vs                1/1     Running     1 (22h ago)     4d11h   10.252.1.8    ncn-w002   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-snmp-exporter-5cb4c85bb8-j8pdq     1/1     Running     0               4d10h   10.44.0.58    ncn-w003   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-redfish-cron-28848240-jjc9h                   0/1     Completed   0               16h     10.34.0.27    ncn-w002   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-redfish-cron-28848600-c8qrn                   0/1     Completed   0               10h     10.46.0.17    ncn-w005   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-redfish-cron-28848960-vl5tc                   0/1     Completed   0               4h56m   10.46.0.20    ncn-w005   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-redfish-exporter-c4df695db-5zz4r              1/1     Running     0               23h     10.36.0.49    ncn-w001   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-victoria-metrics-operator-59c8875866-5vsf8    1/1     Running     1 (11h ago)     23h     10.36.0.31    ncn-w001   <none>           <none>
+sysmgmt-health       vmagent-vms-0-5877fbd5c4-2zkk5                                    2/2     Running     0               23h     10.36.0.65    ncn-w001   <none>           <none>
+sysmgmt-health       vmagent-vms-0-5877fbd5c4-9nkk5                                    2/2     Running     0               4d10h   10.41.0.48    ncn-w004   <none>           <none>
+sysmgmt-health       vmagent-vms-1-8c8799964-9cvxd                                     2/2     Running     0               4d10h   10.41.0.39    ncn-w004   <none>           <none>
+sysmgmt-health       vmagent-vms-1-8c8799964-jk4pr                                     2/2     Running     0               4d10h   10.44.0.48    ncn-w003   <none>           <none>
+sysmgmt-health       vmalert-vms-5fdd8f54dd-9j82s                                      2/2     Running     0               4d10h   10.44.0.57    ncn-w003   <none>           <none>
+sysmgmt-health       vmalertmanager-vms-0                                              2/2     Running     0               4d10h   10.41.0.53    ncn-w004   <none>           <none>
+sysmgmt-health       vminsert-vms-cd9d4f894-5wzts                                      1/1     Running     0               4d10h   10.44.0.56    ncn-w003   <none>           <none>
+sysmgmt-health       vminsert-vms-cd9d4f894-z8w9b                                      1/1     Running     0               23h     10.36.0.33    ncn-w001   <none>           <none>
+sysmgmt-health       vmselect-vms-0                                                    1/1     Running     0               22h     10.34.0.10    ncn-w002   <none>           <none>
+sysmgmt-health       vmselect-vms-1                                                    1/1     Running     0               45h     10.36.0.25    ncn-w001   <none>           <none>
+sysmgmt-health       vmstorage-vms-0                                                   1/1     Running     0               22h     10.34.0.17    ncn-w002   <none>           <none>
+sysmgmt-health       vmstorage-vms-1                                                   1/1     Running     0               4d10h   10.41.0.63    ncn-w004   <none>           <none>
+tapms-operator       cray-tapms-operator-57c6cfccf7-czq7d                              2/2     Running     10 (23h ago)    4d10h   10.44.0.73    ncn-w003   <none>           <none>
+vault                cray-vault-0                                                      5/5     Running     1 (4d10h ago)   4d10h   10.44.0.71    ncn-w003   <none>           <none>
+vault                cray-vault-1                                                      5/5     Running     4 (22h ago)     22h     10.34.0.13    ncn-w002   <none>           <none>
+vault                cray-vault-2                                                      5/5     Running     3 (4d10h ago)   4d10h   10.41.0.67    ncn-w004   <none>           <none>
+vault                cray-vault-configurer-7b6f84b7df-nbznn                            2/2     Running     0               23h     10.41.0.96    ncn-w004   <none>           <none>
+vault                cray-vault-operator-57cc597f8d-5l6gt                              2/2     Running     2 (11h ago)     23h     10.36.0.63    ncn-w001   <none>           <none>
+velero               cray-velero-78bb7fbcfd-sf2vc                                      1/1     Running     0               4d10h   10.41.0.54    ncn-w004   <none>           <none>
+velero               restic-7k2fp                                                      1/1     Running     1 (45h ago)     4d12h   10.36.0.7     ncn-w001   <none>           <none>
+velero               restic-mrgfq                                                      1/1     Running     0               4d11h   10.44.0.2     ncn-w003   <none>           <none>
+velero               restic-sdqkb                                                      1/1     Running     0               4d10h   10.41.0.10    ncn-w004   <none>           <none>
+velero               restic-z7ksk                                                      1/1     Running     1 (22h ago)     4d11h   10.34.0.4     ncn-w002   <none>           <none>
+velero               restic-zj544                                                      1/1     Running     0               16h     10.46.0.5     ncn-w005   <none>           <none>

@@ -1,0 +1,1171 @@
+NAMESPACE            NAME                                                                  READY   STATUS      RESTARTS        AGE
+argo                 pod/cray-iuf-metacontroller-helm-0                                    2/2     Running     3 (2d6h ago)    2d11h
+argo                 pod/cray-iuf-metacontroller-helm-1                                    2/2     Running     1 (2d10h ago)   2d10h
+argo                 pod/cray-nls-argo-workflows-server-564cd584d9-2lbjn                   2/2     Running     0               2d11h
+argo                 pod/cray-nls-argo-workflows-server-564cd584d9-jfpnf                   2/2     Running     0               2d10h
+argo                 pod/cray-nls-argo-workflows-server-564cd584d9-njk6t                   2/2     Running     0               2d9h
+argo                 pod/cray-nls-argo-workflows-workflow-controller-6cdc74f748-8rttr      2/2     Running     2 (2d6h ago)    2d11h
+argo                 pod/cray-nls-argo-workflows-workflow-controller-6cdc74f748-qcw9c      2/2     Running     1 (2d6h ago)    2d9h
+argo                 pod/cray-nls-bfd94746b-9ptvp                                          2/2     Running     1 (2d6h ago)    2d6h
+argo                 pod/cray-nls-bfd94746b-thj7v                                          2/2     Running     0               2d6h
+argo                 pod/cray-nls-bfd94746b-vnbrn                                          2/2     Running     0               2d6h
+argo                 pod/cray-nls-postgres-0                                               3/3     Running     0               2d10h
+argo                 pod/cray-nls-postgres-1                                               3/3     Running     0               2d6h
+argo                 pod/cray-nls-postgres-2                                               3/3     Running     0               2d6h
+argo                 pod/logical-backup-cray-nls-postgres-28843150-z9g9m                   0/2     Completed   0               2d5h
+argo                 pod/logical-backup-cray-nls-postgres-28844590-rrbrc                   0/2     Completed   0               29h
+argo                 pod/logical-backup-cray-nls-postgres-28846030-l7bsq                   0/2     Completed   0               5h17m
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-4pcj5                             3/3     Running     0               2d10h
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-dkqsm                             3/3     Running     0               2d11h
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-p2d4b                             3/3     Running     0               2d8h
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-wgrxz                             3/3     Running     0               2d10h
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-x2bz4                             3/3     Running     0               2d11h
+ceph-cephfs          pod/cray-ceph-csi-cephfs-provisioner-788df75f76-2ltmm                 6/6     Running     1 (2d6h ago)    2d9h
+ceph-cephfs          pod/cray-ceph-csi-cephfs-provisioner-788df75f76-xzjpr                 6/6     Running     5 (2d6h ago)    2d11h
+ceph-cephfs          pod/cray-ceph-csi-cephfs-provisioner-788df75f76-zhs7q                 6/6     Running     1 (2d6h ago)    2d10h
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-4cwjf                                3/3     Running     0               2d10h
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-bw4mr                                3/3     Running     0               2d11h
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-gdj4k                                3/3     Running     0               2d8h
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-nzc82                                3/3     Running     0               2d10h
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-q76tz                                3/3     Running     0               2d11h
+ceph-rbd             pod/cray-ceph-csi-rbd-provisioner-6974c7d78b-4h8dk                    7/7     Running     2 (2d6h ago)    2d10h
+ceph-rbd             pod/cray-ceph-csi-rbd-provisioner-6974c7d78b-q8xlq                    7/7     Running     8 (2d6h ago)    2d10h
+ceph-rbd             pod/cray-ceph-csi-rbd-provisioner-6974c7d78b-sdxcd                    7/7     Running     0               2d9h
+cert-manager         pod/cray-certmanager-cert-manager-7d8995464d-rxhvk                    2/2     Running     0               2d10h
+cert-manager         pod/cray-certmanager-cert-manager-7d8995464d-wczlm                    2/2     Running     0               2d11h
+cert-manager         pod/cray-certmanager-cert-manager-7d8995464d-zzppt                    2/2     Running     0               2d10h
+cert-manager         pod/cray-certmanager-cert-manager-cainjector-6c7845f6dc-52vft         2/2     Running     0               2d11h
+cert-manager         pod/cray-certmanager-cert-manager-cainjector-6c7845f6dc-kvpl2         2/2     Running     0               2d10h
+cert-manager         pod/cray-certmanager-cert-manager-cainjector-6c7845f6dc-pfnbt         2/2     Running     1 (2d6h ago)    2d10h
+cert-manager         pod/cray-certmanager-cert-manager-webhook-57dbbff888-7qf6d            2/2     Running     1 (2d11h ago)   2d11h
+cert-manager         pod/cray-certmanager-cert-manager-webhook-57dbbff888-scgs5            2/2     Running     0               2d10h
+cert-manager         pod/cray-certmanager-cert-manager-webhook-57dbbff888-zx55x            2/2     Running     3 (2d10h ago)   2d10h
+dvs                  pod/cray-activemq-artemis-operator-controller-manager-958999f8m68qs   2/2     Running     2 (2d6h ago)    2d11h
+dvs                  pod/cray-dvs-mqtt-ss-0                                                2/2     Running     0               2d10h
+dvs                  pod/cray-dvs-mqtt-ss-1                                                1/2     Running     0               2d9h
+hnc-system           pod/hnc-controller-manager-56c97b978d-f6z2z                           2/2     Running     0               2d10h
+istio-operator       pod/istio-operator-5695f4cd46-9jzfb                                   1/1     Running     5               2d10h
+istio-system         pod/istio-ingressgateway-94df8f964-5m4lq                              1/1     Running     0               2d10h
+istio-system         pod/istio-ingressgateway-94df8f964-g77b6                              1/1     Running     0               2d9h
+istio-system         pod/istio-ingressgateway-94df8f964-kcmdd                              1/1     Running     0               2d10h
+istio-system         pod/istio-ingressgateway-customer-admin-ffc69c5f-5fksl                1/1     Running     0               2d10h
+istio-system         pod/istio-ingressgateway-customer-admin-ffc69c5f-ktzt5                1/1     Running     0               2d11h
+istio-system         pod/istio-ingressgateway-customer-admin-ffc69c5f-z7jc7                1/1     Running     0               2d10h
+istio-system         pod/istio-ingressgateway-customer-user-77fbcc86d7-475jz               1/1     Running     0               2d10h
+istio-system         pod/istio-ingressgateway-customer-user-77fbcc86d7-7cnz4               1/1     Running     0               2d10h
+istio-system         pod/istio-ingressgateway-customer-user-77fbcc86d7-xv7rc               1/1     Running     0               2d9h
+istio-system         pod/istio-ingressgateway-hmn-785b96ddb8-7t795                         1/1     Running     0               2d10h
+istio-system         pod/istio-ingressgateway-hmn-785b96ddb8-bdtwv                         1/1     Running     0               2d9h
+istio-system         pod/istio-ingressgateway-hmn-785b96ddb8-pnn96                         1/1     Running     0               2d10h
+istio-system         pod/istiod-6bb7bc7fb9-7wrws                                           1/1     Running     0               2d10h
+istio-system         pod/istiod-6bb7bc7fb9-bggqx                                           1/1     Running     0               2d9h
+istio-system         pod/istiod-6bb7bc7fb9-wd2sj                                           1/1     Running     0               2d10h
+istio-system         pod/kiali-7cf8968ff4-lbmn4                                            1/1     Running     0               2d10h
+kube-system          pod/coredns-59cc8dbcc8-qm446                                          1/1     Running     0               2d6h
+kube-system          pod/coredns-59cc8dbcc8-w7v45                                          1/1     Running     0               2d6h
+kube-system          pod/cray-k8s-encryption-49d6x                                         1/1     Running     0               10d
+kube-system          pod/cray-k8s-encryption-6r875                                         1/1     Running     0               2d6h
+kube-system          pod/cray-k8s-encryption-sfk2x                                         1/1     Running     0               2d6h
+kube-system          pod/kube-apiserver-ncn-m001                                           1/1     Running     0               10d
+kube-system          pod/kube-apiserver-ncn-m002                                           1/1     Running     0               2d6h
+kube-system          pod/kube-apiserver-ncn-m003                                           1/1     Running     0               2d6h
+kube-system          pod/kube-controller-manager-ncn-m001                                  1/1     Running     1 (2d6h ago)    10d
+kube-system          pod/kube-controller-manager-ncn-m002                                  1/1     Running     0               2d6h
+kube-system          pod/kube-controller-manager-ncn-m003                                  1/1     Running     0               2d6h
+kube-system          pod/kube-etcdbackup-28846340-tqp45                                    0/1     Completed   0               7m49s
+kube-system          pod/kube-multus-ds-4rd57                                              1/1     Running     0               2d10h
+kube-system          pod/kube-multus-ds-c9dz2                                              1/1     Running     0               2d8h
+kube-system          pod/kube-multus-ds-cc8kk                                              1/1     Running     0               10d
+kube-system          pod/kube-multus-ds-cjnw7                                              1/1     Running     0               2d6h
+kube-system          pod/kube-multus-ds-gkhzv                                              1/1     Running     0               2d11h
+kube-system          pod/kube-multus-ds-jtkkw                                              1/1     Running     0               2d10h
+kube-system          pod/kube-multus-ds-m4889                                              1/1     Running     0               2d11h
+kube-system          pod/kube-multus-ds-nz4sg                                              1/1     Running     0               2d6h
+kube-system          pod/kube-proxy-4nnxp                                                  1/1     Running     0               2d6h
+kube-system          pod/kube-proxy-5wzp2                                                  1/1     Running     0               2d11h
+kube-system          pod/kube-proxy-bhhnm                                                  1/1     Running     0               2d10h
+kube-system          pod/kube-proxy-cb496                                                  1/1     Running     0               2d10h
+kube-system          pod/kube-proxy-fxgc6                                                  1/1     Running     0               2d8h
+kube-system          pod/kube-proxy-gxncj                                                  1/1     Running     0               2d11h
+kube-system          pod/kube-proxy-lfht9                                                  1/1     Running     0               10d
+kube-system          pod/kube-proxy-rllms                                                  1/1     Running     0               2d6h
+kube-system          pod/kube-scheduler-ncn-m001                                           1/1     Running     1 (2d6h ago)    10d
+kube-system          pod/kube-scheduler-ncn-m002                                           1/1     Running     0               2d6h
+kube-system          pod/kube-scheduler-ncn-m003                                           1/1     Running     0               2d6h
+kube-system          pod/metrics-server-545fcf988f-r4s2t                                   1/1     Running     0               2d10h
+kube-system          pod/node-problem-detector-4pwct                                       1/1     Running     0               10d
+kube-system          pod/node-problem-detector-6rd8h                                       1/1     Running     0               2d11h
+kube-system          pod/node-problem-detector-8kzps                                       1/1     Running     0               2d6h
+kube-system          pod/node-problem-detector-gc29x                                       1/1     Running     0               2d11h
+kube-system          pod/node-problem-detector-jhtwl                                       1/1     Running     0               2d6h
+kube-system          pod/node-problem-detector-kntvd                                       1/1     Running     0               2d10h
+kube-system          pod/node-problem-detector-rl8wz                                       1/1     Running     0               2d8h
+kube-system          pod/node-problem-detector-rr54n                                       1/1     Running     0               2d10h
+kube-system          pod/sealed-secrets-685b8dc459-krfwp                                   1/1     Running     0               2d10h
+kube-system          pod/weave-net-7pbx9                                                   2/2     Running     1 (2d10h ago)   2d10h
+kube-system          pod/weave-net-dgsml                                                   2/2     Running     0               2d8h
+kube-system          pod/weave-net-f27f9                                                   2/2     Running     0               2d10h
+kube-system          pod/weave-net-fcqnz                                                   2/2     Running     1 (2d6h ago)    2d6h
+kube-system          pod/weave-net-ksz95                                                   2/2     Running     1 (10d ago)     10d
+kube-system          pod/weave-net-sbv7r                                                   2/2     Running     0               2d11h
+kube-system          pod/weave-net-spkgb                                                   2/2     Running     1 (2d6h ago)    2d6h
+kube-system          pod/weave-net-zntch                                                   2/2     Running     0               2d11h
+kyverno              pod/kyverno-admission-controller-5fb8868644-9qqqk                     1/1     Running     0               2d11h
+kyverno              pod/kyverno-admission-controller-5fb8868644-q8hnb                     1/1     Running     0               2d10h
+kyverno              pod/kyverno-admission-controller-5fb8868644-x7tvh                     1/1     Running     0               2d9h
+kyverno              pod/kyverno-background-controller-5bb9c4566d-wspfz                    1/1     Running     0               2d10h
+kyverno              pod/kyverno-cleanup-admission-reports-28846340-pxccn                  0/1     Completed   0               7m49s
+kyverno              pod/kyverno-cleanup-cluster-admission-reports-28846340-8l55w          0/1     Completed   0               7m49s
+kyverno              pod/kyverno-cleanup-controller-5569cb8948-khpsq                       1/1     Running     2 (2d6h ago)    2d11h
+kyverno              pod/kyverno-reports-controller-599f875b5b-nlwvv                       1/1     Running     2 (2d6h ago)    2d9h
+metallb-system       pod/metallb-controller-564f6966f-c6vsj                                1/1     Running     0               2d10h
+metallb-system       pod/metallb-speaker-95n2g                                             1/1     Running     0               2d10h
+metallb-system       pod/metallb-speaker-c2vx4                                             1/1     Running     0               2d11h
+metallb-system       pod/metallb-speaker-cdcdv                                             1/1     Running     0               2d10h
+metallb-system       pod/metallb-speaker-fq8mh                                             1/1     Running     0               2d6h
+metallb-system       pod/metallb-speaker-mlqr4                                             1/1     Running     0               2d6h
+metallb-system       pod/metallb-speaker-nk44l                                             1/1     Running     0               10d
+metallb-system       pod/metallb-speaker-w26mm                                             1/1     Running     0               2d8h
+metallb-system       pod/metallb-speaker-z6gcb                                             1/1     Running     0               2d11h
+nexus                pod/cray-precache-images-8hdmn                                        1/1     Running     0               2d11h
+nexus                pod/cray-precache-images-9xddc                                        1/1     Running     0               2d11h
+nexus                pod/cray-precache-images-gqndd                                        1/1     Running     0               2d10h
+nexus                pod/cray-precache-images-jxv9h                                        1/1     Running     0               2d10h
+nexus                pod/cray-precache-images-s7v26                                        1/1     Running     0               2d8h
+nexus                pod/nexus-84f59cbb6-2wclr                                             2/2     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-8pw9f                                     1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-9qs2m                                     1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-customer-admin-bmrht                      1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-customer-admin-d8wrn                      1/1     Running     0               2d8h
+opa                  pod/cray-opa-ingressgateway-customer-admin-ggrcp                      1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-customer-admin-jcp2r                      1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-customer-admin-p6psv                      1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-customer-user-768w7                       1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-customer-user-9b4vb                       1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-customer-user-cg8rh                       1/1     Running     0               2d8h
+opa                  pod/cray-opa-ingressgateway-customer-user-glbm7                       1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-customer-user-rs9m5                       1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-g9wjv                                     1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-hmn-2mwmk                                 1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-hmn-gj65t                                 1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-hmn-gpx6m                                 1/1     Running     0               2d8h
+opa                  pod/cray-opa-ingressgateway-hmn-gpzjz                                 1/1     Running     0               2d10h
+opa                  pod/cray-opa-ingressgateway-hmn-trx9n                                 1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-sv4zc                                     1/1     Running     0               2d11h
+opa                  pod/cray-opa-ingressgateway-x94jn                                     1/1     Running     0               2d8h
+operators            pod/cray-kiali-kiali-operator-66645594fc-p5prx                        1/1     Running     0               2d10h
+operators            pod/strimzi-cluster-operator-569c45b5d-p5cf7                          1/1     Running     1 (2d6h ago)    2d9h
+pki-operator         pod/trustedcerts-operator-f546977cb-hvbtx                             2/2     Running     3 (2d10h ago)   2d10h
+pki-operator         pod/trustedcerts-operator-f546977cb-j7jkh                             2/2     Running     2 (2d6h ago)    2d11h
+pki-operator         pod/trustedcerts-operator-f546977cb-x7mqq                             2/2     Running     4 (2d6h ago)    2d10h
+services             pod/cfs-2c62f80c-ce57-4995-ba5e-1cec52107a9e-zwm6d                    0/3     Completed   0               2d11h
+services             pod/cfs-319212e1-0cad-4e2b-907b-9fedec35e082-zzgr7                    0/3     Completed   0               2d10h
+services             pod/cfs-41ab5ec8-167d-4b1d-9cdb-8ba0f2b295ec-44nwr                    0/3     Completed   0               2d8h
+services             pod/cfs-51e773a9-faba-4ba5-b040-bccc5d54d851-nfq6r                    0/3     Completed   0               2d7h
+services             pod/cfs-5e9d9e0d-db80-4b2a-907a-1e0aacab0dc9-4pf64                    0/3     Completed   0               2d6h
+services             pod/cfs-7b91e886-3615-47b1-8c53-5f0a2775d977-t8vqg                    0/3     Completed   0               2d7h
+services             pod/cfs-9e837c7a-df93-4f06-b77f-d3a6a93f3e4e-qj92f                    0/3     Completed   0               2d10h
+services             pod/cfs-ara-7f56fdf8b4-msn4r                                          2/2     Running     0               2d10h
+services             pod/cfs-ara-postgres-0                                                3/3     Running     0               2d6h
+services             pod/cfs-ara-postgres-1                                                3/3     Running     0               2d6h
+services             pod/cfs-ara-postgres-2                                                3/3     Running     0               2d8h
+services             pod/cfs-c185920a-1094-47bc-88a6-06badac5d78d-lqvh7                    0/3     Completed   0               2d6h
+services             pod/cfs-c8a14f0a-d7c2-4473-9bd3-c0a94864f02e-vjh4h                    0/3     Completed   0               2d8h
+services             pod/cfs-d1a9b280-8cb5-437b-848f-282f7c5bf602-lxcv7                    0/3     Completed   0               2d11h
+services             pod/cfs-hwsync-agent-b4b6657d5-5f9rz                                  2/2     Running     0               2d9h
+services             pod/cfs-trust-68fc9fcdb4-sp44l                                        2/2     Running     2 (2d10h ago)   2d10h
+services             pod/cos-config-service-c9b948f98-zn2t5                                2/2     Running     0               2d10h
+services             pod/cray-bos-75bb8ddbf9-g94cv                                         2/2     Running     0               2d10h
+services             pod/cray-bos-75bb8ddbf9-v8z4z                                         2/2     Running     0               2d10h
+services             pod/cray-bos-db-788bcbc84c-6xkwc                                      2/2     Running     0               2d10h
+services             pod/cray-bos-operator-actual-state-cleanup-576b95fdc6-bsdg4           2/2     Running     0               2d10h
+services             pod/cray-bos-operator-configuration-7856b8fc78-qbd68                  2/2     Running     0               2d10h
+services             pod/cray-bos-operator-discovery-59ff8c8554-lshdd                      2/2     Running     0               2d10h
+services             pod/cray-bos-operator-power-off-forceful-7d75d64556-gb2px             2/2     Running     0               2d10h
+services             pod/cray-bos-operator-power-off-graceful-756657cbfb-6frh7             2/2     Running     0               2d10h
+services             pod/cray-bos-operator-power-on-7b8ccc7554-2mvt2                       2/2     Running     0               2d10h
+services             pod/cray-bos-operator-session-cleanup-6c7448798b-kjs4h                2/2     Running     0               2d10h
+services             pod/cray-bos-operator-session-completion-6576ff58b-d98zt              2/2     Running     0               2d10h
+services             pod/cray-bos-operator-session-setup-6b9fc44c88-zp5b4                  2/2     Running     0               2d10h
+services             pod/cray-bos-operator-status-57bc98cb8d-xrd46                         2/2     Running     0               2d10h
+services             pod/cray-bss-79785c6d89-fdcn4                                         2/2     Running     0               2d10h
+services             pod/cray-bss-79785c6d89-kq8vf                                         2/2     Running     0               2d10h
+services             pod/cray-bss-79785c6d89-wbqrc                                         2/2     Running     0               2d11h
+services             pod/cray-bss-bitnami-etcd-0                                           2/2     Running     0               2d10h
+services             pod/cray-bss-bitnami-etcd-1                                           2/2     Running     0               2d10h
+services             pod/cray-bss-bitnami-etcd-2                                           2/2     Running     0               2d11h
+services             pod/cray-bss-bitnami-etcd-snapshotter-28846320-gbzvd                  0/2     Completed   0               27m
+services             pod/cray-capmc-6c5d69f685-4m44m                                       2/2     Running     0               2d10h
+services             pod/cray-capmc-6c5d69f685-hv798                                       2/2     Running     0               2d9h
+services             pod/cray-capmc-6c5d69f685-wlgr2                                       2/2     Running     0               2d10h
+services             pod/cray-cfs-api-557fb98d57-2hwd5                                     2/2     Running     1 (2d9h ago)    2d9h
+services             pod/cray-cfs-api-557fb98d57-54728                                     2/2     Running     0               2d10h
+services             pod/cray-cfs-api-db-ff7f66d5d-lmsvw                                   2/2     Running     0               2d10h
+services             pod/cray-cfs-batcher-6c66f6887-4rfr5                                  2/2     Running     0               2d10h
+services             pod/cray-cfs-operator-854847c8c-s25lf                                 2/2     Running     0               2d9h
+services             pod/cray-console-data-bbff78774-2jp6w                                 2/2     Running     0               2d10h
+services             pod/cray-console-data-postgres-0                                      3/3     Running     0               2d8h
+services             pod/cray-console-data-postgres-1                                      3/3     Running     0               2d6h
+services             pod/cray-console-data-postgres-2                                      3/3     Running     0               2d6h
+services             pod/cray-console-node-0                                               3/3     Running     0               2d10h
+services             pod/cray-console-node-1                                               3/3     Running     5 (2d6h ago)    2d10h
+services             pod/cray-console-operator-79b4c7dd4b-tx5v6                            2/2     Running     0               2d9h
+services             pod/cray-cps-5684977999-88dpx                                         2/2     Running     0               2d9h
+services             pod/cray-cps-5684977999-8j6jm                                         2/2     Running     0               2d10h
+services             pod/cray-dhcp-kea-56c5bb5789-72rcl                                    3/3     Running     0               2d9h
+services             pod/cray-dhcp-kea-56c5bb5789-96vj5                                    3/3     Running     0               2d10h
+services             pod/cray-dhcp-kea-56c5bb5789-xjvwq                                    3/3     Running     2 (2d6h ago)    2d10h
+services             pod/cray-dhcp-kea-helper-28846338-8qjf7                               0/2     Completed   0               9m49s
+services             pod/cray-dhcp-kea-helper-28846341-9pbzs                               0/2     Completed   0               6m49s
+services             pod/cray-dhcp-kea-helper-28846344-84b5m                               0/2     Completed   0               3m49s
+services             pod/cray-dhcp-kea-helper-28846347-xs6rw                               1/2     NotReady    0               49s
+services             pod/cray-dhcp-kea-postgres-0                                          3/3     Running     0               2d6h
+services             pod/cray-dhcp-kea-postgres-1                                          3/3     Running     0               2d6h
+services             pod/cray-dhcp-kea-postgres-2                                          3/3     Running     0               2d11h
+services             pod/cray-dns-powerdns-645654c6f6-4g8v6                                2/2     Running     2 (2d9h ago)    2d9h
+services             pod/cray-dns-powerdns-postgres-0                                      3/3     Running     0               2d8h
+services             pod/cray-dns-powerdns-postgres-1                                      3/3     Running     0               2d6h
+services             pod/cray-dns-powerdns-postgres-2                                      3/3     Running     0               2d6h
+services             pod/cray-dns-unbound-79b56d4645-4xd9z                                 3/3     Running     0               2d10h
+services             pod/cray-dns-unbound-79b56d4645-g5xzp                                 3/3     Running     0               2d11h
+services             pod/cray-dns-unbound-79b56d4645-ldnvn                                 3/3     Running     0               2d10h
+services             pod/cray-dns-unbound-manager-28846342-97jpg                           0/2     Completed   0               5m49s
+services             pod/cray-dns-unbound-manager-28846344-spgnt                           0/2     Completed   0               3m49s
+services             pod/cray-dns-unbound-manager-28846346-7mnxr                           0/2     Completed   0               109s
+services             pod/cray-externaldns-external-dns-688c68fb58-tkg7h                    1/1     Running     5 (2d6h ago)    2d10h
+services             pod/cray-fas-77bb4c6b79-mkhgt                                         2/2     Running     1 (2d11h ago)   2d11h
+services             pod/cray-fas-bitnami-etcd-0                                           2/2     Running     0               2d10h
+services             pod/cray-fas-bitnami-etcd-1                                           2/2     Running     0               2d10h
+services             pod/cray-fas-bitnami-etcd-2                                           2/2     Running     0               2d9h
+services             pod/cray-fas-bitnami-etcd-snapshotter-28846320-q228d                  0/2     Completed   0               27m
+services             pod/cray-hbtd-55fb95cc7b-6srfv                                        2/2     Running     0               2d10h
+services             pod/cray-hbtd-55fb95cc7b-g44mc                                        2/2     Running     0               2d9h
+services             pod/cray-hbtd-55fb95cc7b-njsqf                                        2/2     Running     0               2d10h
+services             pod/cray-hbtd-bitnami-etcd-0                                          2/2     Running     0               2d10h
+services             pod/cray-hbtd-bitnami-etcd-1                                          2/2     Running     0               2d10h
+services             pod/cray-hbtd-bitnami-etcd-2                                          2/2     Running     0               2d9h
+services             pod/cray-hbtd-bitnami-etcd-snapshotter-28846320-w8hkg                 0/2     Completed   0               27m
+services             pod/cray-hmnfd-747b78f958-cgwgl                                       2/2     Running     0               2d11h
+services             pod/cray-hmnfd-747b78f958-jj27k                                       2/2     Running     0               2d10h
+services             pod/cray-hmnfd-747b78f958-n6m76                                       2/2     Running     0               2d10h
+services             pod/cray-hmnfd-bitnami-etcd-0                                         2/2     Running     0               2d10h
+services             pod/cray-hmnfd-bitnami-etcd-1                                         2/2     Running     0               2d10h
+services             pod/cray-hmnfd-bitnami-etcd-2                                         2/2     Running     0               2d9h
+services             pod/cray-hmnfd-bitnami-etcd-snapshotter-28846320-cbw8r                0/2     Completed   0               27m
+services             pod/cray-hms-hmcollector-ingress-7c5bb55c74-8x8cx                     2/2     Running     0               2d9h
+services             pod/cray-hms-hmcollector-ingress-7c5bb55c74-hd9rz                     2/2     Running     0               2d10h
+services             pod/cray-hms-hmcollector-ingress-7c5bb55c74-njsf4                     2/2     Running     0               2d10h
+services             pod/cray-hms-hmcollector-poll-66cc59bcd-f8lrh                         2/2     Running     0               2d9h
+services             pod/cray-hms-rts-5488d9b94-b4p6z                                      3/3     Running     0               2d9h
+services             pod/cray-hms-rts-snmp-d9cb7fdc-b9qbq                                  3/3     Running     0               2d9h
+services             pod/cray-ims-d7466c6f9-4z9qp                                          2/2     Running     0               2d9h
+services             pod/cray-ipxe-aarch64-6d97578788-rr9dm                                2/2     Running     0               2d10h
+services             pod/cray-ipxe-x86-64-59d949584d-gvwlv                                 2/2     Running     0               2d10h
+services             pod/cray-keycloak-0                                                   2/2     Running     0               2d10h
+services             pod/cray-keycloak-1                                                   2/2     Running     2 (2d9h ago)    2d9h
+services             pod/cray-keycloak-2                                                   2/2     Running     0               2d10h
+services             pod/cray-meds-85d8955fb5-qt58c                                        2/2     Running     0               2d10h
+services             pod/cray-node-discovery-cz27p                                         1/1     Running     0               2d10h
+services             pod/cray-node-discovery-jfnhp                                         1/1     Running     0               2d11h
+services             pod/cray-node-discovery-l5wzh                                         1/1     Running     0               2d10h
+services             pod/cray-node-discovery-r5jzj                                         1/1     Running     0               2d11h
+services             pod/cray-node-discovery-ttk6q                                         1/1     Running     0               2d8h
+services             pod/cray-node-labels-6c7cc4c5f8-cqfdv                                 2/2     Running     0               2d10h
+services             pod/cray-oauth2-proxies-customer-access-ingress-7fc49cffcf-dhxph      1/1     Running     0               2d9h
+services             pod/cray-oauth2-proxies-customer-high-speed-ingress-79cb9bd5795vqxx   1/1     Running     0               2d10h
+services             pod/cray-oauth2-proxies-customer-management-ingress-c6c64ddfb-td79s   1/1     Running     0               2d10h
+services             pod/cray-postgres-operator-596b6cfb9c-lcxd2                           2/2     Running     0               2d10h
+services             pod/cray-power-control-6f9869d68-7kgz4                                2/2     Running     1 (2d10h ago)   2d10h
+services             pod/cray-power-control-6f9869d68-ljmdt                                2/2     Running     0               2d10h
+services             pod/cray-power-control-6f9869d68-r6bsb                                2/2     Running     0               2d11h
+services             pod/cray-power-control-bitnami-etcd-0                                 2/2     Running     0               2d11h
+services             pod/cray-power-control-bitnami-etcd-1                                 2/2     Running     0               2d9h
+services             pod/cray-power-control-bitnami-etcd-2                                 2/2     Running     0               2d10h
+services             pod/cray-power-control-bitnami-etcd-snapshotter-28846320-ntvck        0/2     Completed   0               27m
+services             pod/cray-powerdns-manager-6c49966f54-vxf62                            3/3     Running     6 (2d9h ago)    2d10h
+services             pod/cray-scsd-b744ccc54-bq9h2                                         2/2     Running     0               2d10h
+services             pod/cray-scsd-b744ccc54-n8xr8                                         2/2     Running     0               2d11h
+services             pod/cray-scsd-b744ccc54-sdz25                                         2/2     Running     0               2d10h
+services             pod/cray-shared-kafka-entity-operator-779945b686-hvr4h                2/2     Running     1 (2d9h ago)    2d9h
+services             pod/cray-shared-kafka-kafka-0                                         1/1     Running     1 (2d9h ago)    2d9h
+services             pod/cray-shared-kafka-kafka-1                                         1/1     Running     1 (2d11h ago)   2d11h
+services             pod/cray-shared-kafka-kafka-2                                         1/1     Running     1 (2d10h ago)   2d10h
+services             pod/cray-shared-kafka-zookeeper-0                                     1/1     Running     0               2d11h
+services             pod/cray-shared-kafka-zookeeper-1                                     1/1     Running     0               2d10h
+services             pod/cray-shared-kafka-zookeeper-2                                     1/1     Running     0               2d9h
+services             pod/cray-sls-9d467b6d6-lxt8h                                          2/2     Running     0               2d9h
+services             pod/cray-sls-9d467b6d6-ns8pv                                          2/2     Running     0               2d10h
+services             pod/cray-sls-9d467b6d6-nvxm7                                          2/2     Running     0               2d10h
+services             pod/cray-sls-postgres-0                                               3/3     Running     0               2d6h
+services             pod/cray-sls-postgres-1                                               3/3     Running     0               2d8h
+services             pod/cray-sls-postgres-2                                               3/3     Running     0               2d6h
+services             pod/cray-smd-79dc846fcb-2vqwk                                         2/2     Running     0               2d11h
+services             pod/cray-smd-79dc846fcb-lj2v2                                         2/2     Running     0               2d11h
+services             pod/cray-smd-79dc846fcb-r4wtn                                         2/2     Running     0               2d9h
+services             pod/cray-smd-postgres-0                                               3/3     Running     0               2d6h
+services             pod/cray-smd-postgres-1                                               3/3     Running     0               2d6h
+services             pod/cray-smd-postgres-2                                               3/3     Running     0               2d8h
+services             pod/cray-sts-6b8bb75c68-bwt25                                         2/2     Running     0               2d9h
+services             pod/cray-sts-6b8bb75c68-mhtjt                                         2/2     Running     0               2d10h
+services             pod/cray-sts-6b8bb75c68-pgnb4                                         2/2     Running     0               2d11h
+services             pod/cray-tftp-5d546777c9-4f67h                                        1/1     Running     0               2d10h
+services             pod/cray-tftp-5d546777c9-59v7f                                        1/1     Running     0               2d9h
+services             pod/cray-tftp-5d546777c9-fdmvg                                        1/1     Running     0               2d10h
+services             pod/cray-tftp-modprobe-4hsf2                                          1/1     Running     0               2d11h
+services             pod/cray-tftp-modprobe-ll5sh                                          1/1     Running     0               2d8h
+services             pod/cray-tftp-modprobe-ltd9g                                          1/1     Running     0               2d10h
+services             pod/cray-tftp-modprobe-pkrhx                                          1/1     Running     0               2d11h
+services             pod/cray-tftp-modprobe-q6msp                                          1/1     Running     0               2d10h
+services             pod/cray-vpa-recommender-86867b7bf6-p65sg                             2/2     Running     0               2d10h
+services             pod/cray-vpa-updater-6f7bb8dcf5-2lmg9                                 2/2     Running     1 (2d6h ago)    2d10h
+services             pod/csm-ssh-keys-7ccc4f5494-nc44c                                     2/2     Running     1 (2d10h ago)   2d10h
+services             pod/etcd-backup-pvc-snapshots-to-s3-28846325-5d9cm                    0/2     Completed   0               22m
+services             pod/etcd-backup-restore-75bb5c4694-4kgp5                              1/1     Running     0               2d10h
+services             pod/etcd-backup-restore-75bb5c4694-qk27m                              1/1     Running     0               2d10h
+services             pod/gitea-vcs-856dfb98cf-v52ws                                        2/2     Running     0               2d10h
+services             pod/gitea-vcs-postgres-0                                              3/3     Running     0               2d6h
+services             pod/gitea-vcs-postgres-1                                              3/3     Running     0               2d6h
+services             pod/gitea-vcs-postgres-2                                              3/3     Running     0               2d8h
+services             pod/hms-discovery-28846317-qh24r                                      0/2     Completed   0               30m
+services             pod/hms-discovery-28846320-mc7lz                                      0/2     Completed   0               27m
+services             pod/hms-discovery-28846323-rvhj4                                      0/2     Completed   0               24m
+services             pod/hms-discovery-28846326-5mtbg                                      0/2     Completed   0               21m
+services             pod/hms-discovery-28846329-9zcwh                                      0/2     Completed   0               18m
+services             pod/hms-discovery-28846332-2xtlw                                      0/2     Completed   0               15m
+services             pod/hms-discovery-28846335-lx9sx                                      0/2     Completed   0               12m
+services             pod/hms-discovery-28846338-m9crr                                      0/2     Completed   0               9m49s
+services             pod/hms-discovery-28846341-zh9jh                                      0/2     Completed   0               6m49s
+services             pod/hms-discovery-28846344-w6rf4                                      0/2     Completed   0               3m49s
+services             pod/hms-discovery-28846347-7nz4p                                      1/2     NotReady    0               49s
+services             pod/keycloak-postgres-0                                               3/3     Running     0               2d6h
+services             pod/keycloak-postgres-1                                               3/3     Running     0               2d6h
+services             pod/keycloak-postgres-2                                               3/3     Running     0               2d8h
+services             pod/kube-etcd-defrag-28846080-s9d7c                                   0/2     Completed   0               4h27m
+services             pod/kube-etcd-defrag-cray-hbtd-bitnami-etcd-28846320-hjnn6            0/2     Completed   0               27m
+services             pod/logical-backup-cray-sls-postgres-28843150-xzl48                   0/2     Completed   0               2d5h
+services             pod/logical-backup-cray-sls-postgres-28844590-g5w45                   0/2     Completed   0               29h
+services             pod/logical-backup-cray-sls-postgres-28846030-6lm9g                   0/2     Completed   0               5h17m
+services             pod/logical-backup-cray-smd-postgres-28843210-rs6vq                   0/2     Completed   0               2d4h
+services             pod/logical-backup-cray-smd-postgres-28844650-ltkvf                   0/2     Completed   0               28h
+services             pod/logical-backup-cray-smd-postgres-28846090-cqrtb                   0/2     Completed   0               4h17m
+services             pod/logical-backup-gitea-vcs-postgres-28843270-rrcqt                  0/2     Completed   0               2d3h
+services             pod/logical-backup-gitea-vcs-postgres-28844710-fxgp7                  0/2     Completed   0               27h
+services             pod/logical-backup-gitea-vcs-postgres-28846150-rpsld                  0/2     Completed   0               3h17m
+services             pod/logical-backup-keycloak-postgres-28843330-k6j9t                   0/2     Completed   0               2d2h
+services             pod/logical-backup-keycloak-postgres-28844770-xsrpj                   0/2     Completed   0               26h
+services             pod/logical-backup-keycloak-postgres-28846210-67zrj                   0/2     Completed   0               137m
+services             pod/nmdv2-service-86466bc7f8-2c4c5                                    2/2     Running     0               2d11h
+services             pod/slingshot-fabric-manager-6b74fdb5c7-d28ht                         2/2     Running     0               2d10h
+services             pod/sonar-jobs-watcher-cc5sz                                          1/1     Running     0               2d11h
+services             pod/sonar-jobs-watcher-jnqk5                                          1/1     Running     0               2d10h
+services             pod/sonar-jobs-watcher-nvnk6                                          1/1     Running     0               2d8h
+services             pod/sonar-jobs-watcher-t28jc                                          1/1     Running     0               2d11h
+services             pod/sonar-jobs-watcher-zmctk                                          1/1     Running     0               2d10h
+services             pod/sonar-sync-28846345-rkxmg                                         0/1     Completed   0               2m49s
+services             pod/sonar-sync-28846346-6bnmd                                         0/1     Completed   0               109s
+services             pod/sonar-sync-28846347-mxfw5                                         0/1     Completed   0               49s
+services             pod/sshot-fm-recover-28846317-dl6h7                                   0/2     Completed   0               30m
+services             pod/sshot-fm-recover-28846320-285db                                   0/2     Completed   0               27m
+services             pod/sshot-fm-recover-28846323-v7mc6                                   0/2     Completed   0               24m
+services             pod/sshot-fm-recover-28846326-8c6f2                                   0/2     Completed   0               21m
+services             pod/sshot-fm-recover-28846329-4pdb5                                   0/2     Completed   0               18m
+services             pod/sshot-fm-recover-28846332-bk7gz                                   0/2     Completed   0               15m
+services             pod/sshot-fm-recover-28846335-lqxmt                                   0/2     Completed   0               12m
+services             pod/sshot-fm-recover-28846338-qjsbn                                   0/2     Completed   0               9m49s
+services             pod/sshot-fm-recover-28846341-vz6l2                                   0/2     Completed   0               6m49s
+services             pod/sshot-fm-recover-28846344-k8zts                                   0/2     Completed   0               3m49s
+services             pod/sshot-fm-recover-28846347-7wlq9                                   1/2     NotReady    0               49s
+spire                pod/cray-spire-agent-fhp9g                                            1/1     Running     0               2d11h
+spire                pod/cray-spire-agent-mkdvt                                            1/1     Running     0               2d11h
+spire                pod/cray-spire-agent-nd9hd                                            1/1     Running     0               2d10h
+spire                pod/cray-spire-agent-vckbb                                            1/1     Running     0               2d8h
+spire                pod/cray-spire-agent-z9gtm                                            1/1     Running     0               2d10h
+spire                pod/cray-spire-jwks-847fc745b8-ckpsh                                  3/3     Running     0               2d11h
+spire                pod/cray-spire-jwks-847fc745b8-n925t                                  3/3     Running     0               2d10h
+spire                pod/cray-spire-jwks-847fc745b8-slc5n                                  3/3     Running     0               2d9h
+spire                pod/cray-spire-postgres-0                                             3/3     Running     0               2d6h
+spire                pod/cray-spire-postgres-1                                             3/3     Running     0               2d8h
+spire                pod/cray-spire-postgres-2                                             3/3     Running     0               2d6h
+spire                pod/cray-spire-postgres-pooler-5997f6f6f5-g7jb8                       2/2     Running     0               2d11h
+spire                pod/cray-spire-postgres-pooler-5997f6f6f5-q59zj                       2/2     Running     0               2d9h
+spire                pod/cray-spire-postgres-pooler-5997f6f6f5-trwx8                       2/2     Running     0               2d10h
+spire                pod/cray-spire-server-0                                               2/2     Running     0               2d10h
+spire                pod/cray-spire-server-1                                               2/2     Running     0               2d9h
+spire                pod/cray-spire-server-2                                               2/2     Running     0               2d10h
+spire                pod/request-ncn-join-token-29q8q                                      2/2     Running     0               2d6h
+spire                pod/request-ncn-join-token-99gk5                                      2/2     Running     0               2d10h
+spire                pod/request-ncn-join-token-cfvt9                                      2/2     Running     0               2d6h
+spire                pod/request-ncn-join-token-d9269                                      2/2     Running     0               10d
+spire                pod/request-ncn-join-token-ffwtk                                      2/2     Running     0               2d11h
+spire                pod/request-ncn-join-token-jnw8x                                      2/2     Running     0               2d10h
+spire                pod/request-ncn-join-token-p5wlp                                      2/2     Running     0               2d8h
+spire                pod/request-ncn-join-token-w5cfp                                      2/2     Running     0               2d11h
+spire                pod/spire-agent-9lnh8                                                 1/1     Running     0               2d11h
+spire                pod/spire-agent-f2tzn                                                 1/1     Running     0               2d10h
+spire                pod/spire-agent-qgtjq                                                 1/1     Running     0               2d10h
+spire                pod/spire-agent-qm8x8                                                 1/1     Running     0               2d8h
+spire                pod/spire-agent-wbcch                                                 1/1     Running     0               2d11h
+spire                pod/spire-jwks-6fbb5864db-4cxg2                                       3/3     Running     0               2d10h
+spire                pod/spire-jwks-6fbb5864db-5p45h                                       3/3     Running     0               2d10h
+spire                pod/spire-jwks-6fbb5864db-f976b                                       3/3     Running     0               2d9h
+spire                pod/spire-postgres-0                                                  3/3     Running     0               2d6h
+spire                pod/spire-postgres-1                                                  3/3     Running     0               2d6h
+spire                pod/spire-postgres-2                                                  3/3     Running     0               2d8h
+spire                pod/spire-postgres-pooler-6c97d87dd5-7z9nh                            2/2     Running     0               2d9h
+spire                pod/spire-postgres-pooler-6c97d87dd5-nt7xb                            2/2     Running     0               2d10h
+spire                pod/spire-postgres-pooler-6c97d87dd5-xpkj7                            2/2     Running     0               2d10h
+spire                pod/spire-server-0                                                    2/2     Running     0               2d10h
+spire                pod/spire-server-1                                                    2/2     Running     0               2d9h
+spire                pod/spire-server-2                                                    2/2     Running     0               2d10h
+spire                pod/tpm-provisioner-0                                                 2/2     Running     0               2d9h
+sshot-net-operator   pod/sshot-net-operator-cf49677c5-cms4t                                1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-canu-test-5fc8b5d66c-nrdm4                    2/2     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-grafana-7476fd6654-s6gbl                      3/3     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-grok-exporter-544fb59f84-9l6f7                1/1     Running     0               2d6h
+sysmgmt-health       pod/cray-sysmgmt-health-grok-exporter-544fb59f84-jnpl4                1/1     Running     0               2d6h
+sysmgmt-health       pod/cray-sysmgmt-health-grok-exporter-544fb59f84-lwktf                1/1     Running     0               10d
+sysmgmt-health       pod/cray-sysmgmt-health-kube-state-metrics-754c86467f-bjwgq           1/1     Running     0               2d9h
+sysmgmt-health       pod/cray-sysmgmt-health-logstash-exporter-85bc88574b-8qwr6            1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-58772                     1/1     Running     0               2d11h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-b8x7t                     1/1     Running     0               2d8h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-gm4pz                     1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-hv2z4                     1/1     Running     0               2d11h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-xqbdz                     1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-5x9tm                  1/1     Running     0               2d6h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-6bhqk                  1/1     Running     0               2d8h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-c7p7l                  1/1     Running     0               2d6h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-kthlq                  1/1     Running     0               2d11h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-pdl4m                  1/1     Running     0               10d
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-pwmzv                  1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-q6kll                  1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-z58nr                  1/1     Running     0               2d11h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-74hxf                1/1     Running     0               2d6h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-dtvnd                1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-jnqwg                1/1     Running     0               2d11h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-l9zwd                1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-ntjwx                1/1     Running     0               2d6h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-v6lz5                1/1     Running     0               10d
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-w4spp                1/1     Running     0               2d8h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-zq9vs                1/1     Running     0               2d11h
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-snmp-exporter-5cb4c85bb8-j8pdq     1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-redfish-cron-28845360-jtsx6                   0/1     Completed   0               16h
+sysmgmt-health       pod/cray-sysmgmt-health-redfish-cron-28845720-7wgzh                   0/1     Completed   0               10h
+sysmgmt-health       pod/cray-sysmgmt-health-redfish-cron-28846080-5k522                   0/1     Completed   0               4h27m
+sysmgmt-health       pod/cray-sysmgmt-health-redfish-exporter-c4df695db-gdgbx              1/1     Running     0               2d10h
+sysmgmt-health       pod/cray-sysmgmt-health-victoria-metrics-operator-59c8875866-jwwng    1/1     Running     2 (2d6h ago)    2d10h
+sysmgmt-health       pod/vmagent-vms-0-5877fbd5c4-9nkk5                                    2/2     Running     0               2d9h
+sysmgmt-health       pod/vmagent-vms-0-5877fbd5c4-r4gkm                                    2/2     Running     0               2d10h
+sysmgmt-health       pod/vmagent-vms-1-8c8799964-9cvxd                                     2/2     Running     0               2d9h
+sysmgmt-health       pod/vmagent-vms-1-8c8799964-jk4pr                                     2/2     Running     0               2d10h
+sysmgmt-health       pod/vmalert-vms-5fdd8f54dd-9j82s                                      2/2     Running     0               2d10h
+sysmgmt-health       pod/vmalertmanager-vms-0                                              2/2     Running     0               2d9h
+sysmgmt-health       pod/vminsert-vms-cd9d4f894-5wzts                                      1/1     Running     0               2d10h
+sysmgmt-health       pod/vminsert-vms-cd9d4f894-6jppr                                      1/1     Running     0               2d10h
+sysmgmt-health       pod/vmselect-vms-0                                                    1/1     Running     0               2d10h
+sysmgmt-health       pod/vmselect-vms-1                                                    1/1     Running     0               2d11h
+sysmgmt-health       pod/vmstorage-vms-0                                                   1/1     Running     0               2d10h
+sysmgmt-health       pod/vmstorage-vms-1                                                   1/1     Running     0               2d9h
+tapms-operator       pod/cray-tapms-operator-57c6cfccf7-czq7d                              2/2     Running     4 (2d6h ago)    2d10h
+vault                pod/cray-vault-0                                                      5/5     Running     1 (2d10h ago)   2d10h
+vault                pod/cray-vault-1                                                      5/5     Running     0               2d10h
+vault                pod/cray-vault-2                                                      5/5     Running     3 (2d9h ago)    2d9h
+vault                pod/cray-vault-configurer-7b6f84b7df-mvg24                            2/2     Running     0               2d10h
+vault                pod/cray-vault-operator-57cc597f8d-fntrq                              2/2     Running     2 (2d6h ago)    2d10h
+vault                pod/spire-intermediate-28844640-84k9l                                 0/2     Completed   0               28h
+vault                pod/tpm-intermediate-28844640-dcr8x                                   0/2     Completed   0               28h
+velero               pod/cray-velero-78bb7fbcfd-sf2vc                                      1/1     Running     0               2d9h
+velero               pod/restic-7k2fp                                                      1/1     Running     0               2d11h
+velero               pod/restic-mrgfq                                                      1/1     Running     0               2d10h
+velero               pod/restic-sdqkb                                                      1/1     Running     0               2d10h
+velero               pod/restic-xprvn                                                      1/1     Running     0               2d8h
+velero               pod/restic-z7ksk                                                      1/1     Running     0               2d11h
+
+NAMESPACE        NAME                                                      TYPE           CLUSTER-IP      EXTERNAL-IP                                   PORT(S)                                                                   AGE
+argo             service/argo-server-internal                              ClusterIP      10.25.112.142   <none>                                        2746/TCP                                                                  10d
+argo             service/cray-nls                                          ClusterIP      10.23.182.210   <none>                                        80/TCP                                                                    10d
+argo             service/cray-nls-argo-workflows-server                    ClusterIP      10.29.209.104   <none>                                        2746/TCP                                                                  10d
+argo             service/cray-nls-postgres                                 ClusterIP      10.29.246.36    <none>                                        5432/TCP                                                                  10d
+argo             service/cray-nls-postgres-0                               ClusterIP      10.29.100.159   <none>                                        5432/TCP                                                                  10d
+argo             service/cray-nls-postgres-1                               ClusterIP      10.30.203.182   <none>                                        5432/TCP                                                                  10d
+argo             service/cray-nls-postgres-2                               ClusterIP      10.23.94.104    <none>                                        5432/TCP                                                                  10d
+argo             service/cray-nls-postgres-config                          ClusterIP      None            <none>                                        <none>                                                                    10d
+argo             service/cray-nls-postgres-repl                            ClusterIP      10.19.124.169   <none>                                        5432/TCP                                                                  10d
+argo             service/workflow-controller-metrics                       ClusterIP      10.21.209.48    <none>                                        8080/TCP                                                                  10d
+ceph-cephfs      service/cray-ceph-csi-cephfs-nodeplugin-http-metrics      ClusterIP      10.16.229.35    <none>                                        8080/TCP                                                                  10d
+ceph-cephfs      service/cray-ceph-csi-cephfs-provisioner-http-metrics     ClusterIP      10.19.221.38    <none>                                        8080/TCP                                                                  10d
+ceph-rbd         service/cray-ceph-csi-rbd-nodeplugin-http-metrics         ClusterIP      10.26.111.51    <none>                                        8080/TCP                                                                  10d
+ceph-rbd         service/cray-ceph-csi-rbd-provisioner-http-metrics        ClusterIP      10.17.231.103   <none>                                        8080/TCP                                                                  10d
+ceph-rgw         service/cray-s3                                           LoadBalancer   10.30.246.119   10.102.193.65                                 8080:31615/TCP                                                            10d
+cert-manager     service/cray-certmanager-cert-manager                     ClusterIP      10.26.209.33    <none>                                        9402/TCP                                                                  10d
+cert-manager     service/cray-certmanager-cert-manager-webhook             ClusterIP      10.25.234.199   <none>                                        443/TCP                                                                   10d
+default          service/kubernetes                                        ClusterIP      10.16.0.1       <none>                                        443/TCP                                                                   10d
+dvs              service/cray-dvs-mqtt                                     ClusterIP      10.29.174.197   <none>                                        1883/TCP                                                                  3d17h
+dvs              service/cray-dvs-mqtt-dvs-0-svc                           ClusterIP      10.25.144.209   <none>                                        1883/TCP                                                                  3d17h
+dvs              service/cray-dvs-mqtt-dvs-1-svc                           ClusterIP      10.16.76.172    <none>                                        1883/TCP                                                                  3d17h
+dvs              service/cray-dvs-mqtt-hdls-svc                            ClusterIP      None            <none>                                        7800/TCP,8161/TCP,61616/TCP                                               3d17h
+dvs              service/cray-dvs-mqtt-ping-svc                            ClusterIP      None            <none>                                        8888/TCP                                                                  3d17h
+hnc-system       service/hnc-controller-manager-metrics-service            ClusterIP      10.20.88.182    <none>                                        8443/TCP                                                                  10d
+hnc-system       service/hnc-webhook-service                               ClusterIP      10.31.188.248   <none>                                        443/TCP                                                                   10d
+istio-operator   service/istio-operator                                    ClusterIP      10.16.111.143   <none>                                        8383/TCP                                                                  10d
+istio-system     service/istio-ingressgateway                              LoadBalancer   10.27.120.182   10.92.100.71                                  80:30853/TCP,443:31828/TCP,8081:31901/TCP,8883:31882/TCP,8888:32351/TCP   10d
+istio-system     service/istio-ingressgateway-can                          LoadBalancer   10.27.237.146   <pending>                                     80:32757/TCP,443:32447/TCP                                                10d
+istio-system     service/istio-ingressgateway-chn                          LoadBalancer   10.18.226.147   10.102.193.224                                80:31633/TCP,443:32724/TCP                                                10d
+istio-system     service/istio-ingressgateway-cmn                          LoadBalancer   10.28.47.240    10.102.193.64                                 80:30891/TCP,443:31741/TCP                                                10d
+istio-system     service/istio-ingressgateway-hmn                          LoadBalancer   10.30.125.195   10.94.100.71                                  80:30639/TCP,443:30585/TCP,8888:31116/TCP                                 10d
+istio-system     service/istio-ingressgateway-local                        LoadBalancer   10.23.234.57    10.92.100.81                                  80:32222/TCP,443:31677/TCP,8081:31663/TCP,8883:30114/TCP,8888:32171/TCP   10d
+istio-system     service/istiod                                            ClusterIP      10.20.138.128   <none>                                        15010/TCP,15012/TCP,443/TCP,15014/TCP                                     10d
+istio-system     service/kiali                                             ClusterIP      10.24.36.15     <none>                                        20001/TCP,9090/TCP                                                        10d
+kube-system      service/kube-dns                                          ClusterIP      10.16.0.10      <none>                                        53/UDP,53/TCP,9153/TCP                                                    10d
+kube-system      service/metrics-server                                    ClusterIP      10.22.241.145   <none>                                        443/TCP                                                                   10d
+kube-system      service/sealed-secrets                                    ClusterIP      10.23.8.146     <none>                                        8080/TCP                                                                  10d
+kube-system      service/vms-coredns                                       ClusterIP      None            <none>                                        9153/TCP                                                                  10d
+kube-system      service/vms-kube-controller-manager                       ClusterIP      None            <none>                                        10257/TCP                                                                 10d
+kube-system      service/vms-kube-etcd                                     ClusterIP      None            <none>                                        2379/TCP                                                                  10d
+kube-system      service/vms-kube-proxy                                    ClusterIP      None            <none>                                        10249/TCP                                                                 10d
+kube-system      service/vms-kube-scheduler                                ClusterIP      None            <none>                                        10259/TCP                                                                 10d
+kyverno          service/cray-kyverno-svc                                  ClusterIP      10.16.176.243   <none>                                        443/TCP                                                                   10d
+kyverno          service/cray-kyverno-svc-metrics                          ClusterIP      10.20.246.105   <none>                                        8000/TCP                                                                  10d
+kyverno          service/kyverno-background-controller-metrics             ClusterIP      10.24.92.238    <none>                                        8000/TCP                                                                  10d
+kyverno          service/kyverno-cleanup-controller                        ClusterIP      10.28.166.72    <none>                                        443/TCP                                                                   10d
+kyverno          service/kyverno-cleanup-controller-metrics                ClusterIP      10.31.168.233   <none>                                        8000/TCP                                                                  10d
+kyverno          service/kyverno-reports-controller-metrics                ClusterIP      10.31.187.6     <none>                                        8000/TCP                                                                  10d
+nexus            service/nexus                                             ClusterIP      10.31.80.111    <none>                                        80/TCP,5003/TCP                                                           10d
+opa              service/ingressgateway                                    ClusterIP      10.18.204.249   <none>                                        9191/TCP                                                                  10d
+opa              service/ingressgateway-customer-admin                     ClusterIP      10.22.8.166     <none>                                        9191/TCP                                                                  10d
+opa              service/ingressgateway-customer-user                      ClusterIP      10.29.168.132   <none>                                        9191/TCP                                                                  10d
+opa              service/ingressgateway-hmn                                ClusterIP      10.28.232.14    <none>                                        9191/TCP                                                                  10d
+services         service/cfs-ara                                           ClusterIP      10.16.53.86     <none>                                        80/TCP                                                                    10d
+services         service/cfs-ara-postgres                                  ClusterIP      10.26.10.233    <none>                                        5432/TCP                                                                  10d
+services         service/cfs-ara-postgres-0                                ClusterIP      10.18.56.242    <none>                                        5432/TCP                                                                  10d
+services         service/cfs-ara-postgres-1                                ClusterIP      10.17.223.120   <none>                                        5432/TCP                                                                  10d
+services         service/cfs-ara-postgres-2                                ClusterIP      10.28.190.121   <none>                                        5432/TCP                                                                  10d
+services         service/cfs-ara-postgres-config                           ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/cfs-ara-postgres-repl                             ClusterIP      10.20.109.3     <none>                                        5432/TCP                                                                  10d
+services         service/cms-ipxe-cray-service                             ClusterIP      10.20.77.107    <none>                                        80/TCP                                                                    10d
+services         service/cos-config-service                                ClusterIP      10.30.6.230     <none>                                        80/TCP                                                                    3d17h
+services         service/cray-bos                                          ClusterIP      10.31.65.75     <none>                                        80/TCP                                                                    10d
+services         service/cray-bos-db                                       ClusterIP      10.19.234.110   <none>                                        6379/TCP                                                                  10d
+services         service/cray-bss                                          ClusterIP      10.19.245.231   <none>                                        80/TCP                                                                    10d
+services         service/cray-bss-bitnami-etcd                             ClusterIP      10.31.112.207   <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-bss-bitnami-etcd-headless                    ClusterIP      None            <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-capmc                                        ClusterIP      10.31.240.222   <none>                                        80/TCP                                                                    10d
+services         service/cray-cfs-api                                      ClusterIP      10.28.128.60    <none>                                        80/TCP                                                                    10d
+services         service/cray-cfs-api-db                                   ClusterIP      10.31.84.215    <none>                                        6379/TCP                                                                  10d
+services         service/cray-cfs-batcher                                  ClusterIP      10.25.108.231   <none>                                        80/TCP                                                                    10d
+services         service/cray-console-data                                 ClusterIP      10.18.66.171    <none>                                        80/TCP                                                                    10d
+services         service/cray-console-data-postgres                        ClusterIP      10.19.179.183   <none>                                        5432/TCP                                                                  10d
+services         service/cray-console-data-postgres-0                      ClusterIP      10.22.41.144    <none>                                        5432/TCP                                                                  10d
+services         service/cray-console-data-postgres-1                      ClusterIP      10.29.215.38    <none>                                        5432/TCP                                                                  10d
+services         service/cray-console-data-postgres-2                      ClusterIP      10.27.56.203    <none>                                        5432/TCP                                                                  10d
+services         service/cray-console-data-postgres-config                 ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/cray-console-data-postgres-repl                   ClusterIP      10.28.115.184   <none>                                        5432/TCP                                                                  10d
+services         service/cray-console-node                                 ClusterIP      10.19.145.95    <none>                                        80/TCP                                                                    10d
+services         service/cray-console-operator                             ClusterIP      10.18.130.100   <none>                                        80/TCP                                                                    10d
+services         service/cray-cps                                          ClusterIP      10.20.153.6     <none>                                        80/TCP                                                                    3d17h
+services         service/cray-dhcp-kea-api                                 ClusterIP      10.16.231.160   <none>                                        8000/TCP                                                                  10d
+services         service/cray-dhcp-kea-postgres                            ClusterIP      10.19.13.61     <none>                                        5432/TCP                                                                  10d
+services         service/cray-dhcp-kea-postgres-0                          ClusterIP      10.18.124.142   <none>                                        5432/TCP                                                                  10d
+services         service/cray-dhcp-kea-postgres-1                          ClusterIP      10.22.205.102   <none>                                        5432/TCP                                                                  10d
+services         service/cray-dhcp-kea-postgres-2                          ClusterIP      10.16.118.211   <none>                                        5432/TCP                                                                  10d
+services         service/cray-dhcp-kea-postgres-config                     ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/cray-dhcp-kea-postgres-repl                       ClusterIP      10.31.236.73    <none>                                        5432/TCP                                                                  10d
+services         service/cray-dhcp-kea-tcp-hmn                             LoadBalancer   10.28.147.246   10.94.100.222                                 67:32364/TCP                                                              10d
+services         service/cray-dhcp-kea-tcp-nmn                             LoadBalancer   10.27.2.125     10.92.100.222                                 67:31652/TCP                                                              10d
+services         service/cray-dhcp-kea-udp-hmn                             LoadBalancer   10.24.69.58     10.94.100.222                                 67:31445/UDP                                                              10d
+services         service/cray-dhcp-kea-udp-nmn                             LoadBalancer   10.24.67.246    10.92.100.222                                 67:30888/UDP                                                              10d
+services         service/cray-dns-powerdns-api                             ClusterIP      10.18.10.233    <none>                                        8081/TCP                                                                  10d
+services         service/cray-dns-powerdns-cmn-tcp                         LoadBalancer   10.22.153.149   10.102.193.61                                 53:32385/TCP                                                              10d
+services         service/cray-dns-powerdns-cmn-udp                         LoadBalancer   10.31.231.212   10.102.193.61                                 53:32343/UDP                                                              10d
+services         service/cray-dns-powerdns-hmn-tcp                         LoadBalancer   10.20.218.255   10.94.100.85                                  53:31878/TCP                                                              10d
+services         service/cray-dns-powerdns-hmn-udp                         LoadBalancer   10.27.60.125    10.94.100.85                                  53:31222/UDP                                                              10d
+services         service/cray-dns-powerdns-nmn-tcp                         LoadBalancer   10.17.181.211   10.92.100.85                                  53:32376/TCP                                                              10d
+services         service/cray-dns-powerdns-nmn-udp                         LoadBalancer   10.16.50.11     10.92.100.85                                  53:32502/UDP                                                              10d
+services         service/cray-dns-powerdns-postgres                        ClusterIP      10.19.53.74     <none>                                        5432/TCP                                                                  10d
+services         service/cray-dns-powerdns-postgres-0                      ClusterIP      10.16.147.11    <none>                                        5432/TCP                                                                  10d
+services         service/cray-dns-powerdns-postgres-1                      ClusterIP      10.31.91.238    <none>                                        5432/TCP                                                                  10d
+services         service/cray-dns-powerdns-postgres-2                      ClusterIP      10.19.150.140   <none>                                        5432/TCP                                                                  10d
+services         service/cray-dns-powerdns-postgres-config                 ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/cray-dns-powerdns-postgres-repl                   ClusterIP      10.16.145.121   <none>                                        5432/TCP                                                                  10d
+services         service/cray-dns-unbound                                  ClusterIP      10.20.140.28    <none>                                        80/TCP                                                                    10d
+services         service/cray-dns-unbound-dns-unbound-exporter             ClusterIP      10.30.103.165   <none>                                        9167/TCP                                                                  10d
+services         service/cray-dns-unbound-tcp-hmn                          LoadBalancer   10.18.243.246   10.94.100.225                                 53:30167/TCP                                                              10d
+services         service/cray-dns-unbound-tcp-nmn                          LoadBalancer   10.24.187.183   10.92.100.225                                 53:32248/TCP                                                              10d
+services         service/cray-dns-unbound-tcp-nmn-local-1                  LoadBalancer   10.16.140.233   10.92.100.224                                 53:32700/TCP                                                              10d
+services         service/cray-dns-unbound-tcp-nmn-local-2                  LoadBalancer   10.22.58.212    10.92.100.223                                 53:32547/TCP                                                              10d
+services         service/cray-dns-unbound-udp-hmn                          LoadBalancer   10.21.189.246   10.94.100.225                                 53:30027/UDP                                                              10d
+services         service/cray-dns-unbound-udp-nmn                          LoadBalancer   10.30.26.188    10.92.100.225                                 53:32024/UDP                                                              10d
+services         service/cray-dns-unbound-udp-nmn-local-1                  LoadBalancer   10.23.179.123   10.92.100.224                                 53:30058/UDP                                                              10d
+services         service/cray-dns-unbound-udp-nmn-local-2                  LoadBalancer   10.20.181.111   10.92.100.223                                 53:30741/UDP                                                              10d
+services         service/cray-externaldns-external-dns                     ClusterIP      10.20.136.177   <none>                                        7979/TCP                                                                  10d
+services         service/cray-fas                                          ClusterIP      10.29.4.65      <none>                                        80/TCP                                                                    10d
+services         service/cray-fas-bitnami-etcd                             ClusterIP      10.27.171.205   <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-fas-bitnami-etcd-headless                    ClusterIP      None            <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-hbtd                                         ClusterIP      10.18.43.50     <none>                                        80/TCP                                                                    10d
+services         service/cray-hbtd-bitnami-etcd                            ClusterIP      10.20.227.33    <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-hbtd-bitnami-etcd-headless                   ClusterIP      None            <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-hmnfd                                        ClusterIP      10.31.33.221    <none>                                        80/TCP                                                                    10d
+services         service/cray-hmnfd-bitnami-etcd                           ClusterIP      10.26.164.127   <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-hmnfd-bitnami-etcd-headless                  ClusterIP      None            <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-hms-hmcollector-ingress                      ClusterIP      10.20.7.221     <none>                                        80/TCP                                                                    10d
+services         service/cray-hms-rts                                      ClusterIP      10.29.159.136   <none>                                        80/TCP,443/TCP                                                            10d
+services         service/cray-hms-rts-snmp                                 ClusterIP      10.25.70.101    <none>                                        80/TCP,443/TCP                                                            10d
+services         service/cray-ims                                          ClusterIP      10.20.160.92    <none>                                        80/TCP                                                                    10d
+services         service/cray-keycloak-headless                            ClusterIP      None            <none>                                        80/TCP                                                                    10d
+services         service/cray-keycloak-http                                ClusterIP      10.22.210.198   <none>                                        80/TCP,8443/TCP                                                           10d
+services         service/cray-meds                                         ClusterIP      10.17.248.57    <none>                                        80/TCP                                                                    10d
+services         service/cray-oauth2-proxies-customer-access-ingress       LoadBalancer   10.31.245.171   <pending>                                     443:31196/TCP                                                             10d
+services         service/cray-oauth2-proxies-customer-high-speed-ingress   LoadBalancer   10.23.57.16     10.102.193.225                                443:31541/TCP                                                             10d
+services         service/cray-oauth2-proxies-customer-management-ingress   LoadBalancer   10.24.248.195   10.102.193.66                                 443:31441/TCP                                                             10d
+services         service/cray-postgres-operator                            ClusterIP      10.29.19.205    <none>                                        8080/TCP                                                                  10d
+services         service/cray-power-control                                ClusterIP      10.27.234.33    <none>                                        80/TCP                                                                    10d
+services         service/cray-power-control-bitnami-etcd                   ClusterIP      10.31.129.175   <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-power-control-bitnami-etcd-headless          ClusterIP      None            <none>                                        2379/TCP,2380/TCP                                                         10d
+services         service/cray-powerdns-manager                             ClusterIP      10.23.77.155    <none>                                        80/TCP                                                                    10d
+services         service/cray-scsd                                         ClusterIP      10.25.80.110    <none>                                        80/TCP                                                                    10d
+services         service/cray-shared-kafka-kafka-bootstrap                 ClusterIP      10.16.18.177    <none>                                        9091/TCP,9092/TCP                                                         10d
+services         service/cray-shared-kafka-kafka-brokers                   ClusterIP      None            <none>                                        9090/TCP,9091/TCP,8443/TCP,9092/TCP                                       10d
+services         service/cray-shared-kafka-zookeeper-client                ClusterIP      10.16.14.144    <none>                                        2181/TCP                                                                  10d
+services         service/cray-shared-kafka-zookeeper-nodes                 ClusterIP      None            <none>                                        2181/TCP,2888/TCP,3888/TCP                                                10d
+services         service/cray-sls                                          ClusterIP      10.21.80.132    <none>                                        80/TCP                                                                    10d
+services         service/cray-sls-postgres                                 ClusterIP      10.16.75.201    <none>                                        5432/TCP                                                                  10d
+services         service/cray-sls-postgres-0                               ClusterIP      10.22.221.149   <none>                                        5432/TCP                                                                  10d
+services         service/cray-sls-postgres-1                               ClusterIP      10.28.41.61     <none>                                        5432/TCP                                                                  10d
+services         service/cray-sls-postgres-2                               ClusterIP      10.19.158.68    <none>                                        5432/TCP                                                                  10d
+services         service/cray-sls-postgres-config                          ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/cray-sls-postgres-repl                            ClusterIP      10.29.49.141    <none>                                        5432/TCP                                                                  10d
+services         service/cray-smd                                          ClusterIP      10.20.81.97     <none>                                        80/TCP                                                                    10d
+services         service/cray-smd-postgres                                 ClusterIP      10.18.144.217   <none>                                        5432/TCP                                                                  10d
+services         service/cray-smd-postgres-0                               ClusterIP      10.19.180.101   <none>                                        5432/TCP                                                                  10d
+services         service/cray-smd-postgres-1                               ClusterIP      10.26.112.203   <none>                                        5432/TCP                                                                  10d
+services         service/cray-smd-postgres-2                               ClusterIP      10.25.77.196    <none>                                        5432/TCP                                                                  10d
+services         service/cray-smd-postgres-config                          ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/cray-smd-postgres-repl                            ClusterIP      10.31.188.98    <none>                                        5432/TCP                                                                  10d
+services         service/cray-sts                                          ClusterIP      10.31.99.138    <none>                                        80/TCP                                                                    10d
+services         service/cray-sysmgmt-health-dhcp-kea-exporter             ClusterIP      10.25.208.112   <none>                                        8080/TCP                                                                  10d
+services         service/cray-sysmgmt-health-gitea-vcs-postgres-exporter   ClusterIP      10.21.16.69     <none>                                        9187/TCP                                                                  10d
+services         service/cray-sysmgmt-health-keycloak-postgres-exporter    ClusterIP      10.25.250.141   <none>                                        9187/TCP                                                                  10d
+services         service/cray-sysmgmt-health-rm-pals-postgres-exporter     ClusterIP      10.30.116.27    <none>                                        9187/TCP                                                                  10d
+services         service/cray-sysmgmt-health-sls-postgres-exporter         ClusterIP      10.29.101.165   <none>                                        9187/TCP                                                                  10d
+services         service/cray-sysmgmt-health-smd-postgres-exporter         ClusterIP      10.22.25.123    <none>                                        9187/TCP                                                                  10d
+services         service/cray-tapms                                        ExternalName   <none>          cray-tapms.tapms-operator.svc.cluster.local   <none>                                                                    10d
+services         service/cray-tftp                                         LoadBalancer   10.24.43.247    10.92.100.60                                  69:30490/UDP                                                              10d
+services         service/cray-tftp-hmn                                     LoadBalancer   10.18.114.248   10.94.100.60                                  69:30507/UDP                                                              10d
+services         service/gitea-vcs                                         ClusterIP      10.20.129.102   <none>                                        80/TCP                                                                    10d
+services         service/gitea-vcs-postgres                                ClusterIP      10.26.167.164   <none>                                        5432/TCP                                                                  10d
+services         service/gitea-vcs-postgres-0                              ClusterIP      10.18.133.226   <none>                                        5432/TCP                                                                  10d
+services         service/gitea-vcs-postgres-1                              ClusterIP      10.29.140.123   <none>                                        5432/TCP                                                                  10d
+services         service/gitea-vcs-postgres-2                              ClusterIP      10.23.171.218   <none>                                        5432/TCP                                                                  10d
+services         service/gitea-vcs-postgres-config                         ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/gitea-vcs-postgres-repl                           ClusterIP      10.25.168.148   <none>                                        5432/TCP                                                                  10d
+services         service/keycloak                                          ClusterIP      10.22.176.2     <none>                                        8080/TCP                                                                  10d
+services         service/keycloak-postgres                                 ClusterIP      10.19.46.5      <none>                                        5432/TCP                                                                  10d
+services         service/keycloak-postgres-0                               ClusterIP      10.22.216.203   <none>                                        5432/TCP                                                                  10d
+services         service/keycloak-postgres-1                               ClusterIP      10.18.236.180   <none>                                        5432/TCP                                                                  10d
+services         service/keycloak-postgres-2                               ClusterIP      10.20.36.121    <none>                                        5432/TCP                                                                  10d
+services         service/keycloak-postgres-config                          ClusterIP      None            <none>                                        <none>                                                                    10d
+services         service/keycloak-postgres-repl                            ClusterIP      10.20.181.125   <none>                                        5432/TCP                                                                  10d
+services         service/nmdv2-service                                     ClusterIP      10.19.251.59    <none>                                        80/TCP                                                                    3d17h
+services         service/slingshot-fabric-manager                          ClusterIP      10.31.211.58    <none>                                        80/TCP                                                                    3d17h
+services         service/x3000c0h12s1-rts                                  ClusterIP      10.19.228.58    <none>                                        8083/TCP,8082/TCP                                                         10d
+services         service/x3000c0h13s1-rts                                  ClusterIP      10.24.52.114    <none>                                        8083/TCP,8082/TCP                                                         10d
+services         service/x3000c0w14-rts                                    ClusterIP      10.28.195.117   <none>                                        8083/TCP,8082/TCP                                                         10d
+sma              service/cray-sysmgmt-health-sma-postgres-exporter         ClusterIP      10.18.255.230   <none>                                        9187/TCP                                                                  10d
+spire            service/cray-spire-cluster                                LoadBalancer   10.19.124.133   10.92.100.84                                  8081:32162/TCP                                                            10d
+spire            service/cray-spire-jwks                                   ClusterIP      10.31.128.99    <none>                                        80/TCP                                                                    10d
+spire            service/cray-spire-local                                  LoadBalancer   10.23.192.136   10.92.100.83                                  8081:31458/TCP                                                            10d
+spire            service/cray-spire-postgres                               ClusterIP      10.19.177.43    <none>                                        5432/TCP                                                                  10d
+spire            service/cray-spire-postgres-0                             ClusterIP      10.29.130.227   <none>                                        5432/TCP                                                                  10d
+spire            service/cray-spire-postgres-1                             ClusterIP      10.26.80.56     <none>                                        5432/TCP                                                                  10d
+spire            service/cray-spire-postgres-2                             ClusterIP      10.28.237.94    <none>                                        5432/TCP                                                                  10d
+spire            service/cray-spire-postgres-config                        ClusterIP      None            <none>                                        <none>                                                                    10d
+spire            service/cray-spire-postgres-pooler                        ClusterIP      10.25.205.147   <none>                                        5432/TCP                                                                  10d
+spire            service/cray-spire-postgres-repl                          ClusterIP      10.21.187.193   <none>                                        5432/TCP                                                                  10d
+spire            service/cray-spire-server                                 ClusterIP      10.24.39.195    <none>                                        8081/TCP                                                                  10d
+spire            service/cray-spire-tokens                                 ClusterIP      10.29.25.91     <none>                                        54440/TCP                                                                 10d
+spire            service/cray-sysmgmt-health-spire-postgres-exporter       ClusterIP      10.26.62.172    <none>                                        9187/TCP                                                                  10d
+spire            service/spire-bundle                                      ClusterIP      10.23.108.161   <none>                                        8080/TCP                                                                  10d
+spire            service/spire-jwks                                        ClusterIP      10.29.241.245   <none>                                        80/TCP                                                                    10d
+spire            service/spire-lb                                          LoadBalancer   10.25.96.44     10.92.100.82                                  8081:31694/TCP                                                            10d
+spire            service/spire-postgres                                    ClusterIP      10.22.61.217    <none>                                        5432/TCP                                                                  10d
+spire            service/spire-postgres-0                                  ClusterIP      10.24.19.48     <none>                                        5432/TCP                                                                  10d
+spire            service/spire-postgres-1                                  ClusterIP      10.25.98.17     <none>                                        5432/TCP                                                                  10d
+spire            service/spire-postgres-2                                  ClusterIP      10.20.165.138   <none>                                        5432/TCP                                                                  10d
+spire            service/spire-postgres-config                             ClusterIP      None            <none>                                        <none>                                                                    10d
+spire            service/spire-postgres-pooler                             ClusterIP      10.30.243.44    <none>                                        5432/TCP                                                                  10d
+spire            service/spire-postgres-repl                               ClusterIP      10.30.151.155   <none>                                        5432/TCP                                                                  10d
+spire            service/spire-server                                      ClusterIP      10.23.251.237   <none>                                        8081/TCP                                                                  10d
+spire            service/spire-tokens                                      ClusterIP      10.22.115.182   <none>                                        54440/TCP                                                                 10d
+spire            service/tpm-provisioner                                   ClusterIP      10.31.39.101    <none>                                        8080/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-canu-test                     ClusterIP      10.21.61.76     <none>                                        9144/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-ceph-exporter                 ClusterIP      None            <none>                                        9283/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-ceph-node-exporter            ClusterIP      None            <none>                                        9100/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-grafana                       ClusterIP      10.24.159.189   <none>                                        80/TCP                                                                    10d
+sysmgmt-health   service/cray-sysmgmt-health-grok-exporter                 ClusterIP      10.17.146.9     <none>                                        9144/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-kube-state-metrics            ClusterIP      10.26.222.174   <none>                                        8080/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-logstash-exporter             ClusterIP      10.29.72.132    <none>                                        9198/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-prometheus-node-exporter      ClusterIP      10.16.139.55    <none>                                        9100/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-prometheus-snmp-exporter      ClusterIP      10.26.237.69    <none>                                        9116/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-redfish-exporter              ClusterIP      10.17.164.127   <none>                                        9220/TCP                                                                  10d
+sysmgmt-health   service/cray-sysmgmt-health-victoria-metrics-operator     ClusterIP      10.25.19.188    <none>                                        8080/TCP,443/TCP                                                          10d
+sysmgmt-health   service/vmagent-vms                                       ClusterIP      10.19.206.69    <none>                                        8429/TCP                                                                  10d
+sysmgmt-health   service/vmalert-vms                                       ClusterIP      10.18.60.163    <none>                                        8080/TCP                                                                  10d
+sysmgmt-health   service/vmalertmanager-vms                                ClusterIP      None            <none>                                        9093/TCP,9094/TCP,9094/UDP                                                10d
+sysmgmt-health   service/vminsert-vms                                      ClusterIP      10.29.109.129   <none>                                        8480/TCP                                                                  10d
+sysmgmt-health   service/vmselect-vms                                      ClusterIP      None            <none>                                        8481/TCP                                                                  10d
+sysmgmt-health   service/vmstorage-vms                                     ClusterIP      None            <none>                                        8482/TCP,8400/TCP,8401/TCP                                                10d
+tapms-operator   service/cray-tapms                                        ClusterIP      10.27.103.125   <none>                                        80/TCP                                                                    10d
+tapms-operator   service/tapms-webhook-service                             ClusterIP      10.25.74.213    <none>                                        443/TCP                                                                   10d
+vault            service/cray-vault                                        ClusterIP      10.25.123.221   <none>                                        8200/TCP,8201/TCP,9091/TCP,9102/TCP                                       10d
+vault            service/cray-vault-0                                      ClusterIP      10.23.180.228   <none>                                        8200/TCP,8201/TCP,9091/TCP                                                10d
+vault            service/cray-vault-1                                      ClusterIP      10.21.196.193   <none>                                        8200/TCP,8201/TCP,9091/TCP                                                10d
+vault            service/cray-vault-2                                      ClusterIP      10.29.237.141   <none>                                        8200/TCP,8201/TCP,9091/TCP                                                10d
+vault            service/cray-vault-configurer                             ClusterIP      10.19.1.78      <none>                                        9091/TCP                                                                  10d
+vault            service/cray-vault-operator                               ClusterIP      10.23.132.99    <none>                                        80/TCP,8383/TCP                                                           10d
+velero           service/cray-velero                                       ClusterIP      10.24.2.75      <none>                                        8085/TCP                                                                  10d
+
+NAMESPACE        NAME                                                          DESIRED   CURRENT   READY   UP-TO-DATE   AVAILABLE   NODE SELECTOR            AGE
+ceph-cephfs      daemonset.apps/cray-ceph-csi-cephfs-nodeplugin                5         5         5       5            5           <none>                   10d
+ceph-rbd         daemonset.apps/cray-ceph-csi-rbd-nodeplugin                   5         5         5       5            5           <none>                   10d
+kube-system      daemonset.apps/cray-k8s-encryption                            3         3         3       3            3           <none>                   10d
+kube-system      daemonset.apps/kube-multus-ds                                 8         8         8       8            8           <none>                   10d
+kube-system      daemonset.apps/kube-proxy                                     8         8         8       8            8           kubernetes.io/os=linux   10d
+kube-system      daemonset.apps/node-problem-detector                          8         8         8       8            8           <none>                   10d
+kube-system      daemonset.apps/weave-net                                      8         8         8       8            8           <none>                   10d
+metallb-system   daemonset.apps/metallb-speaker                                8         8         8       8            8           kubernetes.io/os=linux   10d
+nexus            daemonset.apps/cray-precache-images                           5         5         5       5            5           <none>                   10d
+opa              daemonset.apps/cray-opa-ingressgateway                        5         5         5       5            5           <none>                   10d
+opa              daemonset.apps/cray-opa-ingressgateway-customer-admin         5         5         5       5            5           <none>                   10d
+opa              daemonset.apps/cray-opa-ingressgateway-customer-user          5         5         5       5            5           <none>                   10d
+opa              daemonset.apps/cray-opa-ingressgateway-hmn                    5         5         5       5            5           <none>                   10d
+services         daemonset.apps/cray-node-discovery                            5         5         5       5            5           <none>                   10d
+services         daemonset.apps/cray-tftp-modprobe                             5         5         5       5            5           <none>                   10d
+services         daemonset.apps/sonar-jobs-watcher                             5         5         5       5            5           <none>                   10d
+spire            daemonset.apps/cray-spire-agent                               5         5         5       5            5           <none>                   10d
+spire            daemonset.apps/request-ncn-join-token                         8         8         8       8            8           <none>                   10d
+spire            daemonset.apps/spire-agent                                    5         5         5       5            5           <none>                   10d
+sysmgmt-health   daemonset.apps/cray-sysmgmt-health-node-exporter-iscsi        5         5         5       5            5           iscsi=sbps               10d
+sysmgmt-health   daemonset.apps/cray-sysmgmt-health-node-exporter-smartmon     8         8         8       8            8           <none>                   10d
+sysmgmt-health   daemonset.apps/cray-sysmgmt-health-prometheus-node-exporter   8         8         8       8            8           <none>                   10d
+velero           daemonset.apps/restic                                         5         5         5       5            5           <none>                   10d
+
+NAMESPACE            NAME                                                                READY   UP-TO-DATE   AVAILABLE   AGE
+argo                 deployment.apps/cray-nls                                            3/3     3            3           10d
+argo                 deployment.apps/cray-nls-argo-workflows-server                      3/3     3            3           10d
+argo                 deployment.apps/cray-nls-argo-workflows-workflow-controller         2/2     2            2           10d
+ceph-cephfs          deployment.apps/cray-ceph-csi-cephfs-provisioner                    3/3     3            3           10d
+ceph-rbd             deployment.apps/cray-ceph-csi-rbd-provisioner                       3/3     3            3           10d
+cert-manager         deployment.apps/cray-certmanager-cert-manager                       3/3     3            3           10d
+cert-manager         deployment.apps/cray-certmanager-cert-manager-cainjector            3/3     3            3           10d
+cert-manager         deployment.apps/cray-certmanager-cert-manager-webhook               3/3     3            3           10d
+dvs                  deployment.apps/cray-activemq-artemis-operator-controller-manager   1/1     1            1           3d17h
+hnc-system           deployment.apps/hnc-controller-manager                              1/1     1            1           10d
+istio-operator       deployment.apps/istio-operator                                      1/1     1            1           10d
+istio-system         deployment.apps/istio-ingressgateway                                3/3     3            3           10d
+istio-system         deployment.apps/istio-ingressgateway-customer-admin                 3/3     3            3           10d
+istio-system         deployment.apps/istio-ingressgateway-customer-user                  3/3     3            3           10d
+istio-system         deployment.apps/istio-ingressgateway-hmn                            3/3     3            3           10d
+istio-system         deployment.apps/istiod                                              3/3     3            3           10d
+istio-system         deployment.apps/kiali                                               1/1     1            1           10d
+kube-system          deployment.apps/coredns                                             2/2     2            2           10d
+kube-system          deployment.apps/metrics-server                                      1/1     1            1           10d
+kube-system          deployment.apps/sealed-secrets                                      1/1     1            1           10d
+kyverno              deployment.apps/kyverno-admission-controller                        3/3     3            3           10d
+kyverno              deployment.apps/kyverno-background-controller                       1/1     1            1           10d
+kyverno              deployment.apps/kyverno-cleanup-controller                          1/1     1            1           10d
+kyverno              deployment.apps/kyverno-reports-controller                          1/1     1            1           10d
+metallb-system       deployment.apps/metallb-controller                                  1/1     1            1           10d
+nexus                deployment.apps/nexus                                               1/1     1            1           10d
+operators            deployment.apps/cray-kiali-kiali-operator                           1/1     1            1           10d
+operators            deployment.apps/strimzi-cluster-operator                            1/1     1            1           10d
+pki-operator         deployment.apps/trustedcerts-operator                               3/3     3            3           10d
+services             deployment.apps/cfs-ara                                             1/1     1            1           10d
+services             deployment.apps/cfs-hwsync-agent                                    1/1     1            1           10d
+services             deployment.apps/cfs-trust                                           1/1     1            1           10d
+services             deployment.apps/cos-config-service                                  1/1     1            1           3d17h
+services             deployment.apps/cray-bos                                            2/2     2            2           10d
+services             deployment.apps/cray-bos-db                                         1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-actual-state-cleanup              1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-configuration                     1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-discovery                         1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-power-off-forceful                1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-power-off-graceful                1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-power-on                          1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-session-cleanup                   1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-session-completion                1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-session-setup                     1/1     1            1           10d
+services             deployment.apps/cray-bos-operator-status                            1/1     1            1           10d
+services             deployment.apps/cray-bss                                            3/3     3            3           10d
+services             deployment.apps/cray-capmc                                          3/3     3            3           10d
+services             deployment.apps/cray-cfs-api                                        2/2     2            2           10d
+services             deployment.apps/cray-cfs-api-db                                     1/1     1            1           10d
+services             deployment.apps/cray-cfs-batcher                                    1/1     1            1           10d
+services             deployment.apps/cray-cfs-operator                                   1/1     1            1           10d
+services             deployment.apps/cray-console-data                                   1/1     1            1           10d
+services             deployment.apps/cray-console-operator                               1/1     1            1           10d
+services             deployment.apps/cray-cps                                            2/2     2            2           3d17h
+services             deployment.apps/cray-dhcp-kea                                       3/3     3            3           10d
+services             deployment.apps/cray-dns-powerdns                                   1/1     1            1           10d
+services             deployment.apps/cray-dns-unbound                                    3/3     3            3           10d
+services             deployment.apps/cray-externaldns-external-dns                       1/1     1            1           10d
+services             deployment.apps/cray-fas                                            1/1     1            1           10d
+services             deployment.apps/cray-hbtd                                           3/3     3            3           10d
+services             deployment.apps/cray-hmnfd                                          3/3     3            3           10d
+services             deployment.apps/cray-hms-hmcollector-ingress                        3/3     3            3           10d
+services             deployment.apps/cray-hms-hmcollector-poll                           1/1     1            1           10d
+services             deployment.apps/cray-hms-rts                                        1/1     1            1           10d
+services             deployment.apps/cray-hms-rts-snmp                                   1/1     1            1           10d
+services             deployment.apps/cray-ims                                            1/1     1            1           10d
+services             deployment.apps/cray-ipxe-aarch64                                   1/1     1            1           10d
+services             deployment.apps/cray-ipxe-x86-64                                    1/1     1            1           10d
+services             deployment.apps/cray-meds                                           1/1     1            1           10d
+services             deployment.apps/cray-node-labels                                    1/1     1            1           10d
+services             deployment.apps/cray-oauth2-proxies-customer-access-ingress         1/1     1            1           10d
+services             deployment.apps/cray-oauth2-proxies-customer-high-speed-ingress     1/1     1            1           10d
+services             deployment.apps/cray-oauth2-proxies-customer-management-ingress     1/1     1            1           10d
+services             deployment.apps/cray-postgres-operator                              1/1     1            1           10d
+services             deployment.apps/cray-power-control                                  3/3     3            3           10d
+services             deployment.apps/cray-powerdns-manager                               1/1     1            1           10d
+services             deployment.apps/cray-scsd                                           3/3     3            3           10d
+services             deployment.apps/cray-shared-kafka-entity-operator                   1/1     1            1           10d
+services             deployment.apps/cray-sls                                            3/3     3            3           10d
+services             deployment.apps/cray-smd                                            3/3     3            3           10d
+services             deployment.apps/cray-sts                                            3/3     3            3           10d
+services             deployment.apps/cray-tftp                                           3/3     3            3           10d
+services             deployment.apps/cray-vpa-recommender                                1/1     1            1           10d
+services             deployment.apps/cray-vpa-updater                                    1/1     1            1           10d
+services             deployment.apps/csm-ssh-keys                                        1/1     1            1           10d
+services             deployment.apps/etcd-backup-restore                                 2/2     2            2           10d
+services             deployment.apps/gitea-vcs                                           1/1     1            1           10d
+services             deployment.apps/nmdv2-service                                       1/1     1            1           3d17h
+services             deployment.apps/slingshot-fabric-manager                            1/1     1            1           3d17h
+spire                deployment.apps/cray-spire-jwks                                     3/3     3            3           10d
+spire                deployment.apps/cray-spire-postgres-pooler                          3/3     3            3           10d
+spire                deployment.apps/spire-jwks                                          3/3     3            3           10d
+spire                deployment.apps/spire-postgres-pooler                               3/3     3            3           10d
+sshot-net-operator   deployment.apps/sshot-net-operator                                  1/1     1            1           3d17h
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-canu-test                       1/1     1            1           10d
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-grafana                         1/1     1            1           10d
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-grok-exporter                   3/3     3            3           10d
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-kube-state-metrics              1/1     1            1           10d
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-logstash-exporter               1/1     1            1           10d
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-prometheus-snmp-exporter        1/1     1            1           10d
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-redfish-exporter                1/1     1            1           10d
+sysmgmt-health       deployment.apps/cray-sysmgmt-health-victoria-metrics-operator       1/1     1            1           10d
+sysmgmt-health       deployment.apps/vmagent-vms-0                                       2/2     2            2           10d
+sysmgmt-health       deployment.apps/vmagent-vms-1                                       2/2     2            2           10d
+sysmgmt-health       deployment.apps/vmalert-vms                                         1/1     1            1           10d
+sysmgmt-health       deployment.apps/vminsert-vms                                        2/2     2            2           10d
+tapms-operator       deployment.apps/cray-tapms-operator                                 1/1     1            1           10d
+vault                deployment.apps/cray-vault-configurer                               1/1     1            1           10d
+vault                deployment.apps/cray-vault-operator                                 1/1     1            1           10d
+velero               deployment.apps/cray-velero                                         1/1     1            1           10d
+
+NAMESPACE            NAME                                                                          DESIRED   CURRENT   READY   AGE
+argo                 replicaset.apps/cray-nls-5bd575bf74                                           0         0         0       2d8h
+argo                 replicaset.apps/cray-nls-5db5b88c8b                                           0         0         0       10d
+argo                 replicaset.apps/cray-nls-argo-workflows-server-564cd584d9                     3         3         3       10d
+argo                 replicaset.apps/cray-nls-argo-workflows-workflow-controller-6cdc74f748        2         2         2       10d
+argo                 replicaset.apps/cray-nls-bfd94746b                                            3         3         3       2d6h
+ceph-cephfs          replicaset.apps/cray-ceph-csi-cephfs-provisioner-788df75f76                   3         3         3       10d
+ceph-rbd             replicaset.apps/cray-ceph-csi-rbd-provisioner-6974c7d78b                      3         3         3       10d
+cert-manager         replicaset.apps/cray-certmanager-cert-manager-7d8995464d                      3         3         3       10d
+cert-manager         replicaset.apps/cray-certmanager-cert-manager-cainjector-6c7845f6dc           3         3         3       10d
+cert-manager         replicaset.apps/cray-certmanager-cert-manager-webhook-57dbbff888              3         3         3       10d
+dvs                  replicaset.apps/cray-activemq-artemis-operator-controller-manager-958999f86   1         1         1       3d17h
+hnc-system           replicaset.apps/hnc-controller-manager-56c97b978d                             1         1         1       10d
+istio-operator       replicaset.apps/istio-operator-5695f4cd46                                     1         1         1       10d
+istio-system         replicaset.apps/istio-ingressgateway-94df8f964                                3         3         3       10d
+istio-system         replicaset.apps/istio-ingressgateway-customer-admin-ffc69c5f                  3         3         3       10d
+istio-system         replicaset.apps/istio-ingressgateway-customer-user-77fbcc86d7                 3         3         3       10d
+istio-system         replicaset.apps/istio-ingressgateway-hmn-785b96ddb8                           3         3         3       10d
+istio-system         replicaset.apps/istiod-6bb7bc7fb9                                             3         3         3       10d
+istio-system         replicaset.apps/kiali-7cf8968ff4                                              1         1         1       10d
+kube-system          replicaset.apps/coredns-57dd9dd49d                                            0         0         0       10d
+kube-system          replicaset.apps/coredns-59cc8dbcc8                                            2         2         2       10d
+kube-system          replicaset.apps/coredns-8845c5db5                                             0         0         0       10d
+kube-system          replicaset.apps/metrics-server-545fcf988f                                     1         1         1       10d
+kube-system          replicaset.apps/sealed-secrets-685b8dc459                                     1         1         1       10d
+kyverno              replicaset.apps/kyverno-admission-controller-5fb8868644                       3         3         3       10d
+kyverno              replicaset.apps/kyverno-admission-controller-74b95b8bcb                       0         0         0       10d
+kyverno              replicaset.apps/kyverno-background-controller-5bb9c4566d                      1         1         1       10d
+kyverno              replicaset.apps/kyverno-cleanup-controller-5569cb8948                         1         1         1       10d
+kyverno              replicaset.apps/kyverno-reports-controller-599f875b5b                         1         1         1       10d
+metallb-system       replicaset.apps/metallb-controller-564f6966f                                  1         1         1       10d
+metallb-system       replicaset.apps/metallb-controller-796b7bbcb8                                 0         0         0       10d
+nexus                replicaset.apps/nexus-84f59cbb6                                               1         1         1       10d
+operators            replicaset.apps/cray-kiali-kiali-operator-66645594fc                          1         1         1       10d
+operators            replicaset.apps/strimzi-cluster-operator-569c45b5d                            1         1         1       10d
+pki-operator         replicaset.apps/trustedcerts-operator-f546977cb                               3         3         3       10d
+services             replicaset.apps/cfs-ara-7f56fdf8b4                                            1         1         1       10d
+services             replicaset.apps/cfs-hwsync-agent-b4b6657d5                                    1         1         1       10d
+services             replicaset.apps/cfs-trust-68fc9fcdb4                                          1         1         1       10d
+services             replicaset.apps/cos-config-service-c9b948f98                                  1         1         1       3d17h
+services             replicaset.apps/cray-bos-75bb8ddbf9                                           2         2         2       10d
+services             replicaset.apps/cray-bos-db-788bcbc84c                                        1         1         1       10d
+services             replicaset.apps/cray-bos-operator-actual-state-cleanup-576b95fdc6             1         1         1       10d
+services             replicaset.apps/cray-bos-operator-configuration-7856b8fc78                    1         1         1       10d
+services             replicaset.apps/cray-bos-operator-discovery-59ff8c8554                        1         1         1       10d
+services             replicaset.apps/cray-bos-operator-power-off-forceful-7d75d64556               1         1         1       10d
+services             replicaset.apps/cray-bos-operator-power-off-graceful-756657cbfb               1         1         1       10d
+services             replicaset.apps/cray-bos-operator-power-on-7b8ccc7554                         1         1         1       10d
+services             replicaset.apps/cray-bos-operator-session-cleanup-6c7448798b                  1         1         1       10d
+services             replicaset.apps/cray-bos-operator-session-completion-6576ff58b                1         1         1       10d
+services             replicaset.apps/cray-bos-operator-session-setup-6b9fc44c88                    1         1         1       10d
+services             replicaset.apps/cray-bos-operator-status-57bc98cb8d                           1         1         1       10d
+services             replicaset.apps/cray-bss-79785c6d89                                           3         3         3       10d
+services             replicaset.apps/cray-capmc-6c5d69f685                                         3         3         3       10d
+services             replicaset.apps/cray-cfs-api-557fb98d57                                       2         2         2       10d
+services             replicaset.apps/cray-cfs-api-db-ff7f66d5d                                     1         1         1       10d
+services             replicaset.apps/cray-cfs-batcher-6c66f6887                                    1         1         1       10d
+services             replicaset.apps/cray-cfs-operator-854847c8c                                   1         1         1       10d
+services             replicaset.apps/cray-console-data-bbff78774                                   1         1         1       10d
+services             replicaset.apps/cray-console-operator-79b4c7dd4b                              1         1         1       10d
+services             replicaset.apps/cray-cps-5684977999                                           2         2         2       3d17h
+services             replicaset.apps/cray-dhcp-kea-56c5bb5789                                      3         3         3       10d
+services             replicaset.apps/cray-dns-powerdns-645654c6f6                                  1         1         1       10d
+services             replicaset.apps/cray-dns-unbound-79b56d4645                                   3         3         3       10d
+services             replicaset.apps/cray-externaldns-external-dns-688c68fb58                      1         1         1       10d
+services             replicaset.apps/cray-fas-77bb4c6b79                                           1         1         1       10d
+services             replicaset.apps/cray-hbtd-55fb95cc7b                                          3         3         3       10d
+services             replicaset.apps/cray-hmnfd-747b78f958                                         3         3         3       10d
+services             replicaset.apps/cray-hms-hmcollector-ingress-7c5bb55c74                       3         3         3       10d
+services             replicaset.apps/cray-hms-hmcollector-poll-66cc59bcd                           1         1         1       10d
+services             replicaset.apps/cray-hms-rts-5488d9b94                                        1         1         1       10d
+services             replicaset.apps/cray-hms-rts-snmp-d9cb7fdc                                    1         1         1       10d
+services             replicaset.apps/cray-ims-d7466c6f9                                            1         1         1       10d
+services             replicaset.apps/cray-ipxe-aarch64-6d97578788                                  1         1         1       10d
+services             replicaset.apps/cray-ipxe-x86-64-59d949584d                                   1         1         1       10d
+services             replicaset.apps/cray-meds-85d8955fb5                                          1         1         1       10d
+services             replicaset.apps/cray-node-labels-6c7cc4c5f8                                   1         1         1       10d
+services             replicaset.apps/cray-oauth2-proxies-customer-access-ingress-7fc49cffcf        1         1         1       10d
+services             replicaset.apps/cray-oauth2-proxies-customer-high-speed-ingress-79cb9bd579    1         1         1       10d
+services             replicaset.apps/cray-oauth2-proxies-customer-management-ingress-c6c64ddfb     1         1         1       10d
+services             replicaset.apps/cray-postgres-operator-596b6cfb9c                             1         1         1       10d
+services             replicaset.apps/cray-power-control-6f9869d68                                  3         3         3       10d
+services             replicaset.apps/cray-powerdns-manager-6c49966f54                              1         1         1       10d
+services             replicaset.apps/cray-scsd-b744ccc54                                           3         3         3       10d
+services             replicaset.apps/cray-shared-kafka-entity-operator-779945b686                  1         1         1       10d
+services             replicaset.apps/cray-sls-9d467b6d6                                            3         3         3       10d
+services             replicaset.apps/cray-smd-79dc846fcb                                           3         3         3       10d
+services             replicaset.apps/cray-sts-6b8bb75c68                                           3         3         3       10d
+services             replicaset.apps/cray-tftp-5d546777c9                                          3         3         3       10d
+services             replicaset.apps/cray-vpa-recommender-86867b7bf6                               1         1         1       10d
+services             replicaset.apps/cray-vpa-updater-6f7bb8dcf5                                   1         1         1       10d
+services             replicaset.apps/csm-ssh-keys-7ccc4f5494                                       1         1         1       10d
+services             replicaset.apps/etcd-backup-restore-75bb5c4694                                2         2         2       10d
+services             replicaset.apps/gitea-vcs-856dfb98cf                                          1         1         1       10d
+services             replicaset.apps/nmdv2-service-86466bc7f8                                      1         1         1       3d17h
+services             replicaset.apps/slingshot-fabric-manager-6b74fdb5c7                           1         1         1       3d17h
+spire                replicaset.apps/cray-spire-jwks-847fc745b8                                    3         3         3       10d
+spire                replicaset.apps/cray-spire-postgres-pooler-5997f6f6f5                         3         3         3       10d
+spire                replicaset.apps/spire-jwks-6fbb5864db                                         3         3         3       10d
+spire                replicaset.apps/spire-postgres-pooler-6c97d87dd5                              3         3         3       10d
+sshot-net-operator   replicaset.apps/sshot-net-operator-cf49677c5                                  1         1         1       3d17h
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-canu-test-5fc8b5d66c                      1         1         1       10d
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-grafana-7476fd6654                        1         1         1       10d
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-grok-exporter-544fb59f84                  3         3         3       10d
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-kube-state-metrics-754c86467f             1         1         1       10d
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-logstash-exporter-85bc88574b              1         1         1       10d
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-prometheus-snmp-exporter-5cb4c85bb8       1         1         1       10d
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-redfish-exporter-c4df695db                1         1         1       10d
+sysmgmt-health       replicaset.apps/cray-sysmgmt-health-victoria-metrics-operator-59c8875866      1         1         1       10d
+sysmgmt-health       replicaset.apps/vmagent-vms-0-5877fbd5c4                                      2         2         2       10d
+sysmgmt-health       replicaset.apps/vmagent-vms-1-8c8799964                                       2         2         2       10d
+sysmgmt-health       replicaset.apps/vmalert-vms-5fdd8f54dd                                        1         1         1       10d
+sysmgmt-health       replicaset.apps/vminsert-vms-cd9d4f894                                        2         2         2       10d
+tapms-operator       replicaset.apps/cray-tapms-operator-57c6cfccf7                                1         1         1       10d
+vault                replicaset.apps/cray-vault-configurer-7b6f84b7df                              1         1         1       10d
+vault                replicaset.apps/cray-vault-operator-57cc597f8d                                1         1         1       10d
+velero               replicaset.apps/cray-velero-78bb7fbcfd                                        1         1         1       10d
+
+NAMESPACE        NAME                                               READY   AGE
+argo             statefulset.apps/cray-iuf-metacontroller-helm      2/2     10d
+argo             statefulset.apps/cray-nls-postgres                 3/3     10d
+dvs              statefulset.apps/cray-dvs-mqtt-ss                  1/2     3d17h
+services         statefulset.apps/cfs-ara-postgres                  3/3     10d
+services         statefulset.apps/cray-bss-bitnami-etcd             3/3     10d
+services         statefulset.apps/cray-console-data-postgres        3/3     10d
+services         statefulset.apps/cray-console-node                 2/2     10d
+services         statefulset.apps/cray-dhcp-kea-postgres            3/3     10d
+services         statefulset.apps/cray-dns-powerdns-postgres        3/3     10d
+services         statefulset.apps/cray-fas-bitnami-etcd             3/3     10d
+services         statefulset.apps/cray-hbtd-bitnami-etcd            3/3     10d
+services         statefulset.apps/cray-hmnfd-bitnami-etcd           3/3     10d
+services         statefulset.apps/cray-keycloak                     3/3     10d
+services         statefulset.apps/cray-power-control-bitnami-etcd   3/3     10d
+services         statefulset.apps/cray-sls-postgres                 3/3     10d
+services         statefulset.apps/cray-smd-postgres                 3/3     10d
+services         statefulset.apps/gitea-vcs-postgres                3/3     10d
+services         statefulset.apps/keycloak-postgres                 3/3     10d
+spire            statefulset.apps/cray-spire-postgres               3/3     10d
+spire            statefulset.apps/cray-spire-server                 3/3     10d
+spire            statefulset.apps/spire-postgres                    3/3     10d
+spire            statefulset.apps/spire-server                      3/3     10d
+spire            statefulset.apps/tpm-provisioner                   1/1     10d
+sysmgmt-health   statefulset.apps/vmalertmanager-vms                1/1     10d
+sysmgmt-health   statefulset.apps/vmselect-vms                      2/2     10d
+sysmgmt-health   statefulset.apps/vmstorage-vms                     2/2     10d
+vault            statefulset.apps/cray-vault                        3/3     10d
+
+NAMESPACE      NAME                                                                      REFERENCE                                        TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+istio-system   horizontalpodautoscaler.autoscaling/istio-ingressgateway                  Deployment/istio-ingressgateway                  3%/80%    3         6         3          10d
+istio-system   horizontalpodautoscaler.autoscaling/istio-ingressgateway-customer-admin   Deployment/istio-ingressgateway-customer-admin   6%/80%    3         6         3          10d
+istio-system   horizontalpodautoscaler.autoscaling/istio-ingressgateway-customer-user    Deployment/istio-ingressgateway-customer-user    6%/80%    3         6         3          10d
+istio-system   horizontalpodautoscaler.autoscaling/istio-ingressgateway-hmn              Deployment/istio-ingressgateway-hmn              6%/80%    3         6         3          10d
+istio-system   horizontalpodautoscaler.autoscaling/istiod                                Deployment/istiod                                1%/80%    3         8         3          10d
+services       horizontalpodautoscaler.autoscaling/cray-bos                              Deployment/cray-bos                              9%/50%    2         10        2          10d
+services       horizontalpodautoscaler.autoscaling/cray-cfs-api                          Deployment/cray-cfs-api                          8%/50%    2         10        2          10d
+
+NAMESPACE        NAME                                                        SCHEDULE       SUSPEND   ACTIVE   LAST SCHEDULE   AGE
+argo             cronjob.batch/logical-backup-cray-nls-postgres              10 23 * * *    False     0        5h17m           10d
+kube-system      cronjob.batch/kube-etcdbackup                               */10 * * * *   False     0        7m50s           10d
+kyverno          cronjob.batch/kyverno-cleanup-admission-reports             */10 * * * *   False     0        7m50s           10d
+kyverno          cronjob.batch/kyverno-cleanup-cluster-admission-reports     */10 * * * *   False     0        7m50s           10d
+services         cronjob.batch/cray-bss-bitnami-etcd-snapshotter             0 */1 * * *    False     0        27m             10d
+services         cronjob.batch/cray-dhcp-kea-helper                          */3 * * * *    False     1        50s             10d
+services         cronjob.batch/cray-dns-unbound-manager                      */2 * * * *    False     0        110s            10d
+services         cronjob.batch/cray-fas-bitnami-etcd-snapshotter             0 */1 * * *    False     0        27m             10d
+services         cronjob.batch/cray-hbtd-bitnami-etcd-snapshotter            0 */1 * * *    False     0        27m             10d
+services         cronjob.batch/cray-hmnfd-bitnami-etcd-snapshotter           0 */1 * * *    False     0        27m             10d
+services         cronjob.batch/cray-power-control-bitnami-etcd-snapshotter   0 */1 * * *    False     0        27m             10d
+services         cronjob.batch/etcd-backup-pvc-snapshots-to-s3               5 */1 * * *    False     0        22m             10d
+services         cronjob.batch/hms-discovery                                 */3 * * * *    False     1        50s             10d
+services         cronjob.batch/kube-etcd-defrag                              0 0 * * *      False     0        4h27m           10d
+services         cronjob.batch/kube-etcd-defrag-cray-hbtd-bitnami-etcd       0 */4 * * *    False     0        27m             10d
+services         cronjob.batch/logical-backup-cray-sls-postgres              10 23 * * *    False     0        5h17m           10d
+services         cronjob.batch/logical-backup-cray-smd-postgres              10 0 * * *     False     0        4h17m           10d
+services         cronjob.batch/logical-backup-gitea-vcs-postgres             10 1 * * *     False     0        3h17m           10d
+services         cronjob.batch/logical-backup-keycloak-postgres              10 2 * * *     False     0        137m            10d
+services         cronjob.batch/sonar-sync                                    */1 * * * *    False     0        50s             10d
+services         cronjob.batch/sshot-fm-recover                              */3 * * * *    False     1        50s             3d17h
+sysmgmt-health   cronjob.batch/cray-sysmgmt-health-redfish-cron              0 */6 * * *    False     0        4h27m           10d
+vault            cronjob.batch/spire-intermediate                            0 0 * * 1      False     0        28h             10d
+vault            cronjob.batch/tpm-intermediate                              0 0 * * 1      False     0        28h             10d
+
+NAMESPACE        NAME                                                             COMPLETIONS   DURATION   AGE
+argo             job.batch/logical-backup-cray-nls-postgres-28843150              1/1           113s       2d5h
+argo             job.batch/logical-backup-cray-nls-postgres-28844590              1/1           67s        29h
+argo             job.batch/logical-backup-cray-nls-postgres-28846030              1/1           21s        5h17m
+kube-system      job.batch/kube-etcdbackup-28846340                               1/1           13s        7m50s
+kyverno          job.batch/kyverno-cleanup-admission-reports-28846340             1/1           7s         7m50s
+kyverno          job.batch/kyverno-cleanup-cluster-admission-reports-28846340     1/1           5s         7m50s
+services         job.batch/cfs-14be2f57-d88e-4c8b-b761-73a64d472d67               1/1           2m33s      2d12h
+services         job.batch/cfs-16286ae0-aaf4-4c41-9632-92b760640772               1/1           57m        3d11h
+services         job.batch/cfs-2b990f1f-940c-48b6-a408-59c40f1b3c25               0/1           3d13h      3d13h
+services         job.batch/cfs-2c62f80c-ce57-4995-ba5e-1cec52107a9e               1/1           5m52s      2d11h
+services         job.batch/cfs-319212e1-0cad-4e2b-907b-9fedec35e082               1/1           5m9s       2d10h
+services         job.batch/cfs-41ab5ec8-167d-4b1d-9cdb-8ba0f2b295ec               1/1           6m14s      2d8h
+services         job.batch/cfs-46798ca0-f9dd-460d-97ff-2f38d8676809               1/1           51m        3d13h
+services         job.batch/cfs-51e773a9-faba-4ba5-b040-bccc5d54d851               1/1           70s        2d7h
+services         job.batch/cfs-5e9d9e0d-db80-4b2a-907a-1e0aacab0dc9               1/1           3m53s      2d6h
+services         job.batch/cfs-6609143b-2dd4-4397-b620-de89662daa52               1/1           56m        3d11h
+services         job.batch/cfs-7b91e886-3615-47b1-8c53-5f0a2775d977               1/1           2m52s      2d7h
+services         job.batch/cfs-7cb75ede-e7d4-4e6c-b305-ce13e5692429               1/1           55m        3d13h
+services         job.batch/cfs-7d079a52-2c3c-4a0b-8129-dc7b834856fe               0/1           2d13h      2d13h
+services         job.batch/cfs-8bb8d16b-2114-4981-9814-b1880c01e245               1/1           44m        3d11h
+services         job.batch/cfs-8f6684eb-cb8f-4f03-89b0-e1921783ca99               1/1           11m        3d13h
+services         job.batch/cfs-99fb7303-990d-480f-909d-54bf3de51268               1/1           41m        3d15h
+services         job.batch/cfs-9e837c7a-df93-4f06-b77f-d3a6a93f3e4e               1/1           5m36s      2d10h
+services         job.batch/cfs-a123c901-bf91-466d-8146-3ed090c536db               1/1           14m        3d15h
+services         job.batch/cfs-a53dd931-0ddf-4193-9a55-69225bcd8ead               1/1           16m        3d13h
+services         job.batch/cfs-ara-wait-for-postgres-1                            1/1           3m52s      10d
+services         job.batch/cfs-c185920a-1094-47bc-88a6-06badac5d78d               1/1           4m10s      2d6h
+services         job.batch/cfs-c2a9c575-8cbf-479f-8663-62353c9cbfef               0/1           3d13h      3d13h
+services         job.batch/cfs-c3095dad-ab7b-4ac2-b122-480b457e0c42               1/1           3m31s      2d12h
+services         job.batch/cfs-c8a14f0a-d7c2-4473-9bd3-c0a94864f02e               1/1           3m41s      2d8h
+services         job.batch/cfs-caf53d40-95cb-4a44-8f66-97d324953cf1               0/1           2d12h      2d12h
+services         job.batch/cfs-ce03f0e5-0d97-42c2-821b-a6a4df765f66               1/1           15m        3d15h
+services         job.batch/cfs-d1a9b280-8cb5-437b-848f-282f7c5bf602               1/1           5m49s      2d11h
+services         job.batch/cray-bss-bitnami-etcd-snapshotter-28846320             1/1           104s       27m
+services         job.batch/cray-bss-wait-for-etcd-1                               1/1           51s        10d
+services         job.batch/cray-console-data-wait-for-postgres-1                  1/1           3m52s      10d
+services         job.batch/cray-dhcp-kea-helper-28846338                          1/1           77s        9m50s
+services         job.batch/cray-dhcp-kea-helper-28846341                          1/1           58s        6m50s
+services         job.batch/cray-dhcp-kea-helper-28846344                          1/1           33s        3m50s
+services         job.batch/cray-dhcp-kea-helper-28846347                          0/1           50s        50s
+services         job.batch/cray-dns-powerdns-wait-for-postgres-1                  1/1           4m57s      10d
+services         job.batch/cray-dns-unbound-manager-28846342                      1/1           80s        5m50s
+services         job.batch/cray-dns-unbound-manager-28846344                      1/1           38s        3m50s
+services         job.batch/cray-dns-unbound-manager-28846346                      1/1           70s        110s
+services         job.batch/cray-fas-bitnami-etcd-snapshotter-28846320             1/1           2m2s       27m
+services         job.batch/cray-fas-wait-for-etcd-1                               1/1           33s        10d
+services         job.batch/cray-hbtd-bitnami-etcd-snapshotter-28846320            1/1           2m7s       27m
+services         job.batch/cray-hbtd-wait-for-etcd-1                              1/1           70s        10d
+services         job.batch/cray-hmnfd-bitnami-etcd-snapshotter-28846320           1/1           2m13s      27m
+services         job.batch/cray-hmnfd-wait-for-etcd-1                             1/1           41s        10d
+services         job.batch/cray-hms-rts-init                                      1/1           67s        10d
+services         job.batch/cray-power-control-bitnami-etcd-snapshotter-28846320   1/1           2m18s      27m
+services         job.batch/cray-power-control-wait-for-etcd-1                     1/1           67s        10d
+services         job.batch/cray-sls-init-load                                     1/1           4m         10d
+services         job.batch/cray-sls-wait-for-postgres-1                           1/1           4m8s       10d
+services         job.batch/cray-smd-init                                          1/1           3m52s      10d
+services         job.batch/cray-smd-wait-for-postgres-1                           1/1           4m22s      10d
+services         job.batch/etcd-backup-pvc-snapshots-to-s3-28846325               1/1           99s        22m
+services         job.batch/gitea-vcs-wait-for-postgres-1                          1/1           4m2s       10d
+services         job.batch/hms-discovery-28842735                                 0/1           2d12h      2d12h
+services         job.batch/hms-discovery-28846317                                 1/1           67s        30m
+services         job.batch/hms-discovery-28846320                                 1/1           2m24s      27m
+services         job.batch/hms-discovery-28846323                                 1/1           58s        24m
+services         job.batch/hms-discovery-28846326                                 1/1           116s       21m
+services         job.batch/hms-discovery-28846329                                 1/1           91s        18m
+services         job.batch/hms-discovery-28846332                                 1/1           66s        15m
+services         job.batch/hms-discovery-28846335                                 1/1           119s       12m
+services         job.batch/hms-discovery-28846338                                 1/1           88s        9m50s
+services         job.batch/hms-discovery-28846341                                 1/1           64s        6m50s
+services         job.batch/hms-discovery-28846344                                 1/1           116s       3m50s
+services         job.batch/hms-discovery-28846347                                 0/1           50s        50s
+services         job.batch/keycloak-setup-1                                       1/1           7m58s      10d
+services         job.batch/keycloak-users-localize-1                              1/1           12m        10d
+services         job.batch/keycloak-wait-for-postgres-1                           1/1           4m28s      10d
+services         job.batch/kube-etcd-defrag-28846080                              1/1           81s        4h27m
+services         job.batch/kube-etcd-defrag-cray-hbtd-bitnami-etcd-28846320       1/1           2m29s      27m
+services         job.batch/logical-backup-cray-sls-postgres-28843150              1/1           119s       2d5h
+services         job.batch/logical-backup-cray-sls-postgres-28844590              1/1           78s        29h
+services         job.batch/logical-backup-cray-sls-postgres-28846030              1/1           43s        5h17m
+services         job.batch/logical-backup-cray-smd-postgres-28843210              1/1           59s        2d4h
+services         job.batch/logical-backup-cray-smd-postgres-28844650              1/1           85s        28h
+services         job.batch/logical-backup-cray-smd-postgres-28846090              1/1           59s        4h17m
+services         job.batch/logical-backup-gitea-vcs-postgres-28843270             1/1           54s        2d3h
+services         job.batch/logical-backup-gitea-vcs-postgres-28844710             1/1           82s        27h
+services         job.batch/logical-backup-gitea-vcs-postgres-28846150             1/1           54s        3h17m
+services         job.batch/logical-backup-keycloak-postgres-28843330              1/1           44s        2d2h
+services         job.batch/logical-backup-keycloak-postgres-28844770              1/1           75s        26h
+services         job.batch/logical-backup-keycloak-postgres-28846210              1/1           44s        137m
+services         job.batch/sonar-sync-28846345                                    1/1           38s        2m50s
+services         job.batch/sonar-sync-28846346                                    1/1           38s        110s
+services         job.batch/sonar-sync-28846347                                    1/1           38s        50s
+services         job.batch/sshot-fm-recover-28846317                              1/1           72s        30m
+services         job.batch/sshot-fm-recover-28846320                              1/1           2m35s      27m
+services         job.batch/sshot-fm-recover-28846323                              1/1           71s        24m
+services         job.batch/sshot-fm-recover-28846326                              1/1           45s        21m
+services         job.batch/sshot-fm-recover-28846329                              1/1           97s        18m
+services         job.batch/sshot-fm-recover-28846332                              1/1           71s        15m
+services         job.batch/sshot-fm-recover-28846335                              1/1           42s        12m
+services         job.batch/sshot-fm-recover-28846338                              1/1           94s        9m50s
+services         job.batch/sshot-fm-recover-28846341                              1/1           69s        6m50s
+services         job.batch/sshot-fm-recover-28846344                              1/1           44s        3m50s
+services         job.batch/sshot-fm-recover-28846347                              0/1           50s        50s
+spire            job.batch/cray-spire-update-bss-1                                1/1           62s        10d
+sysmgmt-health   job.batch/cray-sysmgmt-health-redfish-cron-28845360              1/1           24m        16h
+sysmgmt-health   job.batch/cray-sysmgmt-health-redfish-cron-28845720              1/1           24m        10h
+sysmgmt-health   job.batch/cray-sysmgmt-health-redfish-cron-28846080              1/1           24m        4h27m
+vault            job.batch/spire-intermediate-28834560                            1/1           18s        8d
+vault            job.batch/spire-intermediate-28844640                            1/1           41s        28h
+vault            job.batch/tpm-intermediate-28834560                              1/1           18s        8d
+vault            job.batch/tpm-intermediate-28844640                              1/1           38s        28h
+
+NAMESPACE   NAME                                                         IMAGE                                                                                         CLUSTER-LABEL   SERVICE-ACCOUNT   MIN-INSTANCES   AGE
+services    operatorconfiguration.acid.zalan.do/cray-postgres-operator   artifactory.algol60.net/csm-docker/stable/registry.opensource.zalan.do/acid/spilo-14:2.1-p7   cluster-name    postgres-pod      -1              10d
+
+NAMESPACE   NAME                                                  TEAM                VERSION   PODS   VOLUME   CPU-REQUEST   MEMORY-REQUEST   AGE   STATUS
+argo        postgresql.acid.zalan.do/cray-nls-postgres            cray-nls            14        3      2Gi                                     10d   Running
+services    postgresql.acid.zalan.do/cfs-ara-postgres             cfs-ara             14        3      50Gi                                    10d   Running
+services    postgresql.acid.zalan.do/cray-console-data-postgres   cray-console-data   14        3      2Gi                                     10d   Running
+services    postgresql.acid.zalan.do/cray-dhcp-kea-postgres       cray-dhcp-kea       14        3      10Gi     2             1Gi              10d   Running
+services    postgresql.acid.zalan.do/cray-dns-powerdns-postgres   cray-dns-powerdns   14        3      10Gi                                    10d   Running
+services    postgresql.acid.zalan.do/cray-sls-postgres            cray-sls            14        3      1Gi                                     10d   Running
+services    postgresql.acid.zalan.do/cray-smd-postgres            cray-smd            14        3      100Gi    4             8Gi              10d   Running
+services    postgresql.acid.zalan.do/gitea-vcs-postgres           gitea-vcs           14        3      50Gi                                    10d   Running
+services    postgresql.acid.zalan.do/keycloak-postgres            keycloak            14        3      10Gi                                    10d   Running
+spire       postgresql.acid.zalan.do/cray-spire-postgres          cray-spire          14        3      60Gi     4             4Gi              10d   Running
+spire       postgresql.acid.zalan.do/spire-postgres               spire               14        3      60Gi     4             4Gi              10d   Running

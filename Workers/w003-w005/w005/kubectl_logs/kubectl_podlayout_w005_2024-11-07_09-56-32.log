@@ -1,0 +1,32 @@
+Timestamp: 2024-11-07 09:56:32
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-b5npn                             3/3     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-mktr9                                3/3     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+kube-system          pod/coredns-59cc8dbcc8-285sw                                          1/1     Terminating   0                4h39m   10.46.0.14    ncn-w005   <none>           <none>
+kube-system          pod/kube-etcdbackup-28849540-dxz7w                                    0/1     Terminating   0                16m     <none>        ncn-w005   <none>           <none>
+kube-system          pod/kube-multus-ds-cfplv                                              1/1     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+kube-system          pod/kube-proxy-nt289                                                  1/1     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+kube-system          pod/node-problem-detector-xmjz7                                       1/1     Running       0                21h     10.46.0.2     ncn-w005   <none>           <none>
+kube-system          pod/weave-net-dgsml                                                   2/2     Running       3 (21h ago)      4d14h   10.252.1.14   ncn-w005   <none>           <none>
+kyverno              pod/kyverno-cleanup-admission-reports-28849540-k7jfr                  0/1     Terminating   0                16m     <none>        ncn-w005   <none>           <none>
+kyverno              pod/kyverno-cleanup-cluster-admission-reports-28849540-hq45t          0/1     Terminating   0                16m     <none>        ncn-w005   <none>           <none>
+metallb-system       pod/metallb-speaker-6w8t4                                             1/1     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+nexus                pod/cray-precache-images-xtzjk                                        1/1     Running       0                21h     10.46.0.12    ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-9jpjm                                     1/1     Running       0                21h     10.46.0.9     ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-admin-j475x                      1/1     Running       0                21h     10.46.0.1     ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-user-lt5zd                       1/1     Running       0                21h     10.46.0.11    ncn-w005   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hmn-gd987                                 1/1     Running       0                21h     10.46.0.4     ncn-w005   <none>           <none>
+services             pod/cray-dhcp-kea-helper-28849539-f9mj7                               1/2     Terminating   0                17m     10.46.0.15    ncn-w005   <none>           <none>
+services             pod/cray-dns-unbound-manager-28849540-zxbst                           0/2     Terminating   0                16m     <none>        ncn-w005   <none>           <none>
+services             pod/cray-node-discovery-gnnrw                                         1/1     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+services             pod/cray-tftp-modprobe-cfmzt                                          1/1     Running       0                21h     10.46.0.7     ncn-w005   <none>           <none>
+services             pod/hms-discovery-28849539-gg692                                      2/2     Terminating   0                17m     10.46.0.13    ncn-w005   <none>           <none>
+services             pod/sonar-jobs-watcher-bkz8g                                          1/1     Running       0                21h     10.46.0.8     ncn-w005   <none>           <none>
+services             pod/sonar-sync-28849539-5k5l7                                         1/1     Terminating   0                17m     10.46.0.16    ncn-w005   <none>           <none>
+services             pod/sshot-fm-recover-28849539-k4rrz                                   1/2     Terminating   0                17m     10.46.0.17    ncn-w005   <none>           <none>
+spire                pod/cray-spire-agent-qwqpg                                            1/1     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+spire                pod/request-ncn-join-token-95vlr                                      2/2     Running       0                21h     10.46.0.10    ncn-w005   <none>           <none>
+spire                pod/spire-agent-xjqzr                                                 1/1     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-s7cfl                     1/1     Running       0                21h     10.46.0.6     ncn-w005   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-lc69n                  1/1     Running       0                21h     10.46.0.3     ncn-w005   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-df5zx                1/1     Running       0                21h     10.252.1.14   ncn-w005   <none>           <none>
+velero               pod/restic-zj544                                                      1/1     Running       0                21h     10.46.0.5     ncn-w005   <none>           <none>

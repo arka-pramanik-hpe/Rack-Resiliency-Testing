@@ -1,0 +1,6 @@
+740cf32dcccbf4e5, started, ncn-m001, https://10.252.1.12:2380, https://10.252.1.12:2379,https://127.0.0.1:2379, false
+86b28293e0f95af2, started, ncn-m003, https://10.252.1.10:2380, https://10.252.1.10:2379,https://127.0.0.1:2379, false
+dc30d91e1de3d1c8, started, ncn-m002, https://10.252.1.11:2380, https://10.252.1.11:2379,https://127.0.0.1:2379, false
+ncn-m003:2379 is healthy: successfully committed proposal: took = 15.387498ms
+ncn-m002:2379 is healthy: successfully committed proposal: took = 15.328287ms
+ncn-m001:2379 is healthy: successfully committed proposal: took = 17.554745ms

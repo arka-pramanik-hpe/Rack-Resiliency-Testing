@@ -1,0 +1,82 @@
+Timestamp: 2024-11-05 12:16:15
+argo                 pod/cray-iuf-metacontroller-helm-0                                    2/2     Running     0               5h17m   10.36.0.15    ncn-w001   <none>           <none>
+argo                 pod/cray-nls-postgres-0                                               2/3     Running     0               5h16m   10.36.0.17    ncn-w001   <none>           <none>
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-dkqsm                             3/3     Running     3 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-bw4mr                                3/3     Running     3 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+dvs                  pod/cray-dvs-mqtt-ss-0                                                2/2     Running     0               83m     10.36.0.26    ncn-w001   <none>           <none>
+kube-system          pod/kube-etcdbackup-28846810-jd8v4                                    0/1     Completed   0               6m15s   10.36.0.31    ncn-w001   <none>           <none>
+kube-system          pod/kube-multus-ds-gkhzv                                              1/1     Running     1 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+kube-system          pod/kube-proxy-5wzp2                                                  1/1     Running     1 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+kube-system          pod/node-problem-detector-6rd8h                                       1/1     Running     1 (5h19m ago)   2d19h   10.36.0.11    ncn-w001   <none>           <none>
+kube-system          pod/weave-net-zntch                                                   2/2     Running     3 (5h18m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+kyverno              pod/kyverno-cleanup-admission-reports-28846810-24vzd                  0/1     Completed   0               6m15s   10.36.0.29    ncn-w001   <none>           <none>
+kyverno              pod/kyverno-cleanup-cluster-admission-reports-28846810-28mtq          0/1     Completed   0               6m15s   10.36.0.32    ncn-w001   <none>           <none>
+metallb-system       pod/metallb-speaker-z6gcb                                             1/1     Running     1 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+nexus                pod/cray-precache-images-9xddc                                        1/1     Running     1 (5h19m ago)   2d19h   10.36.0.5     ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-admin-bmrht                      1/1     Running     1 (5h19m ago)   2d19h   10.36.0.3     ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-user-glbm7                       1/1     Running     1 (5h19m ago)   2d19h   10.36.0.6     ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hmn-gj65t                                 1/1     Running     1 (5h19m ago)   2d19h   10.36.0.2     ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-sv4zc                                     1/1     Running     1 (5h19m ago)   2d19h   10.36.0.10    ncn-w001   <none>           <none>
+services             pod/cray-bss-bitnami-etcd-2                                           2/2     Running     0               5h17m   10.36.0.20    ncn-w001   <none>           <none>
+services             pod/cray-bss-bitnami-etcd-snapshotter-28846800-w4q8l                  0/2     Completed   0               16m     10.36.0.41    ncn-w001   <none>           <none>
+services             pod/cray-console-data-postgres-2                                      3/3     Running     0               5h17m   10.36.0.19    ncn-w001   <none>           <none>
+services             pod/cray-console-node-1                                               3/3     Running     0               5h17m   10.36.0.21    ncn-w001   <none>           <none>
+services             pod/cray-dhcp-kea-helper-28846809-g8nks                               0/2     Completed   0               7m15s   10.36.0.32    ncn-w001   <none>           <none>
+services             pod/cray-dhcp-kea-helper-28846812-d95pn                               0/2     Completed   0               4m15s   10.36.0.33    ncn-w001   <none>           <none>
+services             pod/cray-dhcp-kea-helper-28846815-s6xw6                               0/2     Completed   0               75s     10.36.0.31    ncn-w001   <none>           <none>
+services             pod/cray-dhcp-kea-postgres-2                                          3/3     Running     0               80m     10.36.0.30    ncn-w001   <none>           <none>
+services             pod/cray-dns-unbound-manager-28846810-7z2jr                           0/2     Completed   0               6m15s   10.36.0.33    ncn-w001   <none>           <none>
+services             pod/cray-dns-unbound-manager-28846812-kfhkd                           0/2     Completed   0               4m15s   10.36.0.31    ncn-w001   <none>           <none>
+services             pod/cray-dns-unbound-manager-28846814-8rnvv                           0/2     Completed   0               2m15s   10.36.0.29    ncn-w001   <none>           <none>
+services             pod/cray-dns-unbound-manager-28846816-cmnjh                           1/2     NotReady    0               15s     10.36.0.33    ncn-w001   <none>           <none>
+services             pod/cray-fas-bitnami-etcd-snapshotter-28846800-d65jk                  0/2     Completed   0               16m     10.36.0.38    ncn-w001   <none>           <none>
+services             pod/cray-hbtd-bitnami-etcd-snapshotter-28846800-hnpnd                 0/2     Completed   0               16m     10.36.0.33    ncn-w001   <none>           <none>
+services             pod/cray-hmnfd-bitnami-etcd-snapshotter-28846800-6vgz8                0/2     Completed   0               16m     10.36.0.34    ncn-w001   <none>           <none>
+services             pod/cray-keycloak-2                                                   2/2     Running     2 (5h16m ago)   5h17m   10.36.0.12    ncn-w001   <none>           <none>
+services             pod/cray-node-discovery-r5jzj                                         1/1     Running     1 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+services             pod/cray-power-control-bitnami-etcd-0                                 2/2     Running     0               5h16m   10.36.0.24    ncn-w001   <none>           <none>
+services             pod/cray-power-control-bitnami-etcd-snapshotter-28846800-mp9xs        0/2     Completed   0               16m     10.36.0.37    ncn-w001   <none>           <none>
+services             pod/cray-shared-kafka-kafka-1                                         1/1     Running     1 (5h16m ago)   5h17m   10.36.0.16    ncn-w001   <none>           <none>
+services             pod/cray-shared-kafka-zookeeper-0                                     1/1     Running     0               5h16m   10.36.0.22    ncn-w001   <none>           <none>
+services             pod/cray-smd-postgres-1                                               3/3     Running     0               5h16m   10.36.0.23    ncn-w001   <none>           <none>
+services             pod/cray-tftp-modprobe-4hsf2                                          1/1     Running     1 (5h19m ago)   2d19h   10.36.0.9     ncn-w001   <none>           <none>
+services             pod/etcd-backup-pvc-snapshots-to-s3-28846805-9n5mm                    0/2     Completed   0               11m     10.36.0.29    ncn-w001   <none>           <none>
+services             pod/gitea-vcs-postgres-1                                              3/3     Running     0               5h17m   10.36.0.14    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846788-zdvlj                                      0/2     Completed   0               28m     10.36.0.31    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846791-2m2mr                                      0/2     Completed   0               25m     10.36.0.31    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846794-f8tnk                                      0/2     Completed   0               22m     10.36.0.31    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846797-jw59q                                      0/2     Completed   0               19m     10.36.0.32    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846800-whbfm                                      0/2     Completed   0               16m     10.36.0.36    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846803-mwj57                                      0/2     Completed   0               13m     10.36.0.31    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846806-qsmzv                                      0/2     Completed   0               10m     10.36.0.34    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846809-sr6fb                                      0/2     Completed   0               7m15s   10.36.0.31    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846812-4tf4r                                      0/2     Completed   0               4m15s   10.36.0.32    ncn-w001   <none>           <none>
+services             pod/hms-discovery-28846815-nflj9                                      0/2     Completed   0               75s     10.36.0.32    ncn-w001   <none>           <none>
+services             pod/keycloak-postgres-1                                               3/3     Running     0               5h17m   10.36.0.18    ncn-w001   <none>           <none>
+services             pod/kube-etcd-defrag-cray-hbtd-bitnami-etcd-28846800-6z2b4            0/2     Completed   0               16m     10.36.0.29    ncn-w001   <none>           <none>
+services             pod/sonar-jobs-watcher-cc5sz                                          1/1     Running     1 (5h19m ago)   2d19h   10.36.0.4     ncn-w001   <none>           <none>
+services             pod/sonar-sync-28846813-xmnns                                         0/1     Completed   0               3m15s   10.36.0.28    ncn-w001   <none>           <none>
+services             pod/sonar-sync-28846814-7p7pn                                         0/1     Completed   0               2m15s   10.36.0.28    ncn-w001   <none>           <none>
+services             pod/sonar-sync-28846815-mhxdk                                         0/1     Completed   0               75s     10.36.0.28    ncn-w001   <none>           <none>
+services             pod/sonar-sync-28846816-rndj4                                         1/1     Running     0               15s     10.36.0.28    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846785-dv6gw                                   0/2     Completed   0               31m     10.36.0.29    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846788-72g6w                                   0/2     Completed   0               28m     10.36.0.32    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846791-kd599                                   0/2     Completed   0               25m     10.36.0.29    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846794-7fnb2                                   0/2     Completed   0               22m     10.36.0.29    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846797-7l5p4                                   0/2     Completed   0               19m     10.36.0.31    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846800-75df6                                   0/2     Completed   0               16m     10.36.0.40    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846803-rzbnq                                   0/2     Completed   0               13m     10.36.0.32    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846806-kw5rw                                   0/2     Completed   0               10m     10.36.0.33    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846809-jtbg7                                   0/2     Completed   0               7m15s   10.36.0.29    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846812-f67kg                                   0/2     Completed   0               4m15s   10.36.0.29    ncn-w001   <none>           <none>
+services             pod/sshot-fm-recover-28846815-wf4n2                                   1/2     NotReady    0               75s     10.36.0.29    ncn-w001   <none>           <none>
+spire                pod/cray-spire-agent-fhp9g                                            1/1     Running     1 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+spire                pod/request-ncn-join-token-ffwtk                                      2/2     Running     2 (5h19m ago)   2d19h   10.36.0.8     ncn-w001   <none>           <none>
+spire                pod/spire-agent-9lnh8                                                 1/1     Running     1 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+spire                pod/spire-server-0                                                    2/2     Running     0               81m     10.36.0.27    ncn-w001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-58772                     1/1     Running     1 (5h19m ago)   2d19h   10.36.0.13    ncn-w001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-z58nr                  1/1     Running     1 (5h19m ago)   2d19h   10.36.0.1     ncn-w001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-jnqwg                1/1     Running     1 (5h19m ago)   2d19h   10.252.1.9    ncn-w001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-redfish-cron-28846800-hczkn                   1/1     Running     0               16m     10.36.0.39    ncn-w001   <none>           <none>
+sysmgmt-health       pod/vmselect-vms-1                                                    1/1     Running     0               5h16m   10.36.0.25    ncn-w001   <none>           <none>
+velero               pod/restic-7k2fp                                                      1/1     Running     1 (5h19m ago)   2d19h   10.36.0.7     ncn-w001   <none>           <none>

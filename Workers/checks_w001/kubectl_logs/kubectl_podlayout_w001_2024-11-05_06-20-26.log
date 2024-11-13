@@ -1,0 +1,67 @@
+Timestamp: 2024-11-05 06:20:26
+argo                 pod/cray-iuf-metacontroller-helm-0                                    2/2     Terminating   3 (2d8h ago)    2d13h   10.36.0.22    ncn-w001   <none>           <none>
+argo                 pod/cray-nls-argo-workflows-server-564cd584d9-2lbjn                   2/2     Terminating   0               2d13h   10.36.0.13    ncn-w001   <none>           <none>
+argo                 pod/cray-nls-argo-workflows-workflow-controller-6cdc74f748-8rttr      2/2     Terminating   2 (2d8h ago)    2d13h   10.36.0.16    ncn-w001   <none>           <none>
+argo                 pod/cray-nls-postgres-0                                               3/3     Terminating   0               2d12h   10.36.0.55    ncn-w001   <none>           <none>
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-dkqsm                             3/3     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+ceph-cephfs          pod/cray-ceph-csi-cephfs-provisioner-788df75f76-xzjpr                 6/6     Terminating   5 (2d8h ago)    2d13h   10.36.0.38    ncn-w001   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-bw4mr                                3/3     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-7d8995464d-wczlm                    2/2     Terminating   0               2d13h   10.36.0.35    ncn-w001   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-cainjector-6c7845f6dc-52vft         2/2     Terminating   0               2d13h   10.36.0.43    ncn-w001   <none>           <none>
+cert-manager         pod/cray-certmanager-cert-manager-webhook-57dbbff888-7qf6d            2/2     Terminating   1 (2d13h ago)   2d13h   10.36.0.15    ncn-w001   <none>           <none>
+dvs                  pod/cray-activemq-artemis-operator-controller-manager-958999f8m68qs   2/2     Terminating   2 (2d8h ago)    2d13h   10.36.0.41    ncn-w001   <none>           <none>
+dvs                  pod/cray-dvs-mqtt-ss-0                                                2/2     Terminating   0               2d12h   10.36.0.51    ncn-w001   <none>           <none>
+istio-system         pod/istio-ingressgateway-customer-admin-ffc69c5f-ktzt5                1/1     Terminating   0               2d13h   10.36.0.18    ncn-w001   <none>           <none>
+istio-system         pod/istiod-6bb7bc7fb9-7wrws                                           1/1     Terminating   0               2d12h   10.36.0.58    ncn-w001   <none>           <none>
+kube-system          pod/kube-multus-ds-gkhzv                                              1/1     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+kube-system          pod/kube-proxy-5wzp2                                                  1/1     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+kube-system          pod/node-problem-detector-6rd8h                                       1/1     Running       0               2d13h   10.36.0.11    ncn-w001   <none>           <none>
+kube-system          pod/weave-net-zntch                                                   2/2     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+kyverno              pod/kyverno-admission-controller-5fb8868644-9qqqk                     1/1     Terminating   0               2d13h   10.36.0.20    ncn-w001   <none>           <none>
+kyverno              pod/kyverno-cleanup-controller-5569cb8948-khpsq                       1/1     Terminating   2 (2d8h ago)    2d13h   10.36.0.21    ncn-w001   <none>           <none>
+metallb-system       pod/metallb-speaker-z6gcb                                             1/1     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+nexus                pod/cray-precache-images-9xddc                                        1/1     Running       0               2d13h   10.36.0.5     ncn-w001   <none>           <none>
+nexus                pod/nexus-84f59cbb6-2wclr                                             2/2     Terminating   0               2d12h   10.36.0.29    ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-admin-bmrht                      1/1     Running       0               2d13h   10.36.0.12    ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-user-glbm7                       1/1     Running       0               2d13h   10.36.0.6     ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hmn-gj65t                                 1/1     Running       0               2d13h   10.36.0.2     ncn-w001   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-sv4zc                                     1/1     Running       0               2d13h   10.36.0.10    ncn-w001   <none>           <none>
+pki-operator         pod/trustedcerts-operator-f546977cb-j7jkh                             2/2     Terminating   2 (2d8h ago)    2d13h   10.36.0.36    ncn-w001   <none>           <none>
+services             pod/cray-bss-79785c6d89-wbqrc                                         2/2     Terminating   0               2d13h   10.36.0.23    ncn-w001   <none>           <none>
+services             pod/cray-bss-bitnami-etcd-2                                           2/2     Terminating   0               2d13h   10.36.0.33    ncn-w001   <none>           <none>
+services             pod/cray-cfs-api-db-ff7f66d5d-lmsvw                                   2/2     Terminating   0               2d12h   10.36.0.59    ncn-w001   <none>           <none>
+services             pod/cray-console-data-postgres-2                                      3/3     Terminating   0               2d8h    10.36.0.34    ncn-w001   <none>           <none>
+services             pod/cray-console-node-1                                               3/3     Terminating   5 (2d8h ago)    2d12h   10.36.0.53    ncn-w001   <none>           <none>
+services             pod/cray-dhcp-kea-postgres-2                                          3/3     Terminating   0               2d13h   10.36.0.50    ncn-w001   <none>           <none>
+services             pod/cray-dns-unbound-79b56d4645-g5xzp                                 3/3     Terminating   0               2d13h   10.36.0.24    ncn-w001   <none>           <none>
+services             pod/cray-fas-77bb4c6b79-mkhgt                                         2/2     Terminating   1 (2d13h ago)   2d13h   10.36.0.25    ncn-w001   <none>           <none>
+services             pod/cray-hmnfd-747b78f958-cgwgl                                       2/2     Terminating   0               2d13h   10.36.0.27    ncn-w001   <none>           <none>
+services             pod/cray-ipxe-aarch64-6d97578788-rr9dm                                2/2     Terminating   0               2d12h   10.36.0.52    ncn-w001   <none>           <none>
+services             pod/cray-ipxe-x86-64-59d949584d-gvwlv                                 2/2     Terminating   0               2d12h   10.36.0.54    ncn-w001   <none>           <none>
+services             pod/cray-keycloak-2                                                   2/2     Terminating   0               2d12h   10.36.0.46    ncn-w001   <none>           <none>
+services             pod/cray-node-discovery-r5jzj                                         1/1     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+services             pod/cray-power-control-6f9869d68-r6bsb                                2/2     Terminating   0               2d13h   10.36.0.26    ncn-w001   <none>           <none>
+services             pod/cray-power-control-bitnami-etcd-0                                 2/2     Terminating   0               2d13h   10.36.0.32    ncn-w001   <none>           <none>
+services             pod/cray-scsd-b744ccc54-n8xr8                                         2/2     Terminating   0               2d13h   10.36.0.40    ncn-w001   <none>           <none>
+services             pod/cray-shared-kafka-kafka-1                                         1/1     Terminating   1 (2d13h ago)   2d13h   10.36.0.30    ncn-w001   <none>           <none>
+services             pod/cray-shared-kafka-zookeeper-0                                     1/1     Terminating   0               2d13h   10.36.0.1     ncn-w001   <none>           <none>
+services             pod/cray-smd-79dc846fcb-2vqwk                                         2/2     Terminating   0               2d13h   10.36.0.39    ncn-w001   <none>           <none>
+services             pod/cray-smd-79dc846fcb-lj2v2                                         2/2     Terminating   0               2d13h   10.36.0.42    ncn-w001   <none>           <none>
+services             pod/cray-smd-postgres-1                                               3/3     Terminating   0               2d8h    10.36.0.48    ncn-w001   <none>           <none>
+services             pod/cray-sts-6b8bb75c68-pgnb4                                         2/2     Terminating   0               2d13h   10.36.0.44    ncn-w001   <none>           <none>
+services             pod/cray-tftp-modprobe-4hsf2                                          1/1     Running       0               2d13h   10.36.0.9     ncn-w001   <none>           <none>
+services             pod/gitea-vcs-postgres-1                                              3/3     Terminating   0               2d8h    10.36.0.45    ncn-w001   <none>           <none>
+services             pod/keycloak-postgres-1                                               3/3     Terminating   0               2d8h    10.36.0.47    ncn-w001   <none>           <none>
+services             pod/nmdv2-service-86466bc7f8-2c4c5                                    2/2     Terminating   0               2d13h   10.36.0.37    ncn-w001   <none>           <none>
+services             pod/sonar-jobs-watcher-cc5sz                                          1/1     Running       0               2d13h   10.36.0.7     ncn-w001   <none>           <none>
+spire                pod/cray-spire-agent-fhp9g                                            1/1     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+spire                pod/cray-spire-jwks-847fc745b8-ckpsh                                  3/3     Terminating   0               2d13h   10.36.0.28    ncn-w001   <none>           <none>
+spire                pod/cray-spire-postgres-pooler-5997f6f6f5-g7jb8                       2/2     Terminating   0               2d13h   10.36.0.17    ncn-w001   <none>           <none>
+spire                pod/request-ncn-join-token-ffwtk                                      2/2     Running       0               2d13h   10.36.0.8     ncn-w001   <none>           <none>
+spire                pod/spire-agent-9lnh8                                                 1/1     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+spire                pod/spire-server-0                                                    2/2     Terminating   0               2d12h   10.36.0.19    ncn-w001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-58772                     1/1     Running       0               2d13h   10.36.0.14    ncn-w001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-z58nr                  1/1     Running       0               2d13h   10.36.0.3     ncn-w001   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-jnqwg                1/1     Running       0               2d13h   10.252.1.9    ncn-w001   <none>           <none>
+sysmgmt-health       pod/vmselect-vms-1                                                    1/1     Terminating   0               2d13h   10.36.0.31    ncn-w001   <none>           <none>
+velero               pod/restic-7k2fp                                                      1/1     Running       0               2d13h   10.36.0.4     ncn-w001   <none>           <none>

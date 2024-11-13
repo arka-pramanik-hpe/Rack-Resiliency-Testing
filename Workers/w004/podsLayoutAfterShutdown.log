@@ -1,0 +1,71 @@
+argo                 cray-nls-postgres-2                                               3/3     Running     0               13m     10.41.0.129   ncn-w004   <none>           <none>
+ceph-cephfs          cray-ceph-csi-cephfs-nodeplugin-4pcj5                             3/3     Running     3 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+ceph-rbd             cray-ceph-csi-rbd-nodeplugin-nzc82                                3/3     Running     3 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+dvs                  cray-dvs-mqtt-ss-1                                                1/2     Running     0               10m     10.41.0.43    ncn-w004   <none>           <none>
+kube-system          kube-etcdbackup-28855550-sh2ct                                    0/1     Completed   0               68s     10.41.0.38    ncn-w004   <none>           <none>
+kube-system          kube-multus-ds-4rd57                                              1/1     Running     1 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+kube-system          kube-proxy-bhhnm                                                  1/1     Running     1 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+kube-system          node-problem-detector-rr54n                                       1/1     Running     1 (15m ago)     8d      10.41.0.2     ncn-w004   <none>           <none>
+kube-system          weave-net-f27f9                                                   2/2     Running     2 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+kyverno              kyverno-cleanup-admission-reports-28855550-knzzd                  0/1     Completed   0               68s     10.41.0.25    ncn-w004   <none>           <none>
+kyverno              kyverno-cleanup-cluster-admission-reports-28855550-zzw2x          0/1     Completed   0               68s     10.41.0.24    ncn-w004   <none>           <none>
+metallb-system       metallb-speaker-cdcdv                                             1/1     Running     2 (14m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+nexus                cray-precache-images-jxv9h                                        1/1     Running     1 (15m ago)     8d      10.41.0.1     ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-8pw9f                                     1/1     Running     1 (15m ago)     8d      10.41.0.5     ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-admin-jcp2r                      1/1     Running     1 (15m ago)     8d      10.41.0.6     ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-customer-user-rs9m5                       1/1     Running     1 (15m ago)     8d      10.41.0.11    ncn-w004   <none>           <none>
+opa                  cray-opa-ingressgateway-hmn-gpzjz                                 1/1     Running     1 (15m ago)     8d      10.41.0.4     ncn-w004   <none>           <none>
+services             cfs-ara-postgres-0                                                3/3     Running     0               12m     10.41.0.27    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-helper-28855542-jn6ns                               0/2     Completed   0               9m8s    10.41.0.40    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-helper-28855545-d6k5z                               0/2     Completed   0               6m8s    10.41.0.44    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-helper-28855548-5lt6l                               0/2     Completed   0               3m8s    10.41.0.44    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-helper-28855551-cp989                               1/2     Running     0               8s      10.41.0.40    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running     0               12m     10.41.0.12    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-0                                      3/3     Running     0               12m     10.41.0.14    ncn-w004   <none>           <none>
+services             cray-dns-unbound-manager-28855544-ftnts                           0/2     Completed   0               6m20s   10.41.0.24    ncn-w004   <none>           <none>
+services             cray-dns-unbound-manager-28855546-sbdhv                           0/2     Completed   0               5m3s    10.41.0.24    ncn-w004   <none>           <none>
+services             cray-dns-unbound-manager-28855548-djbff                           0/2     Completed   0               3m8s    10.41.0.25    ncn-w004   <none>           <none>
+services             cray-dns-unbound-manager-28855550-kv8wr                           1/2     NotReady    0               68s     10.41.0.44    ncn-w004   <none>           <none>
+services             cray-fas-bitnami-etcd-2                                           2/2     Running     0               12m     10.41.0.26    ncn-w004   <none>           <none>
+services             cray-hbtd-bitnami-etcd-2                                          2/2     Running     1 (10m ago)     13m     10.41.0.17    ncn-w004   <none>           <none>
+services             cray-hmnfd-bitnami-etcd-2                                         2/2     Running     0               11m     10.41.0.35    ncn-w004   <none>           <none>
+services             cray-keycloak-1                                                   2/2     Running     3 (10m ago)     12m     10.41.0.20    ncn-w004   <none>           <none>
+services             cray-node-discovery-l5wzh                                         1/1     Running     1 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+services             cray-power-control-bitnami-etcd-1                                 2/2     Running     0               13m     10.41.0.16    ncn-w004   <none>           <none>
+services             cray-shared-kafka-kafka-0                                         1/1     Running     2 (10m ago)     11m     10.41.0.29    ncn-w004   <none>           <none>
+services             cray-shared-kafka-zookeeper-2                                     1/1     Running     0               13m     10.41.0.132   ncn-w004   <none>           <none>
+services             cray-sls-postgres-0                                               2/3     Running     0               13m     10.41.0.19    ncn-w004   <none>           <none>
+services             cray-tftp-modprobe-ltd9g                                          1/1     Running     1 (15m ago)     8d      10.41.0.9     ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-0                                              2/3     Running     0               13m     10.41.0.116   ncn-w004   <none>           <none>
+services             hms-discovery-28855539-cndgp                                      0/2     Completed   0               12m     10.41.0.25    ncn-w004   <none>           <none>
+services             hms-discovery-28855542-vkbg5                                      0/2     Completed   0               9m6s    10.41.0.44    ncn-w004   <none>           <none>
+services             hms-discovery-28855545-xjxcc                                      0/2     Completed   0               6m8s    10.41.0.46    ncn-w004   <none>           <none>
+services             hms-discovery-28855548-dkt2j                                      0/2     Completed   0               3m8s    10.41.0.38    ncn-w004   <none>           <none>
+services             hms-discovery-28855551-s4xrn                                      2/2     Running     0               8s      10.41.0.38    ncn-w004   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running     0               11m     10.41.0.36    ncn-w004   <none>           <none>
+services             sonar-jobs-watcher-zmctk                                          1/1     Running     1 (15m ago)     8d      10.41.0.3     ncn-w004   <none>           <none>
+services             sonar-sync-28855548-49vv6                                         0/1     Completed   0               3m8s    10.41.0.24    ncn-w004   <none>           <none>
+services             sonar-sync-28855549-njqnw                                         0/1     Completed   0               2m8s    10.41.0.24    ncn-w004   <none>           <none>
+services             sonar-sync-28855550-wh78l                                         0/1     Completed   0               68s     10.41.0.40    ncn-w004   <none>           <none>
+services             sonar-sync-28855551-h74xt                                         1/1     Running     0               8s      10.41.0.24    ncn-w004   <none>           <none>
+services             sshot-fm-recover-28855536-fjrll                                   0/2     Completed   0               15m     10.41.0.106   ncn-w004   <none>           <none>
+services             sshot-fm-recover-28855542-7s964                                   0/2     Completed   0               9m      10.41.0.46    ncn-w004   <none>           <none>
+services             sshot-fm-recover-28855545-s2f4q                                   0/2     Completed   0               6m8s    10.41.0.40    ncn-w004   <none>           <none>
+services             sshot-fm-recover-28855548-4hbvx                                   0/2     Completed   0               3m8s    10.41.0.40    ncn-w004   <none>           <none>
+services             sshot-fm-recover-28855551-rfn77                                   1/2     NotReady    0               8s      10.41.0.25    ncn-w004   <none>           <none>
+spire                cray-spire-agent-z9gtm                                            1/1     Running     1 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+spire                cray-spire-postgres-0                                             3/3     Running     0               11m     10.41.0.32    ncn-w004   <none>           <none>
+spire                cray-spire-server-1                                               2/2     Running     0               13m     10.41.0.89    ncn-w004   <none>           <none>
+spire                request-ncn-join-token-jnw8x                                      2/2     Running     2 (15m ago)     8d      10.41.0.10    ncn-w004   <none>           <none>
+spire                spire-agent-qgtjq                                                 1/1     Running     1 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+spire                spire-postgres-0                                                  3/3     Running     0               12m     10.41.0.28    ncn-w004   <none>           <none>
+spire                spire-server-1                                                    2/2     Running     0               12m     10.41.0.21    ncn-w004   <none>           <none>
+spire                tpm-provisioner-0                                                 2/2     Running     0               10m     10.41.0.39    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-iscsi-xqbdz                     1/1     Running     1 (15m ago)     8d      10.41.0.13    ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-node-exporter-smartmon-pwmzv                  1/1     Running     1 (15m ago)     8d      10.41.0.8     ncn-w004   <none>           <none>
+sysmgmt-health       cray-sysmgmt-health-prometheus-node-exporter-l9zwd                1/1     Running     1 (15m ago)     8d      10.252.1.13   ncn-w004   <none>           <none>
+sysmgmt-health       vmalertmanager-vms-0                                              2/2     Running     0               10m     10.41.0.45    ncn-w004   <none>           <none>
+sysmgmt-health       vmstorage-vms-1                                                   1/1     Running     0               13m     10.41.0.105   ncn-w004   <none>           <none>
+tapms-operator       cray-tapms-operator-57c6cfccf7-zt27f                              2/2     Running     8 (11m ago)     4d4h    10.41.0.42    ncn-w004   <none>           <none>
+vault                cray-vault-2                                                      5/5     Running     1 (11m ago)     11m     10.41.0.31    ncn-w004   <none>           <none>
+velero               restic-sdqkb                                                      1/1     Running     1 (15m ago)     8d      10.41.0.7     ncn-w004   <none>           <none>

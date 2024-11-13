@@ -1,0 +1,33 @@
+Timestamp: 2024-11-07 10:24:18
+ceph-cephfs          pod/cray-ceph-csi-cephfs-nodeplugin-wgrxz                             3/3     Running                3 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+ceph-rbd             pod/cray-ceph-csi-rbd-nodeplugin-4cwjf                                3/3     Running                3 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          pod/kube-multus-ds-jtkkw                                              1/1     Running                1 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          pod/kube-proxy-cb496                                                  1/1     Running                1 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+kube-system          pod/node-problem-detector-kntvd                                       1/1     Running                1 (2m8s ago)    4d16h   10.44.0.4     ncn-w003   <none>           <none>
+kube-system          pod/weave-net-7pbx9                                                   2/2     Running                3 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+metallb-system       pod/metallb-speaker-95n2g                                             0/1     Unknown                0               4d16h   10.252.1.7    ncn-w003   <none>           <none>
+nexus                pod/cray-precache-images-gqndd                                        1/1     Running                1 (2m8s ago)    4d16h   10.44.0.1     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-9qs2m                                     1/1     Running                1 (2m8s ago)    4d16h   10.44.0.7     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-admin-p6psv                      1/1     Running                1 (2m8s ago)    4d16h   10.44.0.8     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-customer-user-9b4vb                       1/1     Running                1 (2m8s ago)    4d16h   10.44.0.5     ncn-w003   <none>           <none>
+opa                  pod/cray-opa-ingressgateway-hmn-2mwmk                                 1/1     Running                1 (2m8s ago)    4d16h   10.44.0.11    ncn-w003   <none>           <none>
+services             pod/cray-bss-bitnami-etcd-0                                           0/2     Pending                0               1s      <none>        ncn-w003   <none>           <none>
+services             pod/cray-dhcp-kea-helper-28849584-j9kt7                               0/2     Pending                0               19s     <none>        ncn-w003   <none>           <none>
+services             pod/cray-dns-unbound-manager-28849584-f942z                           0/2     Pending                0               19s     <none>        ncn-w003   <none>           <none>
+services             pod/cray-hmnfd-bitnami-etcd-0                                         0/2     Pending                0               20s     <none>        ncn-w003   <none>           <none>
+services             pod/cray-node-discovery-cz27p                                         1/1     Running                1 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+services             pod/cray-shared-kafka-kafka-2                                         0/1     Running                0               41s     10.44.0.12    ncn-w003   <none>           <none>
+services             pod/cray-tftp-5d546777c9-4f67h                                        0/1     Terminating            0               4d16h   <none>        ncn-w003   <none>           <none>
+services             pod/cray-tftp-modprobe-q6msp                                          1/1     Running                1 (2m8s ago)    4d16h   10.44.0.6     ncn-w003   <none>           <none>
+services             pod/hms-discovery-28849584-mhv6h                                      0/2     Pending                0               19s     <none>        ncn-w003   <none>           <none>
+services             pod/sonar-jobs-watcher-jnqk5                                          1/1     Running                1 (2m8s ago)    4d16h   10.44.0.9     ncn-w003   <none>           <none>
+services             pod/sonar-sync-28849584-rrl8c                                         0/1     Pending                0               13s     <none>        ncn-w003   <none>           <none>
+services             pod/sshot-fm-recover-28849584-zhcfs                                   0/2     Pending                0               19s     <none>        ncn-w003   <none>           <none>
+spire                pod/cray-spire-agent-nd9hd                                            1/1     Running                1 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+spire                pod/request-ncn-join-token-99gk5                                      2/2     Running                2 (2m8s ago)    4d16h   10.44.0.10    ncn-w003   <none>           <none>
+spire                pod/spire-agent-f2tzn                                                 1/1     Running                1 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+spire                pod/spire-postgres-1                                                  2/3     Running                0               38s     10.44.0.13    ncn-w003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-iscsi-gm4pz                     0/1     CreateContainerError   0 (2m8s ago)    4d16h   10.44.0.16    ncn-w003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-q6kll                  1/1     Running                1 (2m8s ago)    4d16h   10.44.0.3     ncn-w003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-dtvnd                1/1     Running                1 (2m8s ago)    4d16h   10.252.1.7    ncn-w003   <none>           <none>
+velero               pod/restic-mrgfq                                                      1/1     Running                1 (2m8s ago)    4d16h   10.44.0.2     ncn-w003   <none>           <none>
