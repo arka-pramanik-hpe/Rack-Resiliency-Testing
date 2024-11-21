@@ -1,0 +1,4553 @@
+{
+    "ncn-w001": {
+        "2024-11-15 10:05:07": {
+            "argo": {
+                "cray-nls-postgres-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-nls-postgres"
+                    },
+                    "Pod Age": "10d 3h 5m"
+                }
+            },
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-provisioner-788df75f76-wsg8h": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-cephfs-provisioner-788df75f76"
+                    },
+                    "Pod Age": "8d 0h 20m"
+                }
+            },
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-provisioner-6974c7d78b-66m9l": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-rbd-provisioner-6974c7d78b"
+                    },
+                    "Pod Age": "9d 4h 11m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-webhook-57dbbff888-8kds5": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-webhook-57dbbff888"
+                    },
+                    "Pod Age": "9d 4h 11m"
+                }
+            },
+            "dvs": {
+                "cray-dvs-mqtt-ss-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-dvs-mqtt-ss"
+                    },
+                    "Pod Age": "9d 23h 12m"
+                }
+            },
+            "istio-system": {
+                "istiod-6bb7bc7fb9-tjw5v": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "8d 0h 20m"
+                }
+            },
+            "kube-system": {
+                "kube-proxy-5wzp2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-proxy"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-zntch": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            },
+            "kyverno": {
+                "kyverno-admission-controller-5fb8868644-8hjmp": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kyverno-admission-controller-5fb8868644"
+                    },
+                    "Pod Age": "8d 0h 20m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-z6gcb": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            },
+            "nexus": {
+                "cray-precache-images-9xddc": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-precache-images"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            },
+            "opa": {
+                "cray-opa-ingressgateway-sv4zc": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-opa-ingressgateway"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            }
+        },
+        "2024-11-15 10:05:09": {
+            "pki-operator": {
+                "trustedcerts-operator-f546977cb-nlv7d": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "trustedcerts-operator-f546977cb"
+                    },
+                    "Pod Age": "9d 4h 11m"
+                }
+            },
+            "services": {
+                "cray-dhcp-kea-56c5bb5789-b62rk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-dhcp-kea-56c5bb5789"
+                    },
+                    "Pod Age": "8d 0h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:05:10": {
+            "services": {
+                "cray-power-control-bitnami-etcd-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-power-control-bitnami-etcd"
+                    },
+                    "Pod Age": "10d 3h 5m"
+                }
+            }
+        },
+        "2024-11-15 10:05:11": {
+            "services": {
+                "cray-tftp-modprobe-4hsf2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-tftp-modprobe"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            }
+        },
+        "2024-11-15 10:05:12": {
+            "services": {
+                "keycloak-postgres-1": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "keycloak-postgres"
+                    },
+                    "Pod Age": "10d 3h 6m"
+                }
+            }
+        },
+        "2024-11-15 10:05:13": {
+            "services": {
+                "sonar-jobs-watcher-cc5sz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "sonar-jobs-watcher"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            },
+            "spire": {
+                "cray-spire-agent-fhp9g": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-spire-agent"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "spire-jwks-6fbb5864db-7x7d7": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "spire-jwks-6fbb5864db"
+                    },
+                    "Pod Age": "9d 4h 11m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "spire": {
+                "spire-server-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "spire-server"
+                    },
+                    "Pod Age": "9d 23h 10m"
+                }
+            },
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-victoria-metrics-operator-59c8875866-5vsf8": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-sysmgmt-health-victoria-metrics-operator-59c8875866"
+                    },
+                    "Pod Age": "9d 4h 11m"
+                }
+            }
+        },
+        "2024-11-15 10:05:16": {
+            "sysmgmt-health": {
+                "vmselect-vms-1": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmselect-vms"
+                    },
+                    "Pod Age": "10d 3h 5m"
+                }
+            },
+            "vault": {
+                "cray-vault-operator-57cc597f8d-5l6gt": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-vault-operator-57cc597f8d"
+                    },
+                    "Pod Age": "9d 4h 11m"
+                }
+            },
+            "velero": {
+                "restic-n7xml": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "restic"
+                    },
+                    "Pod Age": "2d 0h 52m"
+                }
+            }
+        }
+    },
+    "ncn-w002": {
+        "2024-11-15 10:05:07": {
+            "argo": {
+                "cray-nls-postgres-1": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-nls-postgres"
+                    },
+                    "Pod Age": "8d 21h 27m"
+                }
+            },
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-provisioner-788df75f76-g7zhx": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-cephfs-provisioner-788df75f76"
+                    },
+                    "Pod Age": "8d 21h 27m"
+                }
+            },
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-provisioner-6974c7d78b-drfgh": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-rbd-provisioner-6974c7d78b"
+                    },
+                    "Pod Age": "8d 0h 20m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-webhook-57dbbff888-tgsjt": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-webhook-57dbbff888"
+                    },
+                    "Pod Age": "8d 21h 27m"
+                }
+            },
+            "istio-system": {
+                "istiod-6bb7bc7fb9-4bp8c": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "8d 21h 27m"
+                }
+            },
+            "kube-system": {
+                "kube-proxy-gxncj": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-proxy"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-sbv7r": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-controller-5569cb8948-xfbc9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kyverno-cleanup-controller-5569cb8948"
+                    },
+                    "Pod Age": "8d 21h 27m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-c2vx4": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            },
+            "nexus": {
+                "cray-precache-images-8hdmn": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-precache-images"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            },
+            "opa": {
+                "cray-opa-ingressgateway-hmn-trx9n": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-opa-ingressgateway-hmn"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            }
+        },
+        "2024-11-15 10:05:09": {
+            "pki-operator": {
+                "trustedcerts-operator-f546977cb-pghxd": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "trustedcerts-operator-f546977cb"
+                    },
+                    "Pod Age": "8d 0h 20m"
+                }
+            },
+            "services": {
+                "cray-dhcp-kea-56c5bb5789-c75gj": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-dhcp-kea-56c5bb5789"
+                    },
+                    "Pod Age": "8d 21h 27m"
+                }
+            }
+        },
+        "2024-11-15 10:05:10": {
+            "services": {
+                "cray-power-control-bitnami-etcd-2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-power-control-bitnami-etcd"
+                    },
+                    "Pod Age": "9d 3h 36m"
+                }
+            }
+        },
+        "2024-11-15 10:05:11": {
+            "services": {
+                "cray-tftp-modprobe-pkrhx": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-tftp-modprobe"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            }
+        },
+        "2024-11-15 10:05:13": {
+            "services": {
+                "sonar-jobs-watcher-t28jc": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "sonar-jobs-watcher"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            },
+            "spire": {
+                "cray-spire-agent-mkdvt": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-spire-agent"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "spire-jwks-6fbb5864db-2j676": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "spire-jwks-6fbb5864db"
+                    },
+                    "Pod Age": "8d 0h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "spire": {
+                "spire-server-2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "spire-server"
+                    },
+                    "Pod Age": "9d 3h 35m"
+                }
+            },
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-prometheus-node-exporter-zq9vs": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-sysmgmt-health-prometheus-node-exporter"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            }
+        },
+        "2024-11-15 10:05:16": {
+            "sysmgmt-health": {
+                "vmstorage-vms-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmstorage-vms"
+                    },
+                    "Pod Age": "9d 3h 36m"
+                }
+            },
+            "vault": {
+                "cray-vault-1": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-vault"
+                    },
+                    "Pod Age": "9d 3h 36m"
+                }
+            },
+            "velero": {
+                "restic-z7ksk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "restic"
+                    },
+                    "Pod Age": "12d 16h 48m"
+                }
+            }
+        },
+        "2024-11-15 10:12:56": {
+            "argo": {
+                "cray-nls-argo-workflows-workflow-controller-6cdc74f748-8h522": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-argo-workflows-workflow-controller-6cdc74f748"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            }
+        },
+        "2024-11-15 10:12:57": {
+            "argo": {
+                "cray-nls-postgres-1": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-nls-postgres"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            },
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-provisioner-788df75f76-g7zhx": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-cephfs-provisioner-788df75f76"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            },
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-provisioner-6974c7d78b-drfgh": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-rbd-provisioner-6974c7d78b"
+                    },
+                    "Pod Age": "8d 0h 28m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-webhook-57dbbff888-tgsjt": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-webhook-57dbbff888"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            },
+            "istio-system": {
+                "istio-ingressgateway-customer-admin-ffc69c5f-flhqq": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istio-ingressgateway-customer-admin-ffc69c5f"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            }
+        },
+        "2024-11-15 10:12:58": {
+            "istio-system": {
+                "istiod-6bb7bc7fb9-4bp8c": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-controller-5569cb8948-xfbc9": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kyverno-cleanup-controller-5569cb8948"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            },
+            "pki-operator": {
+                "trustedcerts-operator-f546977cb-pghxd": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "trustedcerts-operator-f546977cb"
+                    },
+                    "Pod Age": "8d 0h 28m"
+                }
+            },
+            "services": {
+                "cray-bss-79785c6d89-4ws95": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-bss-79785c6d89"
+                    },
+                    "Pod Age": "8d 0h 28m"
+                }
+            }
+        },
+        "2024-11-15 10:12:59": {
+            "services": {
+                "cray-ipxe-aarch64-6d97578788-cnm4t": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ipxe-aarch64-6d97578788"
+                    },
+                    "Pod Age": "8d 21h 35m"
+                }
+            }
+        },
+        "2024-11-15 10:13:00": {
+            "services": {
+                "cray-tftp-5d546777c9-ksh49": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-tftp-5d546777c9"
+                    },
+                    "Pod Age": "8d 0h 28m"
+                }
+            },
+            "spire": {
+                "spire-server-2": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "spire-server"
+                    },
+                    "Pod Age": "9d 3h 43m"
+                }
+            }
+        },
+        "2024-11-15 10:13:01": {
+            "sysmgmt-health": {
+                "vmstorage-vms-0": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmstorage-vms"
+                    },
+                    "Pod Age": "9d 3h 44m"
+                }
+            },
+            "vault": {
+                "cray-vault-1": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-vault"
+                    },
+                    "Pod Age": "9d 3h 44m"
+                }
+            }
+        },
+        "2024-11-15 10:32:17": {
+            "spire": {
+                "cray-spire-server-2": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-spire-server"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:18": {
+            "sysmgmt-health": {
+                "vmstorage-vms-0": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmstorage-vms"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "vault": {
+                "cray-vault-1": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-vault"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:32": {
+            "services": {
+                "cray-hmnfd-bitnami-etcd-1": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-hmnfd-bitnami-etcd"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "sysmgmt-health": {
+                "vmselect-vms-0": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmselect-vms"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:45": {
+            "argo": {
+                "cray-nls-postgres-1": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-nls-postgres"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:46": {
+            "services": {
+                "cray-power-control-bitnami-etcd-2": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-power-control-bitnami-etcd"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:59": {
+            "services": {
+                "cray-hbtd-bitnami-etcd-1": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-hbtd-bitnami-etcd"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "spire": {
+                "cray-spire-postgres-1": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-spire-postgres"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:33:13": {
+            "services": {
+                "sshot-fm-recover-28861113-ppgzb": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861113"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:33:27": {
+            "argo": {
+                "cray-iuf-metacontroller-helm-1": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-iuf-metacontroller-helm"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kube-system": {
+                "weave-net-sbv7r": {
+                    "Previous State": "Running",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 17h 16m"
+                }
+            },
+            "services": {
+                "hms-discovery-28861113-b6drx": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861113"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:33:40": {
+            "argo": {
+                "cray-nls-postgres-1": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-nls-postgres"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "services": {
+                "cray-console-data-postgres-1": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-console-data-postgres"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:33:41": {
+            "services": {
+                "sonar-sync-28861113-rj88w": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861113"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "spire": {
+                "cray-spire-server-2": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-spire-server"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "sysmgmt-health": {
+                "vmselect-vms-0": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmselect-vms"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "vault": {
+                "cray-vault-1": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-vault"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:33:54": {
+            "kube-system": {
+                "weave-net-sbv7r": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 17h 17m"
+                }
+            }
+        },
+        "2024-11-15 10:33:55": {
+            "services": {
+                "cray-hbtd-bitnami-etcd-1": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-hbtd-bitnami-etcd"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "sysmgmt-health": {
+                "vmstorage-vms-0": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmstorage-vms"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:34:08": {
+            "argo": {
+                "cray-iuf-metacontroller-helm-1": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-iuf-metacontroller-helm"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "istio-system": {
+                "istiod-6bb7bc7fb9-mkvdp": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sonar-sync-28861113-rj88w": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861113"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:34:09": {
+            "services": {
+                "sshot-fm-recover-28861113-ppgzb": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861113"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:34:22": {
+            "istio-system": {
+                "istiod-6bb7bc7fb9-mkvdp": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sshot-fm-recover-28861113-ppgzb": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861113"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "spire": {
+                "cray-spire-postgres-1": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-spire-postgres"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:34:36": {
+            "istio-system": {
+                "istiod-6bb7bc7fb9-tsjfr": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:34:49": {
+            "services": {
+                "sonar-sync-28861114-sct4f": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861114"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:35:16": {
+            "services": {
+                "sonar-sync-28861115-hb4vj": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861115"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:35:30": {
+            "services": {
+                "hms-discovery-28861113-b6drx": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861113"
+                    },
+                    "Pod Age": "0d 0h 2m"
+                }
+            }
+        },
+        "2024-11-15 10:35:43": {
+            "services": {
+                "sonar-sync-28861115-hb4vj": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861115"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:36:10": {
+            "services": {
+                "sonar-sync-28861116-5rx28": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861116"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:36:11": {
+            "services": {
+                "sshot-fm-recover-28861116-cz8zw": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861116"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:36:24": {
+            "services": {
+                "hms-discovery-28861116-mg7dv": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861116"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:36:51": {
+            "services": {
+                "sonar-sync-28861116-5rx28": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861116"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:37:04": {
+            "services": {
+                "sonar-sync-28861117-qf52g": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861117"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:37:05": {
+            "services": {
+                "sshot-fm-recover-28861116-cz8zw": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861116"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:37:18": {
+            "services": {
+                "sonar-sync-28861117-qf52g": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861117"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:37:45": {
+            "services": {
+                "sonar-sync-28861117-qf52g": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861117"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:38:12": {
+            "services": {
+                "sonar-sync-28861118-s4mgf": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861118"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:38:52": {
+            "services": {
+                "sonar-sync-28861118-s4mgf": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861118"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:39:05": {
+            "services": {
+                "sshot-fm-recover-28861119-4fnb2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861119"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:39:19": {
+            "services": {
+                "sshot-fm-recover-28861119-4fnb2": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861119"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:39:33": {
+            "services": {
+                "sshot-fm-recover-28861119-4fnb2": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861119"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:39:46": {
+            "services": {
+                "sonar-sync-28861119-757bc": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861119"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:40:13": {
+            "kube-system": {
+                "kube-etcdbackup-28861120-cmcfj": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861120"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-cluster-admission-reports-28861120-sstkf": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-cluster-admission-reports-28861120"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sonar-sync-28861120-js8qh": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861120"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:40:27": {
+            "kube-system": {
+                "kube-etcdbackup-28861120-cmcfj": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861120"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:40:40": {
+            "services": {
+                "cray-dns-unbound-manager-28861120-xwdd5": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861120"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:40:53": {
+            "services": {
+                "hms-discovery-28861119-xgf78": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861119"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:40:54": {
+            "services": {
+                "sonar-sync-28861120-js8qh": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861120"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:41:07": {
+            "services": {
+                "sonar-sync-28861121-h7g7s": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861121"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        }
+    },
+    "ncn-w003": {
+        "2024-11-15 10:05:07": {
+            "argo": {
+                "cray-nls-argo-workflows-workflow-controller-6cdc74f748-hmn5z": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-argo-workflows-workflow-controller-6cdc74f748"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-provisioner-788df75f76-n2rp9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-cephfs-provisioner-788df75f76"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-nodeplugin-4cwjf": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-ceph-csi-rbd-nodeplugin"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-cainjector-6c7845f6dc-wl5xq": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-cainjector-6c7845f6dc"
+                    },
+                    "Pod Age": "3d 21h 53m"
+                }
+            },
+            "dvs": {
+                "cray-activemq-artemis-operator-controller-manager-958999f8224qp": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-activemq-artemis-operator-controller-manager-958999f86"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "hnc-system": {
+                "hnc-controller-manager-56c97b978d-hlq8k": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "hnc-controller-manager-56c97b978d"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "istio-operator": {
+                "istio-operator-5695f4cd46-xp2mn": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istio-operator-5695f4cd46"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "istio-system": {
+                "kiali-7cf8968ff4-6r2kz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kiali-7cf8968ff4"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "kube-system": {
+                "kube-proxy-cb496": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-proxy"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-7pbx9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            },
+            "kyverno": {
+                "kyverno-reports-controller-599f875b5b-mn96j": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kyverno-reports-controller-599f875b5b"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-95n2g": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            },
+            "nexus": {
+                "cray-precache-images-gqndd": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-precache-images"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            },
+            "opa": {
+                "cray-opa-ingressgateway-hmn-2mwmk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-opa-ingressgateway-hmn"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            },
+            "operators": {
+                "cray-kiali-kiali-operator-66645594fc-vc9w9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-kiali-kiali-operator-66645594fc"
+                    },
+                    "Pod Age": "3d 21h 53m"
+                }
+            },
+            "pki-operator": {
+                "trustedcerts-operator-f546977cb-2wzb2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "trustedcerts-operator-f546977cb"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            }
+        },
+        "2024-11-15 10:05:09": {
+            "services": {
+                "cray-dhcp-kea-56c5bb5789-zwzzj": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-dhcp-kea-56c5bb5789"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            }
+        },
+        "2024-11-15 10:05:10": {
+            "services": {
+                "cray-scsd-b744ccc54-8ztcf": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-scsd-b744ccc54"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            }
+        },
+        "2024-11-15 10:05:11": {
+            "services": {
+                "cray-tftp-modprobe-q6msp": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-tftp-modprobe"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:05:12": {
+            "services": {
+                "gitea-vcs-856dfb98cf-tx2t9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "gitea-vcs-856dfb98cf"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            }
+        },
+        "2024-11-15 10:05:13": {
+            "services": {
+                "sonar-jobs-watcher-jnqk5": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "sonar-jobs-watcher"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "spire-agent-f2tzn": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "spire-agent"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "spire": {
+                "spire-postgres-pooler-6c97d87dd5-t4r5s": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "spire-postgres-pooler-6c97d87dd5"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "sshot-net-operator": {
+                "sshot-net-operator-cf49677c5-l5vgz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "sshot-net-operator-cf49677c5"
+                    },
+                    "Pod Age": "3d 21h 52m"
+                }
+            },
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-prometheus-node-exporter-dtvnd": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-sysmgmt-health-prometheus-node-exporter"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:05:16": {
+            "sysmgmt-health": {
+                "vminsert-vms-cd9d4f894-6q949": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "vminsert-vms-cd9d4f894"
+                    },
+                    "Pod Age": "3d 21h 53m"
+                }
+            },
+            "vault": {
+                "tpm-intermediate-28854720-dbnql": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "tpm-intermediate-28854720"
+                    },
+                    "Pod Age": "4d 10h 5m"
+                }
+            },
+            "velero": {
+                "restic-mrgfq": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "restic"
+                    },
+                    "Pod Age": "12d 16h 20m"
+                }
+            }
+        },
+        "2024-11-15 10:19:00": {
+            "services": {
+                "cray-cfs-api-557fb98d57-ztj57": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-cfs-api-557fb98d57"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:24:16": {
+            "services": {
+                "cray-cfs-api-557fb98d57-ztj57": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-cfs-api-557fb98d57"
+                    },
+                    "Pod Age": "0d 0h 5m"
+                }
+            }
+        }
+    },
+    "ncn-m002": {
+        "2024-11-15 10:05:07": {
+            "argo": {
+                "cray-nls-bfd94746b-m97ln": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-bfd94746b"
+                    },
+                    "Pod Age": "0d 0h 43m"
+                }
+            },
+            "kube-system": {
+                "kube-proxy-4nnxp": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-proxy"
+                    },
+                    "Pod Age": "12d 12h 25m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-fcqnz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 12h 25m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-fq8mh": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "12d 12h 25m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "request-ncn-join-token-29q8q": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "request-ncn-join-token"
+                    },
+                    "Pod Age": "12d 12h 25m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-prometheus-node-exporter-74hxf": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-sysmgmt-health-prometheus-node-exporter"
+                    },
+                    "Pod Age": "12d 12h 25m"
+                }
+            }
+        },
+        "2024-11-15 10:12:57": {
+            "argo": {
+                "cray-nls-bfd94746b-m97ln": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-bfd94746b"
+                    },
+                    "Pod Age": "0d 0h 51m"
+                }
+            }
+        },
+        "2024-11-15 10:12:58": {
+            "kube-system": {
+                "coredns-59cc8dbcc8-stch9": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "coredns-59cc8dbcc8"
+                    },
+                    "Pod Age": "8d 0h 27m"
+                }
+            }
+        },
+        "2024-11-15 10:13:01": {
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-grok-exporter-544fb59f84-xncnp": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-sysmgmt-health-grok-exporter-544fb59f84"
+                    },
+                    "Pod Age": "8d 4h 56m"
+                }
+            }
+        },
+        "2024-11-15 10:31:36": {
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-grok-exporter-544fb59f84-xfcw4": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-sysmgmt-health-grok-exporter-544fb59f84"
+                    },
+                    "Pod Age": "0d 0h 18m"
+                }
+            }
+        }
+    },
+    "ncn-m001": {
+        "2024-11-15 10:05:07": {
+            "argo": {
+                "cray-nls-bfd94746b-vnbrn": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-bfd94746b"
+                    },
+                    "Pod Age": "12d 12h 32m"
+                }
+            },
+            "kube-system": {
+                "kube-proxy-lfht9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-proxy"
+                    },
+                    "Pod Age": "20d 21h 25m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-ksz95": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "20d 21h 25m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-nk44l": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "20d 21h 24m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "request-ncn-join-token-d9269": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "request-ncn-join-token"
+                    },
+                    "Pod Age": "20d 21h 25m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-prometheus-node-exporter-v6lz5": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-sysmgmt-health-prometheus-node-exporter"
+                    },
+                    "Pod Age": "20d 21h 25m"
+                }
+            }
+        }
+    },
+    "ncn-w004": {
+        "2024-11-15 10:05:07": {
+            "argo": {
+                "cray-nls-postgres-2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-nls-postgres"
+                    },
+                    "Pod Age": "3d 20h 27m"
+                }
+            },
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-nodeplugin-4pcj5": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-ceph-csi-cephfs-nodeplugin"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            },
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-provisioner-6974c7d78b-bfllq": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-rbd-provisioner-6974c7d78b"
+                    },
+                    "Pod Age": "3d 0h 15m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-webhook-57dbbff888-dlpfq": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-webhook-57dbbff888"
+                    },
+                    "Pod Age": "3d 0h 15m"
+                }
+            },
+            "dvs": {
+                "cray-dvs-mqtt-ss-1": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-dvs-mqtt-ss"
+                    },
+                    "Pod Age": "3d 20h 24m"
+                }
+            },
+            "ims": {
+                "cray-ims-19219974-a545-4903-9b31-135ceaa87a57-customize-jrgth": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-ims-19219974-a545-4903-9b31-135ceaa87a57-customize"
+                    },
+                    "Pod Age": "0d 17h 37m"
+                }
+            },
+            "kube-system": {
+                "kube-proxy-bhhnm": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-proxy"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-f27f9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-cdcdv": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            },
+            "nexus": {
+                "nexus-84f59cbb6-ndmcw": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "nexus-84f59cbb6"
+                    },
+                    "Pod Age": "3d 0h 15m"
+                }
+            },
+            "opa": {
+                "cray-opa-ingressgateway-hmn-gpzjz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-opa-ingressgateway-hmn"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            },
+            "operators": {
+                "strimzi-cluster-operator-569c45b5d-5nfx6": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "strimzi-cluster-operator-569c45b5d"
+                    },
+                    "Pod Age": "3d 0h 15m"
+                }
+            }
+        },
+        "2024-11-15 10:05:09": {
+            "services": {
+                "cray-cps-5684977999-6hbh2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-cps-5684977999"
+                    },
+                    "Pod Age": "3d 0h 15m"
+                }
+            }
+        },
+        "2024-11-15 10:05:10": {
+            "services": {
+                "cray-power-control-bitnami-etcd-1": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-power-control-bitnami-etcd"
+                    },
+                    "Pod Age": "3d 20h 27m"
+                }
+            }
+        },
+        "2024-11-15 10:05:11": {
+            "services": {
+                "cray-tftp-modprobe-ltd9g": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-tftp-modprobe"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            }
+        },
+        "2024-11-15 10:05:12": {
+            "services": {
+                "keycloak-postgres-2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "keycloak-postgres"
+                    },
+                    "Pod Age": "3d 20h 25m"
+                }
+            }
+        },
+        "2024-11-15 10:05:13": {
+            "services": {
+                "sonar-jobs-watcher-zmctk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "sonar-jobs-watcher"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "spire-postgres-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "spire-postgres"
+                    },
+                    "Pod Age": "3d 20h 26m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "spire": {
+                "tpm-provisioner-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "tpm-provisioner"
+                    },
+                    "Pod Age": "3d 20h 24m"
+                }
+            },
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-prometheus-snmp-exporter-5cb4c85bb8-c7js6": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-sysmgmt-health-prometheus-snmp-exporter-5cb4c85bb8"
+                    },
+                    "Pod Age": "3d 0h 15m"
+                }
+            }
+        },
+        "2024-11-15 10:05:16": {
+            "sysmgmt-health": {
+                "vmstorage-vms-1": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "vmstorage-vms"
+                    },
+                    "Pod Age": "3d 20h 27m"
+                }
+            },
+            "tapms-operator": {
+                "cray-tapms-operator-57c6cfccf7-zt27f": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-tapms-operator-57c6cfccf7"
+                    },
+                    "Pod Age": "8d 0h 21m"
+                }
+            },
+            "vault": {
+                "cray-vault-2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-vault"
+                    },
+                    "Pod Age": "2d 3h 30m"
+                }
+            },
+            "velero": {
+                "restic-sdqkb": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "restic"
+                    },
+                    "Pod Age": "12d 15h 46m"
+                }
+            }
+        },
+        "2024-11-15 10:12:56": {
+            "argo": {
+                "cray-nls-argo-workflows-server-564cd584d9-7shh4": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-argo-workflows-server-564cd584d9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:57": {
+            "cert-manager": {
+                "cray-certmanager-cert-manager-7d8995464d-smpvd": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-7d8995464d"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "istio-system": {
+                "istio-ingressgateway-94df8f964-x765h": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istio-ingressgateway-94df8f964"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:58": {
+            "istio-system": {
+                "istiod-6bb7bc7fb9-cw66r": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-controller-5569cb8948-mwpww": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kyverno-cleanup-controller-5569cb8948"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:59": {
+            "services": {
+                "cray-hmnfd-747b78f958-b7mds": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-hmnfd-747b78f958"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:00": {
+            "services": {
+                "cray-ipxe-aarch64-6d97578788-x6jr8": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ipxe-aarch64-6d97578788"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:14": {
+            "argo": {
+                "cray-nls-argo-workflows-server-564cd584d9-7shh4": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-argo-workflows-server-564cd584d9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:15": {
+            "cert-manager": {
+                "cray-certmanager-cert-manager-7d8995464d-smpvd": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-7d8995464d"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "istio-system": {
+                "istiod-6bb7bc7fb9-hwwnk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-controller-5569cb8948-mwpww": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kyverno-cleanup-controller-5569cb8948"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sonar-sync-28861093-jd9np": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861093"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:30": {
+            "istio-system": {
+                "istiod-6bb7bc7fb9-hwwnk": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-admission-controller-5fb8868644-rsj8m": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "kyverno-admission-controller-5fb8868644"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "cray-hbtd-55fb95cc7b-p89wb": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-hbtd-55fb95cc7b"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:31": {
+            "services": {
+                "sonar-sync-28861093-jd9np": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861093"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:45": {
+            "services": {
+                "hms-discovery-28861092-z58qw": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861092"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:58": {
+            "services": {
+                "sonar-sync-28861093-jd9np": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861093"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:14:12": {
+            "services": {
+                "sonar-sync-28861094-kks4h": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861094"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:14:39": {
+            "services": {
+                "sonar-sync-28861094-kks4h": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861094"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:15:07": {
+            "services": {
+                "sshot-fm-recover-28861095-5x6qz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861095"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:15:21": {
+            "services": {
+                "sshot-fm-recover-28861095-5x6qz": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861095"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:15:48": {
+            "services": {
+                "sonar-sync-28861095-6fhpb": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861095"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:16:02": {
+            "services": {
+                "sshot-fm-recover-28861095-5x6qz": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861095"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:16:15": {
+            "services": {
+                "sonar-sync-28861096-bx8dp": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861096"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:16:43": {
+            "services": {
+                "sonar-sync-28861096-bx8dp": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861096"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:17:10": {
+            "services": {
+                "sonar-sync-28861097-22hvm": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861097"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:17:37": {
+            "services": {
+                "sonar-sync-28861097-22hvm": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861097"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:18:05": {
+            "services": {
+                "sshot-fm-recover-28861098-tgn9t": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861098"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:18:18": {
+            "services": {
+                "cray-dhcp-kea-helper-28861095-xdshp": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dhcp-kea-helper-28861095"
+                    },
+                    "Pod Age": "0d 0h 2m"
+                }
+            }
+        },
+        "2024-11-15 10:18:19": {
+            "services": {
+                "sshot-fm-recover-28861098-tgn9t": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861098"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:18:32": {
+            "services": {
+                "cray-dns-unbound-manager-28861096-sjvcg": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861096"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:18:33": {
+            "services": {
+                "cray-dns-unbound-manager-28861098-9j7wk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861098"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:18:46": {
+            "services": {
+                "sonar-sync-28861098-bmflq": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861098"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:19:14": {
+            "services": {
+                "sonar-sync-28861099-cf4tk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861099"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:19:41": {
+            "services": {
+                "sonar-sync-28861099-cf4tk": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861099"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:19:55": {
+            "services": {
+                "sshot-fm-recover-28861098-tgn9t": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861098"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:20:09": {
+            "kube-system": {
+                "kube-etcdbackup-28861100-zllk6": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861100"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-cluster-admission-reports-28861100-pdd68": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-cluster-admission-reports-28861100"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sonar-sync-28861100-4g2r2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861100"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:20:23": {
+            "kube-system": {
+                "kube-etcdbackup-28861100-zllk6": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861100"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-admission-reports-28861100-2sjps": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-admission-reports-28861100"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sonar-sync-28861100-4g2r2": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861100"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:20:50": {
+            "services": {
+                "sonar-sync-28861100-4g2r2": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861100"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:21:04": {
+            "services": {
+                "sonar-sync-28861101-wjqcw": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861101"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:21:05": {
+            "services": {
+                "sshot-fm-recover-28861101-rw7h8": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861101"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:21:18": {
+            "services": {
+                "sonar-sync-28861101-wjqcw": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861101"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:21:19": {
+            "services": {
+                "sshot-fm-recover-28861101-rw7h8": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861101"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:21:46": {
+            "services": {
+                "sonar-sync-28861101-wjqcw": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861101"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:22:13": {
+            "services": {
+                "sonar-sync-28861102-txxk9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861102"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:22:27": {
+            "services": {
+                "sshot-fm-recover-28861101-rw7h8": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861101"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:22:41": {
+            "services": {
+                "sonar-sync-28861102-txxk9": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861102"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:23:08": {
+            "services": {
+                "sonar-sync-28861103-t89x6": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861103"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:23:35": {
+            "services": {
+                "cray-dns-unbound-manager-28861102-d8cjz": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861102"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:23:49": {
+            "services": {
+                "sonar-sync-28861103-t89x6": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861103"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:24:17": {
+            "services": {
+                "sshot-fm-recover-28861104-9sg5t": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861104"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:24:44": {
+            "services": {
+                "sonar-sync-28861104-d85b6": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861104"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:24:58": {
+            "services": {
+                "hms-discovery-28861104-vtcf2": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861104"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:25:12": {
+            "services": {
+                "sshot-fm-recover-28861104-9sg5t": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861104"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:25:39": {
+            "services": {
+                "sonar-sync-28861105-bdspm": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861105"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:26:06": {
+            "services": {
+                "sonar-sync-28861106-sxth6": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861106"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:26:20": {
+            "services": {
+                "cray-dns-unbound-manager-28861106-lz669": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861106"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:26:47": {
+            "services": {
+                "sonar-sync-28861106-sxth6": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861106"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:27:14": {
+            "services": {
+                "cray-dhcp-kea-helper-28861107-mvzl4": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dhcp-kea-helper-28861107"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:27:15": {
+            "services": {
+                "sshot-fm-recover-28861107-9thhc": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861107"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:27:28": {
+            "services": {
+                "cray-dns-unbound-manager-28861106-lz669": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861106"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:27:42": {
+            "services": {
+                "sshot-fm-recover-28861107-9thhc": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861107"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:28:09": {
+            "services": {
+                "sonar-sync-28861108-2xxkt": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861108"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:28:37": {
+            "services": {
+                "sonar-sync-28861108-2xxkt": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861108"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:28:50": {
+            "services": {
+                "hms-discovery-28861107-f7snl": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861107"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:29:04": {
+            "services": {
+                "sonar-sync-28861109-f9dsk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861109"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:29:18": {
+            "services": {
+                "sonar-sync-28861109-f9dsk": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861109"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:29:45": {
+            "services": {
+                "sonar-sync-28861109-f9dsk": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861109"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:30:12": {
+            "kube-system": {
+                "kube-etcdbackup-28861110-s6lqp": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861110"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-cluster-admission-reports-28861110-6ftqr": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-cluster-admission-reports-28861110"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:30:13": {
+            "services": {
+                "sshot-fm-recover-28861110-cpjcb": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861110"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:30:27": {
+            "kube-system": {
+                "kube-etcdbackup-28861110-s6lqp": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861110"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-admission-reports-28861110-l8797": {
+                    "Previous State": "Pending",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-admission-reports-28861110"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sshot-fm-recover-28861110-cpjcb": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861110"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:30:41": {
+            "services": {
+                "sonar-sync-28861110-kwzcs": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861110"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:31:08": {
+            "services": {
+                "sonar-sync-28861111-5qqgm": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861111"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:31:22": {
+            "services": {
+                "hms-discovery-28861110-8kgjw": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861110"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:31:36": {
+            "services": {
+                "sshot-fm-recover-28861110-cpjcb": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861110"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:31:50": {
+            "services": {
+                "sonar-sync-28861111-5qqgm": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861111"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:03": {
+            "services": {
+                "sonar-sync-28861112-xqtzx": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861112"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:17": {
+            "services": {
+                "sonar-sync-28861112-xqtzx": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861112"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:31": {
+            "services": {
+                "cfs-8bba5a9b-5982-4e87-8cfe-7ff077da74a1-2hfbf": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cfs-8bba5a9b-5982-4e87-8cfe-7ff077da74a1"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:45": {
+            "services": {
+                "cray-dns-unbound-manager-28861112-29nvk": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861112"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:46": {
+            "services": {
+                "sonar-sync-28861112-xqtzx": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861112"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:59": {
+            "services": {
+                "cray-smd-postgres-0": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-smd-postgres"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:34:36": {
+            "istio-system": {
+                "istiod-6bb7bc7fb9-6qtwb": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:35:03": {
+            "services": {
+                "cfs-8bba5a9b-5982-4e87-8cfe-7ff077da74a1-2hfbf": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cfs-8bba5a9b-5982-4e87-8cfe-7ff077da74a1"
+                    },
+                    "Pod Age": "0d 0h 2m"
+                }
+            }
+        },
+        "2024-11-15 10:37:18": {
+            "services": {
+                "cfs-3c8946b8-65bf-4490-8a3f-b4294382916b-cfsvq": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cfs-3c8946b8-65bf-4490-8a3f-b4294382916b"
+                    },
+                    "Pod Age": "0d 0h 6m"
+                }
+            }
+        }
+    },
+    "ncn-w005": {
+        "2024-11-15 10:05:07": {
+            "argo": {
+                "logical-backup-cray-nls-postgres-28860430-flwx8": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "logical-backup-cray-nls-postgres-28860430"
+                    },
+                    "Pod Age": "0d 10h 55m"
+                }
+            },
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-nodeplugin-b5npn": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-ceph-csi-cephfs-nodeplugin"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            },
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-nodeplugin-mktr9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-ceph-csi-rbd-nodeplugin"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            },
+            "ims": {
+                "cray-ims-dcde60ad-3267-4ec4-975e-103e51a3b518-customize-fnfhr": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-ims-dcde60ad-3267-4ec4-975e-103e51a3b518-customize"
+                    },
+                    "Pod Age": "0d 12h 46m"
+                }
+            },
+            "kube-system": {
+                "kube-proxy-nt289": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-proxy"
+                    },
+                    "Pod Age": "8d 21h 22m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-dgsml": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 14h 33m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-cluster-admission-reports-28861080-89b4s": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-cluster-admission-reports-28861080"
+                    },
+                    "Pod Age": "0d 0h 5m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-6w8t4": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            },
+            "nexus": {
+                "cray-precache-images-xtzjk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-precache-images"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            },
+            "opa": {
+                "cray-opa-ingressgateway-hmn-gd987": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-opa-ingressgateway-hmn"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            }
+        },
+        "2024-11-15 10:05:09": {
+            "services": {
+                "cray-dhcp-kea-helper-28861083-8m9kz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dhcp-kea-helper-28861083"
+                    },
+                    "Pod Age": "0d 0h 2m"
+                }
+            }
+        },
+        "2024-11-15 10:05:10": {
+            "services": {
+                "cray-power-control-bitnami-etcd-snapshotter-28861080-5tv6j": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-power-control-bitnami-etcd-snapshotter-28861080"
+                    },
+                    "Pod Age": "0d 0h 5m"
+                }
+            }
+        },
+        "2024-11-15 10:05:11": {
+            "services": {
+                "cray-tftp-modprobe-cfmzt": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-tftp-modprobe"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            }
+        },
+        "2024-11-15 10:05:12": {
+            "services": {
+                "logical-backup-cray-smd-postgres-28859050-w6xjn": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "logical-backup-cray-smd-postgres-28859050"
+                    },
+                    "Pod Age": "1d 9h 55m"
+                }
+            }
+        },
+        "2024-11-15 10:05:13": {
+            "services": {
+                "sshot-fm-recover-28861083-2sbzr": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861083"
+                    },
+                    "Pod Age": "0d 0h 2m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "spire-agent-xjqzr": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "spire-agent"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-redfish-cron-28860840-sr5lf": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-sysmgmt-health-redfish-cron-28860840"
+                    },
+                    "Pod Age": "0d 4h 5m"
+                }
+            }
+        },
+        "2024-11-15 10:05:16": {
+            "vault": {
+                "cray-vault-0": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "cray-vault"
+                    },
+                    "Pod Age": "1d 19h 44m"
+                }
+            },
+            "velero": {
+                "restic-zj544": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "restic"
+                    },
+                    "Pod Age": "8d 21h 18m"
+                }
+            }
+        },
+        "2024-11-15 10:05:29": {
+            "services": {
+                "etcd-backup-pvc-snapshots-to-s3-28861085-gfvv6": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "etcd-backup-pvc-snapshots-to-s3-28861085"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:05:43": {
+            "services": {
+                "sonar-sync-28861085-qx2xf": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861085"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:06:54": {
+            "services": {
+                "cray-dns-unbound-manager-28861086-k6bt6": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861086"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:06:55": {
+            "services": {
+                "sshot-fm-recover-28861086-6qxkq": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861086"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:07:21": {
+            "services": {
+                "sonar-sync-28861086-dd8zt": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861086"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:07:48": {
+            "services": {
+                "sshot-fm-recover-28861086-6qxkq": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861086"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:08:01": {
+            "istio-system": {
+                "istiod-6bb7bc7fb9-t75z7": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istiod-6bb7bc7fb9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "cray-dns-unbound-manager-28861086-k6bt6": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861086"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:08:02": {
+            "services": {
+                "sonar-sync-28861087-srgk6": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861087"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:08:42": {
+            "services": {
+                "sonar-sync-28861088-4l7tk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861088"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:09:08": {
+            "services": {
+                "sonar-sync-28861088-4l7tk": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861088"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:09:09": {
+            "services": {
+                "sonar-sync-28861089-gclh2": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861089"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:09:22": {
+            "services": {
+                "sonar-sync-28861089-gclh2": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861089"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:09:35": {
+            "services": {
+                "sshot-fm-recover-28861089-hd5lk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861089"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:09:49": {
+            "services": {
+                "sshot-fm-recover-28861089-hd5lk": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861089"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:10:15": {
+            "kube-system": {
+                "kube-etcdbackup-28861090-884wc": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861090"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "kyverno": {
+                "kyverno-cleanup-admission-reports-28861090-2prd7": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-admission-reports-28861090"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:10:16": {
+            "kyverno": {
+                "kyverno-cleanup-cluster-admission-reports-28861090-nmdxh": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kyverno-cleanup-cluster-admission-reports-28861090"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "sonar-sync-28861090-hkbrf": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861090"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:10:42": {
+            "services": {
+                "sonar-sync-28861090-hkbrf": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861090"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:10:56": {
+            "services": {
+                "sshot-fm-recover-28861089-hd5lk": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861089"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:11:09": {
+            "kube-system": {
+                "kube-etcdbackup-28861090-884wc": {
+                    "Previous State": "Running",
+                    "Current State": "Failed",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861090"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "services": {
+                "sonar-sync-28861091-w9r9f": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861091"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:11:22": {
+            "kube-system": {
+                "kube-etcdbackup-28861090-z6hz4": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861090"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:11:36": {
+            "kube-system": {
+                "kube-etcdbackup-28861090-z6hz4": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "kube-etcdbackup-28861090"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:11:49": {
+            "services": {
+                "sonar-sync-28861091-w9r9f": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861091"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:02": {
+            "services": {
+                "hms-discovery-28861089-4p7b5": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "hms-discovery-28861089"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:16": {
+            "services": {
+                "sshot-fm-recover-28861092-577nx": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861092"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:43": {
+            "services": {
+                "sonar-sync-28861092-7scj9": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sonar-sync-28861092"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:56": {
+            "argo": {
+                "cray-nls-argo-workflows-workflow-controller-6cdc74f748-lvv6w": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-argo-workflows-workflow-controller-6cdc74f748"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:57": {
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-provisioner-788df75f76-6r6kd": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-cephfs-provisioner-788df75f76"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-provisioner-6974c7d78b-4442m": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-rbd-provisioner-6974c7d78b"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-webhook-57dbbff888-4796m": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-webhook-57dbbff888"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "istio-system": {
+                "istio-ingressgateway-customer-admin-ffc69c5f-dn4vk": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istio-ingressgateway-customer-admin-ffc69c5f"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:58": {
+            "pki-operator": {
+                "trustedcerts-operator-f546977cb-mpg2w": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "trustedcerts-operator-f546977cb"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "cray-bss-79785c6d89-xw6f7": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-bss-79785c6d89"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:59": {
+            "services": {
+                "cray-hms-hmcollector-ingress-7c5bb55c74-hnbph": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-hms-hmcollector-ingress-7c5bb55c74"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:00": {
+            "services": {
+                "cray-tftp-5d546777c9-cpv72": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-tftp-5d546777c9"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "spire": {
+                "spire-postgres-pooler-6c97d87dd5-mp9fz": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "spire-postgres-pooler-6c97d87dd5"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:15": {
+            "ceph-rbd": {
+                "cray-ceph-csi-rbd-provisioner-6974c7d78b-4442m": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-rbd-provisioner-6974c7d78b"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-cainjector-6c7845f6dc-f9l8h": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-cainjector-6c7845f6dc"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "pki-operator": {
+                "trustedcerts-operator-f546977cb-mpg2w": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "trustedcerts-operator-f546977cb"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "services": {
+                "cray-scsd-b744ccc54-2g6sd": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-scsd-b744ccc54"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "spire": {
+                "cray-spire-jwks-847fc745b8-dpl9r": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-spire-jwks-847fc745b8"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:29": {
+            "argo": {
+                "cray-nls-argo-workflows-workflow-controller-6cdc74f748-lvv6w": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-argo-workflows-workflow-controller-6cdc74f748"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "ceph-cephfs": {
+                "cray-ceph-csi-cephfs-provisioner-788df75f76-6r6kd": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-ceph-csi-cephfs-provisioner-788df75f76"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "cert-manager": {
+                "cray-certmanager-cert-manager-webhook-57dbbff888-4796m": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-certmanager-cert-manager-webhook-57dbbff888"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            },
+            "istio-system": {
+                "istio-ingressgateway-customer-admin-ffc69c5f-dn4vk": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "istio-ingressgateway-customer-admin-ffc69c5f"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:30": {
+            "services": {
+                "cray-sls-9d467b6d6-ck4vv": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-sls-9d467b6d6"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:31": {
+            "services": {
+                "sshot-fm-recover-28861092-577nx": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "sshot-fm-recover-28861092"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "spire": {
+                "spire-postgres-pooler-6c97d87dd5-mp9fz": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "spire-postgres-pooler-6c97d87dd5"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:45": {
+            "services": {
+                "cray-tftp-5d546777c9-cpv72": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-tftp-5d546777c9"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            },
+            "spire": {
+                "cray-spire-postgres-pooler-5997f6f6f5-9nsf7": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-spire-postgres-pooler-5997f6f6f5"
+                    },
+                    "Pod Age": "0d 0h 1m"
+                }
+            }
+        },
+        "2024-11-15 10:15:48": {
+            "services": {
+                "cray-dhcp-kea-helper-28861089-274qc": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dhcp-kea-helper-28861089"
+                    },
+                    "Pod Age": "0d 0h 5m"
+                }
+            }
+        },
+        "2024-11-15 10:18:05": {
+            "services": {
+                "cray-dns-unbound-manager-28861092-6rswg": {
+                    "Previous State": "Running",
+                    "Current State": "Succeeded",
+                    "Controller": {
+                        "Type": "Job",
+                        "Name": "cray-dns-unbound-manager-28861092"
+                    },
+                    "Pod Age": "0d 0h 6m"
+                }
+            }
+        },
+        "2024-11-15 10:19:00": {
+            "services": {
+                "cray-cfs-api-557fb98d57-2dgwm": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-cfs-api-557fb98d57"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:24:16": {
+            "services": {
+                "cray-cfs-api-557fb98d57-2dgwm": {
+                    "Previous State": "Running",
+                    "Current State": "Terminating",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-cfs-api-557fb98d57"
+                    },
+                    "Pod Age": "0d 0h 5m"
+                }
+            }
+        },
+        "2024-11-15 10:32:17": {
+            "spire": {
+                "spire-server-2": {
+                    "Previous State": "Terminating",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "spire-server"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:32:59": {
+            "spire": {
+                "spire-server-2": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "StatefulSet",
+                        "Name": "spire-server"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        }
+    },
+    "ncn-m003": {
+        "2024-11-15 10:05:07": {
+            "kube-system": {
+                "kube-multus-ds-cjnw7": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "kube-multus-ds"
+                    },
+                    "Pod Age": "12d 12h 10m"
+                }
+            }
+        },
+        "2024-11-15 10:05:08": {
+            "kube-system": {
+                "weave-net-spkgb": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "weave-net"
+                    },
+                    "Pod Age": "12d 12h 10m"
+                }
+            },
+            "metallb-system": {
+                "metallb-speaker-mlqr4": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "metallb-speaker"
+                    },
+                    "Pod Age": "12d 12h 10m"
+                }
+            }
+        },
+        "2024-11-15 10:05:14": {
+            "spire": {
+                "request-ncn-join-token-cfvt9": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "request-ncn-join-token"
+                    },
+                    "Pod Age": "12d 12h 10m"
+                }
+            }
+        },
+        "2024-11-15 10:05:15": {
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-prometheus-node-exporter-ntjwx": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "DaemonSet",
+                        "Name": "cray-sysmgmt-health-prometheus-node-exporter"
+                    },
+                    "Pod Age": "12d 12h 10m"
+                }
+            }
+        },
+        "2024-11-15 10:12:57": {
+            "argo": {
+                "cray-nls-bfd94746b-84nxs": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-bfd94746b"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:12:58": {
+            "kube-system": {
+                "coredns-59cc8dbcc8-t9d6g": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "coredns-59cc8dbcc8"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        },
+        "2024-11-15 10:13:15": {
+            "argo": {
+                "cray-nls-bfd94746b-84nxs": {
+                    "Previous State": "Pending",
+                    "Current State": "Running",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-nls-bfd94746b"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        }
+    },
+    "unknown": {
+        "2024-11-15 10:13:00": {
+            "sysmgmt-health": {
+                "cray-sysmgmt-health-grok-exporter-544fb59f84-xfcw4": {
+                    "Previous State": "UNKNOWN",
+                    "Current State": "Pending",
+                    "Controller": {
+                        "Type": "ReplicaSet",
+                        "Name": "cray-sysmgmt-health-grok-exporter-544fb59f84"
+                    },
+                    "Pod Age": "0d 0h 0m"
+                }
+            }
+        }
+    }
+}

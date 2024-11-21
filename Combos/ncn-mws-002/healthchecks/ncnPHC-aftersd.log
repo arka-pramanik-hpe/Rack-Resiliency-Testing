@@ -1,0 +1,494 @@
+             +++++ NCN Postgres Health Checks +++++
+=== Can Be Executed on any ncn worker or master node. ===
+=== Executing on ncn-m001, Fri Nov 15 10:20:09 UTC 2024 ===
+
+=== Postgresql Operator Version ===
+artifactory.algol60.net/csm-docker/stable/registry.opensource.zalan.do/acid/postgres-operator:v1.8.2
+
+=== List of Postgresql Clusters Using Operator ===
+NAMESPACE   NAME                         TEAM                VERSION   PODS   VOLUME   CPU-REQUEST   MEMORY-REQUEST   AGE   STATUS
+argo        cray-nls-postgres            cray-nls            14        3      2Gi                                     21d   Running
+services    cfs-ara-postgres             cfs-ara             14        3      50Gi                                    21d   Running
+services    cray-console-data-postgres   cray-console-data   14        3      2Gi                                     21d   Running
+services    cray-dhcp-kea-postgres       cray-dhcp-kea       14        3      10Gi     2             1Gi              21d   Running
+services    cray-dns-powerdns-postgres   cray-dns-powerdns   14        3      10Gi                                    21d   Running
+services    cray-sls-postgres            cray-sls            14        3      1Gi                                     21d   Running
+services    cray-smd-postgres            cray-smd            14        3      100Gi    4             8Gi              21d   Running
+services    gitea-vcs-postgres           gitea-vcs           14        3      50Gi                                    21d   Running
+services    keycloak-postgres            keycloak            14        3      10Gi                                    21d   Running
+spire       cray-spire-postgres          cray-spire          14        3      60Gi     4             4Gi              21d   Running
+spire       spire-postgres               spire               14        3      60Gi     4             4Gi              21d   Running
+
+=== Look at patronictl list info for each cluster, determine and attach to leader of each cluster ===
+=== Report status of postgres pods in cluster ===
+-----------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-nls-postgres cluster with leader pod: cray-nls-postgres-0 ===
+
+--- patronictl, version , list for argo leader pod cray-nls-postgres-0 ---
++ Cluster: cray-nls-postgres (7429648723677089861) -----+----+-----------+
+| Member              | Host        | Role    | State   | TL | Lag in MB |
++---------------------+-------------+---------+---------+----+-----------+
+| cray-nls-postgres-0 | 10.36.0.17  | Leader  | running |  7 |           |
+| cray-nls-postgres-1 | 10.34.0.44  | Replica | running |  7 |        15 |
+| cray-nls-postgres-2 | 10.41.0.129 | Replica | running |  7 |         0 |
++---------------------+-------------+---------+---------+----+-----------+
+--- WARNING --- cray-nls-postgres members have Lag
+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+argo                 cray-nls-postgres-0                                               3/3     Running       0               10d     10.36.0.17    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-1                                               3/3     Terminating   0               8d      10.34.0.44    ncn-w002   <none>           <none>
+argo                 cray-nls-postgres-2                                               3/3     Running       0               3d20h   10.41.0.129   ncn-w004   <none>           <none>
+--- ERROR --- not all cray-nls-postgres pods have status 'Running'
+
+--- Error Logs for argo "Leader Pod" cray-nls-postgres-0 --- 
+2024-11-15 09:15:17,888 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.9997079180320725)",)
+2024-11-15 09:15:19,478 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=1.135774850845337)",)
+2024-11-15 09:15:20,792 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=1)",)
+2024-11-15 09:15:22,817 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=1)",)
+2024-11-15 09:15:22,817 ERROR: failed to update leader lock
+2024-11-15 10:06:11,399 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.999626838020049)",)
+ERROR:  extension "pg_cron" does not exist
+ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
+ERROR:  schema "cron" does not exist
+
+--- Error Logs for argo non-leader pod cray-nls-postgres-1 --- 
+
+--- Error Logs for argo non-leader pod cray-nls-postgres-2 --- 
+2024-11-11 13:40:00,733 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:01,246 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:01,734 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:06,255 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:06,740 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:07,256 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:07,741 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:10,249 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:11,249 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:11,250 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:12,751 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:13,752 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:13,753 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:14,754 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:16,256 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:17,258 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:17,259 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:18,260 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:19,763 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:20,764 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:20,766 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:21,767 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:23,270 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:24,271 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:24,273 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:25,274 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:26,777 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:27,163 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:27,778 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:27,780 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:28,781 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:30,284 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:30,769 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:31,285 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:31,771 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:34,277 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:35,279 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:36,292 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:37,294 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:37,784 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:38,785 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:39,799 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:40,801 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:41,290 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:41,777 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:42,164 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:42,292 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:42,778 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:47,301 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:48,302 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+
+ * The logs above show up to 50 of the most recent errors * 
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cfs-ara-postgres cluster with leader pod: cfs-ara-postgres-2 ===
+
+--- patronictl, version , list for services leader pod cfs-ara-postgres-2 ---
++ Cluster: cfs-ara-postgres (7429653337307897930) ----+----+-----------+
+| Member             | Host       | Role    | State   | TL | Lag in MB |
++--------------------+------------+---------+---------+----+-----------+
+| cfs-ara-postgres-0 | 10.41.0.27 | Replica | running |  7 |         0 |
+| cfs-ara-postgres-1 | 10.46.0.24 | Replica | running |  7 |         0 |
+| cfs-ara-postgres-2 | 10.36.0.73 | Leader  | running |  7 |           |
++--------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cfs-ara-postgres-0                                                3/3     Running       0               3d20h   10.41.0.27    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-1                                                3/3     Running       0               43h     10.46.0.24    ncn-w005   <none>           <none>
+services             cfs-ara-postgres-2                                                3/3     Running       0               8d      10.36.0.73    ncn-w001   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-console-data-postgres cluster with leader pod: cray-console-data-postgres-2 ===
+
+--- patronictl, version , list for services leader pod cray-console-data-postgres-2 ---
++ Cluster: cray-console-data-postgres (7429653366548672586) ----+----+-----------+
+| Member                       | Host       | Role    | State   | TL | Lag in MB |
++------------------------------+------------+---------+---------+----+-----------+
+| cray-console-data-postgres-0 | 10.44.0.25 | Replica | running |  6 |         0 |
+| cray-console-data-postgres-1 | 10.34.0.49 | Replica | running |  5 |         1 |
+| cray-console-data-postgres-2 | 10.36.0.19 | Leader  | running |  6 |           |
++------------------------------+------------+---------+---------+----+-----------+
+--- WARNING --- cray-console-data-postgres members have Lag
+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-console-data-postgres-0                                      3/3     Running       0               3d20h   10.44.0.25    ncn-w003   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Terminating   0               8d      10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running       0               10d     10.36.0.19    ncn-w001   <none>           <none>
+--- ERROR --- not all cray-console-data-postgres pods have status 'Running'
+
+--- Error Logs for services "Leader Pod" cray-console-data-postgres-2 --- 
+2024-11-15 09:15:22,370 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.999660299974494)",)
+2024-11-15 09:15:24,982 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=2.3786140707088634)",)
+2024-11-15 09:15:26,906 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=1)",)
+2024-11-15 09:15:26,906 ERROR: failed to update leader lock
+2024-11-15 09:15:34,549 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.98043439805042)",)
+2024-11-15 09:15:37,224 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=2.3110784586751834)",)
+2024-11-15 10:06:04,926 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.999667313066311)",)
+2024-11-15 10:06:07,797 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=2.1177868784870952)",)
+2024-11-15 10:06:09,924 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=1.8544220216572285)",)
+2024-11-15 10:06:09,925 ERROR: failed to update leader lock
+ERROR:  extension "pg_cron" does not exist
+ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
+ERROR:  schema "cron" does not exist
+
+--- Error Logs for services non-leader pod cray-console-data-postgres-0 --- 
+2024-11-15 09:15:42,985 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.990947331069037)",)
+2024-11-15 09:15:49,502 ERROR: Unexpected error from Kubernetes API
+
+--- Error Logs for services non-leader pod cray-console-data-postgres-1 --- 
+
+ * The logs above show up to 50 of the most recent errors * 
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-dhcp-kea-postgres cluster with leader pod: cray-dhcp-kea-postgres-2 ===
+
+--- patronictl, version , list for services leader pod cray-dhcp-kea-postgres-2 ---
++ Cluster: cray-dhcp-kea-postgres (7429648994707337289) ----+----+-----------+
+| Member                   | Host       | Role    | State   | TL | Lag in MB |
++--------------------------+------------+---------+---------+----+-----------+
+| cray-dhcp-kea-postgres-0 | 10.34.0.48 | Replica | running |  6 |         0 |
+| cray-dhcp-kea-postgres-1 | 10.41.0.12 | Replica | running |  7 |         0 |
+| cray-dhcp-kea-postgres-2 | 10.36.0.30 | Leader  | running |  7 |           |
++--------------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-dhcp-kea-postgres-0                                          3/3     Terminating   0               8d      10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running       0               3d20h   10.41.0.12    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running       0               9d      10.36.0.30    ncn-w001   <none>           <none>
+--- ERROR --- not all cray-dhcp-kea-postgres pods have status 'Running'
+
+--- Error Logs for services "Leader Pod" cray-dhcp-kea-postgres-2 --- 
+2024-11-15 10:06:18,110 ERROR: Exception when working with leader
+2024-11-15 10:06:27,326 ERROR: Exception when working with leader
+2024-11-15 10:06:38,544 ERROR: Exception when working with leader
+2024-11-15 10:06:45,763 ERROR: Exception when working with leader
+ERROR:  extension "pg_cron" does not exist
+ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
+ERROR:  schema "cron" does not exist
+
+--- Error Logs for services non-leader pod cray-dhcp-kea-postgres-0 --- 
+
+--- Error Logs for services non-leader pod cray-dhcp-kea-postgres-1 --- 
+2024-11-15 10:06:10,144 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=2.5)",)
+2024-11-15 10:06:14,122 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=3.5135479678283446)",)
+2024-11-15 10:06:24,988 ERROR: Request to server https://10.16.0.1:443 failed: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/services/endpoints?labelSelector=application%3Dspilo%2Ccluster-name%3Dcray-dhcp-kea-postgres (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=4.990776075981557)",))',)
+2024-11-15 10:06:25,533 ERROR: Error communicating with DCS
+2024-11-15 10:06:25,989 ERROR: ObjectCache.run K8sConnectionFailed('No more API server nodes in the cluster',)
+2024-11-15 10:06:35,536 ERROR: Error communicating with DCS
+2024-11-15 10:06:36,002 ERROR: Request to server https://10.16.0.1:443 failed: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/services/endpoints?labelSelector=application%3Dspilo%2Ccluster-name%3Dcray-dhcp-kea-postgres (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=4.9910379339708015)",))',)
+2024-11-15 10:06:37,003 ERROR: ObjectCache.run K8sConnectionFailed('No more API server nodes in the cluster',)
+2024-11-15 10:06:39,672 ERROR: Exception when working with leader
+2024-11-15 10:06:48,888 ERROR: Exception when working with leader
+2024-11-15 10:06:58,104 ERROR: Exception when working with leader
+
+ * The logs above show up to 50 of the most recent errors * 
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-dns-powerdns-postgres cluster with leader pod: cray-dns-powerdns-postgres-0 ===
+
+--- patronictl, version , list for services leader pod cray-dns-powerdns-postgres-0 ---
++ Cluster: cray-dns-powerdns-postgres (7429649497407156297) ----+----+-----------+
+| Member                       | Host       | Role    | State   | TL | Lag in MB |
++------------------------------+------------+---------+---------+----+-----------+
+| cray-dns-powerdns-postgres-0 | 10.41.0.14 | Leader  | running |  5 |           |
+| cray-dns-powerdns-postgres-1 | 10.36.0.28 | Replica | running |  5 |         0 |
+| cray-dns-powerdns-postgres-2 | 10.46.0.27 | Replica | running |  5 |         0 |
++------------------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-dns-powerdns-postgres-0                                      3/3     Running       0               3d20h   10.41.0.14    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-1                                      3/3     Running       0               8d      10.36.0.28    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-2                                      3/3     Running       0               43h     10.46.0.27    ncn-w005   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-sls-postgres cluster with leader pod: cray-sls-postgres-1 ===
+
+--- patronictl, version , list for services leader pod cray-sls-postgres-1 ---
++ Cluster: cray-sls-postgres (7429648913392148553) ----+----+-----------+
+| Member              | Host       | Role    | State   | TL | Lag in MB |
++---------------------+------------+---------+---------+----+-----------+
+| cray-sls-postgres-0 | 10.41.0.19 | Replica | running | 10 |         0 |
+| cray-sls-postgres-1 | 10.36.0.72 | Leader  | running | 10 |           |
+| cray-sls-postgres-2 | 10.46.0.21 | Replica | running | 10 |         0 |
++---------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-sls-postgres-0                                               3/3     Running       0               3d20h   10.41.0.19    ncn-w004   <none>           <none>
+services             cray-sls-postgres-1                                               3/3     Running       0               8d      10.36.0.72    ncn-w001   <none>           <none>
+services             cray-sls-postgres-2                                               3/3     Running       0               43h     10.46.0.21    ncn-w005   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-smd-postgres cluster with leader pod: cray-smd-postgres-1 ===
+
+--- patronictl, version , list for services leader pod cray-smd-postgres-1 ---
++ Cluster: cray-smd-postgres (7429648967686664265) ----+----+-----------+
+| Member              | Host       | Role    | State   | TL | Lag in MB |
++---------------------+------------+---------+---------+----+-----------+
+| cray-smd-postgres-0 | 10.34.0.47 | Replica | running |  5 |        16 |
+| cray-smd-postgres-1 | 10.36.0.23 | Leader  | running |  5 |           |
+| cray-smd-postgres-2 | 10.46.0.25 | Replica | running |  5 |         0 |
++---------------------+------------+---------+---------+----+-----------+
+--- WARNING --- cray-smd-postgres members have Lag
+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             cray-smd-postgres-0                                               3/3     Terminating   0               8d      10.34.0.47    ncn-w002   <none>           <none>
+services             cray-smd-postgres-1                                               3/3     Running       0               10d     10.36.0.23    ncn-w001   <none>           <none>
+services             cray-smd-postgres-2                                               3/3     Running       0               43h     10.46.0.25    ncn-w005   <none>           <none>
+--- ERROR --- not all cray-smd-postgres pods have status 'Running'
+
+--- Error Logs for services "Leader Pod" cray-smd-postgres-1 --- 
+2024-11-15 09:15:21,938 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.9997931469697505)",)
+2024-11-15 09:15:23,695 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=1.0819202065467834)",)
+
+--- Error Logs for services non-leader pod cray-smd-postgres-0 --- 
+
+--- Error Logs for services non-leader pod cray-smd-postgres-2 --- 
+2024-11-13 14:22:00,234 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:05,227 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError("HTTPSConnectionPool(host='10.16.0.1', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))",)
+2024-11-13 14:22:05,248 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:05,249 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:06,250 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:06,251 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:11,262 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:11,263 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:12,264 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:12,265 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:15,250 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:16,252 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:16,255 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-13 14:22:17,274 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:18,276 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:18,758 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:19,760 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:20,781 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-13 14:22:21,782 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:22,265 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-13 14:22:22,271 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-13 14:22:23,266 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:23,273 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:28,275 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:28,283 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:29,276 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:29,285 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:31,786 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError("HTTPSConnectionPool(host='10.16.0.1', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))",)
+2024-11-13 14:22:32,269 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-13 14:22:32,758 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-13 14:22:32,788 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-13 14:22:33,270 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+
+ * The logs above show up to 50 of the most recent errors * 
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the gitea-vcs-postgres cluster with leader pod: gitea-vcs-postgres-1 ===
+
+--- patronictl, version , list for services leader pod gitea-vcs-postgres-1 ---
++ Cluster: gitea-vcs-postgres (7429653957876965450) -----+----+-----------+
+| Member               | Host        | Role    | State   | TL | Lag in MB |
++----------------------+-------------+---------+---------+----+-----------+
+| gitea-vcs-postgres-0 | 10.41.0.116 | Replica | running |  6 |         0 |
+| gitea-vcs-postgres-1 | 10.36.0.14  | Leader  | running |  6 |           |
+| gitea-vcs-postgres-2 | 10.46.0.22  | Replica | running |  6 |         0 |
++----------------------+-------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             gitea-vcs-postgres-0                                              3/3     Running       0               3d20h   10.41.0.116   ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running       0               10d     10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Running       0               44h     10.46.0.22    ncn-w005   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the keycloak-postgres cluster with leader pod: keycloak-postgres-1 ===
+
+--- patronictl, version , list for services leader pod keycloak-postgres-1 ---
++ Cluster: keycloak-postgres (7429648627273879625) ----+----+-----------+
+| Member              | Host       | Role    | State   | TL | Lag in MB |
++---------------------+------------+---------+---------+----+-----------+
+| keycloak-postgres-0 | 10.46.0.30 | Replica | running |  6 |         0 |
+| keycloak-postgres-1 | 10.36.0.18 | Leader  | running |  6 |           |
+| keycloak-postgres-2 | 10.41.0.36 | Replica | running |  6 |         0 |
++---------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+services             keycloak-postgres-0                                               3/3     Running       0               43h     10.46.0.30    ncn-w005   <none>           <none>
+services             keycloak-postgres-1                                               3/3     Running       0               10d     10.36.0.18    ncn-w001   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running       0               3d20h   10.41.0.36    ncn-w004   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the cray-spire-postgres cluster with leader pod: cray-spire-postgres-0 ===
+
+--- patronictl, version , list for spire leader pod cray-spire-postgres-0 ---
++ Cluster: cray-spire-postgres (7429654005986693194) ----+----+-----------+
+| Member                | Host       | Role    | State   | TL | Lag in MB |
++-----------------------+------------+---------+---------+----+-----------+
+| cray-spire-postgres-0 | 10.41.0.32 | Leader  | running |  8 |           |
+| cray-spire-postgres-1 | 10.34.0.46 | Replica | running |  7 |         2 |
+| cray-spire-postgres-2 | 10.46.0.18 | Replica | running |  8 |         0 |
++-----------------------+------------+---------+---------+----+-----------+
+--- WARNING --- cray-spire-postgres members have Lag
+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+spire                cray-spire-postgres-0                                             3/3     Running       0               3d20h   10.41.0.32    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-1                                             3/3     Terminating   0               8d      10.34.0.46    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-2                                             3/3     Running       0               44h     10.46.0.18    ncn-w005   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-9nsf7                       2/2     Running       0               9m3s    10.46.0.46    ncn-w005   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-jkdwx                       2/2     Running       0               9d      10.36.0.64    ncn-w001   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-lkxmw                       2/2     Terminating   0               8d      10.34.0.29    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-pooler-5997f6f6f5-mwzwg                       2/2     Running       0               3d      10.41.0.68    ncn-w004   <none>           <none>
+--- ERROR --- not all cray-spire-postgres pods have status 'Running'
+
+--- Error Logs for spire "Leader Pod" cray-spire-postgres-0 --- 
+2024-11-11 13:39:56,356 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:01,370 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:01,373 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:01,374 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:02,371 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:02,374 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:06,360 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:06,361 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError("HTTPSConnectionPool(host='10.16.0.1', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer')))",)
+2024-11-11 13:40:07,362 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:07,363 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:11,376 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:12,372 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:12,377 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: ClosedPoolError("HTTPSConnectionPool(host='10.16.0.1', port=443): Pool is closed.",)
+2024-11-11 13:40:12,377 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:13,373 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-11 13:40:17,384 ERROR: Failed to get "kubernetes" endpoint from https://10.16.0.1:443: MaxRetryError('HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Max retries exceeded with url: /api/v1/namespaces/default/endpoints/kubernetes (Caused by ReadTimeoutError("HTTPSConnectionPool(host=\'10.16.0.1\', port=443): Read timed out. (read timeout=2.5)",))',)
+2024-11-11 13:40:18,386 ERROR: ObjectCache.run K8sException('Could not get the list of K8s API server nodes',)
+2024-11-15 10:06:29,689 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=4.991597265005112)",)
+2024-11-15 10:06:32,356 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=2.324091627204325)",)
+2024-11-15 10:06:34,688 ERROR: Request to server https://10.16.0.1:443 failed: ReadTimeoutError("HTTPSConnectionPool(host='10.16.0.1', port=443): Read timed out. (read timeout=1.4994234860641882)",)
+ERROR:  extension "pg_cron" does not exist
+ERROR:  extension "pg_cron" must be installed in schema "pg_catalog"
+ERROR:  schema "cron" does not exist
+
+--- Error Logs for spire non-leader pod cray-spire-postgres-1 --- 
+
+--- Error Logs for spire non-leader pod cray-spire-postgres-2 --- 
+
+ * The logs above show up to 50 of the most recent errors * 
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== Looking at patronictl list info for the spire-postgres cluster with leader pod: spire-postgres-2 ===
+
+--- patronictl, version , list for spire leader pod spire-postgres-2 ---
++ Cluster: spire-postgres (7429654033559437386) ----+----+-----------+
+| Member           | Host       | Role    | State   | TL | Lag in MB |
++------------------+------------+---------+---------+----+-----------+
+| spire-postgres-0 | 10.41.0.28 | Replica | running |  6 |         0 |
+| spire-postgres-1 | 10.44.0.13 | Replica | running |  6 |         0 |
+| spire-postgres-2 | 10.36.0.71 | Leader  | running |  6 |           |
++------------------+------------+---------+---------+----+-----------+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+spire                spire-postgres-0                                                  3/3     Running       0               3d20h   10.41.0.28    ncn-w004   <none>           <none>
+spire                spire-postgres-1                                                  3/3     Running       0               7d23h   10.44.0.13    ncn-w003   <none>           <none>
+spire                spire-postgres-2                                                  3/3     Running       0               8d      10.36.0.71    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-h6b8k                            2/2     Running       0               9d      10.36.0.36    ncn-w001   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-mp9fz                            2/2     Running       0               9m9s    10.46.0.51    ncn-w005   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-n5fzp                            2/2     Terminating   0               8d      10.34.0.52    ncn-w002   <none>           <none>
+spire                spire-postgres-pooler-6c97d87dd5-t4r5s                            2/2     Running       0               3d22h   10.44.0.58    ncn-w003   <none>           <none>
+
+--------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------
+
+=== kubectl get pods -A -o wide | grep "NAME\|postgres-" | grep -v "operator\|Completed\|pooler" ===
+
+NAMESPACE            NAME                                                              READY   STATUS        RESTARTS        AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+argo                 cray-nls-postgres-0                                               3/3     Running       0               10d     10.36.0.17    ncn-w001   <none>           <none>
+argo                 cray-nls-postgres-1                                               3/3     Terminating   0               8d      10.34.0.44    ncn-w002   <none>           <none>
+argo                 cray-nls-postgres-2                                               3/3     Running       0               3d20h   10.41.0.129   ncn-w004   <none>           <none>
+services             cfs-ara-postgres-0                                                3/3     Running       0               3d20h   10.41.0.27    ncn-w004   <none>           <none>
+services             cfs-ara-postgres-1                                                3/3     Running       0               44h     10.46.0.24    ncn-w005   <none>           <none>
+services             cfs-ara-postgres-2                                                3/3     Running       0               8d      10.36.0.73    ncn-w001   <none>           <none>
+services             cray-console-data-postgres-0                                      3/3     Running       0               3d20h   10.44.0.25    ncn-w003   <none>           <none>
+services             cray-console-data-postgres-1                                      3/3     Terminating   0               8d      10.34.0.49    ncn-w002   <none>           <none>
+services             cray-console-data-postgres-2                                      3/3     Running       0               10d     10.36.0.19    ncn-w001   <none>           <none>
+services             cray-dhcp-kea-postgres-0                                          3/3     Terminating   0               8d      10.34.0.48    ncn-w002   <none>           <none>
+services             cray-dhcp-kea-postgres-1                                          3/3     Running       0               3d20h   10.41.0.12    ncn-w004   <none>           <none>
+services             cray-dhcp-kea-postgres-2                                          3/3     Running       0               9d      10.36.0.30    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-0                                      3/3     Running       0               3d20h   10.41.0.14    ncn-w004   <none>           <none>
+services             cray-dns-powerdns-postgres-1                                      3/3     Running       0               8d      10.36.0.28    ncn-w001   <none>           <none>
+services             cray-dns-powerdns-postgres-2                                      3/3     Running       0               44h     10.46.0.27    ncn-w005   <none>           <none>
+services             cray-sls-postgres-0                                               3/3     Running       0               3d20h   10.41.0.19    ncn-w004   <none>           <none>
+services             cray-sls-postgres-1                                               3/3     Running       0               8d      10.36.0.72    ncn-w001   <none>           <none>
+services             cray-sls-postgres-2                                               3/3     Running       0               44h     10.46.0.21    ncn-w005   <none>           <none>
+services             cray-smd-postgres-0                                               3/3     Terminating   0               8d      10.34.0.47    ncn-w002   <none>           <none>
+services             cray-smd-postgres-1                                               3/3     Running       0               10d     10.36.0.23    ncn-w001   <none>           <none>
+services             cray-smd-postgres-2                                               3/3     Running       0               44h     10.46.0.25    ncn-w005   <none>           <none>
+services             gitea-vcs-postgres-0                                              3/3     Running       0               3d20h   10.41.0.116   ncn-w004   <none>           <none>
+services             gitea-vcs-postgres-1                                              3/3     Running       0               10d     10.36.0.14    ncn-w001   <none>           <none>
+services             gitea-vcs-postgres-2                                              3/3     Running       0               44h     10.46.0.22    ncn-w005   <none>           <none>
+services             keycloak-postgres-0                                               3/3     Running       0               43h     10.46.0.30    ncn-w005   <none>           <none>
+services             keycloak-postgres-1                                               3/3     Running       0               10d     10.36.0.18    ncn-w001   <none>           <none>
+services             keycloak-postgres-2                                               3/3     Running       0               3d20h   10.41.0.36    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-0                                             3/3     Running       0               3d20h   10.41.0.32    ncn-w004   <none>           <none>
+spire                cray-spire-postgres-1                                             3/3     Terminating   0               8d      10.34.0.46    ncn-w002   <none>           <none>
+spire                cray-spire-postgres-2                                             3/3     Running       0               44h     10.46.0.18    ncn-w005   <none>           <none>
+spire                spire-postgres-0                                                  3/3     Running       0               3d20h   10.41.0.28    ncn-w004   <none>           <none>
+spire                spire-postgres-1                                                  3/3     Running       0               7d23h   10.44.0.13    ncn-w003   <none>           <none>
+spire                spire-postgres-2                                                  3/3     Running       0               8d      10.36.0.71    ncn-w001   <none>           <none>
+
+--- FAILURE --- 
+ 
+- Errors and Warnings are printed below - 
+WARNING: cray-nls-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
+ERROR: not all cray-nls-postgres pods have status 'Running'
+WARNING: cray-console-data-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
+ERROR: not all cray-console-data-postgres pods have status 'Running'
+ERROR: not all cray-dhcp-kea-postgres pods have status 'Running'
+WARNING: cray-smd-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
+ERROR: not all cray-smd-postgres pods have status 'Running'
+WARNING: cray-spire-postgres members have Lag. Lag does not always indicate there is a problem. Look below to see if prometheus alerts for this are firing.
+ERROR: not all cray-spire-postgres pods have status 'Running'
+
+**** Due to Lag being detected, Prometheus alerts will be checked to see if any Postgres Lag alerts are firing ****
+ -- Analysis of output is needed to determine if lag is causing a problem --
+ -- If nothing is printed below the alert title, then the Lag is likely not causing issues --
+
+** Alert: PostgresqlReplicationLagSMA **
+
+** Alert: PostgresqlReplicationLagServices **
+
+** Alert: PostgresqlFollowerReplicationLagSMA **
+
+** Alert: PostgresqlFollowerReplicationLagServices **

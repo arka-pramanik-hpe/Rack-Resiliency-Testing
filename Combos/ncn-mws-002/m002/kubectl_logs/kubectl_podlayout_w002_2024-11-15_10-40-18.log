@@ -1,0 +1,14 @@
+Timestamp: 2024-11-15 10:40:18
+kube-system          pod/cray-k8s-encryption-sfk2x                                         1/1     Running     2 (10m ago)     12d     10.38.0.3     ncn-m002   <none>           <none>
+kube-system          pod/kube-apiserver-ncn-m002                                           1/1     Running     2 (10m ago)     12d     10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-controller-manager-ncn-m002                                  1/1     Running     2 (10m ago)     12d     10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-multus-ds-nz4sg                                              1/1     Running     2 (10m ago)     12d     10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-proxy-4nnxp                                                  1/1     Running     2 (10m ago)     12d     10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/kube-scheduler-ncn-m002                                           1/1     Running     2 (10m ago)     12d     10.252.1.11   ncn-m002   <none>           <none>
+kube-system          pod/node-problem-detector-jhtwl                                       1/1     Running     2 (10m ago)     12d     10.38.0.1     ncn-m002   <none>           <none>
+kube-system          pod/weave-net-fcqnz                                                   2/2     Running     6 (9m30s ago)   12d     10.252.1.11   ncn-m002   <none>           <none>
+metallb-system       pod/metallb-speaker-fq8mh                                             1/1     Running     2 (10m ago)     12d     10.252.1.11   ncn-m002   <none>           <none>
+spire                pod/request-ncn-join-token-29q8q                                      2/2     Running     4 (10m ago)     12d     10.38.0.4     ncn-m002   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-grok-exporter-544fb59f84-xfcw4                1/1     Running     0               27m     10.38.0.5     ncn-m002   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-5x9tm                  1/1     Running     2 (10m ago)     12d     10.38.0.2     ncn-m002   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-74hxf                1/1     Running     2 (10m ago)     12d     10.252.1.11   ncn-m002   <none>           <none>

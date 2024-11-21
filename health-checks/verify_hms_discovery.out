@@ -1,0 +1,29 @@
+HSM Cabinet Summary
+===================
+x3000 (River)
+  Discovered Nodes:          16 (11 Mgmt, 1 Application, 4 Compute)
+  Discovered Node BMCs:      15
+  Discovered Router BMCs:     1
+  Discovered Chassis BMCs:    0
+  Discovered Cab PDU Ctlrs:   0
+  Discovered CMCs:            1
+
+River Cabinet Checks
+============================
+x3000 (River)
+  Nodes: PASS
+  NodeBMCs: PASS
+  RouterBMCs: PASS
+  CMCs: PASS
+  CabinetPDUControllers: FAIL
+    - x3000m0 - Not found in HSM Components.
+    - x3000m1 - Not found in HSM Components; Not found in HSM Redfish Endpoints.
+
+Mountain/Hill Cabinet Checks
+============================
+None Found.
+
+EX2500 Cabinet Checks
+============================
+None Found.
+

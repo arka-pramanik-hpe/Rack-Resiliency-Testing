@@ -1,0 +1,4 @@
+Log file for run is: /opt/cray/tests/hardware_checks-20241114T160403.log
+Running hardware checks...
+DONE.
+SUCCESS: All 2 hardware checks passed: capmc, hsm

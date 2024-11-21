@@ -1,0 +1,132 @@
+Going to test from node types ('ncn_master',) to node types ('ncn_master', 'spine_switch') on networks ('can', 'chn', 'cmn', 'nmn', 'nmnlb', 'hmn', 'hmnlb').
+BICAN:CHN detected.
+ncn-m002 password (leave blank and hit Enter if not using password): 
+ncn-m003 password (leave blank and hit Enter if not using password): 
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network can (can.surtur.hpc.amslabs.hpecorp.net)
+        To node type ncn_master, using ncn-m003.can.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network can (can.surtur.hpc.amslabs.hpecorp.net)
+        To node type spine_switch, using sw-spine-001.can.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network cmn (cmn.surtur.hpc.amslabs.hpecorp.net)
+        To node type ncn_master, using ncn-m003.cmn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: True
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network cmn (cmn.surtur.hpc.amslabs.hpecorp.net)
+        To node type spine_switch, using sw-spine-001.cmn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: True
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+                ^^^^ FAILED: not accessible but SHOULD have been accessible ^^^^
+
+
+Traceback (most recent call last):
+  File "/usr/share/doc/csm/scripts/operations/pyscripts/pyscripts/commands/test_bican_internal/test_bican_internal.py", line 181, in test_from_node_type_to_node_type_over_network
+    toNodeSshConnection.connect()
+  File "/usr/share/doc/csm/scripts/operations/pyscripts/pyscripts/core/ssh/ssh_connection.py", line 109, in connect
+    self.__open_connection_dance()
+  File "/usr/share/doc/csm/scripts/operations/pyscripts/pyscripts/core/ssh/ssh_connection.py", line 212, in __open_connection_dance
+    raise CannotLoginException
+pyscripts.core.ssh.ssh_connection.CannotLoginException
+
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network chn (chn.surtur.hpc.amslabs.hpecorp.net)
+        To node type ncn_master, using ncn-m003.chn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network chn (chn.surtur.hpc.amslabs.hpecorp.net)
+        To node type spine_switch, using sw-spine-001.chn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network nmn (nmn.surtur.hpc.amslabs.hpecorp.net)
+        To node type ncn_master, using ncn-m003.nmn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: True
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network nmn (nmn.surtur.hpc.amslabs.hpecorp.net)
+        To node type spine_switch, using sw-spine-001.nmn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network hmn (hmn.surtur.hpc.amslabs.hpecorp.net)
+        To node type ncn_master, using ncn-m003.hmn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: True
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network hmn (hmn.surtur.hpc.amslabs.hpecorp.net)
+        To node type spine_switch, using sw-spine-001.hmn.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: True
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+                ^^^^ FAILED: not accessible but SHOULD have been accessible ^^^^
+
+
+Traceback (most recent call last):
+  File "/usr/share/doc/csm/scripts/operations/pyscripts/pyscripts/commands/test_bican_internal/test_bican_internal.py", line 181, in test_from_node_type_to_node_type_over_network
+    toNodeSshConnection.connect()
+  File "/usr/share/doc/csm/scripts/operations/pyscripts/pyscripts/core/ssh/ssh_connection.py", line 109, in connect
+    self.__open_connection_dance()
+  File "/usr/share/doc/csm/scripts/operations/pyscripts/pyscripts/core/ssh/ssh_connection.py", line 212, in __open_connection_dance
+    raise CannotLoginException
+pyscripts.core.ssh.ssh_connection.CannotLoginException
+
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network nmnlb (nmnlb.surtur.hpc.amslabs.hpecorp.net)
+        To node type ncn_master, using ncn-m003.nmnlb.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: True
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network nmnlb (nmnlb.surtur.hpc.amslabs.hpecorp.net)
+        To node type spine_switch, using sw-spine-001.nmnlb.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network hmnlb (hmnlb.surtur.hpc.amslabs.hpecorp.net)
+        To node type ncn_master, using ncn-m003.hmnlb.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: True
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        From node type ncn_master, using ncn-m002
+        Over network hmnlb (hmnlb.surtur.hpc.amslabs.hpecorp.net)
+        To node type spine_switch, using sw-spine-001.hmnlb.surtur.hpc.amslabs.hpecorp.net
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+
+Ran 14 tests in 456.267s. Overall status: FAILED (Passed: 12, Failed: 2)

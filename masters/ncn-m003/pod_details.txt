@@ -1,0 +1,9 @@
+Namespace		Pod Name					Node Name			Creation Timestamp
+-------------------------------------------------------------------------------------------------------------------
+argo                 cray-nls-bfd94746b-m97ln                           10.252.1.11                    2024-11-15T09:21:32Z     
+argo                 cray-nls-bfd94746b-tsx62                           10.252.1.12                    2024-11-15T09:21:32Z     
+services             cfs-16d73c65-2316-43cd-a913-a158718bd6c9-zg6hd     10.252.1.14                    2024-11-15T09:30:36Z     
+services             cray-dhcp-kea-helper-28861053-mhdnv                10.252.1.14                    2024-11-15T09:33:00Z     
+services             hms-discovery-28861053-tnbdk                       10.252.1.14                    2024-11-15T09:33:00Z     
+services             sshot-fm-recover-28861053-cxxsg                    10.252.1.14                    2024-11-15T09:33:00Z     
+sysmgmt-health       cray-sysmgmt-health-grok-exporter-544fb59f84-t9n62 10.252.1.10                    2024-11-15T09:21:32Z     

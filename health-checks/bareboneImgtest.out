@@ -1,0 +1,30 @@
+cray.barebones-boot-test: INFO     Barebones image boot test starting
+cray.barebones-boot-test: INFO       For complete logs look in the file /opt/cray/tests/integration/logs/csm/barebones_image_test/20241114162738.log
+cray.barebones-boot-test: INFO     No architecture, node, or image specified; using default arch: x86
+cray.barebones-boot-test: INFO     Latest CSM version found in Product Catalog: 1.6.0-rc.3
+cray.barebones-boot-test: INFO     Querying HSM to find an enabled compute node with 'x86' arch
+cray.barebones-boot-test: INFO     Found compute node 'x3000c0s17b3n0' with architecture 'x86'
+cray.barebones-boot-test: INFO     Found barebones image in product catalog: 'compute-csm-1.6-6.2.25-x86_64': {'id': '4e8ef2b3-89bd-426c-b3dc-6876e9decb6c'}
+cray.barebones-boot-test: INFO     Base IMS image '4e8ef2b3-89bd-426c-b3dc-6876e9decb6c' from the product catalog has arch 'x86'
+cray.barebones-boot-test: INFO     Creating CFS configuration 'csm-barebones-boot-test-20241114162738'
+cray.barebones-boot-test: INFO     Created CFS configuration 'csm-barebones-boot-test-20241114162738'
+cray.barebones-boot-test: INFO     Creating CFS session 'csm-barebones-boot-test-20241114162738' to customize IMS image '4e8ef2b3-89bd-426c-b3dc-6876e9decb6c' with CFS configuration 'csm-barebones-boot-test-20241114162738'
+cray.barebones-boot-test: INFO     Created CFS session 'csm-barebones-boot-test-20241114162738'
+cray.barebones-boot-test: INFO     Waiting for CFS session 'csm-barebones-boot-test-20241114162738' to complete
+cray.barebones-boot-test: INFO     CFS session 'csm-barebones-boot-test-20241114162738' 'status' field is 'pending'
+cray.barebones-boot-test: INFO     CFS session 'csm-barebones-boot-test-20241114162738' 'status' field is now 'running'
+cray.barebones-boot-test: INFO     CFS session 'csm-barebones-boot-test-20241114162738' 'status' field is now 'complete'
+cray.barebones-boot-test: INFO     CFS session 'csm-barebones-boot-test-20241114162738' 'succeeded' field is now 'true'
+cray.barebones-boot-test: INFO     CFS session 'csm-barebones-boot-test-20241114162738' completed successfully
+cray.barebones-boot-test: INFO     Created IMS image '5dbd7816-80df-41e9-a3a1-5af849f1d74f'
+cray.barebones-boot-test: INFO     CFS session 'csm-barebones-boot-test-20241114162738' created customized IMS image '5dbd7816-80df-41e9-a3a1-5af849f1d74f'
+cray.barebones-boot-test: INFO     Creating BOS session template 'csm-barebones-boot-test-20241114162738'
+cray.barebones-boot-test: INFO     Created BOS session template 'csm-barebones-boot-test-20241114162738'
+cray.barebones-boot-test: INFO     Creating BOS session 'csm-barebones-boot-test-20241114162738' with BOS session template 'csm-barebones-boot-test-20241114162738' on node 'x3000c0s17b3n0'
+cray.barebones-boot-test: INFO     Created BOS session 'csm-barebones-boot-test-20241114162738'
+cray.barebones-boot-test: INFO     Waiting for BOS session 'csm-barebones-boot-test-20241114162738' to complete
+cray.barebones-boot-test: INFO     BOS session 'csm-barebones-boot-test-20241114162738' 'status' field is 'pending'
+cray.barebones-boot-test: INFO     BOS session 'csm-barebones-boot-test-20241114162738' 'status' field is now 'running'
+cray.barebones-boot-test: ERROR    BOS session 'csm-barebones-boot-test-20241114162738' has not completed even after 30 minutes
+cray.barebones-boot-test: ERROR    Failure of barebones image boot test.
+cray.barebones-boot-test: INFO     For troubleshooting information and manual steps, see https://github.com/Cray-HPE/docs-csm/blob/release/1.6/troubleshooting/cms_barebones_image_boot.md

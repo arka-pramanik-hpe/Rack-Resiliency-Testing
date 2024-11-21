@@ -1,0 +1,101 @@
+ncn-m001:/usr/share/doc/csm/scripts/operations/pyscripts # cd /usr/share/doc/csm/scripts/operations/pyscripts && ./start.py test_bican_external
+System domain [surtur.hpc.amslabs.hpecorp.net]: 
+Admin client secret []: wC8MwWcObx34m0Jgg2wOVBg3qChYhOXE
+Testing external access to node types ('ncn_master', 'spine_switch') on networks ('can', 'chn', 'cmn', 'nmn', 'nmnlb', 'hmn', 'hmnlb').
+BICAN:CHN detected.
+ncn-m002 password (leave blank and hit Enter if not using password): 
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+
+Testing SSH access:
+        To node type ncn_master, using ncn-m002.can.surtur.hpc.amslabs.hpecorp.net
+        Over network can (can.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type spine_switch, using sw-spine-001.can.surtur.hpc.amslabs.hpecorp.net
+        Over network can (can.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type ncn_master, using ncn-m002.cmn.surtur.hpc.amslabs.hpecorp.net
+        Over network cmn (cmn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: True
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type spine_switch, using sw-spine-001.cmn.surtur.hpc.amslabs.hpecorp.net
+        Over network cmn (cmn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: True
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+                ^^^^ FAILED: not accessible but SHOULD have been accessible ^^^^
+
+
+
+Testing SSH access:
+        To node type ncn_master, using ncn-m002.chn.surtur.hpc.amslabs.hpecorp.net
+        Over network chn (chn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type spine_switch, using sw-spine-001.chn.surtur.hpc.amslabs.hpecorp.net
+        Over network chn (chn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type ncn_master, using ncn-m002.nmn.surtur.hpc.amslabs.hpecorp.net
+        Over network nmn (nmn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ FAILED: accessible but SHOULD NOT have been accessible ^^^^
+
+Testing SSH access:
+        To node type spine_switch, using sw-spine-001.nmn.surtur.hpc.amslabs.hpecorp.net
+        Over network nmn (nmn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type ncn_master, using ncn-m002.nmnlb.surtur.hpc.amslabs.hpecorp.net
+        Over network nmnlb (nmnlb.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type spine_switch, using sw-spine-001.nmnlb.surtur.hpc.amslabs.hpecorp.net
+        Over network nmnlb (nmnlb.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type ncn_master, using ncn-m002.hmn.surtur.hpc.amslabs.hpecorp.net
+        Over network hmn (hmn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ FAILED: accessible but SHOULD NOT have been accessible ^^^^
+
+Testing SSH access:
+        To node type spine_switch, using sw-spine-001.hmn.surtur.hpc.amslabs.hpecorp.net
+        Over network hmn (hmn.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+sw-spine-001 password (leave blank and hit Enter if not using password): 
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type ncn_master, using ncn-m002.hmnlb.surtur.hpc.amslabs.hpecorp.net
+        Over network hmnlb (hmnlb.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+Testing SSH access:
+        To node type spine_switch, using sw-spine-001.hmnlb.surtur.hpc.amslabs.hpecorp.net
+        Over network hmnlb (hmnlb.surtur.hpc.amslabs.hpecorp.net)
+        Expected to work: False
+                ^^^^ PASSED ^^^^
+
+
+Ran 14 tests in 125.624s. Overall status: FAILED (Passed: 11, Failed: 3)
+ncn-m001:/usr/share/doc/csm/scripts/operations/pyscripts # 

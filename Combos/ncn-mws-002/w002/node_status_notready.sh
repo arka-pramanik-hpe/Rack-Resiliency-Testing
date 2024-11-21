@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Node name to monitor
-NODE_NAME="ncn-m001"
+NODE_NAME="ncn-w002"
 
 # File to log the timestamp of state changes
 LOG_FILE="./node_status_change_NR.log"
 
 # Initialize the last state
 LAST_STATE="Not Ready"
-echo "Shutdown starts at: $(date)" | tee -a "$LOG_FILE"
+echo "Power on starts at: $(date)" | tee -a "$LOG_FILE"
 echo "Monitoring node $NODE_NAME for state changes (Not Ready <-> Ready)..."
 
 # Infinite loop to check node status

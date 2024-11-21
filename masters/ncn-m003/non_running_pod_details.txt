@@ -1,0 +1,20 @@
+Namespace		Pod Name			Node Name			State			State Timestamp
+---------------------------------------------------------------------------------------------------------------
+argo                 logical-backup-cray-nls-postgres-28858990-f6g2g 10.252.1.14                    Succeeded       2024-11-13T23:10:00Z     
+argo                 logical-backup-cray-nls-postgres-28860430-flwx8 10.252.1.14                    Succeeded       2024-11-14T23:10:00Z     
+ims                  cray-ims-0ca4b119-c28f-4864-aa64-983e7534992b-customize-l58dl 10.252.1.14                    Succeeded       2024-11-14T18:35:53Z     
+ims                  cray-ims-0fbd4b2b-07a9-42c2-9c99-862501181867-customize-zg7fj 10.252.1.14                    Succeeded       2024-11-14T19:07:46Z     
+ims                  cray-ims-19219974-a545-4903-9b31-135ceaa87a57-customize-jrgth 10.252.1.13                    Succeeded       2024-11-14T16:27:51Z     
+ims                  cray-ims-3a1984a5-274a-4862-8b6f-74c3bb880800-customize-ctvqt 10.252.1.14                    Succeeded       2024-11-13T16:26:09Z     
+ims                  cray-ims-4c77ef81-f4b9-45d7-a04c-17723823b20c-customize-b9t4z 10.252.1.14                    Succeeded       2024-11-14T17:07:00Z     
+ims                  cray-ims-61965b4a-5035-4153-94d9-1f9311a1cf9f-customize-25pbm 10.252.1.14                    Succeeded       2024-11-13T21:53:19Z     
+ims                  cray-ims-66bfdfad-4b28-4f9d-be23-9fb177ef940c-customize-l4565 10.252.1.14                    Succeeded       2024-11-13T19:42:39Z     
+ims                  cray-ims-70423139-018d-4869-a91b-0fc3d9220c21-customize-jpjf7 10.252.1.14                    Succeeded       2024-11-13T21:13:50Z     
+ims                  cray-ims-729e8575-ac4d-4e53-94a5-252137ef80ef-customize-v86l5 10.252.1.14                    Succeeded       2024-11-14T19:42:16Z     
+ims                  cray-ims-88ad4a18-ef77-43df-a7af-ee184fa67dfe-customize-lq98n 10.252.1.14                    Succeeded       2024-11-14T22:56:04Z     
+ims                  cray-ims-935752c4-4a40-48d0-b1e0-06e048e51eab-customize-vwmtx 10.252.1.14                    Succeeded       2024-11-14T16:27:06Z     
+ims                  cray-ims-d321ce0a-04db-4fd9-b27b-f9c25f4c8c8a-customize-9k4bp 10.252.1.14                    Succeeded       2024-11-14T21:47:02Z     
+ims                  cray-ims-d5a02adc-d80e-4292-ad76-d7b3cc84c7b6-customize-m9rw8 10.252.1.14                    Succeeded       2024-11-13T19:04:27Z     
+ims                  cray-ims-dcde60ad-3267-4ec4-975e-103e51a3b518-customize-fnfhr 10.252.1.14                    Succeeded       2024-11-14T21:18:36Z     
+kube-system          kube-etcdbackup-28861050-22tcs 10.252.1.14                    Succeeded       2024-11-15T09:30:00Z     
+kyverno              kyverno-cleanup-admission-reports-28861050-l5bzq 10.252.1.14                    Succeeded       2024-11-15T09:30:00Z     

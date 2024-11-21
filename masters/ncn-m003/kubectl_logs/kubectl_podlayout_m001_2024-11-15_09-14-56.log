@@ -1,0 +1,16 @@
+Timestamp: 2024-11-15 09:14:56
+argo                 pod/cray-nls-bfd94746b-l2tts                                          2/2     Running     0               8d      10.32.0.8     ncn-m003   <none>           <none>
+argo                 pod/cray-nls-bfd94746b-ztgdb                                          2/2     Running     1 (8d ago)      8d      10.32.0.7     ncn-m003   <none>           <none>
+kube-system          pod/cray-k8s-encryption-6r875                                         1/1     Running     1 (8d ago)      12d     10.32.0.5     ncn-m003   <none>           <none>
+kube-system          pod/kube-apiserver-ncn-m003                                           1/1     Running     1 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
+kube-system          pod/kube-controller-manager-ncn-m003                                  1/1     Running     1 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
+kube-system          pod/kube-multus-ds-cjnw7                                              1/1     Running     1 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
+kube-system          pod/kube-proxy-rllms                                                  1/1     Running     1 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
+kube-system          pod/kube-scheduler-ncn-m003                                           1/1     Running     1 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
+kube-system          pod/node-problem-detector-8kzps                                       1/1     Running     1 (8d ago)      12d     10.32.0.6     ncn-m003   <none>           <none>
+kube-system          pod/weave-net-spkgb                                                   2/2     Running     3 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
+metallb-system       pod/metallb-speaker-mlqr4                                             1/1     Running     1 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
+spire                pod/request-ncn-join-token-cfvt9                                      2/2     Running     2 (8d ago)      12d     10.32.0.3     ncn-m003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-grok-exporter-544fb59f84-nnsvr                1/1     Running     0               8d      10.32.0.2     ncn-m003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-node-exporter-smartmon-c7p7l                  1/1     Running     1 (8d ago)      12d     10.32.0.4     ncn-m003   <none>           <none>
+sysmgmt-health       pod/cray-sysmgmt-health-prometheus-node-exporter-ntjwx                1/1     Running     1 (8d ago)      12d     10.252.1.10   ncn-m003   <none>           <none>
